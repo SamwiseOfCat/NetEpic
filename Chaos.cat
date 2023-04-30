@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="a9aa-a2eb-5b74-a29d" name="Chaos" revision="1" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>v1 notes :
+This was the list I was dreading doing... easily the most complex in regards to force composition because of the distinction between Undivided and the four powers, PLUS then the Traitor Legions. Its clunky and not very intuitive, plus its quite limiting compared to the old classic SM 2d Ed Chaos lists. I fully expect to have made some errors in here somehere so please accept my apologies in advance!</readme>
+  <publications>
+    <publication id="114f-d100-94a8-32d5" name="Chaos NetEpic Army Book" shortName="Chaos NetEpic Army Book" publisherUrl="netepic.org"/>
+  </publications>
+  <categoryEntries>
+    <categoryEntry id="876a-a1c2-7f18-2798" name="Chaos Space Marines" hidden="false"/>
+    <categoryEntry id="9294-e104-e717-3556" name="Khorne" hidden="false"/>
+    <categoryEntry id="9ffd-adf8-1090-1cc4" name="Slaanesh" hidden="false"/>
+    <categoryEntry id="5e4c-6b46-08d5-8daa" name="Nurgle" hidden="false"/>
+    <categoryEntry id="a6b2-d03b-0dec-fa0b" name="Tzeentch" hidden="false"/>
+    <categoryEntry id="0f68-4c63-262e-2b3c" name="Chaos Undivided" hidden="false"/>
+  </categoryEntries>
+  <forceEntries>
+    <forceEntry id="4afe-7c65-f0bd-fcf7" name="Chaos Undivided" hidden="false">
+      <rules>
+        <rule id="fd90-ce5b-5728-4fa0" name="Chaos Undivided - Allies" publicationId="114f-d100-94a8-32d5" page="5" hidden="false">
+          <comment></comment>
+          <description>The Standard Chaos Army consists of minor Chaos forces such as pirates, raiding parties, small groups of Chaos Marines, rebel Chaos cultists, aspiring champions and so on, known collectively as Chaos Renegades. If you choose to run a Standard Army you must put at least 50% of your points into the Standard Chaos List. The insidiousness of Chaos can corrupt just about everyone, so the rest of your points may go into any one Power, or any one Standard List other than Eldar or Space Marines. If you ally with an Imperial force, it is assumed to be corrupted or traitor and therefore a Chaos force itself, not an Imperial force working with Chaos. This is a technicality however, and makes no difference when purchasing your force. Any Marines bought in a Chaos Marine army are from one of the Legions Excommunicate Traitoris.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="6386-7d30-288d-97de" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a60d-4da7-213f-2768" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="b8e3-1041-1c5b-caf2" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="false">
+          <modifiers>
+            <modifier type="increment" field="4e24-9f60-55db-46fa" value="5.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="704c-e54e-0e5c-2d2f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e24-9f60-55db-46fa" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="97b9-370d-8314-fceb" name="Special Cards" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="false">
+          <modifiers>
+            <modifier type="increment" field="e6df-8a48-368d-5c08" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="704c-e54e-0e5c-2d2f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6df-8a48-368d-5c08" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="ab86-8478-eb18-8a73" name="Free Cards" hidden="false" targetId="8e49-5810-e088-7dc4" primary="false">
+          <modifiers>
+            <modifier type="increment" field="0a6d-8baa-5426-3935" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="704c-e54e-0e5c-2d2f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a6d-8baa-5426-3935" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="7157-5c84-b933-4485" name="Chaos Undivided" hidden="false" targetId="0f68-4c63-262e-2b3c" primary="false"/>
+        <categoryLink id="ad9d-ae48-1007-0f35" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="a68b-fb17-7eb0-a873" name="Nurgle" hidden="false">
+      <rules>
+        <rule id="3d3a-49e1-6c80-091c" name="Nurgle - Allies" publicationId="114f-d100-94a8-32d5" page="5" hidden="false">
+          <comment></comment>
+          <description>A Nurgle army must have 75% of your points into that Power and the Standard Chaos Lists. You may put up to 25% of your points into any of the other Powers, or any one Standard List other than Eldar or Space Marines.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="0671-e9a4-0bc5-c8f1" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b65-0bdd-c7e3-a134" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="b4f0-875c-f810-9383" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="false">
+          <modifiers>
+            <modifier type="increment" field="ef05-112f-3133-3f7a" value="5.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="704c-e54e-0e5c-2d2f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef05-112f-3133-3f7a" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="c9b4-8575-0d91-1c38" name="Special Cards" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="false">
+          <modifiers>
+            <modifier type="increment" field="9794-0bd9-59fb-6444" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="704c-e54e-0e5c-2d2f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9794-0bd9-59fb-6444" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="aab0-7989-c998-6874" name="Free Cards" hidden="false" targetId="8e49-5810-e088-7dc4" primary="false">
+          <modifiers>
+            <modifier type="increment" field="bac5-b7cd-41ba-365e" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="704c-e54e-0e5c-2d2f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bac5-b7cd-41ba-365e" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="114d-ed82-94ef-183e" name="Nurgle" hidden="false" targetId="5e4c-6b46-08d5-8daa" primary="false"/>
+        <categoryLink id="d613-1c6b-1b61-62f9" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="5b7e-c308-02a9-89eb" name="Khorne" hidden="false">
+      <rules>
+        <rule id="be35-53b1-ece9-f874" name="Khorne - Allies" publicationId="114f-d100-94a8-32d5" page="" hidden="false">
+          <comment></comment>
+          <description>A Khorne army must have 75% of your points into that Power and the Standard Chaos Lists. You may put up to 25% of your points into any of the other Powers, or any one Standard List other than Eldar or Space Marines.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="4801-c70a-64de-74d8" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9c0-0a84-4ba2-bde6" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="21de-ddb2-2663-cf24" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="false">
+          <modifiers>
+            <modifier type="increment" field="d29f-faf6-bd74-eba9" value="5.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="704c-e54e-0e5c-2d2f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d29f-faf6-bd74-eba9" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="0b39-d338-fb60-9d2a" name="Special Cards" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="false">
+          <modifiers>
+            <modifier type="increment" field="388d-05c1-b62d-183d" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="704c-e54e-0e5c-2d2f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="388d-05c1-b62d-183d" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="8fdb-e1b5-eba8-9fe8" name="Free Cards" hidden="false" targetId="8e49-5810-e088-7dc4" primary="false">
+          <modifiers>
+            <modifier type="increment" field="0e35-0828-e2d2-f42e" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="704c-e54e-0e5c-2d2f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e35-0828-e2d2-f42e" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="5c25-e87e-c576-e905" name="Khorne" hidden="false" targetId="9294-e104-e717-3556" primary="false"/>
+        <categoryLink id="bcb5-9725-4d02-7ff6" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="13f5-04f5-81f1-45f2" name="Slaanesh" hidden="false">
+      <rules>
+        <rule id="4140-1593-c4eb-fbf1" name="Slaanesh - Allies" publicationId="114f-d100-94a8-32d5" page="5" hidden="false">
+          <comment></comment>
+          <description>A Slaanesh army must have 75% of your points into that Power and the Standard Chaos Lists. You may put up to 25% of your points into any of the other Powers, or any one Standard List other than Eldar or Space Marines.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="576d-8219-2133-5aeb" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ef1-f415-80bc-edd2" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="1db9-c13b-c7c5-d5f2" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="false">
+          <modifiers>
+            <modifier type="increment" field="1cff-2af6-2896-da4e" value="5.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="704c-e54e-0e5c-2d2f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cff-2af6-2896-da4e" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="b030-d3a9-73b4-58fd" name="Special Cards" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="false">
+          <modifiers>
+            <modifier type="increment" field="dfd8-2733-964e-bcda" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="704c-e54e-0e5c-2d2f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfd8-2733-964e-bcda" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="ba86-fa34-73ce-99f1" name="Free Cards" hidden="false" targetId="8e49-5810-e088-7dc4" primary="false">
+          <modifiers>
+            <modifier type="increment" field="f9f6-756f-689d-daa7" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="704c-e54e-0e5c-2d2f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9f6-756f-689d-daa7" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="16d6-24d7-e795-be21" name="Slaanesh" hidden="false" targetId="9ffd-adf8-1090-1cc4" primary="false"/>
+        <categoryLink id="a754-6e91-2985-4957" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="36bd-d9fb-f2f7-2670" name="Tzeentch" hidden="false">
+      <rules>
+        <rule id="04dc-0b36-2fff-64f5" name="Tzeentch - Allies" publicationId="114f-d100-94a8-32d5" page="5" hidden="false">
+          <comment></comment>
+          <description>A Tzeentch army must have 75% of your points into that Power and the Standard Chaos Lists. You may put up to 25% of your points into any of the other Powers, or any one Standard List other than Eldar or Space Marines.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="4cd8-a209-fcf1-b852" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb46-cc3e-954e-7c40" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="a451-3144-4489-2f37" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="false">
+          <modifiers>
+            <modifier type="increment" field="c32a-582e-8e77-2d50" value="5.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="704c-e54e-0e5c-2d2f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c32a-582e-8e77-2d50" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="e65b-0f36-53e4-2931" name="Special Cards" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="false">
+          <modifiers>
+            <modifier type="increment" field="de4a-0618-3ac3-4818" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="704c-e54e-0e5c-2d2f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de4a-0618-3ac3-4818" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="67ba-680e-5d50-70d9" name="Free Cards" hidden="false" targetId="8e49-5810-e088-7dc4" primary="false">
+          <modifiers>
+            <modifier type="increment" field="2054-104a-804b-8f64" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="704c-e54e-0e5c-2d2f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2054-104a-804b-8f64" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="fabd-09c5-5a90-7dbf" name="Slaanesh" hidden="false" targetId="9ffd-adf8-1090-1cc4" primary="false"/>
+        <categoryLink id="279d-9201-dff6-5c3f" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="749f-c4c8-425d-fae6" name="Chaos Space Marines" hidden="false">
+      <rules>
+        <rule id="44ff-c683-c7a7-3251" name="Chaos Space Marines - Allies" publicationId="114f-d100-94a8-32d5" page="5" hidden="false">
+          <comment></comment>
+          <description>The Chaos Marine Legions are a special case. You must put at least 75% of your points into that Legion list, the Standard Chaos List and the Standard Chaos Marine List, and may put up to 25% of your points into any of the other Powers (and the Standard Chaos List), or any one Standard List except Eldar or Space Marines.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="a52b-2b5f-9f88-93be" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e10c-48fb-0f2c-aefe" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="36a5-7939-0b7c-95ec" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="false">
+          <modifiers>
+            <modifier type="increment" field="750f-78ad-0a78-77b6" value="5.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="704c-e54e-0e5c-2d2f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="750f-78ad-0a78-77b6" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="d8be-0ef4-21fb-e47e" name="Special Cards" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="false">
+          <modifiers>
+            <modifier type="increment" field="9ea0-da2d-afdf-0c21" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="704c-e54e-0e5c-2d2f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ea0-da2d-afdf-0c21" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="4873-d565-0401-7a4a" name="Free Cards" hidden="false" targetId="8e49-5810-e088-7dc4" primary="false">
+          <modifiers>
+            <modifier type="increment" field="b304-cf0f-197f-ae90" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="704c-e54e-0e5c-2d2f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b304-cf0f-197f-ae90" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="2153-1a09-19d1-d3f8" name="Chaos Space Marines" hidden="false" targetId="876a-a1c2-7f18-2798" primary="false"/>
+        <categoryLink id="9802-3e76-ae66-9753" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <sharedRules>
+    <rule id="952d-3432-487f-ade6" name="Mark of Khorne : Blood for the Blood God!" publicationId="114f-d100-94a8-32d5" page="10" hidden="false">
+      <description>These beings enter a berserk killing frenzy. They gain +3 CAF, but you may lose control as they succumb to mindless rage. Roll 2D6 if you gave them Charge Orders and 1D6 for anything else. If you see a “6” (on one or both dice) the detachment reverts to Charge Orders and moves to engage the nearest models, friend or foe. Models in this mindless rage may move out of coherency.</description>
+    </rule>
+    <rule id="6191-49ea-3b65-b65c" name="Mark of Nurgle : Plague Touch" publicationId="114f-d100-94a8-32d5" page="13" hidden="false">
+      <description>Models in the Marked detachment carry deadly disease, filth and pestilence. If they are engaged in Close Combat against units that have no armor save, roll a die after Close Combat. On a 3+ the enemy dies no matter what the Close Combat result.</description>
+    </rule>
+    <rule id="7657-bf59-05bb-7a81" name="Mark of Slaanesh : Lewd Enchantments" publicationId="114f-d100-94a8-32d5" page="16" hidden="false">
+      <description>A model that wishes to shoot at models in the Marked detachment must pass a morale check or be persuaded to shoot at another target. If a Marked model is in Close Combat, no one can fire into the melee even if the race could normally do so (e.g. Tyranids). This is an ethereal psychic power, and will not work on inorganic units such as Robots, Wraithguard and Necron.</description>
+    </rule>
+    <rule id="d523-f634-65b4-5da6" name="Glamour of Slaanesh" publicationId="114f-d100-94a8-32d5" page="16" hidden="false">
+      <description>A unit with the Glamour of Slaanesh receives the following benefits : it is harder for enemy units to hit with ranged combat, all direct shots suffer a -1 modified to their To Hit rolls and any direct fire Barrages automatically scatter, plus the Glamour also provides a 4+ Psychic save.</description>
+    </rule>
+    <rule id="0a0f-bea8-0f17-09e1" name="Mark of Tzeentch" publicationId="114f-d100-94a8-32d5" page="19" hidden="false">
+      <description>If a model in the Marked detachment is killed, immediately replace it with a Pink Horror. This replacement even occurs in Close Combat, but not if the Marked model is slain by a psychic effect or something that does not leave a corpse (such as a Vortex missile). Yes, this Pink Horror will split into two Blue Horrors as usual and no, the Marked model doesn’t count as truly destroyed (for Break Point calculations) until both Blue Horrors are destroyed.</description>
+    </rule>
+    <rule id="7465-58bf-2995-3d22" name="Iron Warriors HQ &amp; Elites - Regeneration" hidden="false">
+      <description>All Iron Warriors HQ and Elite infantry units are heavily modified with bionic implants, and may Regenerate on a 6+ in the End Phase. Additionally, they may benefit from the saves granted by both Medic and Mechanic units (but still only get one save per stand).</description>
+    </rule>
+  </sharedRules>
+</catalogue>

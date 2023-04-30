@@ -1,0 +1,1422 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="96e7-de04-00de-819d" name="Titan Legions" revision="1" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>v1 notes : 
+It is very small as youd expect, as the Codex list only allows the player to take Titan cards. This is a *very* niche army (although you can take allies...) that wont see the tabletop too much as holding objectives might be a struggle when you have about 5 models on the board. Although, if they annihilate everything on the other side of the table.... ;-)
+You pick this army for two reasons : 1) so you can have Company Cards of about 3000 points worth of Warlords and 2) so you can run the Imperator Titan. Enjoy.</readme>
+  <publications>
+    <publication id="5c4c-4f06-26be-0749" name="Adeptus Mechanicus NetEpic Army Book" shortName="Adeptus Mechanicus NetEpic Army Book" publisherUrl="netepic.org"/>
+  </publications>
+  <categoryEntries>
+    <categoryEntry id="e10e-1be4-cbde-b0d1" name="Titan Legions" hidden="false"/>
+  </categoryEntries>
+  <forceEntries>
+    <forceEntry id="3c00-5583-e211-fcbe" name="Titan Legions Army" hidden="false">
+      <rules>
+        <rule id="ca46-8175-4b7a-d5a3" name="Titan Legions - Allies" publicationId="5c4c-4f06-26be-0749" page="4" hidden="false">
+          <comment>Fixed Typo</comment>
+          <description>If you want to field companies of titans or an Imperator Titan you must field a Codex Army and put 75% of your points into troops from this book. This allows you to purchase units from both the Standard and Codex lists.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="6888-a92c-c1a5-338b" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff17-5986-6156-e714" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="0a70-a2c1-576a-7101" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="false">
+          <modifiers>
+            <modifier type="increment" field="f994-4ea2-dc8a-f8d1" value="5.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="704c-e54e-0e5c-2d2f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f994-4ea2-dc8a-f8d1" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="582d-21e0-2a0a-50fd" name="Special Cards" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="false">
+          <modifiers>
+            <modifier type="increment" field="5200-fe71-ec08-b131" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="704c-e54e-0e5c-2d2f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5200-fe71-ec08-b131" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="520b-8742-dca5-a806" name="Free Cards" hidden="false" targetId="8e49-5810-e088-7dc4" primary="false">
+          <modifiers>
+            <modifier type="increment" field="d335-7953-bad0-abc4" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="704c-e54e-0e5c-2d2f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d335-7953-bad0-abc4" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="6d6c-915a-742b-dea5" name="Titan Legions" hidden="false" targetId="e10e-1be4-cbde-b0d1" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <selectionEntries>
+    <selectionEntry id="2776-0a15-20c2-7c10" name="Imperator Titan" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="73d1-3f7f-7418-3168" name="Imperator Titan" hidden="false" targetId="4821-4aa9-d89b-0b02" type="profile"/>
+        <infoLink id="de59-c270-ea3a-031c" name="Point Defence (16)" hidden="false" targetId="b033-6932-7ec4-7bbd" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="73bd-9cfd-1bdc-65da" name="Titan" hidden="false" targetId="31e8-9840-fb3a-3b8d" primary="false"/>
+        <categoryLink id="f4de-cb54-ae34-b691" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="true"/>
+        <categoryLink id="93ae-e8a8-c096-5d03" name="Titan Legions" hidden="false" targetId="e10e-1be4-cbde-b0d1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c0e1-0887-8205-55db" name="Imperator Defence Laser" hidden="false" collective="false" import="true" targetId="11d2-78ad-5a20-c362" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a85-9098-3d98-624a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f376-10f3-e9f4-fe06" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="2470-4305-9e93-426a" name="Imperator Gun Towers" hidden="false" collective="false" import="true" targetId="d7be-f7da-244d-d86b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7a9-c0d1-3ef7-7af5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c72-82bc-3077-eaed" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="0839-da2a-467a-7f7f" name="Imperator Main Battery" hidden="false" collective="false" import="true" targetId="044e-acb9-10e8-16f8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abfa-9e3e-8d35-4b2b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7af-8776-f948-b480" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8330-74ce-3a6e-1fdc" name="Imperator Secondary Weapons" hidden="false" collective="false" import="true" targetId="145c-62fb-dde4-8a46" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8af4-1a4c-5956-9d4f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31e5-cb1c-00ea-d008" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="fe47-29c6-7a05-1752" name="Hellstorm Cannon" hidden="false" collective="false" import="true" targetId="dcb4-0fb6-38d8-f6d2" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f83a-5474-59f9-a90b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bd3-0397-98d4-2e59" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="0865-3b38-5ff4-e3de" name="Plasma Annihilator" hidden="false" collective="false" import="true" targetId="39ac-659e-48e8-34e8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7166-ec3e-14e4-caa6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd2f-d093-6348-1d4b" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="2250.0"/>
+        <cost name=" VP" typeId="points" value="23.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a98b-5a53-e7b2-1424" name="Reaver Titan Battlegroup" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="7bfd-bf2f-9166-6fe1" name="Titan Battlegroup VP Awards" hidden="false" targetId="76f5-c869-6176-d58d" type="rule"/>
+        <infoLink id="d5ad-d078-4358-3533" name="Titan Coherency" hidden="false" targetId="0a3b-ef73-c45d-713c" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9dbd-910e-3a64-dce5" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="true"/>
+        <categoryLink id="db91-e366-fe0b-91eb" name="Titan Legions" hidden="false" targetId="e10e-1be4-cbde-b0d1" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="e010-a7b9-08b9-4be8" name="Reaver Titans" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d08-7cc7-a0a4-7de1" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fcc-d790-805f-b5bb" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="684c-aabf-1a11-00bd" name="Reaver Titan" hidden="false" collective="false" import="true" type="unit">
+              <infoLinks>
+                <infoLink id="4c3c-8563-a61c-911a" name="Reaver Titan" hidden="false" targetId="7ac8-35c0-6725-7148" type="profile"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="4337-7ca8-9802-099a" name="Titan" hidden="false" targetId="31e8-9840-fb3a-3b8d" primary="false"/>
+              </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="84a7-633c-af0a-7c6a" name="Reaver Titan Carapace Weapons" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55c9-cc7c-df05-327c" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a12f-0d44-756a-f75f" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="7176-380c-da61-8e31" name="Doomburner" hidden="false" collective="false" import="true" targetId="a11f-0aff-461e-361d" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cccf-a788-150b-52ce" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="982c-8f61-09f1-05e9" name="Quake Cannon" hidden="false" collective="false" import="true" targetId="a31c-7736-59bc-7c7f" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e4d-d6ec-02fc-b65c" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="7237-23a6-f554-750f" name="Gatling Blaster" hidden="false" collective="false" import="true" targetId="c1de-6a34-9aa5-27d5" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a486-f163-b3a4-86c6" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="0968-3a67-96a3-8ecd" name="Turbo-Laser Destructor" hidden="false" collective="false" import="true" targetId="d082-b547-d07b-781e" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6078-eac7-7291-6297" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="fa1a-e604-0318-f7a9" name="Volcano Cannon" hidden="false" collective="false" import="true" targetId="53d4-12cf-1d3f-0d53" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45e2-14e7-6788-fe83" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="fd09-e9b4-3464-0516" name="Laser Blaster" hidden="false" collective="false" import="true" targetId="0345-af42-bfa1-1f70" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="716b-42b0-e4b3-65d2" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="66fd-1c76-b995-43fc" name="Melta Cannon" hidden="false" collective="false" import="true" targetId="90b7-9938-d43f-5c42" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1a0-3f77-01fc-8677" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="fdd5-f3b6-42d4-3e89" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="54c6-7048-fee2-bd60" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a63d-d4d8-39dd-7bd5" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="4c6a-7b9c-6f56-f8c0" name="Plasma Blastgun" hidden="false" collective="false" import="true" targetId="fcee-4146-3e03-6c93" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a792-caac-3446-be3c" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="714c-084b-0148-42b2" name="Inferno Gun" hidden="false" collective="false" import="true" targetId="cb96-7e53-cb77-7470" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9dff-6601-2c62-38ad" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="3e6c-5874-9f93-4e48" name="Hellstrike Cannon" hidden="false" collective="false" import="true" targetId="7f21-b2f0-a80c-97c6" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fbb-ed20-6652-496b" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="6212-b70b-99b7-edff" name="Multiple Rocket Launcher" hidden="false" collective="false" import="true" targetId="ca02-0110-a2a5-8a92" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f18a-a00c-fa23-dd60" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="3bcd-e70d-b633-811c" name="Warp Missile" hidden="false" collective="false" import="true" targetId="417c-1a53-541c-aa98" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d500-6601-d1a9-296b" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="f237-4997-f01b-d914" name="Barrage Missile Launcher" hidden="false" collective="false" import="true" targetId="b8ca-5814-f0a6-2c72" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6569-29dd-16f8-0012" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="58ad-bbc3-2cdd-5348" name="Harpoon Missile" hidden="false" collective="false" import="true" targetId="d175-f59c-e381-ddb8" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5290-8082-79a1-6533" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="3667-1f07-5f63-f94e" name="Vortex Missile" hidden="false" collective="false" import="true" targetId="c5a5-4359-d59d-40e0" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aee9-bd91-a0f0-cca5" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="8a85-5c14-4203-b959" name="Cerberus Anti-Aircraft Gun" hidden="false" collective="false" import="true" targetId="bf02-2b7c-4d2e-c8bd" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34df-0c17-d9d9-63fc" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="7afe-f566-cce8-af83" name="Fire Control Center" hidden="false" collective="false" import="true" targetId="5e8c-c284-6768-68f8" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd4b-7a07-8f46-e2c3" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="b68e-ec09-d2f9-0812" name="Reaver Titan Arm Weapons" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af4f-2692-63f3-9ff0" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3400-ce44-bb5a-39eb" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="b820-ecc5-d51e-1665" name="Trident" hidden="false" collective="false" import="true" targetId="367f-54af-1231-8ee7" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6388-452f-220a-37d5" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="a779-f501-2596-95c0" name="Wrecker" hidden="false" collective="false" import="true" targetId="6870-3d2c-e0d4-88c3" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18f2-5b5d-4641-be44" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="a3c2-9121-f10e-97c9" name="Power Ram" hidden="false" collective="false" import="true" targetId="2612-1eb3-2df1-6bc6" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afe8-0429-9194-12c0" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="871d-a874-2fb2-163d" name="Power Fist" hidden="false" collective="false" import="true" targetId="efdb-36a0-bd4c-53b0" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d98-204f-2ef8-612b" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="dcf5-c1d3-a260-47dc" name="Laser Burner" hidden="false" collective="false" import="true" targetId="3b07-ebc2-0c2c-e32f" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d68-59d3-9d2b-627a" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="a5b2-6b89-9809-5ed8" name="Chain Fist" hidden="false" collective="false" import="true" targetId="cf99-1072-a612-0787" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b89b-b66e-642d-1fa1" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="1cad-59c7-bd1c-3e1d" name="Multiple Rocket Launcher" hidden="false" collective="false" import="true" targetId="ca02-0110-a2a5-8a92" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82ff-acfb-99b7-72bc" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="7a9b-15d4-2dfb-9e1b" name="Hellstrike Cannon" hidden="false" collective="false" import="true" targetId="7f21-b2f0-a80c-97c6" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6910-dfa1-acea-5fce" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="f4f1-814e-55da-c4ed" name="Inferno Gun" hidden="false" collective="false" import="true" targetId="cb96-7e53-cb77-7470" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f634-59ab-059f-7d87" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="0905-c212-3b95-c91b" name="Plasma Blastgun" hidden="false" collective="false" import="true" targetId="fcee-4146-3e03-6c93" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2be1-5558-6019-6df2" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="77ee-64a5-be50-5155" name="Melta Cannon" hidden="false" collective="false" import="true" targetId="90b7-9938-d43f-5c42" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ce3-1b09-71f4-d60d" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="3663-a43e-ebeb-e6d5" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="54c6-7048-fee2-bd60" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="721c-8099-519a-5a8b" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="fa20-d0c7-0bae-3b49" name="Laser Blaster" hidden="false" collective="false" import="true" targetId="0345-af42-bfa1-1f70" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b858-eccd-4da1-e759" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="fc8e-bc6b-2fab-3685" name="Volcano Cannon" hidden="false" collective="false" import="true" targetId="53d4-12cf-1d3f-0d53" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e927-881c-5dcc-eead" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="00ac-f398-1fb5-3b4c" name="Turbo-Laser Destructor" hidden="false" collective="false" import="true" targetId="d082-b547-d07b-781e" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ad5-7146-1b9c-5b9c" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="a88e-437c-38fb-d5ef" name="Gatling Blaster" hidden="false" collective="false" import="true" targetId="c1de-6a34-9aa5-27d5" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5da-617a-3ca8-ab95" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="acd5-bc68-6d95-f29e" name="Doomburner" hidden="false" collective="false" import="true" targetId="a11f-0aff-461e-361d" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b87f-28f8-dd23-013a" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="9703-eeab-e79b-cc9e" name="Quake Cannon" hidden="false" collective="false" import="true" targetId="a31c-7736-59bc-7c7f" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0375-d279-8557-0a69" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="3596-99c1-f391-02cc" name="Reaver Titan Head Options" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84a5-08ca-b8f0-4282" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="1f33-66ea-be47-a111" name="Close Combat Head" hidden="false" collective="false" import="true" targetId="e218-649f-38cb-036b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b780-8f5f-0b55-712c" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="4068-9192-2268-79bd" name="Weapon Head" hidden="false" collective="false" import="true" targetId="f0d5-b92a-9ff8-af8b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc78-3bcb-2881-4524" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="300.0"/>
+                <cost name=" VP" typeId="points" value="5.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2a21-f0a5-ab79-9736" name="Warlord Titan Battlegroup" hidden="false" collective="false" import="true" type="unit">
+      <comment>Added to Imperial Guard list as Orks can pick Gargant Big Mobs</comment>
+      <infoLinks>
+        <infoLink id="4018-1d8b-3452-064f" name="Titan Battlegroup VP Awards" hidden="false" targetId="76f5-c869-6176-d58d" type="rule"/>
+        <infoLink id="cfec-83d8-a6e8-24ec" name="Titan Coherency" hidden="false" targetId="0a3b-ef73-c45d-713c" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6ce6-3aa6-f72d-dc59" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="true"/>
+        <categoryLink id="db84-2026-4702-df51" name="Titan Legions" hidden="false" targetId="e10e-1be4-cbde-b0d1" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="90fe-0e72-6eb8-30c6" name="Warlord Titans" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db15-ba02-8830-0890" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0b6-48cb-c38b-ca39" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="0a29-d18c-4a65-5032" name="Warlord Titan" hidden="false" collective="false" import="true" type="unit">
+              <infoLinks>
+                <infoLink id="b0cf-e240-015e-3932" name="Warlord Titan" hidden="false" targetId="a3a3-18d6-61ac-e2a0" type="profile"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="7d47-6016-6879-6857" name="Titan" hidden="false" targetId="31e8-9840-fb3a-3b8d" primary="false"/>
+              </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="4856-c4dc-d940-f926" name="Warlord Titan Carapace Weapons" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da6c-b1c7-8279-d959" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6247-669e-865f-304f" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="a510-13ac-d174-6c3e" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="54c6-7048-fee2-bd60" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f8e-65ef-14e9-eb44" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="02f0-1cc0-8505-697d" name="Doomburner" hidden="false" collective="false" import="true" targetId="a11f-0aff-461e-361d" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce6f-0828-d1a6-8053" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="1c03-ec4e-49a0-e5f9" name="Gatling Blaster" hidden="false" collective="false" import="true" targetId="c1de-6a34-9aa5-27d5" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4792-7231-4154-c148" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="c822-5d91-f5ac-4572" name="Laser Blaster" hidden="false" collective="false" import="true" targetId="0345-af42-bfa1-1f70" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2740-9cad-0f12-0d93" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="66e9-ad6a-300d-f900" name="Melta Cannon" hidden="false" collective="false" import="true" targetId="90b7-9938-d43f-5c42" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a78b-1639-397d-e9e6" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="f0c2-f47c-fe9f-0758" name="Quake Cannon" hidden="false" collective="false" import="true" targetId="a31c-7736-59bc-7c7f" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f65e-9f9e-6639-7dc3" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="8a34-251f-8fba-1bec" name="Turbo-Laser Destructor" hidden="false" collective="false" import="true" targetId="d082-b547-d07b-781e" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80ca-8f0f-ac13-3aa3" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="24e2-f1e3-3ddc-b12f" name="Volcano Cannon" hidden="false" collective="false" import="true" targetId="53d4-12cf-1d3f-0d53" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2f8-b0d4-53f1-fb98" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="03cb-1ea4-c0f0-6984" name="Plasma Blastgun" hidden="false" collective="false" import="true" targetId="fcee-4146-3e03-6c93" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a99-0cf2-093f-1f9b" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="4ac7-435b-bceb-d1a4" name="Plasma Destructor (with dedicated reactor)" hidden="false" collective="false" import="true" targetId="308a-b0e2-79fb-afc8" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fcb-92ae-b296-7bee" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="1b41-f53c-61a7-9685" name="Plasma Cannon" hidden="false" collective="false" import="true" targetId="58a6-52bd-6839-0447" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6b0-2c07-b3b3-873a" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="22b3-9fc6-9c2c-b00e" name="Inferno Gun" hidden="false" collective="false" import="true" targetId="cb96-7e53-cb77-7470" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="324c-247d-aa1c-c958" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="e96d-14c6-6df0-211a" name="Plasma Cannon (with dedicated reactor)" hidden="false" collective="false" import="true" targetId="8c1b-5053-d56a-92b3" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f51-1fc8-cdf5-6ee9" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="a291-ff90-5a99-b4a2" name="Plasma Destructor" hidden="false" collective="false" import="true" targetId="01ea-db90-773d-d4aa" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43f5-1647-00e0-db2b" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="b86a-f4d9-815e-8f07" name="Hellstrike Cannon" hidden="false" collective="false" import="true" targetId="7f21-b2f0-a80c-97c6" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2004-ee59-3cfa-35b1" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="d27e-cdf7-e315-81d6" name="Multiple Rocket Launcher" hidden="false" collective="false" import="true" targetId="ca02-0110-a2a5-8a92" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4eb2-52e1-8641-3cf2" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="9cf4-5b7a-8a77-cf87" name="Warp Missile" hidden="false" collective="false" import="true" targetId="417c-1a53-541c-aa98" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9f8-58a6-b8fd-19cb" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="2b42-4064-c841-73ff" name="Barrage Missile Launcher" hidden="false" collective="false" import="true" targetId="b8ca-5814-f0a6-2c72" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9575-5d55-8ff8-8b66" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="6a31-f464-7927-15e6" name="Harpoon Missile" hidden="false" collective="false" import="true" targetId="d175-f59c-e381-ddb8" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="450f-4c54-0598-8631" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="b7a7-80e6-57cd-7c1b" name="Vortex Missile" hidden="false" collective="false" import="true" targetId="c5a5-4359-d59d-40e0" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59f1-1ea5-c335-4bcb" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="60d6-89e2-b136-c1c5" name="Carapace Landing Pad" hidden="false" collective="false" import="true" targetId="f07a-7127-6eba-0d60" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e81-fc90-aa29-1515" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="79ae-98ad-6e57-8ad9" name="Cerberus Anti-Aircraft Gun" hidden="false" collective="false" import="true" targetId="bf02-2b7c-4d2e-c8bd" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4075-e0db-a287-a2ca" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="3ab8-6c40-49c8-2a17" name="Fire Control Center" hidden="false" collective="false" import="true" targetId="5e8c-c284-6768-68f8" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="062e-fea9-c373-6c56" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="d4b7-47ae-34c2-00ca" name="Warlord Titan Arm Weapons" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2ec-7471-997d-afbe" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73ba-d4cf-62d7-5fd3" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="cb90-0780-c788-58e3" name="Doomburner" hidden="false" collective="false" import="true" targetId="a11f-0aff-461e-361d" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd7a-3649-301d-d8ce" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="e3fd-bd0c-7f15-916d" name="Quake Cannon" hidden="false" collective="false" import="true" targetId="a31c-7736-59bc-7c7f" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f124-517d-19bb-3d56" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="1b4d-26cc-54f9-ce17" name="Gatling Blaster" hidden="false" collective="false" import="true" targetId="c1de-6a34-9aa5-27d5" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0f8-2e0e-4d06-81b2" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="135c-228a-c7e7-5944" name="Turbo-Laser Destructor" hidden="false" collective="false" import="true" targetId="d082-b547-d07b-781e" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="685b-85ff-e5ae-577d" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="8e79-9d38-6640-ae03" name="Laser Blaster" hidden="false" collective="false" import="true" targetId="0345-af42-bfa1-1f70" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b33f-4696-cf94-9c03" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="742d-a367-e119-71f6" name="Volcano Cannon" hidden="false" collective="false" import="true" targetId="53d4-12cf-1d3f-0d53" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2600-cf93-655b-a572" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="dc6b-aa48-8278-7fb2" name="Melta Cannon" hidden="false" collective="false" import="true" targetId="90b7-9938-d43f-5c42" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d71d-3365-50c5-1112" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="b69a-8571-6d18-3e9d" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="54c6-7048-fee2-bd60" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="166d-9855-e66b-f428" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="1047-ef22-c457-785d" name="Plasma Blastgun" hidden="false" collective="false" import="true" targetId="fcee-4146-3e03-6c93" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8faf-1ff0-326e-3830" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="f583-e1d2-5b0d-f749" name="Plasma Destructor (with dedicated reactor)" hidden="false" collective="false" import="true" targetId="308a-b0e2-79fb-afc8" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="309d-6720-301a-7a95" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="631e-431c-d069-7c93" name="Plasma Cannon" hidden="false" collective="false" import="true" targetId="58a6-52bd-6839-0447" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cdd-c6a9-32b3-ff1d" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="c959-8974-1222-07ff" name="Inferno Gun" hidden="false" collective="false" import="true" targetId="cb96-7e53-cb77-7470" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a477-f913-59ce-2398" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="2bbb-172a-138f-fe5c" name="Plasma Cannon (with dedicated reactor)" hidden="false" collective="false" import="true" targetId="8c1b-5053-d56a-92b3" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23b2-b029-07ff-4aa8" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="011a-feae-297d-7733" name="Plasma Destructor" hidden="false" collective="false" import="true" targetId="01ea-db90-773d-d4aa" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d76-f199-b6b3-6293" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="9512-c516-e2c7-dd42" name="Hellstrike Cannon" hidden="false" collective="false" import="true" targetId="7f21-b2f0-a80c-97c6" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="839b-c765-2e82-0487" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="d26f-8150-6610-18b7" name="Multiple Rocket Launcher" hidden="false" collective="false" import="true" targetId="ca02-0110-a2a5-8a92" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2abf-ee14-1f59-a7bf" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="0c4e-6796-5530-ad5c" name="Chain Fist" hidden="false" collective="false" import="true" targetId="cf99-1072-a612-0787" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f98d-b000-5033-8b63" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="91f1-69f9-f71b-9212" name="Laser Burner" hidden="false" collective="false" import="true" targetId="3b07-ebc2-0c2c-e32f" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d92-0a0e-2259-c92d" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="978d-182a-f15d-0a47" name="Power Fist" hidden="false" collective="false" import="true" targetId="efdb-36a0-bd4c-53b0" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4206-8bae-f053-7a12" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="4492-51c9-2a7f-755c" name="Power Ram" hidden="false" collective="false" import="true" targetId="2612-1eb3-2df1-6bc6" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f25-2109-e4fd-f582" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="8633-afde-86df-db11" name="Wrecker" hidden="false" collective="false" import="true" targetId="6870-3d2c-e0d4-88c3" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2aff-1ba2-437a-fb0c" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="9b28-c361-11d0-f77e" name="Corvus Assault Pod" hidden="false" collective="false" import="true" targetId="6bce-b8fa-f5db-05b5" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ee2-5adc-bceb-0560" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="2bf0-67cf-cd1c-ac1c" name="Trident" hidden="false" collective="false" import="true" targetId="367f-54af-1231-8ee7" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06b8-6b22-5d24-1d11" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="291c-7240-d12a-06f3" name="Warlord Titan Miscellaneous Upgrades" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a06-cfac-cbd3-4088" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="975a-f68e-a06a-83f2" name="Carapace Multi-Lasers" hidden="false" collective="false" import="true" targetId="9305-057c-6f42-47ed" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b069-701d-1bc1-de05" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="e743-3564-90cf-c7f4" name="Devotional Bell" hidden="false" collective="false" import="true" targetId="3203-14fd-af57-a776" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bda9-506d-2627-ebad" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="753a-0756-f66a-d810" name="Warlord Titan Head Options" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63dd-4ee0-7c4a-e0f9" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="53cf-4252-4a80-bb1d" name="Close Combat Head" hidden="false" collective="false" import="true" targetId="e218-649f-38cb-036b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c423-a102-4dcb-33ff" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="9171-2814-e2a4-86a1" name="Command Head" hidden="false" collective="false" import="true" targetId="f35d-2416-717e-789e" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8ea-2ddd-3e5d-0475" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="c06f-6564-eba6-1382" name="Corvus Assault Head" hidden="false" collective="false" import="true" targetId="8590-69ae-0382-2f2b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dedb-b0ec-09d9-4d64" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="a689-8b46-4474-fa33" name="Weapon Head" hidden="false" collective="false" import="true" targetId="f0d5-b92a-9ff8-af8b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3d1-c681-01da-4de6" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="9f91-3471-8534-013e" name="Deathstrike Cannon" hidden="false" collective="false" import="true" targetId="3a6e-a38d-addd-2135" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd7a-9f8f-e45a-d86a" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="500.0"/>
+                <cost name=" VP" typeId="points" value="9.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e1c1-78c6-8252-f56e" name="Warlord Titan" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="437d-9906-d710-e4ec" name="Warlord Titan" hidden="false" targetId="a3a3-18d6-61ac-e2a0" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="86c6-2212-fa20-ec28" name="Titan" hidden="false" targetId="31e8-9840-fb3a-3b8d" primary="false"/>
+        <categoryLink id="4085-d2a5-0df3-9e2e" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+        <categoryLink id="e32b-207d-bbd7-560c" name="Titan Legions" hidden="false" targetId="e10e-1be4-cbde-b0d1" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b436-4d7a-1ecf-24a8" name="Warlord Titan Carapace Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d31-d894-f035-2669" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4eb-4714-6147-4e54" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="b13f-e98f-73b2-e266" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="54c6-7048-fee2-bd60" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3179-af0a-964e-cce1" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="a50d-5d9f-f84e-2f11" name="Doomburner" hidden="false" collective="false" import="true" targetId="a11f-0aff-461e-361d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5458-e3a8-404d-2995" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="a962-1111-1614-3ccc" name="Gatling Blaster" hidden="false" collective="false" import="true" targetId="c1de-6a34-9aa5-27d5" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d53a-7956-c543-03c7" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="6a73-2046-61f9-c683" name="Laser Blaster" hidden="false" collective="false" import="true" targetId="0345-af42-bfa1-1f70" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc74-16a5-bfae-2837" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="e848-557a-f1b3-b363" name="Melta Cannon" hidden="false" collective="false" import="true" targetId="90b7-9938-d43f-5c42" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c443-10e5-34a7-1292" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="6adb-d28b-0cbd-b148" name="Quake Cannon" hidden="false" collective="false" import="true" targetId="a31c-7736-59bc-7c7f" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6842-f15f-1e42-4ff8" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="a462-4664-18c3-bf25" name="Turbo-Laser Destructor" hidden="false" collective="false" import="true" targetId="d082-b547-d07b-781e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="398b-348c-c97d-a447" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="6e53-7b0a-a3e5-7df2" name="Volcano Cannon" hidden="false" collective="false" import="true" targetId="53d4-12cf-1d3f-0d53" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c3e-a5f0-5f60-677d" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="c016-ee8d-8b7a-a5e3" name="Plasma Blastgun" hidden="false" collective="false" import="true" targetId="fcee-4146-3e03-6c93" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a97b-b45b-910e-4b6f" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="b874-764d-a25b-2d00" name="Plasma Destructor (with dedicated reactor)" hidden="false" collective="false" import="true" targetId="308a-b0e2-79fb-afc8" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f0c-fbbc-c6e4-9da9" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="d53d-a151-e5ca-8358" name="Plasma Cannon" hidden="false" collective="false" import="true" targetId="58a6-52bd-6839-0447" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c45-0ae3-62f5-2442" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="beae-abae-4487-c86a" name="Inferno Gun" hidden="false" collective="false" import="true" targetId="cb96-7e53-cb77-7470" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79cd-1cb9-9f76-e7df" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="5e89-5a32-37a5-0477" name="Plasma Cannon (with dedicated reactor)" hidden="false" collective="false" import="true" targetId="8c1b-5053-d56a-92b3" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="006d-15d7-51e8-9847" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="54ff-02cf-f132-3fe6" name="Plasma Destructor" hidden="false" collective="false" import="true" targetId="01ea-db90-773d-d4aa" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a10f-9899-6418-bc39" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="3fc8-5b80-b0c3-c9e5" name="Hellstrike Cannon" hidden="false" collective="false" import="true" targetId="7f21-b2f0-a80c-97c6" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3673-6af5-2444-8866" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="b20d-66a4-e270-1ee4" name="Multiple Rocket Launcher" hidden="false" collective="false" import="true" targetId="ca02-0110-a2a5-8a92" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f76e-bac4-a5f5-0cbd" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="2e10-f909-08e8-a6af" name="Warp Missile" hidden="false" collective="false" import="true" targetId="417c-1a53-541c-aa98" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d69a-064b-4d63-6273" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="eba1-e318-1788-f133" name="Barrage Missile Launcher" hidden="false" collective="false" import="true" targetId="b8ca-5814-f0a6-2c72" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ace-9021-4776-a875" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="b8d2-bbeb-cdb7-302f" name="Harpoon Missile" hidden="false" collective="false" import="true" targetId="d175-f59c-e381-ddb8" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91d9-4ece-20b1-e724" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="cc88-aa3b-d8e7-6b6a" name="Vortex Missile" hidden="false" collective="false" import="true" targetId="c5a5-4359-d59d-40e0" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d3d-39b9-e59d-678c" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="f4c7-4c68-ff00-5427" name="Carapace Landing Pad" hidden="false" collective="false" import="true" targetId="f07a-7127-6eba-0d60" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ef4-ae44-3786-a584" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="24dc-0e0d-5711-abf4" name="Cerberus Anti-Aircraft Gun" hidden="false" collective="false" import="true" targetId="bf02-2b7c-4d2e-c8bd" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a7c-692b-889c-c752" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="09cc-cee0-a294-ea0b" name="Fire Control Center" hidden="false" collective="false" import="true" targetId="5e8c-c284-6768-68f8" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24ae-3983-42c7-70d5" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="f5a7-bbd9-2d99-29de" name="Warlord Titan Arm Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b24-23f5-f4be-db3d" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="249a-a0d2-38a4-748c" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="9228-2605-c144-55e7" name="Doomburner" hidden="false" collective="false" import="true" targetId="a11f-0aff-461e-361d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18f5-c625-d31f-2653" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="4679-2a91-3482-b7d8" name="Quake Cannon" hidden="false" collective="false" import="true" targetId="a31c-7736-59bc-7c7f" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d68-a2f7-399a-8845" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="c661-09cd-53e4-d4e6" name="Gatling Blaster" hidden="false" collective="false" import="true" targetId="c1de-6a34-9aa5-27d5" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4742-4a35-3f4b-b5c7" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="03db-a067-350a-bca8" name="Turbo-Laser Destructor" hidden="false" collective="false" import="true" targetId="d082-b547-d07b-781e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e46a-7d71-067b-8cab" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="07d9-22a4-a88d-6495" name="Laser Blaster" hidden="false" collective="false" import="true" targetId="0345-af42-bfa1-1f70" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b53-be25-4fd6-b5e4" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="4cd9-d190-8dc6-6208" name="Volcano Cannon" hidden="false" collective="false" import="true" targetId="53d4-12cf-1d3f-0d53" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c53c-8b0c-f4d0-cc2b" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="8d5b-21a5-34d0-8405" name="Melta Cannon" hidden="false" collective="false" import="true" targetId="90b7-9938-d43f-5c42" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f569-3492-b58e-4519" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="10ef-336f-cc64-6ff5" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="54c6-7048-fee2-bd60" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="522a-5893-5f0b-087a" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="58e7-3821-3960-dfb9" name="Plasma Blastgun" hidden="false" collective="false" import="true" targetId="fcee-4146-3e03-6c93" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dee3-22dc-7261-90ed" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="6be2-fd1d-de05-c2cc" name="Plasma Destructor (with dedicated reactor)" hidden="false" collective="false" import="true" targetId="308a-b0e2-79fb-afc8" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6863-e53b-e276-081b" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="e5c2-62d8-c747-4f46" name="Plasma Cannon" hidden="false" collective="false" import="true" targetId="58a6-52bd-6839-0447" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf3f-76f9-316f-0ffe" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="5fc1-f4ae-6eb6-0306" name="Inferno Gun" hidden="false" collective="false" import="true" targetId="cb96-7e53-cb77-7470" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e06-111f-33a8-d21e" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="baac-3082-bfdf-b05b" name="Plasma Cannon (with dedicated reactor)" hidden="false" collective="false" import="true" targetId="8c1b-5053-d56a-92b3" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f37a-09dc-021c-7cb2" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="538e-4e41-582a-f4db" name="Plasma Destructor" hidden="false" collective="false" import="true" targetId="01ea-db90-773d-d4aa" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b20-e6d7-3275-8d08" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="3138-80ab-0892-e44e" name="Hellstrike Cannon" hidden="false" collective="false" import="true" targetId="7f21-b2f0-a80c-97c6" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8df-bb71-3f29-25a3" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="c786-b9ea-78bf-44e3" name="Multiple Rocket Launcher" hidden="false" collective="false" import="true" targetId="ca02-0110-a2a5-8a92" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e81-ad15-266c-35fa" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="0345-f7ea-6b5e-750b" name="Chain Fist" hidden="false" collective="false" import="true" targetId="cf99-1072-a612-0787" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c33-c52f-aace-68bb" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="f011-fd71-8bbf-f6a7" name="Laser Burner" hidden="false" collective="false" import="true" targetId="3b07-ebc2-0c2c-e32f" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f7f-ed68-4cd3-a505" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="6fa1-2669-dd17-a682" name="Power Fist" hidden="false" collective="false" import="true" targetId="efdb-36a0-bd4c-53b0" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e42-103a-08da-6e01" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="284f-b6e1-dbe9-da24" name="Power Ram" hidden="false" collective="false" import="true" targetId="2612-1eb3-2df1-6bc6" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd98-dd03-2126-93b6" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="06cc-9db8-2277-f988" name="Wrecker" hidden="false" collective="false" import="true" targetId="6870-3d2c-e0d4-88c3" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fed8-9c1b-bfd7-7721" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="6d56-24ed-e940-ad46" name="Corvus Assault Pod" hidden="false" collective="false" import="true" targetId="6bce-b8fa-f5db-05b5" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ef9-d4a2-0923-9ad2" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="70e1-7306-0ce9-6529" name="Trident" hidden="false" collective="false" import="true" targetId="367f-54af-1231-8ee7" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df18-430a-4a32-58a4" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="5305-1227-5b18-ce56" name="Warlord Titan Miscellaneous Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ee8-c480-4d4d-5c4b" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="bda1-ea9d-c81c-cb6f" name="Carapace Multi-Lasers" hidden="false" collective="false" import="true" targetId="9305-057c-6f42-47ed" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac3d-68d2-8063-f1d9" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="2386-4012-d76e-a45a" name="Devotional Bell" hidden="false" collective="false" import="true" targetId="3203-14fd-af57-a776" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad14-d160-86fc-4e64" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="0fa2-49b8-f15c-6e9d" name="Warlord Titan Head Options" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3b4-6141-0523-b879" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="1a6e-eefe-987d-226c" name="Close Combat Head" hidden="false" collective="false" import="true" targetId="e218-649f-38cb-036b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ec9-87a9-ecef-dd0b" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="b3a5-0bb5-71a9-6be1" name="Command Head" hidden="false" collective="false" import="true" targetId="f35d-2416-717e-789e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81a7-9b32-5c9a-acfa" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="ec85-5fbd-d99e-0b00" name="Corvus Assault Head" hidden="false" collective="false" import="true" targetId="8590-69ae-0382-2f2b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0305-519d-2762-d66c" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="f510-f78b-5397-8072" name="Weapon Head" hidden="false" collective="false" import="true" targetId="f0d5-b92a-9ff8-af8b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ae4-dd28-779a-4c97" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="0d2e-6c2f-7468-d824" name="Deathstrike Cannon" hidden="false" collective="false" import="true" targetId="3a6e-a38d-addd-2135" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a75-1d98-94a7-57ad" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="500.0"/>
+        <cost name=" VP" typeId="points" value="9.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6277-939d-4710-6db2" name="Reaver Titan" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="3453-616f-2742-aee8" name="Reaver Titan" hidden="false" targetId="7ac8-35c0-6725-7148" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="20dc-d829-d22a-7608" name="Titan" hidden="false" targetId="31e8-9840-fb3a-3b8d" primary="false"/>
+        <categoryLink id="be17-b74e-e6a3-c0f8" name="Titan Legions" hidden="false" targetId="e10e-1be4-cbde-b0d1" primary="false"/>
+        <categoryLink id="5b49-b484-a055-dc86" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="58ca-17e9-3d1a-fa74" name="Reaver Titan Carapace Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f129-e7dd-468d-e754" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08f3-0ab5-fd60-537f" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="cf12-b015-c3d3-304e" name="Doomburner" hidden="false" collective="false" import="true" targetId="a11f-0aff-461e-361d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8743-0894-133c-ad3b" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="bc79-1502-5adc-f4a6" name="Quake Cannon" hidden="false" collective="false" import="true" targetId="a31c-7736-59bc-7c7f" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96de-52ae-7389-8baa" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="8f14-120b-2fc2-9a92" name="Gatling Blaster" hidden="false" collective="false" import="true" targetId="c1de-6a34-9aa5-27d5" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55a9-5895-2f97-22f1" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="6e47-8efc-ee27-b29e" name="Turbo-Laser Destructor" hidden="false" collective="false" import="true" targetId="d082-b547-d07b-781e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48ec-62e3-1af2-b382" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="4a3a-fd32-a0df-be02" name="Volcano Cannon" hidden="false" collective="false" import="true" targetId="53d4-12cf-1d3f-0d53" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5511-5c0a-2726-b297" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="c588-778f-8a39-2dd2" name="Laser Blaster" hidden="false" collective="false" import="true" targetId="0345-af42-bfa1-1f70" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e09-23c5-73cc-b3d0" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="1528-fd27-4e5d-b485" name="Melta Cannon" hidden="false" collective="false" import="true" targetId="90b7-9938-d43f-5c42" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c18-4ab4-c979-fc3b" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="6c76-a3e4-bd5e-eaa7" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="54c6-7048-fee2-bd60" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66fd-6d07-b660-c210" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="a578-4d9f-cf0d-d6b5" name="Plasma Blastgun" hidden="false" collective="false" import="true" targetId="fcee-4146-3e03-6c93" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7d0-a44d-cbb1-5fe4" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="f7c7-7f5a-ee9e-1f7f" name="Inferno Gun" hidden="false" collective="false" import="true" targetId="cb96-7e53-cb77-7470" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8801-b1c2-8b12-2d33" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="babe-77a8-88b5-8f81" name="Hellstrike Cannon" hidden="false" collective="false" import="true" targetId="7f21-b2f0-a80c-97c6" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8247-93b5-6bc0-4169" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="61c8-866b-ea6f-171a" name="Multiple Rocket Launcher" hidden="false" collective="false" import="true" targetId="ca02-0110-a2a5-8a92" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="507e-31e5-ff21-21da" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="1bfa-f574-e46a-aa8d" name="Warp Missile" hidden="false" collective="false" import="true" targetId="417c-1a53-541c-aa98" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fb5-ade9-a4ee-3e4a" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="c259-86a9-50fa-3030" name="Barrage Missile Launcher" hidden="false" collective="false" import="true" targetId="b8ca-5814-f0a6-2c72" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9ee-adfd-6f2e-2afe" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="0a65-a9c1-90f4-3242" name="Harpoon Missile" hidden="false" collective="false" import="true" targetId="d175-f59c-e381-ddb8" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6351-a9d6-cea4-ba6e" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="44d6-10c6-4ed8-2f38" name="Vortex Missile" hidden="false" collective="false" import="true" targetId="c5a5-4359-d59d-40e0" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1edb-da4c-6085-7412" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="4aa9-37ce-5c2d-328f" name="Cerberus Anti-Aircraft Gun" hidden="false" collective="false" import="true" targetId="bf02-2b7c-4d2e-c8bd" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cc1-edff-be74-68e4" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="9cda-c9bd-495b-d765" name="Fire Control Center" hidden="false" collective="false" import="true" targetId="5e8c-c284-6768-68f8" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb0d-0e40-822e-1194" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="2579-88e9-6c6a-f567" name="Reaver Titan Arm Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f3b-10f5-c66b-b587" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7aea-8802-6754-ffdf" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="85d2-ed2d-4ec0-d516" name="Trident" hidden="false" collective="false" import="true" targetId="367f-54af-1231-8ee7" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="008c-0c8d-e2e7-8dea" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="b33e-a9a3-28a9-34aa" name="Wrecker" hidden="false" collective="false" import="true" targetId="6870-3d2c-e0d4-88c3" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c206-69d0-1f61-9a22" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="a76e-056a-07f4-71b8" name="Power Ram" hidden="false" collective="false" import="true" targetId="2612-1eb3-2df1-6bc6" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7103-8015-3037-c743" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="03f6-0c71-d935-7da4" name="Power Fist" hidden="false" collective="false" import="true" targetId="efdb-36a0-bd4c-53b0" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f1a-5183-34c2-5e9b" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="8ab4-a2b6-0503-f618" name="Laser Burner" hidden="false" collective="false" import="true" targetId="3b07-ebc2-0c2c-e32f" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e828-4b08-a3b7-cc42" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="9943-d236-a71d-155e" name="Chain Fist" hidden="false" collective="false" import="true" targetId="cf99-1072-a612-0787" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e357-750c-cbab-1478" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="8bb7-50ff-8cc2-e0b6" name="Multiple Rocket Launcher" hidden="false" collective="false" import="true" targetId="ca02-0110-a2a5-8a92" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b9d-bcef-ff06-1c9f" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="0f62-4602-25d3-4dd0" name="Hellstrike Cannon" hidden="false" collective="false" import="true" targetId="7f21-b2f0-a80c-97c6" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c26d-ed78-7e20-a9a8" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="04ab-cc6d-b488-53ca" name="Inferno Gun" hidden="false" collective="false" import="true" targetId="cb96-7e53-cb77-7470" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89e4-b9cb-167e-a4fa" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="ad39-16bc-efd6-3f71" name="Plasma Blastgun" hidden="false" collective="false" import="true" targetId="fcee-4146-3e03-6c93" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55aa-7387-9a50-9014" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="89e5-5bcc-fcd0-2d91" name="Melta Cannon" hidden="false" collective="false" import="true" targetId="90b7-9938-d43f-5c42" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc53-a215-c7b7-0e88" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="7a4e-e991-1b96-419e" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="54c6-7048-fee2-bd60" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44fd-b65b-f378-1504" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="65fa-d248-a4a7-0a08" name="Laser Blaster" hidden="false" collective="false" import="true" targetId="0345-af42-bfa1-1f70" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2769-8354-cf0b-9b7c" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="f558-aa3b-fba4-86f1" name="Volcano Cannon" hidden="false" collective="false" import="true" targetId="53d4-12cf-1d3f-0d53" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36de-f93a-ee49-a7c4" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="a70f-b579-ecdb-7327" name="Turbo-Laser Destructor" hidden="false" collective="false" import="true" targetId="d082-b547-d07b-781e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a86-de4e-4519-251a" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="dc7c-b615-8322-c292" name="Gatling Blaster" hidden="false" collective="false" import="true" targetId="c1de-6a34-9aa5-27d5" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6818-e565-b1d2-4471" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="4e3e-44c8-c3e9-c480" name="Doomburner" hidden="false" collective="false" import="true" targetId="a11f-0aff-461e-361d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f007-8fc4-cd54-1086" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="b82c-3f10-e775-fb73" name="Quake Cannon" hidden="false" collective="false" import="true" targetId="a31c-7736-59bc-7c7f" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c79-bcfe-a5ec-7804" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="722a-5f26-93b9-8760" name="Reaver Titan Head Options" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aecb-a8c8-be93-4f46" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="19a4-836b-5841-f28a" name="Close Combat Head" hidden="false" collective="false" import="true" targetId="e218-649f-38cb-036b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7964-5c0b-a82a-b286" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="65b1-8415-2a16-4c5c" name="Weapon Head" hidden="false" collective="false" import="true" targetId="f0d5-b92a-9ff8-af8b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e14-43a2-cea3-c072" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="300.0"/>
+        <cost name=" VP" typeId="points" value="5.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="33c6-6d07-f4ec-4756" name="Warhound Titan" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="acd1-a250-09df-87a1" name="Warhound Titan" hidden="false" targetId="302b-06f1-7e81-f26d" type="profile"/>
+        <infoLink id="0773-bd2f-f4b2-9329" name="Hard To Hit" hidden="false" targetId="2d0e-02b6-1d6f-c8c4" type="rule"/>
+        <infoLink id="76fe-b27a-5d5d-64b4" name="Agile" hidden="false" targetId="b210-d2d7-79f5-7fcb" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0d4e-2391-1fcb-2e81" name="Titan" hidden="false" targetId="31e8-9840-fb3a-3b8d" primary="false"/>
+        <categoryLink id="a82f-a751-c614-6e96" name="Titan Legions" hidden="false" targetId="e10e-1be4-cbde-b0d1" primary="false"/>
+        <categoryLink id="9522-b169-d82f-ad86" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7bd2-0a14-c647-a5e0" name="Warhound Titan Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b803-b551-e3de-3abd" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26d4-7cfb-bc31-407f" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="e641-db8c-4db5-a629" name="Plasma Blastgun" hidden="false" collective="false" import="true" targetId="fcee-4146-3e03-6c93" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c8d-529b-0c00-ea40" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="8c9f-0b0d-971e-6c53" name="Chain Fist" hidden="false" collective="false" import="true" targetId="cf99-1072-a612-0787" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10a7-7583-9c0d-1961" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="1a41-dd07-7058-7d21" name="Inferno Gun" hidden="false" collective="false" import="true" targetId="cb96-7e53-cb77-7470" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5f0-dde9-8190-f5c9" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="d0eb-1ab5-e591-5969" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="54c6-7048-fee2-bd60" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a68-8226-4a14-36d7" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="b6a0-8034-0582-df14" name="Power Fist" hidden="false" collective="false" import="true" targetId="efdb-36a0-bd4c-53b0" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8893-9b5b-f84f-233b" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="c9bc-2ac9-61e6-b4aa" name="Quake Cannon" hidden="false" collective="false" import="true" targetId="a31c-7736-59bc-7c7f" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d302-fc15-6652-154b" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="9aa4-340f-26c1-3340" name="Gatling Blaster" hidden="false" collective="false" import="true" targetId="c1de-6a34-9aa5-27d5" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad5e-5816-670d-0982" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="f071-f0ca-7195-c51c" name="Turbo-Laser Destructor" hidden="false" collective="false" import="true" targetId="d082-b547-d07b-781e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc79-658e-7181-080b" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="125.0"/>
+        <cost name=" VP" typeId="points" value="4.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="90a8-56d8-f9eb-9dfc" name="Warhound Titan Detachment" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="347c-7949-b836-e32d" name="Titan" hidden="false" targetId="31e8-9840-fb3a-3b8d" primary="false"/>
+        <categoryLink id="b100-0516-9423-32ae" name="Titan Legions" hidden="false" targetId="e10e-1be4-cbde-b0d1" primary="false"/>
+        <categoryLink id="06d1-b2ca-3397-afe4" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9ebe-55fb-b59d-6e8d" name="Warhound Titans" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4e7-a100-4f06-13f3" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78d4-2466-b4a6-41c9" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="4da3-fbb2-6657-6ba1" name="Warhound Titan" hidden="false" collective="false" import="true" type="unit">
+              <infoLinks>
+                <infoLink id="01d3-c870-4355-f1ac" name="Warhound Titan" hidden="false" targetId="302b-06f1-7e81-f26d" type="profile"/>
+                <infoLink id="2fd2-bfeb-fd72-17fa" name="Hard To Hit" hidden="false" targetId="2d0e-02b6-1d6f-c8c4" type="rule"/>
+                <infoLink id="3eb7-7700-150a-e58d" name="Agile" hidden="false" targetId="b210-d2d7-79f5-7fcb" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="c600-25c4-9015-1171" name="Titan" hidden="false" targetId="31e8-9840-fb3a-3b8d" primary="false"/>
+              </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="abc5-1124-71d0-02c5" name="Warhound Titan Weapons" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fb6-9d7f-62c8-ac02" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8c5-381f-e682-c94b" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="fdeb-cf26-5cfa-1024" name="Plasma Blastgun" hidden="false" collective="false" import="true" targetId="fcee-4146-3e03-6c93" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edf0-55e0-16f4-ebe7" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="bd41-c706-2cf8-e949" name="Chain Fist" hidden="false" collective="false" import="true" targetId="cf99-1072-a612-0787" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d62-fd20-0dc0-5ab1" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="6e1e-6bee-da7e-a34c" name="Inferno Gun" hidden="false" collective="false" import="true" targetId="cb96-7e53-cb77-7470" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f46-719e-69c2-05ff" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="18d7-5d3f-f4fc-9382" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="54c6-7048-fee2-bd60" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="790b-fe3d-1560-96f1" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="7280-402a-5ae4-954d" name="Power Fist" hidden="false" collective="false" import="true" targetId="efdb-36a0-bd4c-53b0" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba4f-fbed-c81b-fa36" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="550b-54bd-2f87-f563" name="Quake Cannon" hidden="false" collective="false" import="true" targetId="a31c-7736-59bc-7c7f" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c63-11a9-6f17-e0d4" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="a3d2-e489-f567-0237" name="Gatling Blaster" hidden="false" collective="false" import="true" targetId="c1de-6a34-9aa5-27d5" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b80-42f8-bd8e-49f5" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="b3ba-be11-eaf8-3b1f" name="Turbo-Laser Destructor" hidden="false" collective="false" import="true" targetId="d082-b547-d07b-781e" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="231f-d7b6-925d-c004" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="125.0"/>
+                <cost name=" VP" typeId="points" value="4.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>
