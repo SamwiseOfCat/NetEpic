@@ -4428,6 +4428,10 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="cfe8-8110-1bac-34ea" name="Enjuneer Bignailz" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d497-3be0-bfb9-ac6b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7685-d81d-5810-0697" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="9c64-dc2e-2171-cdde" name="Enjuneer Bignailz" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -4443,6 +4447,11 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
               <categoryLinks>
                 <categoryLink id="9875-d50a-4009-5acb" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="0f85-5054-cc2c-8e79" name="Da Zooma" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -4452,8 +4461,18 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
               <infoLinks>
                 <infoLink id="82e5-bc05-0bae-2e1d" name="Da Zooma" hidden="false" targetId="3650-dcc6-31e1-9209" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -4569,6 +4588,10 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="8a93-cff5-cea3-0454" name="Mad Mob" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dcba-620f-bd29-4486" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6371-a71a-d61c-a121" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="5b36-37f7-d5a7-8b3c" name="Mad Mob" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -4596,6 +4619,10 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           </costs>
         </selectionEntry>
         <selectionEntry id="87b0-e8c1-4cdc-77f0" name="Mad Doc Grotsnik" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e577-5a23-2b25-8001" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9722-f873-22bf-5a43" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="3ff7-00c5-240e-9245" name="Grotsnik" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -4610,8 +4637,18 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
               <categoryLinks>
                 <categoryLink id="52e1-cb86-84a8-1bb3" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -4658,11 +4695,17 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="c729-1026-a920-ece3" name="Command" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
             <infoLink id="39ef-0064-0420-866c" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="400.0"/>
         <cost name=" VP" typeId="points" value="4.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f996-9a0e-85a0-c325" name="Weirdboy Warphead" publicationId="c1a5-0905-d6e8-335a" hidden="false" collective="false" import="true" type="upgrade">
@@ -4695,6 +4738,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
         <cost name=" VP" typeId="points" value="1.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -5075,7 +5119,7 @@ If the total is over 20, roll a D6 and on a 6 the Weirdboy overloads destroying 
       <description>You are only allowed to field one of these units for each Company/Clan Card in your force from the same Clan.</description>
     </rule>
     <rule id="018a-fe1b-b6f7-bd56" name="Killa Kan &amp; Dreadnought Limitation" hidden="false">
-      <description>You may only take one card of Killa Kans or Onslaughter Dreadnoughts per Cpmpany/Clan Card, except Bad Moons who can take two.</description>
+      <description>You may only take one card of Killa Kans or Onslaughter Dreadnoughts per Company/Clan Card, except Bad Moons who can take two.</description>
     </rule>
     <rule id="6366-f5bd-1016-5f5b" name="Kustom Force Field" hidden="false">
       <description>This is a special, sustained power field. While the field is operational the Mekboy Gargant is impervious to damage. At the start of each turn in the Orders Phase you may choose to shut down the field, but once shut down it remains so for the rest of the game. Every turn that the field is on there is a chance that it will overload and shut down permanently. Roll a D6 in the End Phase of each turn it is functional, and on a roll of 10 or more the field overheats and causes damage. An additional D6 is added each turn (2D6 in the second turn, 3D6 in the third, and so on) to make this check. If 10 or more is rolled, roll immediately for damage in the Force Field Generator hit location and apply the results. Mekboy Gargants destroyed this way earn VPs to the opponent in the same turn the check was made. Weapons that bypass shield will also penetrate this shield without affecting it. In case of a vortex missile the field is inactive while it remains in the area of effect of the vortex blast. As with other Ork shields the Kustom Force Field also flickers on a roll of 6 on a D6. For every hit, roll a D6 and on a 6 the shot ignores the shield and hits the Gargant as normal.</description>
@@ -5574,7 +5618,7 @@ Soopa-Blasta Kannon (Shotgun Mode) : 70cm+D6x10cm, 8BP 3+ (0) - May not indirect
         <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+1</characteristic>
         <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Shootas : 50cm, 1d 5+ (0)</characteristic>
         <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">Special</characteristic>
-        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"></characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
       </characteristics>
     </profile>
     <profile id="db8b-3b99-217b-a895" name="Stormboyz Squad" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
@@ -6269,7 +6313,6 @@ Battlecannon : 50cm, 1d 5+ (-1)</characteristic>
       </characteristics>
     </profile>
     <profile id="3650-dcc6-31e1-9209" name="Da Zooma" publicationId="c1a5-0905-d6e8-335a" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
-      <comment></comment>
       <characteristics>
         <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Vehicle</characteristic>
         <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">30cm</characteristic>

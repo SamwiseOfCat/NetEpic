@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gameSystem id="b6ca-ebfc-974f-eaae" name="NetEpic Gold" revision="2" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com   " xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
-  <comment>This is Version 0.2.
+  <comment>This is Version 1.1.
 Added &quot;Unique&quot; Shared Rule to account for unique units.
 Any Titan weapons over 100 points have had an extra VP added to their profile to account for the increased points cost to field them (base VP is accounted for in Titan base profile on presumption that the Titan will field weapons of 50-100 points in each slot).</comment>
-  <readme>This is Version 0.2 - Beta Testing only. Not for publication to any Production repos.
+  <readme>This is Version 1.1.
 
 Pick your Race from the drop-down menu, then select the Faction you wish to use. You can pick mutiple factions within a Race if you are creating a multi-Faction army using Allies. Notes on the creation of the Race files can be found by clicking on the Force you have created in the menu to the left.
 
