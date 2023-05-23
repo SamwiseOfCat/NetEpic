@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0d18-39a5-d423-b431" name="Space Marines" revision="3" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <comment></comment>
-  <readme>v3 notes :
+<catalogue id="0d18-39a5-d423-b431" name="Space Marines" revision="4" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>v4 notes :
+Added Space Marine Commander from original SM 2nd Ed Cards list (although why you&apos;d take him when the NetEpic Chapter Master is superior for the same points...)
+
+v3 notes :
 Added Scythes Of The Emperor special card from WD198
 
 v1/2 notes :
@@ -11265,6 +11267,11 @@ E) Ignore: Ignore the question and move on to the next one.</description>
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="b746-76ac-4c15-1535" name="Scythes Of The Emperor" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -11283,14 +11290,79 @@ E) Ignore: Ignore the question and move on to the next one.</description>
               <categoryLinks>
                 <categoryLink id="1f34-8cce-beeb-bc7e" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="250.0"/>
         <cost name=" VP" typeId="points" value="3.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5581-d444-3112-bbdd" name="Space Marine Commander" hidden="false" collective="false" import="true" type="unit">
+      <comment>Included here for completenesses sake - NetEpic Chapter Master outperforms the standard Commander for the same points</comment>
+      <categoryLinks>
+        <categoryLink id="b41a-e21b-efb4-4d43" name="New CategoryLink" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
+        <categoryLink id="913a-2492-67fb-8532" name="Space Marines" hidden="false" targetId="5358-135e-3852-7d2c" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="8261-7f83-945f-f6ef" name="Space Marine Commander" hidden="false" collective="false" import="true" type="model">
+          <comment>Less helpful rules as the NetEpic Chapter Master for the same points - not a great deal!</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e640-f687-8a99-2552" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a052-44e9-79ad-ea24" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="9949-da55-3e12-587d" name="Space Marine Commander" hidden="false" targetId="a439-6327-c596-51f1" type="profile"/>
+            <infoLink id="2b8a-5665-20f2-e539" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
+            <infoLink id="7175-8f21-810e-1fac" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
+            <infoLink id="9cc7-4a10-f968-9905" name="Command" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
+            <infoLink id="65ec-99c3-5789-ea71" name="Inspirational" hidden="false" targetId="f151-2964-483d-b06d" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="fee5-c3db-82b0-e145" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b558-2b7e-d0b6-0b20" name="Command Rhino" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d985-3679-810e-68e5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f33b-b67e-3daa-6a4a" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="1e8d-f703-158c-1e47" name="Rhino" hidden="false" targetId="f85a-fa0b-759a-d2eb" type="profile"/>
+            <infoLink id="afd8-c6f8-0917-2fd3" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
+            <infoLink id="796a-1a93-736b-1d5a" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="0ca7-cd1b-2640-d91b" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
+        <cost name=" VP" typeId="points" value="1.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -12643,6 +12715,17 @@ Point Defence (1)</characteristic>
         <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">N/A</characteristic>
         <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339">Saves are made on 2D6 not 1. Psychic Save of 2+.
 This unit has multiple special rules and requires special templates and counters to use. Please refer to the NetEpic or Titan Legions rulebooks.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a439-6327-c596-51f1" name="Space Marine Commander" publicationId="f2f6-466f-3445-2eee" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Infantry</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">10cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">5+</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+3</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Bolt Pistols : 25cm, 2d 5+ (0)</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">N/A</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
       </characteristics>
     </profile>
   </sharedProfiles>

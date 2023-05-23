@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3e2a-ea46-765a-b749" name="Orks" revision="1" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <comment></comment>
-  <readme>v1 notes :
+<catalogue id="3e2a-ea46-765a-b749" name="Orks" revision="2" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>v2 notes :
+Added special characters from the 
+
+v1 notes :
 The Orks list has not been split into Faction-specific Force entries - this is due to the way Ork armies are formed, in that you will almost always be picking more than one Clan &quot;Faction&quot; in your army. There was no good reason to force players into having to do separate lists per Clan.
-A lot of Gargant weapons have had their points changed slightly to avoid odd 5&apos;s or 10&apos;s.</readme>
+A lot of Gargant weapons have had their points changed slightly up or down to avoid odd 5&apos;s or 10&apos;s which make little sense to me. These should even themselves out in a loadout anyway.</readme>
   <profileTypes>
     <profileType id="5b9b-337f-67b7-4fd7" name="Ork Gargant Weapons">
       <characteristicTypes>
@@ -4418,6 +4420,283 @@ A lot of Gargant weapons have had their points changed slightly to avoid odd 5&a
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="d35a-b740-ede3-ea23" name="Enjuneer Bignailz &amp; Apprentices" publicationId="c1a5-0905-d6e8-335a" hidden="false" collective="false" import="true" type="unit">
+      <comment>Citadel Journal does not mention allowing any Mekboy Cards for this unit, so none have been added.</comment>
+      <categoryLinks>
+        <categoryLink id="02b5-7de7-10f5-de6d" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
+        <categoryLink id="89b1-e1d6-e102-520e" name="Special Cards" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="cfe8-8110-1bac-34ea" name="Enjuneer Bignailz" hidden="false" collective="false" import="true" type="upgrade">
+          <selectionEntries>
+            <selectionEntry id="9c64-dc2e-2171-cdde" name="Enjuneer Bignailz" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e287-04f0-9783-92e4" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c2e-cb22-f0fe-3520" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="c2f3-cfc2-d1a8-7435" name="Enjuneer Bignailz" hidden="false" targetId="1bc8-570d-1b74-f3e2" type="profile"/>
+                <infoLink id="689c-d2dd-31fd-8d8d" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
+                <infoLink id="885a-c965-bd8a-4b86" name="Enjuneer Bignailz : Erratic Repairs" hidden="false" targetId="20f8-43d6-2e95-8d0e" type="rule"/>
+                <infoLink id="668f-52c8-6449-873a" name="Enjuneer Bignailz : Kombi-Weapon" hidden="false" targetId="5bd0-ca50-ab2d-46bf" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="9875-d50a-4009-5acb" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry id="0f85-5054-cc2c-8e79" name="Da Zooma" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c1b-bb73-b23e-28ca" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8be2-5f6f-d880-b763" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="82e5-bc05-0bae-2e1d" name="Da Zooma" hidden="false" targetId="3650-dcc6-31e1-9209" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6745-2ed2-7949-ae20" name="Mekboy Vehicles" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b60-6607-89a3-650e" type="max"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cf8-5cfe-ec81-8b18" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1bc7-03ed-6c55-c662" name="Mekboy Bubble Chukka Speedsta" hidden="false" collective="false" import="true" type="unit">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc18-0c74-e0d7-a511" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f33-7f3f-7f26-ec52" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="a4cc-3f29-a21a-6a5c" name="Mekboy Bubble Chukka Speedsta" hidden="false" targetId="8ab9-53bc-49f5-f026" type="profile"/>
+                <infoLink id="288e-48c4-361a-9670" name="Mekboy Power Fields" hidden="false" targetId="ed27-2fff-6595-aa56" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="8145-df5f-cdd5-8927" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="66e7-d150-ef8d-3b30" name="Mekboy Destruktor Rokkits Speedsta" hidden="false" collective="false" import="true" type="unit">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b890-a640-a55b-5cc9" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d7f-5077-ca94-cbf6" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="0a4c-deee-fcde-b5bb" name="Mekboy Destrukta Rokkits Speedsta" hidden="false" targetId="8934-96a6-8074-e0cf" type="profile"/>
+                <infoLink id="80af-86a1-cd80-bed8" name="Mekboy Power Fields" hidden="false" targetId="ed27-2fff-6595-aa56" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="11d1-0f44-9ed8-562f" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fc59-7f8e-16ee-2caa" name="Mekboy Dragsta" hidden="false" collective="false" import="true" type="unit">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd81-a100-d35d-1062" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0abd-3f6c-f02d-5917" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="7d44-9f11-5b23-2f1b" name="Mekboy Dragsta" hidden="false" targetId="66ea-0366-0b86-1117" type="profile"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="fcd0-920e-fbd1-29d2" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="897b-7c3c-9656-b406" name="Mekboy Kustom Kannon Speedsta" hidden="false" collective="false" import="true" type="unit">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2784-e8f3-67c0-e92b" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9e3-a166-bf8f-02c1" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="3399-5219-fe0b-2f93" name="Mekboy Kustom Kannon Speedsta" hidden="false" targetId="c969-2d28-3591-f94b" type="profile"/>
+                <infoLink id="1229-331d-1b6d-c2e7" name="Mekboy Power Fields" hidden="false" targetId="ed27-2fff-6595-aa56" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="9fd7-16d4-2c69-f6d1" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a038-173f-bdbe-1e5a" name="Mekboy Lifta-Droppa Speedsta" hidden="false" collective="false" import="true" type="unit">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fe2-7f2a-9e2b-a8fc" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8683-c4d6-0d30-0499" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="e3f2-8b66-d0e1-7481" name="Mekboy Lifta-Droppa Speedsta" hidden="false" targetId="f63a-950d-fe85-66fe" type="profile"/>
+                <infoLink id="f2bf-d183-7eed-c6f7" name="Mekboy Power Fields" hidden="false" targetId="ed27-2fff-6595-aa56" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="402b-32de-202f-4db7" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="500.0"/>
+        <cost name=" VP" typeId="points" value="5.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3383-dff9-b251-6ff5" name="Mad Doc Grotsnik" publicationId="c1a5-0905-d6e8-335a" hidden="false" collective="false" import="true" type="unit">
+      <comment>Rules for Grotsnik are a little worse than normal NetEpic Painboyz, but you *do* get a squad of Madboyz to make up for it with all the &quot;fun&quot; that brings to the table...</comment>
+      <categoryLinks>
+        <categoryLink id="47e1-3033-e8b2-ac24" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
+        <categoryLink id="bcc6-69ce-13c8-4522" name="Special Cards" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="8a93-cff5-cea3-0454" name="Mad Mob" hidden="false" collective="false" import="true" type="unit">
+          <selectionEntries>
+            <selectionEntry id="5b36-37f7-d5a7-8b3c" name="Mad Mob" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e126-c463-da70-f6db" type="max"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0e2-d083-c65f-5e1c" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="5082-3d9e-0ace-d729" name="Madboyz Squad" hidden="false" targetId="8d2f-b65f-5469-d331" type="profile"/>
+                <infoLink id="424d-e88e-1134-4140" name="Madboyz!" hidden="false" targetId="ec7e-ed9d-a94a-0df9" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="0f4d-ecdb-d722-5a89" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name=" VP" typeId="points" value="1.0"/>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="87b0-e8c1-4cdc-77f0" name="Mad Doc Grotsnik" hidden="false" collective="false" import="true" type="unit">
+          <selectionEntries>
+            <selectionEntry id="3ff7-00c5-240e-9245" name="Grotsnik" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0644-3ca5-b3f2-75aa" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce06-5ebf-a7fe-80c7" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="3c67-fe66-ad1d-2208" name="Mad Doc Grotsnik" hidden="false" targetId="cf53-b57d-28c4-015f" type="profile"/>
+                <infoLink id="5f94-b842-a3aa-edaa" name="Madboyz!" hidden="false" targetId="ec7e-ed9d-a94a-0df9" type="rule"/>
+                <infoLink id="c356-d506-cd3e-6731" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="52e1-cb86-84a8-1bb3" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
+        <cost name=" VP" typeId="points" value="1.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b348-352a-86df-8606" name="Da Dreadmob" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="1313-9739-0f8f-5ca7" name="Da Dreadmob" hidden="false">
+          <description>The Dreadmob will only take orders from Kaplin Irongutz, and Kaptin Irongutz may only give orders to the Dreadmob. If Kaptin Irongutz is destroyed then the Dreadmob will automatically go on to fall back orders with no morale check.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="0d9e-ac20-50d6-f805" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
+        <categoryLink id="9a95-8b2b-9823-671c" name="Special Cards" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="a4c9-5820-1e4b-aaf3" name="Onslaughter Dreadnoughts" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8c9-3007-1235-30c8" type="max"/>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9179-175f-bb93-f4e5" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="aca2-697e-4a0f-62df" name="Onslaughter Dreadnought" hidden="false" targetId="d4ff-38b9-2fdb-8940" type="profile"/>
+            <infoLink id="f3cf-8401-5c3d-295a" name="Killa Kan &amp; Dreadnought Limitation" hidden="false" targetId="018a-fe1b-b6f7-bd56" type="rule">
+              <comment>Have left this NetEpic-specifica rule in as it makes sense, given the size of this unit...</comment>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e8b3-e845-4585-50b9" name="Kaptin Irongutz" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ed8-486f-07a4-dd82" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69fa-7bb6-b562-9c8f" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="ac2b-fc25-e490-250e" name="Kaptin Irongutz" hidden="false" targetId="98bc-ba38-939c-999a" type="profile"/>
+            <infoLink id="c729-1026-a920-ece3" name="Command" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
+            <infoLink id="39ef-0064-0420-866c" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="400.0"/>
+        <cost name=" VP" typeId="points" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f996-9a0e-85a0-c325" name="Weirdboy Warphead" publicationId="c1a5-0905-d6e8-335a" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="0dff-dbeb-1c59-900e" name="Warphead - Replaces existing Weirdboy" hidden="false"/>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="1124-9d97-d33b-9f75" name="Special Cards" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
+        <categoryLink id="b0e3-c94e-2fda-f670" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1a1a-2994-5770-4851" name="Weirdboy Warphead Battletower" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3eb4-445f-7a9c-ac63" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85b9-446f-c2c9-41a5" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="77d1-696f-c961-853f" name="Weirdboy Warphead Battletower" hidden="false" targetId="5022-c445-c622-59bd" type="profile"/>
+            <infoLink id="90ef-4989-28b4-557d" name="Weirdboyz : Gaining Power Points" hidden="false" targetId="bfcb-99ab-1109-32d8" type="rule"/>
+            <infoLink id="1454-8084-99d9-a639" name="Weirdboyz Psychic Attacks" hidden="false" targetId="a7bf-bd37-419f-fb92" type="rule"/>
+            <infoLink id="b140-5ae7-5fe2-3160" name="Command" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
+        <cost name=" VP" typeId="points" value="1.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="7b98-1ea1-d1ae-a415" name="Battle Cannon Head" hidden="false" collective="false" import="true" type="upgrade">
@@ -4775,7 +5054,7 @@ After the rokkit lands it starts to heat up. If the template remains in play, re
     <rule id="ed27-2fff-6595-aa56" name="Mekboy Power Fields" hidden="false">
       <description>All Mekboy vehicles possess special devices to protect themselves but these do not always work correctly. To represent this, the Mekboy vehicles saving throw is variable. Each time a model is required to make an armor save it must roll a D6 to determine its saving throw. On a roll of 1-2 = 1+ Armor Save, 3-4 = 2+ Armor Save, 5-6 = 3+ Armor Save. Roll each time the vehicle is hit, not each turn. Thus a Mekboy vehicle may have several different saves in a turn depending on how many times it is attacked.</description>
     </rule>
-    <rule id="bfcb-99ab-1109-32d8" name="Weirdboyz - Gaining Power Points" hidden="false">
+    <rule id="bfcb-99ab-1109-32d8" name="Weirdboyz : Gaining Power Points" hidden="false">
       <description>In the End Phase of every turn work out how much power the Weirdboy has soaked up. For each of the following units that is within 25cm, add the stated psychic energy points. If there are multiple towers/Weirdboyz exposed to the same Orks, all draw the full energy from all Orks in range, regardless of overlap.
 Infantry or Light Artillery - 1 point
 Cavalry, Heavy Artillery, Superheavy, Vehicle or Walker - 1/2 point
@@ -4822,6 +5101,24 @@ Once on the ground, Landas may not move again and act as fire support for local 
     </rule>
     <rule id="9702-61de-f0ba-d987" name="Supa Rokkit Trans&apos;orts" hidden="false">
       <description>Supa Rokkit Trans&apos;orts are subject to multiple special rules. Please refer to the main Orks amry book.</description>
+    </rule>
+    <rule id="20f8-43d6-2e95-8d0e" name="Enjuneer Bignailz : Erratic Repairs" publicationId="c1a5-0905-d6e8-335a" hidden="false">
+      <description>Any Ork vehicle that is destroyed within 10cm of Bignailz is not removed on a D6 roll of 5 or 6. However, if the D6 roll is a 1 the vehicle detachment loses another model as Bignailz has cannabalised it in his unsuccessful attempL The vehicle removed should be the one nearest Bignailz, if 2 or more are the same distance away the Ork player may decide which one is removed.</description>
+    </rule>
+    <rule id="5bd0-ca50-ab2d-46bf" name="Enjuneer Bignailz : Kombi-Weapon" hidden="false">
+      <description>Bignailz carries around a large Kombi-weapon, which is rather unpredictable. To find out how many attack dice it has, roll 1 D6 just before you fire. The result is the number of attack dice for that tum. If you roll a 1 it has backfired and you should roll 1D6 : on a roll of 1 or 2 Bignailz is destroyed by the exploding weapon. Even if he survives Bignailz may not fire the weapon that turn.</description>
+    </rule>
+    <rule id="ec7e-ed9d-a94a-0df9" name="Madboyz!" hidden="false">
+      <description>Madboyz recieve a random order each turn. If they have to take a morale test OR lose a squad in their unit, roll on the Mad Table at the end of the phase : see the main Orks Army Book.</description>
+    </rule>
+    <rule id="02d7-d0bc-9579-4e02" name="Weirdboy Warphead : Da Krunch" publicationId="c1a5-0905-d6e8-335a" hidden="false">
+      <description>Da Krunch summons a ghostly foot - supposedly of Mork or Gork - to crash down upon his enemies. This power works on a 5+ with the following effects. Take the special Da Krunch template and place it anywhere within line of sight and 50cm of the Weirdboy Warphead&apos;s Banletower. Anything half or more under the template, including buildings, takes a hit on a D6 roll of 3+ with a -4 saving throw modifier. Titans and other vehicles with void shields or power fields will lose a shield if Da Krunch is not nullifed. Unshielded Titans and other vehicles with a Hit location template will take a single hit as normal.</description>
+    </rule>
+    <rule id="2a3b-8fa1-e26f-489d" name="Weirdboy Warphead : Waaaargh!" publicationId="c1a5-0905-d6e8-335a" hidden="false">
+      <description>This power infuses all nearby Orks with the power of the Ork gods, driving them into frenzied maniacs, frothing at the mouth and possessed of incredible speed and strength. This power works on a 4+ and affects all Ork Infantry within 15cm. The affected Orks gain an extra D6 in combat for the next combat phase, and are immune lo Morale checks for the rest of the tum. Orks on Fall Back orders which are affected immediately rally successfully and count as out of command for the rest of the tum. Unfortunately, due to their state of mind and general recklessness, the Orks are too wild to shoot effectively and any affected stands have an additional -1 to hit modifier in the subsequent combat phase.</description>
+    </rule>
+    <rule id="36db-19cc-2ce4-c46e" name="Weirdboy Warphead : Casting Warphead powers" publicationId="c1a5-0905-d6e8-335a" hidden="false">
+      <description>For every 4 points of Waaagh! power given up the Warphead can draw a Warp card and use these to cast either Da Krunch or Waaaargh! Any additional Waaagh/Force power left over may be used to make normal Weirdboy attacks, as detailed in the Ork and Squat Warlords supplement.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -5277,7 +5574,7 @@ Soopa-Blasta Kannon (Shotgun Mode) : 70cm+D6x10cm, 8BP 3+ (0) - May not indirect
         <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+1</characteristic>
         <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Shootas : 50cm, 1d 5+ (0)</characteristic>
         <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">Special</characteristic>
-        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339">Madboyz recieve a random order each turn. If they have to take a morale test OR lose a squad in their unti, roll on the Mad Table at the end of the phase : see the main Orks Army Book.</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"></characteristic>
       </characteristics>
     </profile>
     <profile id="db8b-3b99-217b-a895" name="Stormboyz Squad" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
@@ -5935,6 +6232,64 @@ Throw Mode :  Throw an enemy vehicle up to 10cm. Pick a location and scatter 2d6
         <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">See template</characteristic>
         <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">N/A</characteristic>
         <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339">See template</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cf53-b57d-28c4-015f" name="Mad Doc Grotsnik" publicationId="c1a5-0905-d6e8-335a" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Infantry</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">10cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">N/A</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+4</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Bolters : 50cm, 1d 5+ (-1)</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">Special</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339">If an Ork or Gretchin stand is killed within 10cm of Mad Doc Grotsnik roll 1D6. On a roll of 5 or 6 he manages to save them and they are not removed. On a roll of 1 his experimentation leads to more casualties, remove the nearest troop stand from the same formation. If two or more stands are an equal distance from Mad Doc Grotsnik the Ork player may decide which one is removed.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="98bc-ba38-939c-999a" name="Kaptin Irongutz" publicationId="c1a5-0905-d6e8-335a" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Walker</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">10cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">4+</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+5</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Autocannon : 50cm, 2d 5+ (0)
+Battlecannon : 50cm, 1d 5+ (-1)</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">N/A</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+      </characteristics>
+    </profile>
+    <profile id="1bc8-570d-1b74-f3e2" name="Enjuneer Bignailz" publicationId="c1a5-0905-d6e8-335a" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Infantry</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">10cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">5+</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+3</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Kombi-Weapon : 50cm, D6, 5+ (-1)</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">4+</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339">Enjuneer Bignailz may not be targened unless he is the closest model. like a command unit, However he must be given orders and checks morale as normal.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3650-dcc6-31e1-9209" name="Da Zooma" publicationId="c1a5-0905-d6e8-335a" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <comment></comment>
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Vehicle</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">30cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">4+</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+4</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Autocannon : 50cm, 1d 5+ (0)
+Battlecannon : 50cm, 1d 5+ (-1)</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">4+</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339">Can only carry Enjuneer Bignailz.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5022-c445-c622-59bd" name="Weirdboy Warphead Battletower" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Vehicle</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">25cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">4+</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+2</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">None</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">N/A</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339">See Weirdboyz / Weirdboy Warphead rules. Note that this unit is designed to work with the expanded psychic system published in The Citadel Journal 1992-1994 : usage without these rules is at your own risk (Warphead powers are pretty strong...). Can store Force cards.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
