@@ -9416,7 +9416,6 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -9427,7 +9426,6 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -9438,7 +9436,6 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -9450,7 +9447,6 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -9460,7 +9456,6 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -9481,7 +9476,6 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>

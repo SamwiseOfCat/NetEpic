@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gameSystem id="b6ca-ebfc-974f-eaae" name="NetEpic Gold" revision="2" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com   " xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
-  <comment>This is Version 1.1.
-Added &quot;Unique&quot; Shared Rule to account for unique units.
+  <comment>Added &quot;Unique&quot; Shared Rule to account for unique units.
 Any Titan weapons over 100 points have had an extra VP added to their profile to account for the increased points cost to field them (base VP is accounted for in Titan base profile on presumption that the Titan will field weapons of 50-100 points in each slot).</comment>
-  <readme>This is Version 1.1.
+  <readme>This is Version 1.2.
 
-Pick your Race from the drop-down menu, then select the Faction you wish to use. You can pick mutiple factions within a Race if you are creating a multi-Faction army using Allies. Notes on the creation of the Race files can be found by clicking on the Force you have created in the menu to the left.
+Click &quot;Add Force&quot; to the left of this text. Pick your Race from the drop-down menu, then select the Faction you wish to use. You can pick mutiple factions within a Race if you are creating a multi-Faction army using Allies. Notes on the creation of the Race files can be found by clicking on the Force you have created in the menu to the left.
 
 List creation has very few constraints other than : 1) minimum 1 Company Card, 2) min 0, max 5 Support Cards per Company Card, 3) min 0, Max 1 Special Card per Company card and 4) min 0, max 1 Free Card per Company Card. Faction-specific cards are not prohibited by the code - YET - but will be soon. In the meantime, the limitations on Faction-specific cards are made clear by text &quot;Rules&quot; applied to each Force Organisation, as well as Prohibited units that named Factions cant take.
 
@@ -123,6 +122,7 @@ Special thanks to Mad_Spy &amp; Techno on the BS Discord for their help in ironi
     <categoryEntry id="d0cd-8c36-3467-ff79" name="Knight" hidden="false"/>
     <categoryEntry id="8b02-c5e0-f39c-f9a7" name="Skimmer" hidden="false"/>
     <categoryEntry id="f543-0a98-d34d-f604" name="Floater" hidden="false"/>
+    <categoryEntry id="627c-a051-a32e-2dc2" name="Greater Daemon Card" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="1066-30cd-d618-01ed" name="    " hidden="false"/>
@@ -153,7 +153,6 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -164,7 +163,6 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -195,7 +193,6 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -225,7 +222,6 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -268,7 +264,6 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-        <cost name=" VP" typeId="points" value="1.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -290,7 +285,6 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -310,7 +304,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
         <infoLink id="a2a6-180b-ff74-1070" name="Ignores Cover" hidden="false" targetId="68e8-8b1e-49cc-e8ef" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
         <cost name=" VP" typeId="points" value="0.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
@@ -322,7 +316,6 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -333,7 +326,6 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -356,7 +348,6 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -422,7 +413,6 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-        <cost name=" VP" typeId="points" value="1.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -432,7 +422,6 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-        <cost name=" VP" typeId="points" value="1.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -531,7 +520,6 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -541,11 +529,11 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
-        <cost name=" VP" typeId="points" value="1.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="39ac-659e-48e8-34e8" name="Plasma Annihilator" hidden="false" collective="false" import="true" type="upgrade">
+      <comment>Cost is taken into account in main Imperator cost, as unit cannot alter loadout.</comment>
       <infoLinks>
         <infoLink id="8e9f-42b7-478a-98e5" name="Plasma Annihilator" hidden="false" targetId="3698-dcde-8e8d-0066" type="profile"/>
       </infoLinks>
@@ -556,6 +544,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </costs>
     </selectionEntry>
     <selectionEntry id="dcb4-0fb6-38d8-f6d2" name="Hellstorm Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <comment>Cost is taken into account in main Imperator cost, as unit cannot alter loadout.</comment>
       <infoLinks>
         <infoLink id="ec74-b549-7dcf-7df5" name="Hellstorm Cannon" hidden="false" targetId="6bff-06f8-ff06-b594" type="profile"/>
       </infoLinks>
@@ -566,6 +555,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </costs>
     </selectionEntry>
     <selectionEntry id="044e-acb9-10e8-16f8" name="Imperator Main Battery" hidden="false" collective="false" import="true" type="upgrade">
+      <comment>Cost is taken into account in main Imperator cost, as unit cannot alter loadout.</comment>
       <infoLinks>
         <infoLink id="21d8-7c28-bbaf-c24f" name="Imperator Main Battery" hidden="false" targetId="8ddf-8dba-80c4-eb2a" type="profile"/>
       </infoLinks>
@@ -576,6 +566,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </costs>
     </selectionEntry>
     <selectionEntry id="145c-62fb-dde4-8a46" name="Imperator Secondary Weapons" hidden="false" collective="false" import="true" type="upgrade">
+      <comment>Cost is taken into account in main Imperator cost, as unit cannot alter loadout.</comment>
       <infoLinks>
         <infoLink id="2363-3644-9eac-ea20" name="Imperator Secondary Weapons" hidden="false" targetId="bb14-c9d8-22a5-4b98" type="profile"/>
       </infoLinks>
@@ -586,6 +577,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </costs>
     </selectionEntry>
     <selectionEntry id="d7be-f7da-244d-d86b" name="Imperator Gun Towers" hidden="false" collective="false" import="true" type="upgrade">
+      <comment>Cost is taken into account in main Imperator cost, as unit cannot alter loadout.</comment>
       <infoLinks>
         <infoLink id="2cde-7326-d579-70db" name="Imperator Gun Towers" hidden="false" targetId="eb54-037c-d92b-f388" type="profile"/>
       </infoLinks>
@@ -596,6 +588,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </costs>
     </selectionEntry>
     <selectionEntry id="11d2-78ad-5a20-c362" name="Imperator Defence Laser" hidden="false" collective="false" import="true" type="upgrade">
+      <comment>Cost is taken into account in main Imperator cost, as unit cannot alter loadout.</comment>
       <infoLinks>
         <infoLink id="a0d8-f000-2b26-7aa0" name="Imperator Defence Laser" hidden="false" targetId="dd9c-0ded-0bcd-4f8e" type="profile"/>
       </infoLinks>
