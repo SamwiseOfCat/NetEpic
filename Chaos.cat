@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="a9aa-a2eb-5b74-a29d" name="Chaos" revision="2" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <comment>Added &quot;Unique&quot; rule to all named units like the Primarchs or named titans.</comment>
-  <readme>v1 notes :
+  <comment>Added &quot;Unique&quot; rule to all named units like the Primarchs or named titans. Added Chaos Titan-specific weapons.</comment>
+  <readme>v2 notes :
+You can only pick Greater Daemons if your force is aligned to one of the four main powers - note you can pick ANY of them though, there are no limitations on choosing between Powers. If you pick Chaos Undivided you will still be able to pick various Power-specific units in your list, including Daemon Princes (as they are classified as Special Cards and not Greater Daemons, which are similar to Company Cards in many ways). Each Power-specific unit should have a reference to the Power that they follow in the unit description. Ultimately, it&apos;s down to you to follow the NetEpic rules on force composition as its extremely difficult to narrow each Chaos army down in Battlescribe (anyone else is welcome to try it, use my files as a starter for ten... and good luck!)
+
+v1 notes :
 This was the list I was dreading doing... easily the most complex in regards to force composition because of the distinction between Undivided and the four powers, Chaos Rewards, PLUS then the Traitor Legions. Its clunky and not very intuitive, plus its quite limiting compared to the old classic SM 2d Ed Chaos lists. I fully expect to have made some errors in here somehere so please accept my apologies in advance!</readme>
   <publications>
     <publication id="114f-d100-94a8-32d5" name="Chaos NetEpic Army Book" shortName="Chaos NetEpic Army Book" publisherUrl="netepic.org"/>
@@ -3962,12 +3965,17 @@ This was the list I was dreading doing... easily the most complex in regards to 
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="1.0"/>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
         <cost name=" VP" typeId="points" value="1.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="3.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8f19-9378-80b3-a174" name="Juggernaughts" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="7633-924e-14e6-6403" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+        <categoryLink id="3678-fcc2-1676-4a5a" name="Khorne" hidden="false" targetId="9294-e104-e717-3556" primary="false"/>
+        <categoryLink id="a017-f013-e58a-0084" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="4785-b358-6f23-52fb" name="Juggers" hidden="false" collective="false" import="true" type="model">
           <constraints>
@@ -5448,7 +5456,7 @@ This was the list I was dreading doing... easily the most complex in regards to 
     </selectionEntry>
     <selectionEntry id="5a20-9f44-2963-7520" name="Daemonette Pack" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
-        <categoryLink id="8ca9-00d8-6754-cc45" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="false"/>
+        <categoryLink id="8ca9-00d8-6754-cc45" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
         <categoryLink id="db3b-0da1-332d-8572" name="Slaanesh" hidden="false" targetId="9ffd-adf8-1090-1cc4" primary="false"/>
       </categoryLinks>
       <selectionEntries>
@@ -6199,7 +6207,7 @@ This was the list I was dreading doing... easily the most complex in regards to 
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="1.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -7797,9 +7805,9 @@ This was the list I was dreading doing... easily the most complex in regards to 
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="150.0"/>
-            <cost name=" VP" typeId="points" value="2.0"/>
-            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="3.0"/>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e51d-ce97-8265-70ff" name="Bike HQ" hidden="false" collective="false" import="true" type="upgrade">
@@ -7974,6 +7982,8 @@ This was the list I was dreading doing... easily the most complex in regards to 
           </selectionEntries>
           <costs>
             <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -8168,6 +8178,11 @@ This was the list I was dreading doing... easily the most complex in regards to 
           <categoryLinks>
             <categoryLink id="6a17-3ff9-ac4a-742e" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -8263,6 +8278,11 @@ This was the list I was dreading doing... easily the most complex in regards to 
               <categoryLinks>
                 <categoryLink id="1654-27e6-b07e-f422" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <costs>
@@ -8304,6 +8324,11 @@ This was the list I was dreading doing... easily the most complex in regards to 
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="ce6f-49c4-f6a6-0877" name="Plaguebearers Pack" hidden="false" collective="false" import="true" type="unit">
               <categoryLinks>
@@ -8331,6 +8356,11 @@ This was the list I was dreading doing... easily the most complex in regards to 
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="6b89-1c4d-8f80-08f8" name="Daemonette Pack" hidden="false" collective="false" import="true" type="unit">
               <selectionEntries>
@@ -8468,6 +8498,8 @@ This was the list I was dreading doing... easily the most complex in regards to 
           </selectionEntries>
           <costs>
             <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -8481,7 +8513,7 @@ This was the list I was dreading doing... easily the most complex in regards to 
       <categoryLinks>
         <categoryLink id="40c7-8620-14e1-f6dd" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
         <categoryLink id="5b09-da52-8782-f750" name="Chaos Space Marines" hidden="false" targetId="876a-a1c2-7f18-2798" primary="false"/>
-        <categoryLink id="d539-5c8b-6cda-0c01" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="false"/>
+        <categoryLink id="d539-5c8b-6cda-0c01" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="3511-4473-aeef-d0d0" name="Havok Squad" hidden="false" collective="false" import="true" type="unit">
@@ -8546,6 +8578,8 @@ This was the list I was dreading doing... easily the most complex in regards to 
           </selectionEntries>
           <costs>
             <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -8559,7 +8593,7 @@ This was the list I was dreading doing... easily the most complex in regards to 
       <categoryLinks>
         <categoryLink id="1428-adf8-30dc-b559" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
         <categoryLink id="f6c2-4f9f-9084-6845" name="Chaos Space Marines" hidden="false" targetId="876a-a1c2-7f18-2798" primary="false"/>
-        <categoryLink id="14bb-2966-938a-9c2e" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="false"/>
+        <categoryLink id="14bb-2966-938a-9c2e" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="9f5c-baf0-b859-63b4" name="Chaos Land Raiders" hidden="false" collective="false" import="true" type="model">
@@ -8572,6 +8606,11 @@ This was the list I was dreading doing... easily the most complex in regards to 
             <infoLink id="55d9-6e4a-cdb5-84c1" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
             <infoLink id="b79d-5c39-34b2-1f5f" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -8582,7 +8621,7 @@ This was the list I was dreading doing... easily the most complex in regards to 
     </selectionEntry>
     <selectionEntry id="f980-0581-5eae-9c02" name="Chaos Land Raider Company" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
-        <categoryLink id="af82-6884-c5f1-4414" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="false"/>
+        <categoryLink id="af82-6884-c5f1-4414" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="true"/>
         <categoryLink id="77a6-b696-7bc8-2064" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
         <categoryLink id="aeb8-e4a3-b927-63c9" name="Chaos Space Marines" hidden="false" targetId="876a-a1c2-7f18-2798" primary="false"/>
       </categoryLinks>
@@ -8607,8 +8646,18 @@ This was the list I was dreading doing... easily the most complex in regards to 
                 <infoLink id="39f8-cf1e-d8c4-bc4f" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
                 <infoLink id="fce2-bb10-967b-2bb8" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="94fb-bdc3-6f98-8892" name="Command Chaos Land Raider" hidden="false" collective="false" import="true" type="unit">
           <constraints>
@@ -8629,8 +8678,18 @@ This was the list I was dreading doing... easily the most complex in regards to 
                 <infoLink id="ab8b-fc8a-404d-5d69" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
                 <infoLink id="10b0-9e33-f232-2b15" name="Command" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -8640,6 +8699,11 @@ This was the list I was dreading doing... easily the most complex in regards to 
       </costs>
     </selectionEntry>
     <selectionEntry id="8fb5-ada9-16bb-a0ef" name="Chaos Bike Company" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="8104-13b9-8e0c-fef0" name="Chaos Space Marines" hidden="false" targetId="876a-a1c2-7f18-2798" primary="false"/>
+        <categoryLink id="0537-e25c-c09c-d320" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
+        <categoryLink id="9059-32d5-d8f8-9cca" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="true"/>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="2347-9f39-7c9d-8b7a" name="Chaos Marine Bike Squad" hidden="false" collective="false" import="true" type="unit">
           <constraints>
@@ -8669,6 +8733,11 @@ This was the list I was dreading doing... easily the most complex in regards to 
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="10bd-39a7-a980-fb16" name="Command Chaos Marine Bike" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -8686,8 +8755,18 @@ This was the list I was dreading doing... easily the most complex in regards to 
                 <infoLink id="a675-960a-09c3-44cd" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
                 <infoLink id="906d-b9e7-2d8a-4792" name="Chaos Space Marine Bike HQ" hidden="false" targetId="7747-65a4-1ac9-3502" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -8700,7 +8779,7 @@ This was the list I was dreading doing... easily the most complex in regards to 
       <categoryLinks>
         <categoryLink id="5093-c97a-7ae4-75e9" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
         <categoryLink id="ed46-4d17-d6de-8661" name="Chaos Space Marines" hidden="false" targetId="876a-a1c2-7f18-2798" primary="false"/>
-        <categoryLink id="6526-4216-5c5c-69cc" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="false"/>
+        <categoryLink id="6526-4216-5c5c-69cc" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="80ad-5f24-36c5-7f79" name="Chaos Terminators" hidden="false" collective="false" import="true" type="model">
@@ -8715,6 +8794,11 @@ This was the list I was dreading doing... easily the most complex in regards to 
           <categoryLinks>
             <categoryLink id="4deb-cdb2-6124-54d9" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="da9b-3ae2-2d00-b8b7" name="Chaos Land Raiders" hidden="false" collective="false" import="true" type="model">
           <constraints>
@@ -8729,6 +8813,11 @@ This was the list I was dreading doing... easily the most complex in regards to 
           <categoryLinks>
             <categoryLink id="e40c-9ae2-2979-b95d" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -8741,7 +8830,7 @@ This was the list I was dreading doing... easily the most complex in regards to 
       <categoryLinks>
         <categoryLink id="aeab-70f4-3ada-8777" name="Chaos Space Marines" hidden="false" targetId="876a-a1c2-7f18-2798" primary="false"/>
         <categoryLink id="34b1-444d-4f89-c47c" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
-        <categoryLink id="0ac9-61ab-d95a-bf52" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="false"/>
+        <categoryLink id="0ac9-61ab-d95a-bf52" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="dbfc-dad0-2c7a-5e11" name="Chaos Terminator Detachment" hidden="false" collective="false" import="true" type="unit">
@@ -8767,6 +8856,11 @@ This was the list I was dreading doing... easily the most complex in regards to 
               <categoryLinks>
                 <categoryLink id="007c-9fae-51d9-f828" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="0ef9-e358-2622-a757" name="Chaos Land Raiders" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -8781,11 +8875,20 @@ This was the list I was dreading doing... easily the most complex in regards to 
               <categoryLinks>
                 <categoryLink id="1e9e-126f-7d0b-3e3e" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="732e-0dc4-36a2-94b7" name="Chaos Terminator Command" hidden="false" collective="false" import="true" type="unit">
-          <comment></comment>
           <selectionEntries>
             <selectionEntry id="3979-3923-4b4c-de34" name="Terminator HQ" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -8802,6 +8905,11 @@ This was the list I was dreading doing... easily the most complex in regards to 
               <categoryLinks>
                 <categoryLink id="2a9e-dcb8-b389-c468" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="e544-364b-2302-e79b" name="Terminator HQ Land Raider" hidden="false" collective="false" import="true" type="upgrade">
               <comment>Command &amp; HQ rules added for this unit to match Imperial counterpart (missing on NE card)</comment>
@@ -8819,8 +8927,18 @@ This was the list I was dreading doing... easily the most complex in regards to 
               <categoryLinks>
                 <categoryLink id="d145-539a-e1a1-9b8c" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -8834,7 +8952,7 @@ This was the list I was dreading doing... easily the most complex in regards to 
         <categoryLink id="6357-de0f-0caf-0cbd" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
         <categoryLink id="c5af-7e20-f2a8-90ad" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
         <categoryLink id="a44a-51d7-8975-6e0e" name="Chaos Space Marines" hidden="false" targetId="876a-a1c2-7f18-2798" primary="false"/>
-        <categoryLink id="1977-f6ab-f3c1-ceb4" name="Special Card" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="false"/>
+        <categoryLink id="1977-f6ab-f3c1-ceb4" name="Special Card" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="cbfd-96e1-9f42-691f" name="Command Rhino" hidden="false" collective="false" import="true" type="upgrade">
@@ -8850,6 +8968,11 @@ This was the list I was dreading doing... easily the most complex in regards to 
           <categoryLinks>
             <categoryLink id="7cfc-b3af-6d43-44c1" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="dd6d-fea9-a282-cd02" name="Forward Observer" hidden="false" collective="false" import="true" type="model">
           <constraints>
@@ -8865,11 +8988,17 @@ This was the list I was dreading doing... easily the most complex in regards to 
           <categoryLinks>
             <categoryLink id="5d35-11f7-4e64-69ac" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
         <cost name=" VP" typeId="points" value="1.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e7b9-c62d-bf5d-e730" name="Drop Pods" hidden="false" collective="false" import="true" type="upgrade">
@@ -8943,7 +9072,7 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
       <categoryLinks>
         <categoryLink id="d973-de41-ae20-7b1e" name="Chaos Space Marines" hidden="false" targetId="876a-a1c2-7f18-2798" primary="false"/>
         <categoryLink id="8a3b-028f-38c3-abdb" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
-        <categoryLink id="732f-b96c-6502-1bb4" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="false"/>
+        <categoryLink id="732f-b96c-6502-1bb4" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="2b16-81d5-f390-fc58" name="Hunter AA" hidden="false" collective="false" import="true" type="model">
@@ -8955,6 +9084,11 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
             <infoLink id="38dd-6ac4-d5e8-9d79" name="Hunter" hidden="false" targetId="cad7-6197-d9f4-5a84" type="profile"/>
             <infoLink id="c040-c694-5b70-ea30" name="Anti-Aircraft" hidden="false" targetId="fcc4-1801-9767-124b" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -9177,7 +9311,7 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
     </selectionEntry>
     <selectionEntry id="4921-8775-5d6f-26b3" name="Tarantula Support Battery" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
-        <categoryLink id="1659-e712-b679-7391" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="false"/>
+        <categoryLink id="1659-e712-b679-7391" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
         <categoryLink id="b1c3-da9d-8f00-10b4" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
         <categoryLink id="264a-13e4-74e4-d5be" name="Chaos Space Marines" hidden="false" targetId="876a-a1c2-7f18-2798" primary="false"/>
       </categoryLinks>
@@ -9282,6 +9416,8 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b911-82dc-4ddd-90aa" name="Havoc Missile Rack" hidden="false" collective="false" import="true" type="upgrade">
@@ -9291,6 +9427,8 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8ac6-cb22-180c-5c24" name="Doomfist" hidden="false" collective="false" import="true" type="upgrade">
@@ -9300,6 +9438,8 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ac9c-4687-486e-183b" name="Hellblade" hidden="false" collective="false" import="true" type="upgrade">
@@ -9310,6 +9450,8 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="69f9-e86b-e8b7-8cb7" name="Khornate Chaos Tail" hidden="false" collective="false" import="true" type="upgrade">
@@ -9318,6 +9460,8 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="dad7-e8d6-a982-bbb9" name="Chaos Energy Whip" hidden="false" collective="false" import="true" type="upgrade">
@@ -9327,6 +9471,8 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="25.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5964-1f38-6e08-fa77" name="Bloodletter / Lord of Battle Head" hidden="false" collective="false" import="true" type="upgrade">
@@ -9335,6 +9481,8 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0a19-2fca-07a1-654d" name="Chaos Tail" hidden="false" collective="false" import="true" type="upgrade">
@@ -9343,6 +9491,8 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="25.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
