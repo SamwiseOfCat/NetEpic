@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3e2a-ea46-765a-b749" name="Orks" revision="2" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <readme>v2 notes :
-Added special characters from the 
+<catalogue id="3e2a-ea46-765a-b749" name="Orks" revision="3" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>v3 notes :
+Added missing Fighta Bomma unit points value
+
+v2 notes :
+Added special characters from the Citadel Journal (Bignailz, Grotsnik etc)
 
 v1 notes :
 The Orks list has not been split into Faction-specific Force entries - this is due to the way Ork armies are formed, in that you will almost always be picking more than one Clan &quot;Faction&quot; in your army. There was no good reason to force players into having to do separate lists per Clan.
@@ -3100,9 +3103,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
-        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="200.0"/>
+        <cost name=" VP" typeId="points" value="2.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="2.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bd84-c57e-2ce4-5344" name="Megga-Squiggoth" hidden="false" collective="false" import="true" type="upgrade">

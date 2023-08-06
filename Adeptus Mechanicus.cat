@@ -3267,6 +3267,7 @@ Anyway, the main thing is you can run an Imperator in this list if you want as a
       <infoLinks>
         <infoLink id="f4a7-4779-49e4-c354" name="Imperator Titan" hidden="false" targetId="4821-4aa9-d89b-0b02" type="profile"/>
         <infoLink id="14cd-1424-3141-47ca" name="Point Defence (16)" hidden="false" targetId="b033-6932-7ec4-7bbd" type="rule"/>
+        <infoLink id="830f-bda4-1b2b-64a7" name="Void Shields (12)" hidden="false" targetId="26fd-a3dc-3f98-f6c0" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="e442-e820-ec5b-8453" name="Titan" hidden="false" targetId="31e8-9840-fb3a-3b8d" primary="false"/>
@@ -3362,31 +3363,31 @@ Anyway, the main thing is you can run an Imperator in this list if you want as a
       <comment>Added &quot;Ion&quot; to the name as thats what it is now in 40K lore.</comment>
       <description>Shields grant a Fixed Armour Save against shots that strike a Knight on the front 90° arc. Barrages are considered to hit the Knight from the direction of the firer. Weapons of multiple barrages all count as being fired from the direction of the firing weapon (this means you may not bypass the shield by placing additional templates in a manner so as to “walk around” the shield).</description>
     </rule>
-    <rule id="11de-f7d4-4ce7-1d52" name="Psychic Power : Beacon" hidden="false">
+    <rule id="11de-f7d4-4ce7-1d52" name="Psychic Power : Beacon" publicationId="4e5b-6b9c-595f-6c95" hidden="false">
       <description>Until the End Phase, any Greater Daemon, Psyker, or Eldar Waystone Spirit unit within 100cm may only fire at, or target psychic/magic powers at the Astropath. They may violate the normal line of sight and HQ targeting restrictions.</description>
     </rule>
     <rule id="2124-3060-1c91-f46e" name="Psychic Power : Guidance" hidden="false">
       <description>There must be an Imperial unit within 25cm of the Astropath that can see the target, and the artillery detachment being sighted for must be within 75cm of the Astropath. The artillery makes a direct fire</description>
     </rule>
-    <rule id="7db5-2c7b-6d58-d790" name="Psychic Power : Cancellation" hidden="false">
+    <rule id="7db5-2c7b-6d58-d790" name="Psychic Power : Cancellation" publicationId="4e5b-6b9c-595f-6c95" hidden="false">
       <description>Can cancel any Psyker or Greater Daemon psychic ability. Each player rolls a die (Astropath+2, Greater Daemons +3) .If the Astropaths total is higher, the ability fails. Remains in effect until the End Phase.</description>
     </rule>
-    <rule id="71cf-82be-d54f-9f83" name="Psychic Power : Telepathic Link" hidden="false">
+    <rule id="71cf-82be-d54f-9f83" name="Psychic Power : Telepathic Link" publicationId="4e5b-6b9c-595f-6c95" hidden="false">
       <description>The psyker spots for artillery and may act as a Forward Observer. In addition, any indirect barrages aimed at a point visible to the psyker are treated as direct. The power lasts until the End Phase.</description>
     </rule>
-    <rule id="8661-1570-4319-b6c4" name="Psychic Power : Righteous Fire" hidden="false">
+    <rule id="8661-1570-4319-b6c4" name="Psychic Power : Righteous Fire" publicationId="4e5b-6b9c-595f-6c95" hidden="false">
       <description>The psyker makes a physical psychic attack. Pick a target within 25cm and line of sight, and on a 4+ it takes a hit at -2TSM.</description>
     </rule>
-    <rule id="d22a-7414-9b3f-789d" name="Psychic Power : Embolden" hidden="false">
+    <rule id="d22a-7414-9b3f-789d" name="Psychic Power : Embolden" publicationId="4e5b-6b9c-595f-6c95" hidden="false">
       <description>All Imperial detachments within 15cm (including the psyker) become Fearless, inmune to all types of morale effects and gain +1 CAF. These effects last until the End Phase.</description>
     </rule>
-    <rule id="8ac7-ddca-26dd-5703" name="Ordinatus - explosion on destruction" hidden="false">
+    <rule id="8ac7-ddca-26dd-5703" name="Ordinatus - explosion on destruction" publicationId="4e5b-6b9c-595f-6c95" hidden="false">
       <description>If an Ordinatus is destroyed, the resulting explosion hits everything within 2D6cm at 0 TSM.</description>
     </rule>
-    <rule id="0f0a-1539-8f69-6df7" name="Dispersion Field" hidden="false">
+    <rule id="0f0a-1539-8f69-6df7" name="Dispersion Field" publicationId="4e5b-6b9c-595f-6c95" hidden="false">
       <description>Ordinatus units mount a Dispersion Field instead of standard Imperial Void Shields. Dispersion Fields grant a fixed save that decreases over the turns of the battle : Turn 1 - Fixed Save of 2+, Turn 2 - Fixed save of 3+, Turn 3 - Fixed save of 4+, Turn 4 - Fixed save of 5+, Turns 5+ and over - Fixed save of 6+.</description>
     </rule>
-    <rule id="9bfd-c2b6-7608-4f09" name="Additional Transports" hidden="false">
+    <rule id="9bfd-c2b6-7608-4f09" name="Additional Transports" publicationId="4e5b-6b9c-595f-6c95" hidden="false">
       <description>If using this unit as dedicated transports for an infantry unit, you add the VP and Break Point of the transport card to the infantry unit.</description>
     </rule>
   </sharedRules>

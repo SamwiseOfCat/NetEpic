@@ -2075,11 +2075,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
           </constraints>
           <infoLinks>
             <infoLink id="9ff6-e617-b80a-53b5" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
-            <infoLink id="2ab6-6537-5eb5-012e" name="Flyer" hidden="false" targetId="f081-2b42-2559-361e" type="rule"/>
             <infoLink id="0a88-73dd-bcce-7ec7" name="360° Firing" hidden="false" targetId="687c-75a3-312c-a769" type="rule"/>
-            <infoLink id="890f-4877-3dad-8abd" name="Fires in First Fire Phase" hidden="false" targetId="1d5f-6e50-4d9c-e1dc" type="rule"/>
+            <infoLink id="890f-4877-3dad-8abd" name="Always fires in First Fire phase" hidden="false" targetId="1d5f-6e50-4d9c-e1dc" type="rule"/>
             <infoLink id="2c23-51fa-36a3-9add" name="Overlord Armoured Airship" hidden="false" targetId="0b0b-1345-577c-1aa3" type="profile"/>
             <infoLink id="e35b-4567-25be-2881" name="Overlord Hits" hidden="false" targetId="f690-7624-41f6-98bd" type="rule"/>
+            <infoLink id="c1da-0f4a-c912-9ffd" name="Floater" hidden="false" targetId="26d7-77f7-4250-b347" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="4b83-63ed-b4f0-5741" name="Flyer" hidden="false" targetId="d6b7-fbc6-dca0-1682" primary="false"/>

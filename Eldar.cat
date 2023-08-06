@@ -5,6 +5,9 @@
 Craftworld-specific units have been prefixed with the name of the Craftworld they belong to for ease of finding/accounting for in lists.
 Optional Farseer &quot;Guide&quot; Psychic Power has not been added to the unit but is present in the Eldar Rule list so can be added in a later revision if required.
 Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as they were given rules (albeit not official GW rules...) in the Citadel Journal. Use at your own risk.</readme>
+  <publications>
+    <publication id="fb48-538b-b59c-f951" name="Eldar NetEpic Army Book" shortName="Eldar NetEpic Army Book" publisher="Eldar NetEpic Army Book"/>
+  </publications>
   <profileTypes>
     <profileType id="6cab-14fd-d162-8ecc" name="Eldar Titan Weapons">
       <characteristicTypes>
@@ -522,9 +525,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="150.0"/>
-            <cost name=" VP" typeId="points" value="2.0"/>
-            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="2.0"/>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3568,7 +3571,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
       </costs>
     </selectionEntry>
     <selectionEntry id="75d9-8a87-464d-ffe3" name="Jain Zar, The Storm Of Silence" publicationId="c1a5-0905-d6e8-335a" hidden="false" collective="false" import="true" type="unit">
-      <comment>These were experimental rules published in The Citadel Journal. Use at your own risk. (+18 CAF seems crazy here, +10 woudl be more realistic)</comment>
+      <comment>These were experimental rules published in The Citadel Journal. Use at your own risk. (+18 CAF seems crazy here, +10 would be more realistic)</comment>
       <infoLinks>
         <infoLink id="bd26-518d-0fdb-6c92" name="Unique" hidden="false" targetId="8872-7902-38c1-08d1" type="rule"/>
         <infoLink id="30ad-ea87-b119-e82e" name="VP awarded when Phoenix Lord is killed" hidden="false" targetId="eebb-6336-05d8-96d0" type="rule"/>
@@ -3876,73 +3879,73 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
-    <rule id="9ee3-0d9c-3917-602d" name="Waystone Spirit" hidden="false">
+    <rule id="9ee3-0d9c-3917-602d" name="Waystone Spirit" publicationId="fb48-538b-b59c-f951" hidden="false">
       <description>Waystone Spirit forces are special Eldar units which are actually made with an artificial body and a Waystone Spirit encased in that body. As such, these units are not &quot;alive&quot; and therefore have the Inorganic and Artificial Intelligence rules. They are immune to any sort of Moral effect. They are not Robotic and do not require programming before battle. However, a Waystone Spirit unit must always remain within 10cm of a living Eldar unit and will always duplicate the orders of that unit. If a Warlock is present within 10cm of any model in the detachment, the detachment may be given any order that turn. If the units starts a turn more than 10cm from any living Eldar it will charge towards the nearest living Eldar unit, only entering Close Combat if the unit it is trying to reach is also in Close Combat.</description>
     </rule>
-    <rule id="6e32-2d2f-e036-3a34" name="Psychic Power : Psychic Lock" hidden="false">
+    <rule id="6e32-2d2f-e036-3a34" name="Psychic Power : Psychic Lock" publicationId="fb48-538b-b59c-f951" hidden="false">
       <description>Lock a model in LoS (locking results in no movement, no firing and no dice allowed if attacked in CC) within 75cm on a 4+. If multiple models exist in the unit they may move away. Locked models can repair themselves, be repaired and raise shields. Ends with the defender rolling 4+ in the End Phase, or the Warlock takes another action. This is an Ethereal Psychic Power.</description>
     </rule>
-    <rule id="ef11-a186-89a9-9bee" name="Psychic Power : Eldritch Storm" hidden="false">
+    <rule id="ef11-a186-89a9-9bee" name="Psychic Power : Eldritch Storm" publicationId="fb48-538b-b59c-f951" hidden="false">
       <description>Place a standard barrage template (or the storm one, if you have one) within 50cm and LoS of the Warlock. All models under the template are immediately moved to a random edge of the template (use the scatter dice) and may do nothing for the remainder of the turn. Other models within the unit not hit by the storm may act as normal. The storm blocks LoS. Shielded target will lose 1 shield. Unshielded targets take a hit on a random low location on their hit template at -2TSM but may move and shoot (providing the survive). The storm is removed in the End Phase.</description>
     </rule>
-    <rule id="baa0-22b9-03ab-7b75" name="Spirit Host Break Point" hidden="false">
+    <rule id="baa0-22b9-03ab-7b75" name="Spirit Host Break Point" publicationId="fb48-538b-b59c-f951" hidden="false">
       <description>This unit only breaks when either ALL the Wraithguard and Wraithlord are destroyed, or as soon as the Warlock is killed.</description>
     </rule>
-    <rule id="e74c-5205-c931-31c4" name="Psychic Power : Precognitive Direction" hidden="false">
+    <rule id="e74c-5205-c931-31c4" name="Psychic Power : Precognitive Direction" publicationId="fb48-538b-b59c-f951" hidden="false">
       <description>One Eldar detachment within 10cm may shift their orders one place between Charge, Advance and First Fire after orders have been committed to both armies. This means a unit cannot switch directly from Charge to First Fire.</description>
     </rule>
-    <rule id="f537-e71f-09ef-186c" name="Psychic Power : Guide" hidden="false">
+    <rule id="f537-e71f-09ef-186c" name="Psychic Power : Guide" publicationId="fb48-538b-b59c-f951" hidden="false">
       <description>One Eldar infantry detachment within 25cm gains a +1 To Hit bonus this turn.</description>
     </rule>
-    <rule id="04a4-274d-99e1-6f59" name="Psychic Power : Coercion" hidden="false">
+    <rule id="04a4-274d-99e1-6f59" name="Psychic Power : Coercion" publicationId="fb48-538b-b59c-f951" hidden="false">
       <description>Choose an unmoved enemy unit within 50cm. Roll a D6 + the units morale : on a 6 or above the order of the target unit may be shifted one place between Charge, Advance and First Fire. This means the target cannot be switched directly from Charge to First Fire.</description>
     </rule>
-    <rule id="2b1b-c560-aefc-912f" name="Master Mime" hidden="false">
+    <rule id="2b1b-c560-aefc-912f" name="Master Mime" publicationId="fb48-538b-b59c-f951" hidden="false">
       <comment>This could be a potentially very OP rule/card if used multiple times against Titans, etc.</comment>
       <description>Play this card during the Order Phase. Pick an enemy unit - this unit loses its order, and cannot recieve another order until it succeeds in a morale check in any following End Phase. Units that do not check morale can be issued orders as normal after a single End Phase.</description>
     </rule>
-    <rule id="c5bc-0c20-6b4e-f76e" name="Holofields" hidden="false">
+    <rule id="c5bc-0c20-6b4e-f76e" name="Holofields" publicationId="fb48-538b-b59c-f951" hidden="false">
       <description>Holofields provide Eldar Titans with a Fixed Save depending on their current orders : First Fire 4+, Advance 3+, Charge 2+. Barrages ignore the Holofields save.</description>
     </rule>
-    <rule id="29c1-8609-51ad-d112" name="Jump Jets" hidden="false">
+    <rule id="29c1-8609-51ad-d112" name="Jump Jets" publicationId="fb48-538b-b59c-f951" hidden="false">
       <description>When using jump jets the titan’s movement is in a series of leaps that allow it to ignore intervening terrain. In order to use the jump jets the titan must be on Charge Orders. The maximum distance of each leap is 15 cm, so a Revenant on Charge Orders can make four 15 cm leaps or any other combination that does not exceed the movement allowance for the Titan. The maximum height of a normal leap is 5 cm. In order to jump over higher obstacles the Titan uses 2 cm of movement for every additional 1 cm of height needed to jump an obstacle. The Revenant cannot land in impassable terrain during any of its jumps.</description>
     </rule>
-    <rule id="e02d-d8a0-7b8e-e7e4" name="Orderless" hidden="false">
+    <rule id="e02d-d8a0-7b8e-e7e4" name="Orderless" publicationId="fb48-538b-b59c-f951" hidden="false">
       <description>Orders are not placed for Warlock Titans at the same time as all other units. Instead, they may be activated in any phase but must then abide by the rules of that phase (for example, if the player activated the Titan in the Movement phase and decided to charge, it could not fire in the First Fire or Advance phases).</description>
     </rule>
-    <rule id="1966-3cd7-102b-4945" name="Psychic Power : Doom" hidden="false">
+    <rule id="1966-3cd7-102b-4945" name="Psychic Power : Doom" publicationId="fb48-538b-b59c-f951" hidden="false">
       <description>Use on any model within 50cm and line of sight. All shots made by any units that now fire at that model will hit on a 3+. If that model is in Close Combat its base CAF is halved. Models with shields have a 4+ save against Doom and may be rolled every turn. Psychic saves may be made against Doom. This lasts until another power is used.</description>
     </rule>
-    <rule id="01a9-32a5-d8ad-b2ed" name="Psychic Power : Witch Sight" hidden="false">
+    <rule id="01a9-32a5-d8ad-b2ed" name="Psychic Power : Witch Sight" publicationId="fb48-538b-b59c-f951" hidden="false">
       <description>All enemies firing at the Titan in this turn suffer a 1 To-Hit penalty. In Close Combat, opposing Titans and vehicles use one less die. If the Titan is immobilized it cannot use Witch Sight.</description>
     </rule>
-    <rule id="871a-ceca-e955-2296" name="Psychic Power : Mind Shout" hidden="false">
+    <rule id="871a-ceca-e955-2296" name="Psychic Power : Mind Shout" publicationId="fb48-538b-b59c-f951" hidden="false">
       <description>All enemy models within 25cm must immediately pass a morale check or go onto Fall Back orders. Rolls of 1 fail automatically. All friendly units with models within 25 cm can immediately roll to rally from Fall Back.</description>
     </rule>
-    <rule id="1a81-54bd-9704-eba9" name="Revenant Titan VP" hidden="false">
+    <rule id="1a81-54bd-9704-eba9" name="Revenant Titan VP" publicationId="fb48-538b-b59c-f951" hidden="false">
       <comment>Added as per NetEpic Eldar Cards.</comment>
       <description>Each Titan is worth 3 VP, and the points are awarded in the event of each Titans destruction. </description>
     </rule>
-    <rule id="204f-434e-e4c7-8e82" name="Psychic Lance (Eldar Knights)" hidden="false">
+    <rule id="204f-434e-e4c7-8e82" name="Psychic Lance (Eldar Knights)" publicationId="fb48-538b-b59c-f951" hidden="false">
       <description>All Eldar Knights are equipped with a Psychic Lance for use in Close Combat. They function only on the turn when the Knight charges another unit. They do not work if the Knight itself has been charged, or on the second or later rounds of Close Combat. When a Knight charges into combat, roll a D6 before resolving the combat: 1-3 : No effect, resolve combat as normal 4-5 : The Target&apos;s CAF is reduced to zero for this round of combat - Titans/Praetorians lose D6 CAF. 6 : The target takes a hit at -0 TSM before CC dice are rolled - Titans/Praetorians have their CAF halved for this round of combat. In addition, Psychic Lances are particularly effective against Greater
 Daemons. When a Greater Daemon is attacked, it must make its basic saving throw or be destroyed (it cannot use Chaos Cards to save itself). Apply a -1 modifier to this roll for each Eldar Knight beyond the first that adds its Lance to the charge. The Chaos player may apply add +1 to the roll for each Chaos Card he sacrifices. These cards must be discarded before dice are rolled.</description>
     </rule>
-    <rule id="5032-df3f-54e4-bf05" name="Wraithgate" hidden="false">
+    <rule id="5032-df3f-54e4-bf05" name="Wraithgate" publicationId="fb48-538b-b59c-f951" hidden="false">
       <description>If the Storm Serpent is on First Fire Orders, it may be activated in the Movement Phase and project a Wraithgate within 75 cm (and in LoS). Place a counter to mark the location of the gate. Once the gate is open, Eldar infantry, cavalry and walker-class units may enter either the Wraithgate or the Storm Serpent by paying the normal 5 cm to enter a transport. Remove the units from the board and give them their orders for next turn. In the following turn’s Compulsory Movement Phase scatter them 2D6 cm from the opposite end of the gate (it takes a turn to go through the gate). The Storm Serpent must remain on First Fire Orders while units are ‘in transit’, and if the Storm Serpent is destroyed while units are in transit they are lost in the warp and destroyed. The Wraithgate may not be repositioned while units are in transit.</description>
     </rule>
-    <rule id="c116-5f7f-0e69-b143" name="Deploy Anywhere" hidden="false">
+    <rule id="c116-5f7f-0e69-b143" name="Deploy Anywhere" publicationId="fb48-538b-b59c-f951" hidden="false">
       <description>Alaitoc Rangers are legendary for their ability to infiltrate and gain the best position on the battlefield. During setup, Alaitoc Rangers may be placed anywhere on the battlefield that isn’t in the enemy deployment zone. You must place the stands in a detachment within coherency and you can’t place them closer than 5 cm to an enemy unit, but other than that you may treat the entire board as their deployment zone. After setup, go to the infiltrate movement phase and move units normally. Yes, Alaitoc Rangers get their infiltrate movement too, and this may take them into the enemy deployment zone.</description>
     </rule>
-    <rule id="b88a-42a9-cb3a-7742" name="Psychic Power : Power Of The Warp (Eldrad Ulthran)" hidden="false">
+    <rule id="b88a-42a9-cb3a-7742" name="Psychic Power : Power Of The Warp (Eldrad Ulthran)" publicationId="c1a5-0905-d6e8-335a" hidden="false">
       <description>Eldrad may summon the power of the Warp to aid him in Close Combat. Utilising this power has risks! To use this power the Eldar player must roll an Artillery dice and 2d6. The artillery dice score is now Eldrad&apos;s base CAF. If a Misfire result occurs, the psychic power generated was too great to be controlled and Eldrad is consumed by the Warp. Replace Eldrad&apos;s stand with a Vortex template. Anything more than half covered by the template will also be consumed by the Warp on the roll of a 4+. Daemons are automatically destroyed. Units with Psychic Saves may make a save as normal. Titans with shields may attempt their usual save, but if they fail they must roll for damage on the Head damage chart.</description>
     </rule>
-    <rule id="eebb-6336-05d8-96d0" name="VP awarded when Phoenix Lord is killed" hidden="false">
+    <rule id="eebb-6336-05d8-96d0" name="VP awarded when Phoenix Lord is killed" publicationId="fb48-538b-b59c-f951" hidden="false">
       <description>VP&apos;s for this card are only awarded once the Phoenix Lord is killed.</description>
     </rule>
-    <rule id="0b7d-239b-52c5-d31f" name="Psychic Power : Psychic Node" hidden="false">
+    <rule id="0b7d-239b-52c5-d31f" name="Psychic Power : Psychic Node" publicationId="fb48-538b-b59c-f951" hidden="false">
       <description>Eldar spirits (Wraithguard, Dreadnoughts, Ghost Warriors, etc) within 25 cm count as being within 10 cm of a living Eldar. That is, if the spirit unit is within 25 cm of the Spiritseer they may be given orders as normal.</description>
     </rule>
-    <rule id="2b69-ddfd-0a4d-ef51" name="Warlock Precognition" hidden="false">
+    <rule id="2b69-ddfd-0a4d-ef51" name="Warlock Precognition" publicationId="fb48-538b-b59c-f951" hidden="false">
       <description>All Eldar detachments that have units within 10 cm of a Warlock are not given orders during the Orders Phase. Instead, these units may wait until the last moment to act and have an order placed. During the Movement Phase, the Eldar player may activate a detachment by placing an order counter on it and declaring any movement. The order counter remains and the unit will fire in the appropriate segment. This power only works on living Eldar units, not Wraithstone Spirits.</description>
     </rule>
   </sharedRules>

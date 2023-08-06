@@ -94,9 +94,9 @@ Special thanks to Mad_Spy &amp; Techno on the BS Discord for their help in ironi
     </profileType>
   </profileTypes>
   <categoryEntries>
-    <categoryEntry id="224e-9fab-b2e1-8a4f" name="Special Cards" hidden="false"/>
+    <categoryEntry id="224e-9fab-b2e1-8a4f" name="Special Card" hidden="false"/>
     <categoryEntry id="704c-e54e-0e5c-2d2f" name="Company Card" hidden="false"/>
-    <categoryEntry id="4462-e6f9-41a2-4e47" name="Support Cards" hidden="false"/>
+    <categoryEntry id="4462-e6f9-41a2-4e47" name="Support Card" hidden="false"/>
     <categoryEntry id="8e49-5810-e088-7dc4" name="Free Cards" hidden="false"/>
     <categoryEntry id="31e8-9840-fb3a-3b8d" name="Titan" hidden="false"/>
     <categoryEntry id="5358-135e-3852-7d2c" name="Space Marines" hidden="false"/>
@@ -122,6 +122,7 @@ Special thanks to Mad_Spy &amp; Techno on the BS Discord for their help in ironi
     <categoryEntry id="f082-d1ca-f340-1ce8" name="Walker" hidden="false"/>
     <categoryEntry id="d0cd-8c36-3467-ff79" name="Knight" hidden="false"/>
     <categoryEntry id="8b02-c5e0-f39c-f9a7" name="Skimmer" hidden="false"/>
+    <categoryEntry id="f543-0a98-d34d-f604" name="Floater" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="1066-30cd-d618-01ed" name="    " hidden="false"/>
@@ -658,7 +659,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       <description>A unit’s fixed armor save is not modified by the weapon’s TSM.</description>
     </rule>
     <rule id="f081-2b42-2559-361e" name="Flyer" publicationId="c6ff-1c0c-e89b-f854" hidden="false">
-      <description>The unit moves through the air. See &quot;Modes of Movement&quot; for details.</description>
+      <description>Fliers are fast-moving aerial units such as attack helicopters and vectored-thrust aircaft. See &quot;Modes of Movement&quot; for details.</description>
     </rule>
     <rule id="b99f-ff4d-1584-d7fe" name="Forward Observer (FO)" publicationId="c6ff-1c0c-e89b-f854" hidden="false">
       <description>The unit is skilled at calling in artillery. See &quot;Artillery&quot; for details.</description>
@@ -913,6 +914,15 @@ must test morale or go on Fall Back Orders. See &quot;Morale&quot; for details.<
     </rule>
     <rule id="b56d-32e9-d735-cd18" name="Transport (18)" hidden="false">
       <description>The unit may carry up to 18 infantry stands.</description>
+    </rule>
+    <rule id="2637-f0ec-5992-1001" name="Transport (11)" hidden="false">
+      <description>The unit may carry up to 10 infantry stands, and tow one light artillery.</description>
+    </rule>
+    <rule id="26fd-a3dc-3f98-f6c0" name="Void Shields (12)" publicationId="c6ff-1c0c-e89b-f854" hidden="false">
+      <description>This unit has a number of Void Shields, indicated by the number contained in the brackets (&quot;X&quot;). These absorb all incoming hits until knocked down. Weapons must have a TSM of at least –1 in order to knock down shields. Downed shields may be repaired on a 4+ in the End Phase, rolling once for each shield. Void Shields provide a 4+ Psychic Save.</description>
+    </rule>
+    <rule id="26d7-77f7-4250-b347" name="Floater" publicationId="c6ff-1c0c-e89b-f854" hidden="false">
+      <description>Floaters are a relatively slow-moving unit that moves through the air, such as a balloon or zeppelin. See &quot;Modes of Movement&quot; for more details.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

@@ -1405,7 +1405,7 @@ Many thanks to Drewski for initial Alpha testing of this list.</readme>
           <infoLinks>
             <infoLink id="aa1f-50d5-c51f-d654" name="Rhino" hidden="false" targetId="f85a-fa0b-759a-d2eb" type="profile"/>
             <infoLink id="32b6-86d9-d0e0-de49" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
-            <infoLink id="edd6-a7ef-1b0b-22a3" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+            <infoLink id="edd6-a7ef-1b0b-22a3" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="3c68-d96e-f4ba-4d62" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -1483,7 +1483,7 @@ Many thanks to Drewski for initial Alpha testing of this list.</readme>
               <infoLinks>
                 <infoLink id="891c-f479-5136-1728" name="Rhino" hidden="false" targetId="f85a-fa0b-759a-d2eb" type="profile"/>
                 <infoLink id="0b09-f240-703a-21b7" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
-                <infoLink id="f553-619e-cff0-eec2" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="f553-619e-cff0-eec2" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="7489-28a8-d943-106a" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -1532,7 +1532,7 @@ Many thanks to Drewski for initial Alpha testing of this list.</readme>
               <infoLinks>
                 <infoLink id="fda0-323e-f1c2-c935" name="Rhino" hidden="false" targetId="f85a-fa0b-759a-d2eb" type="profile"/>
                 <infoLink id="e1bb-8264-242a-1c0c" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
-                <infoLink id="4b51-72d4-b6ab-c62c" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="4b51-72d4-b6ab-c62c" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="7125-cbde-6184-def6" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -1564,7 +1564,7 @@ Many thanks to Drewski for initial Alpha testing of this list.</readme>
               <infoLinks>
                 <infoLink id="3caa-74e0-8a1c-4787" name="Rhino" hidden="false" targetId="f85a-fa0b-759a-d2eb" type="profile"/>
                 <infoLink id="1d67-744e-8dfa-8090" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
-                <infoLink id="4bf7-8473-904f-99e1" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="4bf7-8473-904f-99e1" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="e015-67c5-3352-8755" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -1631,7 +1631,7 @@ Many thanks to Drewski for initial Alpha testing of this list.</readme>
               <infoLinks>
                 <infoLink id="4ad9-0eba-5849-ced1" name="Rhino" hidden="false" targetId="f85a-fa0b-759a-d2eb" type="profile"/>
                 <infoLink id="fefd-b54a-d8cd-c350" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
-                <infoLink id="4c45-e2e0-f24a-ab83" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="4c45-e2e0-f24a-ab83" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="b360-c81f-9c25-219a" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -1676,7 +1676,7 @@ Many thanks to Drewski for initial Alpha testing of this list.</readme>
               <infoLinks>
                 <infoLink id="ab73-acba-26b6-924b" name="Rhino" hidden="false" targetId="f85a-fa0b-759a-d2eb" type="profile"/>
                 <infoLink id="740e-5bdc-c825-165b" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
-                <infoLink id="242b-1924-0f0a-4328" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="242b-1924-0f0a-4328" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="c84c-7ef8-984b-d8f6" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -1747,7 +1747,7 @@ Many thanks to Drewski for initial Alpha testing of this list.</readme>
               <infoLinks>
                 <infoLink id="a3ac-15dd-10a5-79d9" name="Rhino" hidden="false" targetId="f85a-fa0b-759a-d2eb" type="profile"/>
                 <infoLink id="14b8-dba6-b13e-f727" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
-                <infoLink id="75af-54d7-5000-a074" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="75af-54d7-5000-a074" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="0235-5fcf-d65f-3b64" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -2475,7 +2475,7 @@ Many thanks to Drewski for initial Alpha testing of this list.</readme>
           <infoLinks>
             <infoLink id="a8fd-c5d2-1552-85eb" name="Rhino" hidden="false" targetId="f85a-fa0b-759a-d2eb" type="profile"/>
             <infoLink id="e6e7-207b-4d69-6a13" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
-            <infoLink id="a064-6d58-f330-029a" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+            <infoLink id="a064-6d58-f330-029a" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="057e-6032-ce20-9406" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -3479,7 +3479,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
           <infoLinks>
             <infoLink id="0580-75ed-a42f-3a04" name="Rhino" hidden="false" targetId="f85a-fa0b-759a-d2eb" type="profile"/>
             <infoLink id="eb4f-ea76-e601-6373" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
-            <infoLink id="b8b7-7f16-db25-3a65" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+            <infoLink id="b8b7-7f16-db25-3a65" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="9e8e-886d-c69e-2313" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -4244,7 +4244,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
               <infoLinks>
                 <infoLink id="be55-6d3c-b2a8-9981" name="Rhino" hidden="false" targetId="f85a-fa0b-759a-d2eb" type="profile"/>
                 <infoLink id="cca0-441f-47cd-a71a" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
-                <infoLink id="092b-a945-d949-eab6" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="092b-a945-d949-eab6" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="933a-1ed0-512f-90b4" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -4313,7 +4313,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
               <infoLinks>
                 <infoLink id="110a-14bf-31a7-801e" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
                 <infoLink id="fbae-3f6e-97f0-f53a" name="Rhino" hidden="false" targetId="f85a-fa0b-759a-d2eb" type="profile"/>
-                <infoLink id="d4cd-8db6-063f-421d" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="d4cd-8db6-063f-421d" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="b547-0d8a-f94a-fa7d" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -4348,7 +4348,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
               <infoLinks>
                 <infoLink id="78fd-898a-5fb6-c8e2" name="Rhino" hidden="false" targetId="f85a-fa0b-759a-d2eb" type="profile"/>
                 <infoLink id="5254-4086-e869-353a" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
-                <infoLink id="0260-0beb-4f58-856d" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="0260-0beb-4f58-856d" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="4f8e-ad21-cdf0-fdce" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -11373,41 +11373,41 @@ E) Ignore: Ignore the question and move on to the next one.</description>
     <rule id="d16a-24c2-2f76-67e4" name="Tactical Genius" publicationId="c6ff-1c0c-e89b-f854" hidden="false">
       <description>One Imperial detachment within 10cm may shift their orders one place between Charge, Advance and First Fire after orders have been committed to both armies. This means a unit cannot switch directly from Charge to First Fire.</description>
     </rule>
-    <rule id="1f1f-e129-dc23-6725" name="Psychic Power : Wind Blast" hidden="false">
+    <rule id="1f1f-e129-dc23-6725" name="Psychic Power : Wind Blast" publicationId="c1a5-0905-d6e8-335a" hidden="false">
       <description>Place a standard template anywhere within 25cm of Njal. Any stand or vehicle under the template that does not have a saving throw is pinned by the wind blast and is not allowed to move or shoot, and also has their CAF reduced by -2. Units that do have a saving throw are unaffected by this power. The template is removed at the start of the following combat phase. </description>
     </rule>
-    <rule id="9c21-87be-7f3a-1d62" name="Psychic Power : Force Dome" hidden="false">
+    <rule id="9c21-87be-7f3a-1d62" name="Psychic Power : Force Dome" publicationId="c1a5-0905-d6e8-335a" hidden="false">
       <comment>Added &quot;until the next turn&quot; to this rule, as 4+ Fixed save for entire battle is too powerful</comment>
       <description>The Librarian projects a dome of pure psychic force that protects one Support-sized formation within 25cm. The protected formation gains a fixed save of 4+ until the next turn. The dome is too small to protect Super-heavy units, Knights, Titans and Praetorians.</description>
     </rule>
-    <rule id="1e43-a5d5-ae66-fb9f" name="Replaces Rhinos (Razorbacks)" hidden="false">
+    <rule id="1e43-a5d5-ae66-fb9f" name="Replaces Rhinos (Razorbacks)" publicationId="2c9d-27ab-87cb-a285" hidden="false">
       <description>When selecting this card, the Razorbacks replace all the Rhinos of a single company or detachment, adding their extra VP to the company or detachment which they have joined. If the card joined has no Rhinos, increase the cost of the Razorbacks by 50 points.</description>
     </rule>
-    <rule id="9d36-8f71-171f-1ed9" name="Psychic Power : Courage Of Russ" hidden="false">
+    <rule id="9d36-8f71-171f-1ed9" name="Psychic Power : Courage Of Russ" publicationId="c1a5-0905-d6e8-335a" hidden="false">
       <description>One detachment with 15cm becomes Fearless until the End Phase.</description>
     </rule>
-    <rule id="cc81-5ba0-b80d-1991" name="Psychic Power : Wolf Howl" hidden="false">
+    <rule id="cc81-5ba0-b80d-1991" name="Psychic Power : Wolf Howl" publicationId="c1a5-0905-d6e8-335a" hidden="false">
       <description>The Rune Priest gains the &quot;Terror&quot; special ability until the End Phase.</description>
     </rule>
-    <rule id="0775-0079-bf0f-deac" name="Psychic Power : Fangs Of Fenris" hidden="false">
+    <rule id="0775-0079-bf0f-deac" name="Psychic Power : Fangs Of Fenris" publicationId="c1a5-0905-d6e8-335a" hidden="false">
       <description>Select a model within 25cm and also within line of sight, and fight a round of Close Combat against it at +5 CAF unless the target makes a Psychic Save.</description>
     </rule>
-    <rule id="9674-f4f0-c99f-65c0" name="Replaces Rhinos (Drop Pods)" hidden="false">
+    <rule id="9674-f4f0-c99f-65c0" name="Replaces Rhinos (Drop Pods)" publicationId="2c9d-27ab-87cb-a285" hidden="false">
       <description>When selecting this card, the Drop Pods replace all the Rhinos of a single company, adding their extra VP to the company which they have joined.</description>
     </rule>
-    <rule id="712f-1a76-3e22-5e38" name="Codex Chapter - Allies" hidden="false">
+    <rule id="712f-1a76-3e22-5e38" name="Codex Chapter - Allies" publicationId="2c9d-27ab-87cb-a285" hidden="false">
       <description>Many of the Chapters have changed over the millennia, developing new units and tactics to suit themselves. Each of these is considered a separate Codex Army, consisting of that Chapter’s units in addition to the Standard ones. If you want to play a unique Chapter you must put 75% of your points into their troops (from their Codex List and the Standard Adeptus Astartes List) and you may put up to 25% into any one Standard List other than Chaos.</description>
     </rule>
-    <rule id="0794-0a29-cc4f-5650" name="Jink" hidden="false">
+    <rule id="0794-0a29-cc4f-5650" name="Jink" publicationId="2c9d-27ab-87cb-a285" hidden="false">
       <description>Intimate familiarity with their vehicles and decades of experience give Ravenwing Veteran Land Speeders a 6+ fixed “jink” save. They are Elite units.</description>
     </rule>
-    <rule id="84b8-bbce-d3e2-b385" name="Psychic Power : Quickening" hidden="false">
+    <rule id="84b8-bbce-d3e2-b385" name="Psychic Power : Quickening" publicationId="c1a5-0905-d6e8-335a" hidden="false">
       <description>This power replaces Mind Blast for Blood Angel Librarians. This power may be used at any time, but cannot be used on a unit that is already engaged in Close Combat. A single Blood Angel infantry, cavalry or walker model within a 25 cm and in line of sight gains +3 CAF until the End Phase.</description>
     </rule>
-    <rule id="0a13-97ae-04b4-6cdc" name="Psychic Power : Weaken Resolve" hidden="false">
+    <rule id="0a13-97ae-04b4-6cdc" name="Psychic Power : Weaken Resolve" publicationId="c1a5-0905-d6e8-335a" hidden="false">
       <description>This power replaces Mind Blast for Dark Angels Librarians. Choose one detachment within 25 cm (line of sight is not necessary), and that unit must make a Morale check with a -1 modifier or be given Fall Back Orders.</description>
     </rule>
-    <rule id="538d-6233-23dc-0a0b" name="Psychic Power : Fury Of The Salamander" hidden="false">
+    <rule id="538d-6233-23dc-0a0b" name="Psychic Power : Fury Of The Salamander" publicationId="c1a5-0905-d6e8-335a" hidden="false">
       <description>This power replaces Mind Blast for Salamander Librarians. The power creates a monstrous spectral salamander which moves 3D6 cm in a straight line away from the librarian in any direction. Any model (friend or foe) in its path is hit on 4+ with 0 TSM. This is a physical psychic power. Any detachment losing one or more models must pass a morale check or go on Fall Back Orders.</description>
     </rule>
   </sharedRules>

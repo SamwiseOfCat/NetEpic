@@ -11170,6 +11170,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
         <cost name=" VP" typeId="points" value="1.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -11261,86 +11262,86 @@ E) Ignore: Ignore the question and move on to the next one.</description>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
-    <rule id="1b6c-b512-8d6a-4444" name="No Chain Of Command" hidden="false">
+    <rule id="1b6c-b512-8d6a-4444" name="No Chain Of Command" publicationId="05b1-5ac1-9e42-fdf3" hidden="false">
       <description>The Imperial Guard - Chain Of Command rule does not apply to this unit.</description>
     </rule>
-    <rule id="8518-819c-dec3-96e2" name="Off Table Barrage - Forward Observer" hidden="false">
+    <rule id="8518-819c-dec3-96e2" name="Off Table Barrage - Forward Observer" publicationId="05b1-5ac1-9e42-fdf3" hidden="false">
       <description>This unit acts as having the Forward Observer rule, but only for directing off-table barrages - not on-table artillery.</description>
     </rule>
-    <rule id="1287-d9ca-2dea-378f" name="Stormtrooper Company Support" hidden="false">
+    <rule id="1287-d9ca-2dea-378f" name="Stormtrooper Company Support" publicationId="05b1-5ac1-9e42-fdf3" hidden="false">
       <description>Stormtrooper Companies may only pick from the following Support Cards : Stormtrooper Platoons, Leman Russ Squadrons, Vindicator Squadrons, Hellhound Squadrons, Bike Squadrons, Sentinel Squadrons, Sabre Tank-Destroyer Squadrons, Valkyrie Squadrons and Off-Table Barrages.
 All Support Cards attached to a Stormtrooper Company have their Morale increased to 3+.</description>
     </rule>
-    <rule id="76b2-9193-21e6-c456" name="Company Commissar - VP" hidden="false">
+    <rule id="76b2-9193-21e6-c456" name="Company Commissar - VP" publicationId="05b1-5ac1-9e42-fdf3" hidden="false">
       <description>If the enemy kills a Commissar who was purchased as part of a Company Card, 1VP is awarded. </description>
     </rule>
-    <rule id="c6e3-8c61-fb59-9d3c" name="Commissar - Bypass Chain Of Command" hidden="false">
+    <rule id="c6e3-8c61-fb59-9d3c" name="Commissar - Bypass Chain Of Command" publicationId="05b1-5ac1-9e42-fdf3" hidden="false">
       <description>The Commissar may join any one detachment in your army. When joined, the Chain Of Command rule does not apply to them, until the Commissar either joins another unit or is killed. </description>
     </rule>
-    <rule id="834a-2b1f-88d8-9c62" name="Gorgons and Difficult Terrain" hidden="false">
+    <rule id="834a-2b1f-88d8-9c62" name="Gorgons and Difficult Terrain" publicationId="05b1-5ac1-9e42-fdf3" hidden="false">
       <description>Ignores and clears paths in wooded areas, difficult terrain and Minefields during movement.</description>
     </rule>
-    <rule id="566c-6d6f-887e-c30d" name="Tunneler Company Support" hidden="false">
+    <rule id="566c-6d6f-887e-c30d" name="Tunneler Company Support" publicationId="05b1-5ac1-9e42-fdf3" hidden="false">
       <description>Support Cards purchased for a Company Card which consists of troops and tunnelers (Hellbore, Moles, Termites) must also be tunnelers themselves.</description>
     </rule>
-    <rule id="a1ec-4c60-4e11-ca04" name="Hellbore Surfacing" hidden="false">
+    <rule id="a1ec-4c60-4e11-ca04" name="Hellbore Surfacing" publicationId="05b1-5ac1-9e42-fdf3" hidden="false">
       <description>When the Hellbore surfaces, the surrounding area is turned to molten slag. To represent this, centre the 12 cm template on the surface point. All units under the template are hit on a 3+ at -1 TSM. Those that survive are placed at the edge of the template.</description>
     </rule>
-    <rule id="3912-c406-b5f8-69a0" name="Recon/Cavalry &amp; The Chain Of Command" hidden="false">
+    <rule id="3912-c406-b5f8-69a0" name="Recon/Cavalry &amp; The Chain Of Command" publicationId="05b1-5ac1-9e42-fdf3" hidden="false">
       <description>Unlike other Imperial forces, recon vehicles and cavalry detachments are independent fighting units that may operate outside the Chain of Command radius. These units may receive orders as long as there is either an SHQ or CHQ within coherency. Unfortunately, if they fail any morale test required of them (for any reason) and they are not within the Chain of Command, instead of just breaking they will immediately rout and all the models of the detachment are removed from play.</description>
     </rule>
-    <rule id="abb9-533d-20d8-baa3" name="Psychic Power : Embolden" hidden="false">
+    <rule id="abb9-533d-20d8-baa3" name="Psychic Power : Embolden" publicationId="05b1-5ac1-9e42-fdf3" hidden="false">
       <description>All Imperial detachments within 15cm (including the psyker) become Fearless, inmune to all types of morale effects and gain +1 CAF. These effects last until the End Phase.</description>
     </rule>
-    <rule id="9a26-a728-994d-6673" name="Psychic Power : Telepathic Link" hidden="false">
+    <rule id="9a26-a728-994d-6673" name="Psychic Power : Telepathic Link" publicationId="05b1-5ac1-9e42-fdf3" hidden="false">
       <description>The psyker spots for artillery and may act as a Forward Observer. In addition, any indirect barrages aimed at a point visible to the psyker are treated as direct. The power lasts until the End Phase.</description>
     </rule>
-    <rule id="b62b-44b8-f4ba-c373" name="Psychic Power : Righteous Fire" hidden="false">
+    <rule id="b62b-44b8-f4ba-c373" name="Psychic Power : Righteous Fire" publicationId="05b1-5ac1-9e42-fdf3" hidden="false">
       <description>The psyker makes a physical psychic attack. Pick a target within 25cm and line of sight, and on a 4+ it takes a hit at -2TSM.</description>
     </rule>
-    <rule id="f4d2-dae5-3159-df61" name="Psychic Power : Beacon" hidden="false">
+    <rule id="f4d2-dae5-3159-df61" name="Psychic Power : Beacon" publicationId="05b1-5ac1-9e42-fdf3" hidden="false">
       <description>Until the End Phase, any Greater Daemon, Psyker, or Eldar Waystone Spirit unit within 100cm may only fire at, or target psychic/magic powers at the Astropath. They may violate the normal line of sight and HQ targeting restrictions.</description>
     </rule>
-    <rule id="da4e-5a61-bac5-ec6f" name="Psychic Power : Cancellation" hidden="false">
+    <rule id="da4e-5a61-bac5-ec6f" name="Psychic Power : Cancellation" publicationId="05b1-5ac1-9e42-fdf3" hidden="false">
       <description>Can cancel any Psyker or Greater Daemon psychic ability. Each player rolls a die (Astropath+2, Greater Daemons +3) .If the Astropaths total is higher, the ability fails. Remains in effect until the End Phase.</description>
     </rule>
-    <rule id="360f-ff8a-4762-c5ce" name="Psychic Power : Guidance" hidden="false">
+    <rule id="360f-ff8a-4762-c5ce" name="Psychic Power : Guidance" publicationId="05b1-5ac1-9e42-fdf3" hidden="false">
       <description>There must be an Imperial unit within 25cm of the Astropath that can see the target, and the artillery detachment being sighted for must be within 75cm of the Astropath. The artillery makes a direct fire</description>
     </rule>
-    <rule id="770f-cea7-96a1-90be" name="Tactical Experience" hidden="false">
+    <rule id="770f-cea7-96a1-90be" name="Tactical Experience" publicationId="bd06-115b-2046-6848" hidden="false">
       <description>Due to their superb tactical experience, Imperial Guard Majors &amp; Colonels maychange the orders of one Imperial Guard detachment that is within 25cm immediately after you activate it.</description>
     </rule>
-    <rule id="be64-1edb-1dfe-4b62" name="Two Companies Transport" hidden="false">
+    <rule id="be64-1edb-1dfe-4b62" name="Two Companies Transport" publicationId="05b1-5ac1-9e42-fdf3" hidden="false">
       <description>The Capitol Imperialis can transport two full companies of any type, including vehicle companies (but not those that include other praetorians). Multiple firing ports are scattered thoughout the Capitol’s broadside, permitting infantry to fire from these positions. All infantry stands that compose a company may fire from one side of the Capitol Imperialis, for a total of 2 companies each side. These troops count as if on First Fire orders and are activated separately from the Capitol Imperialis. All weapons have a 360° arc of fire.</description>
     </rule>
-    <rule id="a4d7-713f-89e4-2592" name="Mobile Regimental Command" hidden="false">
+    <rule id="a4d7-713f-89e4-2592" name="Mobile Regimental Command" publicationId="05b1-5ac1-9e42-fdf3" hidden="false">
       <description>You may decide to use this unit as a Regimental Command - this needs to be decided before the game begins. If used as a Regimental Command, this will increase the command radius of all CHQ&apos;s to 35cm - however the Chain Of Command is broken if the Capitol Imperialis is destroyed.</description>
     </rule>
-    <rule id="689a-cada-13de-ce0c" name="Dispersion Field" hidden="false">
+    <rule id="689a-cada-13de-ce0c" name="Dispersion Field" publicationId="05b1-5ac1-9e42-fdf3" hidden="false">
       <description>Ordinatus units mount a Dispersion Field instead of standard Imperial Void Shields. Dispersion Fields grant a fixed save that decreases over the turns of the battle : Turn 1 - Fixed Save of 2+, Turn 2 - Fixed save of 3+, Turn 3 - Fixed save of 4+, Turn 4 - Fixed save of 5+, Turns 5+ and over - Fixed save of 6+.</description>
     </rule>
-    <rule id="052c-cd9c-07fc-2c38" name="Ordinatus - explosion on destruction" hidden="false">
+    <rule id="052c-cd9c-07fc-2c38" name="Ordinatus - explosion on destruction" publicationId="05b1-5ac1-9e42-fdf3" hidden="false">
       <description>If an Ordinatus is destroyed, the resulting explosion hits everything within 2D6cm at 0 TSM.</description>
     </rule>
-    <rule id="9f0a-b8a5-f0f2-cc2c" name="Additional Transports" hidden="false">
+    <rule id="9f0a-b8a5-f0f2-cc2c" name="Additional Transports" publicationId="05b1-5ac1-9e42-fdf3" hidden="false">
       <description>If using this unit as dedicated transports for an infantry unit, you add the VP and Break Point of the transport card to the infantry unit.</description>
     </rule>
-    <rule id="3833-a53d-8ee6-e0c9" name="PDF Only Card" hidden="false">
+    <rule id="3833-a53d-8ee6-e0c9" name="PDF Only Card" publicationId="05b1-5ac1-9e42-fdf3" hidden="false">
       <description>This card can only be taken in a Planetary Defence Force list.</description>
     </rule>
-    <rule id="38e7-aa02-7250-eef6" name="Deathstrike Missiles" hidden="false">
+    <rule id="38e7-aa02-7250-eef6" name="Deathstrike Missiles" publicationId="05b1-5ac1-9e42-fdf3" hidden="false">
       <description>Deathstrike Missiles have a number of special rules : 1) They can only be fired on First Fire orders, 2) After being fired the missile moves up to 35cm in each Compulsory Movement phase, 3) The missile has enough fuel for 4 turns, after which it must select a target or crash, 4) The missile may select any target at any point during its move. It does not require LOS to the intended target when it is fired, 5) Due to their speed only AA units may target the missile and suffer a -2 To-Hit penalty. Any hit will destroy the missile.</description>
     </rule>
-    <rule id="0c47-d9bb-318a-de9d" name="Hive Gang Orders" hidden="false">
+    <rule id="0c47-d9bb-318a-de9d" name="Hive Gang Orders" publicationId="05b1-5ac1-9e42-fdf3" hidden="false">
       <description>The Gang Boss must be within 25cm of all Hive Gang detachments to give them orders - they may not be given orders by any other CHQ unit. If the Gang Boss is killed roll D6 - on 1-4 the gang must make an immediate morale check or rout. On a 5+ the gang explodes in a berserk fury to avenge the death of the Boss and all stands gain +1 to CAF for the rest of the game.</description>
     </rule>
-    <rule id="7952-ae07-a846-707b" name="Penal Discipline" hidden="false">
+    <rule id="7952-ae07-a846-707b" name="Penal Discipline" publicationId="05b1-5ac1-9e42-fdf3" hidden="false">
       <description>New troops have their heads shaved and tattooed with the unit insignia, and explosive collars are put around their neck. The collars are a disciplinary device rather than a means of turning the troops into Human Bombs - the blast is directed inwards and will have little effect on anyone standing even a few feet away. The collars are controlled by the officers and are detonated when discipline needs to be enforced. When a Penal Platoon fails a morale check, remove one stand and make the morale check again. Continue this process until the detachment either makes the morale roll or is entirely wiped out.</description>
     </rule>
-    <rule id="15d0-e18f-cb12-fbbd" name="PDF Superheavies" hidden="false">
+    <rule id="15d0-e18f-cb12-fbbd" name="PDF Superheavies" publicationId="05b1-5ac1-9e42-fdf3" hidden="false">
       <description>Planetary Defence Forces can only take single superheavy tanks as Special Cards due to their rarity in PDF&apos;s. They may not take superheavies as Company or Support cards like a standard Imperial Guard army.</description>
     </rule>
-    <rule id="e3f4-b508-6dd9-3765" name="Penal Company Support" hidden="false">
+    <rule id="e3f4-b508-6dd9-3765" name="Penal Company Support" publicationId="05b1-5ac1-9e42-fdf3" hidden="false">
       <description>This squad may only be attached to Penal Companies.</description>
     </rule>
   </sharedRules>
@@ -11859,7 +11860,7 @@ Hunter-Killer Missile : 75cm, 4d 3+ (-1) - One Shot, Penetrating +2</characteris
         <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">5+</characteristic>
         <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+0</characteristic>
         <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Earthshaker Cannon : 150cm, 2SB (-2)</characteristic>
-        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da"/>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">4+</characteristic>
         <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339">Fires Twice</characteristic>
       </characteristics>
     </profile>
