@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2cff-d5c8-4ee5-b4b8" name="Necrons" revision="1" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <readme>v1 notes :
+<catalogue id="2cff-d5c8-4ee5-b4b8" name="Necrons" revision="2" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>v2 notes :
+Added Heavy Off-Table Barrage - note Necrons OTB acts very differently to other races.
+PLEASE READ the v1 notes below regarding &quot;new&quot; units added by myself and the disclaimer.
+
+v1 notes :
 This list contains quite a few extra units added by myself, as a former 40K Necron player I thought this army needed a few more units in it! Use at your own risk as not thoroughly play tested (yet!) - these have been marked with a Category Entry of &quot;Not in NetEpic Official Army Book&quot;. Each unit type has notes as to why ive given the units the stats I have in case anyone is interested - you can find these notes in the &quot;Comment&quot; section on either the relevant Shared Profile (for actual in-game stats) or Root Selection Entry (for unit points costs and composition). They all seem fairly rounded to me, the one thing that may need revising is the points costs after some playtesting. 
 The &quot;Living Metal&quot; overall rule has been renamed to &quot;Reanimation Protocols&quot; as the two rules are very different in 40k. The Reanimation Protocols rule here is exactly the same as it was before in the NE ruleset with its previous name though, so if you want a completely vanilla NE experience you still can. A new rule has been added called Living Metal which is specific to vehicles, and is not as powerful (as Monoliths etc just coming back to life every 1/3 of the time is unfair, in my book). It also made very little sense that the Platinum Lord could just raise a load of vehicles back from the dead on a 4+ (!)
 
@@ -21,6 +25,15 @@ Finally, I havent split the Force Orgs out to the various Dynasties and written 
         <characteristicType id="fbb0-6765-c4a5-ebdf" name="Range"/>
         <characteristicType id="2710-1682-f86c-9566" name="Shooting Profile"/>
         <characteristicType id="d8ce-c092-cdc0-c166" name="Special Rules"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="5873-4579-788d-c92d" name="Off-Table Ordnance">
+      <characteristicTypes>
+        <characteristicType id="ddaa-3a26-afe2-afc8" name="Weapon"/>
+        <characteristicType id="9498-e21a-479c-ca0e" name="Attack Dice"/>
+        <characteristicType id="c736-5348-027a-aed4" name="To Hit"/>
+        <characteristicType id="31e5-37c7-e6ba-25f2" name="Save Modifier"/>
+        <characteristicType id="00f0-7abc-248a-4396" name="Special Rules"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -2601,6 +2614,41 @@ Finally, I havent split the Force Orgs out to the various Dynasties and written 
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="3.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="fd3c-c8d4-0daa-e92b" name="Heavy Off-Board Barrage" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8b34-2c12-c08a-c859" name="VP Cost : 3" hidden="false" targetId="d7b3-45da-4909-a64f" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3691-c960-8725-1009" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+        <categoryLink id="53f1-b1ff-59eb-2f77" name="Necrons" hidden="false" targetId="962c-b618-f458-9d63" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="e896-f5e5-56e1-d16a" name="Scarab Swarm Barrage" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1459-2f4a-cc9b-941f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e46e-6ba0-105e-7fb2" type="min"/>
+          </constraints>
+          <rules>
+            <rule id="caef-fcf1-28f5-babe" name="Scarab Swarm Barrage" publicationId="5504-f260-8247-6f4f" page="21" hidden="false">
+              <description>Any Necron Lord unit may give up their normal shooting to instead call down an off-board artillery strike at any point in LoS. This is at the cost of 3VPs being awarded to their opponent. The attack is a huge fragmentation warhead, with the individual fragments being Necron Scarabs. The Scarabs remain after the initial bombardment and will continue to attack enemy units. After the initial bombardment has been resolved do not remove the template. It remains for the rest of the game. The Necron player may move the template up to 5 cm in any direction as a normal activation during the movement phase. Any enemy units at least half under the template will be attacked at the end of the movement phase in subsequent turns. Resolve as for the initial bombardment, but with BP and TSM halved. Units are not pinned by the template.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="6ddc-5b86-d0c1-3c60" name="Scarab Swarm Warhead" hidden="false" targetId="9157-c5dd-f45f-1279" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="5a92-2547-d6cb-2c44" name="Gauss Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -3250,6 +3298,17 @@ Chain Lightning : 15cm, 3d 5+ (0)</characteristic>
         <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Staff Of Light : 25cm, 2d 4+ (-1)</characteristic>
         <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da"/>
         <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+      </characteristics>
+    </profile>
+    <profile id="9157-c5dd-f45f-1279" name="Scarab Swarm Warhead" hidden="false" typeId="5873-4579-788d-c92d" typeName="Off-Table Ordnance">
+      <characteristics>
+        <characteristic name="Weapon" typeId="ddaa-3a26-afe2-afc8">Scarab Swarm Warhead</characteristic>
+        <characteristic name="Attack Dice" typeId="9498-e21a-479c-ca0e">N/A</characteristic>
+        <characteristic name="To Hit" typeId="c736-5348-027a-aed4">10SB (2+) - when first launched
+5SB (4+) - subsequent rounds</characteristic>
+        <characteristic name="Save Modifier" typeId="31e5-37c7-e6ba-25f2">-2 - when first launched
+-1 - subsequent rounds</characteristic>
+        <characteristic name="Special Rules" typeId="00f0-7abc-248a-4396">See Special Rule</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

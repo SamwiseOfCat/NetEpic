@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0d18-39a5-d423-b431" name="Space Marines" revision="4" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <readme>v4 notes :
+<catalogue id="0d18-39a5-d423-b431" name="Space Marines" revision="6" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>v6 notes :
+Major change to Titan weapon cost /VP&apos;s - each weapon now has a VP value that aligns to cost in points for more accurate VP awarding in the event of a Titan being destroyed.
+
+v5 notes :
+Added Light &amp; Heavy Off-Board Barrages.
+Changed &quot;Teleport From Orbit&quot; to a Special Card
+
+v4 notes :
 Added Space Marine Commander from original SM 2nd Ed Cards list (although why you&apos;d take him when the NetEpic Chapter Master is superior for the same points...)
 
 v3 notes :
@@ -15,6 +22,17 @@ Many thanks to Drewski for initial Alpha testing of this list.</readme>
   <publications>
     <publication id="2c9d-27ab-87cb-a285" name="Adeptus Astartes NetEpic Army Book" shortName="Adeptus Astartes NetEpic Army Book" publisherUrl="netepic.org"/>
   </publications>
+  <profileTypes>
+    <profileType id="0254-382f-25b4-bc09" name="Off-Table Ordnance">
+      <characteristicTypes>
+        <characteristicType id="af24-a6ca-d4d0-ca83" name="Weapon"/>
+        <characteristicType id="e583-89f9-1e11-e300" name="Attack Dice"/>
+        <characteristicType id="f181-dd32-0459-d361" name="To Hit"/>
+        <characteristicType id="14b5-0e44-b6a8-b625" name="Save Modifier"/>
+        <characteristicType id="8f21-ceeb-4ab8-827a" name="Special Rules"/>
+      </characteristicTypes>
+    </profileType>
+  </profileTypes>
   <categoryEntries>
     <categoryEntry id="0fa7-1982-bb1e-f396" name="Black Templars" hidden="false"/>
     <categoryEntry id="efc6-06ea-e3a8-fa42" name="Blood Angels" hidden="false"/>
@@ -35,7 +53,7 @@ Many thanks to Drewski for initial Alpha testing of this list.</readme>
   <forceEntries>
     <forceEntry id="8ee2-6192-0042-e72b" name="Adeptus Astartes - Standard Space Marines" hidden="false">
       <rules>
-        <rule id="5fb9-2745-abf1-94c6" name="Standard Space Marines - Allies" hidden="false">
+        <rule id="5fb9-2745-abf1-94c6" name="Standard Space Marines Force Composition" hidden="false">
           <description>The standard Space Marines list consists of a variety of power armor infantry troops with a wide array of mechanized support. If you choose to run a Standard Army you must put at least 50% of your points into the Standard Adeptus Astartes List. The other 50% may be spent on any one Standard List other than Chaos.</description>
         </rule>
       </rules>
@@ -2511,7 +2529,7 @@ Many thanks to Drewski for initial Alpha testing of this list.</readme>
             <infoLink id="2000-15ee-88f8-cbc5" name="Command" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
             <infoLink id="a8f2-ed1f-dda1-0238" name="Inspirational" hidden="false" targetId="f151-2964-483d-b06d" type="rule"/>
             <infoLink id="e06c-61d9-ea8e-b572" name="Forced March" hidden="false" targetId="0112-0b91-28f0-ec35" type="rule"/>
-            <infoLink id="d304-0b8c-c0c0-9508" name="Tactical Genius" hidden="false" targetId="d16a-24c2-2f76-67e4" type="rule"/>
+            <infoLink id="d304-0b8c-c0c0-9508" name="Tactical Genius" hidden="false" targetId="ce8d-efac-8880-e4f5" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="5030-0984-d5a4-45af" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
@@ -5351,7 +5369,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
                 <infoLink id="90dc-bf54-1201-c325" name="Command" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
                 <infoLink id="b715-0ac7-acef-3d9d" name="Inspirational" hidden="false" targetId="f151-2964-483d-b06d" type="rule"/>
                 <infoLink id="0dcb-0edc-e8fa-f09b" name="Forced March" hidden="false" targetId="0112-0b91-28f0-ec35" type="rule"/>
-                <infoLink id="50f9-48c2-5a68-2cf0" name="Tactical Genius" hidden="false" targetId="d16a-24c2-2f76-67e4" type="rule"/>
+                <infoLink id="50f9-48c2-5a68-2cf0" name="Tactical Genius" hidden="false" targetId="ce8d-efac-8880-e4f5" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="3b8b-16a7-7ad1-030c" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
@@ -9575,7 +9593,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="125.0"/>
-        <cost name=" VP" typeId="points" value="4.0"/>
+        <cost name=" VP" typeId="points" value="1.25"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -9591,7 +9609,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
         <selectionEntryGroup id="dd89-aa4c-a0a3-0327" name="Reaver Titan Carapace Weapons" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a81a-2ad6-235a-160d" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="040a-b239-ebb5-27ee" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="8d9c-9a45-38c7-ecb3" name="Doomburner" hidden="false" collective="false" import="true" targetId="a11f-0aff-461e-361d" type="selectionEntry">
@@ -9804,7 +9821,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="300.0"/>
-        <cost name=" VP" typeId="points" value="5.0"/>
+        <cost name=" VP" typeId="points" value="3.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -9820,7 +9837,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
         <selectionEntryGroup id="1c8c-6566-0bd3-370c" name="Warlord Titan Carapace Weapons" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d93-3f67-15af-5956" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="827d-7cf6-6e99-0599" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="94ca-c043-18f1-731e" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="54c6-7048-fee2-bd60" type="selectionEntry">
@@ -10115,12 +10131,12 @@ E) Ignore: Ignore the question and move on to the next one.</description>
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="500.0"/>
-        <cost name=" VP" typeId="points" value="9.0"/>
+        <cost name=" VP" typeId="points" value="5.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d25a-7c0f-abc1-7e24" name="Warlord Titan Battlegroup" hidden="false" collective="false" import="true" type="upgrade">
-      <comment>Added to Space Marines list as Orks can pick Gargant Big Mobs</comment>
+      <comment>Added to Space Marines list as Orks can pick Gargant Big Mobs so that seems fair</comment>
       <infoLinks>
         <infoLink id="9631-6e41-7636-5f86" name="Titan Battlegroup VP Awards" hidden="false" targetId="76f5-c869-6176-d58d" type="rule"/>
         <infoLink id="8b5c-4559-bba1-c01c" name="Titan Coherency" hidden="false" targetId="0a3b-ef73-c45d-713c" type="rule"/>
@@ -10147,7 +10163,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
                 <selectionEntryGroup id="be7e-c2fa-1b16-9dfb" name="Warlord Titan Carapace Weapons" hidden="false" collective="false" import="true">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a470-378d-f154-52d8" type="max"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d45e-df28-b7f9-e9c5" type="min"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="98fe-534f-621d-b087" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="54c6-7048-fee2-bd60" type="selectionEntry">
@@ -10441,9 +10456,9 @@ E) Ignore: Ignore the question and move on to the next one.</description>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="500.0"/>
-                <cost name=" VP" typeId="points" value="9.0"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -10455,8 +10470,8 @@ E) Ignore: Ignore the question and move on to the next one.</description>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="1500.0"/>
+        <cost name=" VP" typeId="points" value="15.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -10488,7 +10503,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
                 <selectionEntryGroup id="46c9-db9c-4ceb-35be" name="Reaver Titan Carapace Weapons" hidden="false" collective="false" import="true">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6357-9b03-0a45-fcf1" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d87d-0a17-e218-c108" type="min"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="3da8-b16a-dc23-bc3d" name="Doomburner" hidden="false" collective="false" import="true" targetId="a11f-0aff-461e-361d" type="selectionEntry">
@@ -10700,9 +10714,9 @@ E) Ignore: Ignore the question and move on to the next one.</description>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="300.0"/>
-                <cost name=" VP" typeId="points" value="5.0"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -10714,8 +10728,8 @@ E) Ignore: Ignore the question and move on to the next one.</description>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="900.0"/>
+        <cost name=" VP" typeId="points" value="9.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -10792,9 +10806,9 @@ E) Ignore: Ignore the question and move on to the next one.</description>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="125.0"/>
-                <cost name=" VP" typeId="points" value="4.0"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -10806,8 +10820,8 @@ E) Ignore: Ignore the question and move on to the next one.</description>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="250.0"/>
+        <cost name=" VP" typeId="points" value="2.5"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -10995,7 +11009,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="0a28-56f9-c7b2-47eb" name="Command" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
             <infoLink id="9cbb-6c9f-535e-a7c5" name="Inspirational" hidden="false" targetId="f151-2964-483d-b06d" type="rule"/>
             <infoLink id="d74c-3d44-3728-8e32" name="Forced March" hidden="false" targetId="0112-0b91-28f0-ec35" type="rule"/>
-            <infoLink id="cd59-73f6-d6e6-9b76" name="Tactical Genius" hidden="false" targetId="d16a-24c2-2f76-67e4" type="rule"/>
+            <infoLink id="cd59-73f6-d6e6-9b76" name="Tactical Genius" hidden="false" targetId="ce8d-efac-8880-e4f5" type="rule"/>
             <infoLink id="a69c-5b7f-3c8e-d99a" name="Mechanic" hidden="false" targetId="7bc0-0efc-14c9-1467" type="rule"/>
           </infoLinks>
           <categoryLinks>
@@ -11227,7 +11241,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
       <categoryLinks>
         <categoryLink id="9e92-fa9f-e64c-326f" name="Space Marines" hidden="false" targetId="5358-135e-3852-7d2c" primary="false"/>
         <categoryLink id="5ae3-3673-8c81-0104" name="Space Marines" hidden="false" targetId="5358-135e-3852-7d2c" primary="false"/>
-        <categoryLink id="ec6b-3c86-9a35-f1e7" name="Free Cards" hidden="false" targetId="8e49-5810-e088-7dc4" primary="true"/>
+        <categoryLink id="81f3-8987-6bec-7744" name="Special Card" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -11365,13 +11379,72 @@ E) Ignore: Ignore the question and move on to the next one.</description>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="fb0a-e46b-ddd0-8600" name="Heavy Off-Board Barrage" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c409-6270-84b6-f99a" name="VP Cost : 2" hidden="false" targetId="b09a-df73-fc38-29f6" type="rule"/>
+        <infoLink id="54de-eb2c-e926-02f2" name="Off Board / Orbital Barrages" hidden="false" targetId="b085-7066-0cad-eee5" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f2e8-6b60-2156-02d1" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+        <categoryLink id="f59b-1cae-9f99-b3c8" name="Space Marines" hidden="false" targetId="5358-135e-3852-7d2c" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="a589-bd56-4219-2643" name="Heavy Off-Board Barrage" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e16-355c-0c90-8268" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1d7-b7a7-fe31-4dd1" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="dc2d-fb07-3476-2b70" name="Heavy Off-Board Barrage" hidden="false" targetId="925b-34bb-dc22-5daf" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="62ac-b6f2-9f59-40bc" name="Light Off-Board Barrage" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2e7c-ecfd-6d65-8cff" name="VP Cost : 1" hidden="false" targetId="84c0-6f33-b928-eb28" type="rule"/>
+        <infoLink id="8dc3-b2e8-d56d-ff58" name="Off Board / Orbital Barrages" hidden="false" targetId="b085-7066-0cad-eee5" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7460-d981-ebf7-ceaa" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+        <categoryLink id="10f0-c879-f306-fe7e" name="Space Marines" hidden="false" targetId="5358-135e-3852-7d2c" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="968a-6d01-9989-f733" name="Light Off-Board Barrage" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ffe-af7d-277e-7107" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff66-5232-5617-9ec2" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="5ef5-6eb4-ce76-aadd" name="Light Off-Board Barrage" hidden="false" targetId="5728-3fff-de54-b2b9" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedRules>
     <rule id="0112-0b91-28f0-ec35" name="Forced March" publicationId="c6ff-1c0c-e89b-f854" hidden="false">
       <description>All Imperial detachments within 10cm of this unit recieve +5cm to their movement rate (+10cm on Charge orders)</description>
-    </rule>
-    <rule id="d16a-24c2-2f76-67e4" name="Tactical Genius" publicationId="c6ff-1c0c-e89b-f854" hidden="false">
-      <description>One Imperial detachment within 10cm may shift their orders one place between Charge, Advance and First Fire after orders have been committed to both armies. This means a unit cannot switch directly from Charge to First Fire.</description>
     </rule>
     <rule id="1f1f-e129-dc23-6725" name="Psychic Power : Wind Blast" publicationId="c1a5-0905-d6e8-335a" hidden="false">
       <description>Place a standard template anywhere within 25cm of Njal. Any stand or vehicle under the template that does not have a saving throw is pinned by the wind blast and is not allowed to move or shoot, and also has their CAF reduced by -2. Units that do have a saving throw are unaffected by this power. The template is removed at the start of the following combat phase. </description>
@@ -11395,7 +11468,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
     <rule id="9674-f4f0-c99f-65c0" name="Replaces Rhinos (Drop Pods)" publicationId="2c9d-27ab-87cb-a285" hidden="false">
       <description>When selecting this card, the Drop Pods replace all the Rhinos of a single company, adding their extra VP to the company which they have joined.</description>
     </rule>
-    <rule id="712f-1a76-3e22-5e38" name="Codex Chapter - Allies" publicationId="2c9d-27ab-87cb-a285" hidden="false">
+    <rule id="712f-1a76-3e22-5e38" name="Codex Chapter Force Composition" publicationId="2c9d-27ab-87cb-a285" hidden="false">
       <description>Many of the Chapters have changed over the millennia, developing new units and tactics to suit themselves. Each of these is considered a separate Codex Army, consisting of that Chapter’s units in addition to the Standard ones. If you want to play a unique Chapter you must put 75% of your points into their troops (from their Codex List and the Standard Adeptus Astartes List) and you may put up to 25% into any one Standard List other than Chaos.</description>
     </rule>
     <rule id="0794-0a29-cc4f-5650" name="Jink" publicationId="2c9d-27ab-87cb-a285" hidden="false">
@@ -12726,6 +12799,24 @@ This unit has multiple special rules and requires special templates and counters
         <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Bolt Pistols : 25cm, 2d 5+ (0)</characteristic>
         <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">N/A</characteristic>
         <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+      </characteristics>
+    </profile>
+    <profile id="5728-3fff-de54-b2b9" name="Light Orbital Barrage" hidden="false" typeId="0254-382f-25b4-bc09" typeName="Off-Table Ordnance">
+      <characteristics>
+        <characteristic name="Weapon" typeId="af24-a6ca-d4d0-ca83">Light Orbital Barrage</characteristic>
+        <characteristic name="Attack Dice" typeId="e583-89f9-1e11-e300">N/A</characteristic>
+        <characteristic name="To Hit" typeId="f181-dd32-0459-d361">6BP (4+)</characteristic>
+        <characteristic name="Save Modifier" typeId="14b5-0e44-b6a8-b625">-1</characteristic>
+        <characteristic name="Special Rules" typeId="8f21-ceeb-4ab8-827a"/>
+      </characteristics>
+    </profile>
+    <profile id="925b-34bb-dc22-5daf" name="Heavy Orbital Barrage" hidden="false" typeId="0254-382f-25b4-bc09" typeName="Off-Table Ordnance">
+      <characteristics>
+        <characteristic name="Weapon" typeId="af24-a6ca-d4d0-ca83">Heavy Orbital Barrage</characteristic>
+        <characteristic name="Attack Dice" typeId="e583-89f9-1e11-e300">N/A</characteristic>
+        <characteristic name="To Hit" typeId="f181-dd32-0459-d361">10SB (2+)</characteristic>
+        <characteristic name="Save Modifier" typeId="14b5-0e44-b6a8-b625">-2</characteristic>
+        <characteristic name="Special Rules" typeId="8f21-ceeb-4ab8-827a"/>
       </characteristics>
     </profile>
   </sharedProfiles>

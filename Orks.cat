@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3e2a-ea46-765a-b749" name="Orks" revision="3" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <readme>v3 notes :
+<catalogue id="3e2a-ea46-765a-b749" name="Orks" revision="6" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>v6 notes :
+Changed most of the Gargant weapon costs to be more relevant to actual points cost, matching other race&apos;s Titan costs (and VP awarded).
+
+v5 notes :
+Added some missing rules (Hordes, Wildboyz, Evil Sunz Transports, Mekboys)
+
+v4 notes :
+Added Heavy Off-Board Barrage.
+
+v3 notes :
 Added missing Fighta Bomma unit points value
 
 v2 notes :
@@ -9,12 +18,24 @@ Added special characters from the Citadel Journal (Bignailz, Grotsnik etc)
 v1 notes :
 The Orks list has not been split into Faction-specific Force entries - this is due to the way Ork armies are formed, in that you will almost always be picking more than one Clan &quot;Faction&quot; in your army. There was no good reason to force players into having to do separate lists per Clan.
 A lot of Gargant weapons have had their points changed slightly up or down to avoid odd 5&apos;s or 10&apos;s which make little sense to me. These should even themselves out in a loadout anyway.</readme>
+  <publications>
+    <publication id="09d9-dfff-5270-69aa" name="NetEpic Ork Army Book" shortName="NetEpic Ork Army Book" publisherUrl="www.netepic.org"/>
+  </publications>
   <profileTypes>
     <profileType id="5b9b-337f-67b7-4fd7" name="Ork Gargant Weapons">
       <characteristicTypes>
         <characteristicType id="50c5-9c8b-4cd1-7b1b" name="Range"/>
         <characteristicType id="330f-43ef-ac98-2a9f" name="Shooting Profile"/>
         <characteristicType id="a3ea-6f1e-3702-af25" name="Special Rules"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="0fad-94c1-acf0-3a7d" name="Off-Table Ordnance">
+      <characteristicTypes>
+        <characteristicType id="5ffa-e063-4631-01ab" name="Weapon"/>
+        <characteristicType id="b93d-0458-172c-9e17" name="Attack Dice"/>
+        <characteristicType id="ba08-b5be-0e67-a119" name="To Hit"/>
+        <characteristicType id="2084-64ff-c19d-71ce" name="Save Modifier"/>
+        <characteristicType id="78a1-34c5-8668-59de" name="Special Rules"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -31,23 +52,32 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
   <forceEntries>
     <forceEntry id="2c8c-8d2e-2a96-cade" name="Orks" hidden="false">
       <rules>
-        <rule id="86a6-4d68-e15c-7088" name="Ork Army - Leadership" hidden="false">
+        <rule id="86a6-4d68-e15c-7088" name="Orks - Leadership" hidden="false">
           <description>In order for an Ork army to consist of more than two clans, you must include a strong leader. These required leaders do not take up a Special Card slot. You may buy additional Warbosses or have a Warlord in a smaller army, but in that case they do take up Special Card slots.
 3-4 Clans : Warboss or Gargant
 5-6 Clans : Warlord or Gargant
 7+ Clans : Gargant</description>
         </rule>
-        <rule id="b1bf-6f9d-fa6a-8d44" name="Ork Army - Gargants" hidden="false">
+        <rule id="b1bf-6f9d-fa6a-8d44" name="Orks - Gargants" hidden="false">
           <description>You may only purchase Gargant Big Mobz, Mega-Gargants and Mekboy Gargants if at least 50% of your army is Orks. These units are akin to religious icons and attract huge followings whether they’re wanted or not.</description>
         </rule>
-        <rule id="4601-5e1c-6ea2-3a60" name="Ork Army - No Duplicate Clans" hidden="false">
+        <rule id="4601-5e1c-6ea2-3a60" name="Orks - No Duplicate Clans" hidden="false">
           <description>The constant infighting present in Orky society acts as a leveling agent, ensuring each clan is roughly as strong and as prevalent as each other. When constructing an Ork army, you may not take a second copy of a Clan (Company) Card until you have purchased one of each of the other Clan cards. For the purposes of this rule the Wildboyz Horde and Mega-Gargant are not considered Clans and you may take duplicates of them before purchasing one of each of the Clan Company cards.</description>
         </rule>
-        <rule id="e28e-e528-6cfd-3ccd" name="Ork Army - Mob Rule" hidden="false">
+        <rule id="e28e-e528-6cfd-3ccd" name="Orks - Mob Rule" hidden="false">
           <description>In most armies, Support Cards form their own detachments that are separate from other units in the army. Orks form Mobz and they just get bigger. Adding Support Cards changes both the Break Point and the Victory Points of a Mob, which must be calculated before the game. All Ork units of a given type (Nobz, Boyz, Boarboys, etc.) from a Clan Card will form their own Mob. When support is added to a company it will add to existing Mobz of the same type. If there is no existing Mob of the new unit type, the new units form a new Mob and more units of the same type will be added to the now-existing Mob. All Mobz are treated as single detachments, i.e. they must observe coherency, are activated, make all break and morale tests as a group, and must observe the normal coherency rules.</description>
         </rule>
-        <rule id="cbb3-6e7c-d5f2-75b7" name="Ork Army - Clan Break Points" hidden="false">
+        <rule id="cbb3-6e7c-d5f2-75b7" name="Orks - Clan Break Points" hidden="false">
           <description>A Clan Card is only broken once it has reached the total of its Break Point plus the added Break Points of all attached support cards. Victory Points are only awarded once the entire Clan has been broken. When a Clan breaks each Mob within the Clan tests for Morale separately.</description>
+        </rule>
+        <rule id="d7fa-7535-145b-6411" name="Orks Force Composition" hidden="false">
+          <description>There is no Standard / Codex differentiation for Orks, as no group of Orks has the organization required to qualify as a Codex Army. Orks appear throughout the galaxy and are willing to fight in any sort of battle, at any time, against anyone, no matter what the odds. Orks may be taken as an ally to another Standard Army, or you can take them as your main force and put up to 50% of your points into any one other Standard List. Either way, army construction follows the same rules and has the same requirements.</description>
+        </rule>
+        <rule id="8683-7817-2a88-0c64" name="Orks - Hordes (Optional Rule)" publicationId="09d9-dfff-5270-69aa" page="4" hidden="false">
+          <description>Unlike other armies that are limited to 5 Support Cards per Company, Ork Clans have the option of purchasing an additional 5 Support Cards above and beyond the normal limit (10 in all). These additional Support Cards may only be Extra Boyz, allowing large hordes of greenskins in a single clan. </description>
+        </rule>
+        <rule id="ebc6-abb8-995d-ed6e" name="Orks - Mekboy Support Cards" publicationId="09d9-dfff-5270-69aa" page="6" hidden="false">
+          <description>Since there are a limited number of Mekboys each Clan may only attach one Mekboy Support Card. Some clans attract more Mekboys than others: the Blood Axes and Evil Sunz may add 2 Mekboy Support Cards. The Kult of Speed may take up to 5 Mekboy Support Cards. Also, if a Clan purchases the Renegade Mekboyz Special Card, it may also take up to 5 Mekboy Support Cards.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -56,7 +86,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6468-0f32-01b4-0d2b" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="1d92-ea76-258d-2983" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="false">
+        <categoryLink id="1d92-ea76-258d-2983" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="false">
           <modifiers>
             <modifier type="increment" field="3eb3-3d38-58c5-cdad" value="5.0">
               <repeats>
@@ -290,6 +320,11 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
       </costs>
     </selectionEntry>
     <selectionEntry id="19c5-6db0-f8a0-39b1" name="Evil Sunz Clan" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="8732-c714-7e63-4dc6" name="Evil Sunz Clan - Extra Transports (Optional Rule)" publicationId="09d9-dfff-5270-69aa" page="5" hidden="false">
+          <description>When buying extra Boyz or extra Nobz for an Evil Suns Clan, they can take three Boyz stands plus one Battlewagon rather than four Boyz stands.</description>
+        </rule>
+      </rules>
       <categoryLinks>
         <categoryLink id="e541-149c-4ebf-6f76" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="true"/>
         <categoryLink id="70c9-f686-8505-368d" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
@@ -529,6 +564,11 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
       </costs>
     </selectionEntry>
     <selectionEntry id="6cb1-321b-e0e4-ed48" name="Wildboyz Horde" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="7267-cbd0-7aab-5b76" name="Wildboyz Horde" hidden="false">
+          <description>The Wildboyz Horde represents the masses of Orks who are still Feral and have not developed enough to join a Clan. Due to their low grasp of technology they are limited to the following support cards: Wildmob, Madmob, Lobba Battery, Mega-Squiggoth, Gretchin Mob and any Snakebite specific support cards. The Wildboyz Horde may only take the Gretchin Horde or Steam Gargant special card.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="965e-9ab7-e211-c1a1" name="No Mekboy Cards Allowed" hidden="false" targetId="52b5-8013-ddee-f7ee" type="rule"/>
       </infoLinks>
@@ -4744,6 +4784,41 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="6674-a115-7957-4b46" name="Heavy Off-Board Barrage" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="5e01-0c7c-a26d-5539" name="Ork Rokkit Barrages" publicationId="09d9-dfff-5270-69aa" page="17" hidden="false">
+          <description>As Ork ground troops do not have any forward observers trained for the job, Warbosses and Warlords call in these barrages. These calls must abide by the general rules on the artillery barrages (see Core Rules) and are subject to the restrictions imposed by the Forward Observer rules given in the Off-Table Barrage rules. However, as the Warbosses and Warlords lack targeting expertise, the barrages directed by them scatter 3D6 centimetres (“Drop a big’un on yonder humies! ...Koord wot? You wanna keep yourz earz Mekboy, stop asking thingz an’ drop it NOW!”)</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="bfd4-d5fc-fefd-4630" name="VP Cost : 2" hidden="false" targetId="b09a-df73-fc38-29f6" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3223-ed9c-268c-0ef7" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+        <categoryLink id="a88e-0bad-bf46-4f3c" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="b158-e4ca-fe51-94ac" name="Heavy Off-Board Barrage" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05e8-acc7-cab5-09e4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ac5-500f-f58b-29aa" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="fa78-fcdb-a2f5-8b70" name="Heavy Orbital Barrage" hidden="false" targetId="7db8-b8b0-2f9f-ff41" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="7b98-1ea1-d1ae-a415" name="Battle Cannon Head" hidden="false" collective="false" import="true" type="upgrade">
@@ -4756,7 +4831,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-        <cost name=" VP" typeId="points" value="1.0"/>
+        <cost name=" VP" typeId="points" value="0.75"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -4769,7 +4844,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-        <cost name=" VP" typeId="points" value="1.0"/>
+        <cost name=" VP" typeId="points" value="0.5"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -4782,7 +4857,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="25.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.25"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -4796,7 +4871,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-        <cost name=" VP" typeId="points" value="1.0"/>
+        <cost name=" VP" typeId="points" value="0.5"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -4811,7 +4886,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-        <cost name=" VP" typeId="points" value="1.0"/>
+        <cost name=" VP" typeId="points" value="0.5"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -4840,7 +4915,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-        <cost name=" VP" typeId="points" value="1.0"/>
+        <cost name=" VP" typeId="points" value="0.5"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -4853,7 +4928,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-        <cost name=" VP" typeId="points" value="1.0"/>
+        <cost name=" VP" typeId="points" value="0.75"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -4881,7 +4956,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="25.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.25"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -4895,7 +4970,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-        <cost name=" VP" typeId="points" value="1.0"/>
+        <cost name=" VP" typeId="points" value="0.75"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -4908,7 +4983,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-        <cost name=" VP" typeId="points" value="1.0"/>
+        <cost name=" VP" typeId="points" value="0.75"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -4921,7 +4996,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-        <cost name=" VP" typeId="points" value="1.0"/>
+        <cost name=" VP" typeId="points" value="0.5"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -4934,7 +5009,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="25.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.25"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -4949,7 +5024,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-        <cost name=" VP" typeId="points" value="1.0"/>
+        <cost name=" VP" typeId="points" value="0.75"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -4962,7 +5037,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-        <cost name=" VP" typeId="points" value="1.0"/>
+        <cost name=" VP" typeId="points" value="0.75"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -4976,7 +5051,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-        <cost name=" VP" typeId="points" value="1.0"/>
+        <cost name=" VP" typeId="points" value="0.5"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -4989,7 +5064,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="150.0"/>
-        <cost name=" VP" typeId="points" value="2.0"/>
+        <cost name=" VP" typeId="points" value="1.5"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -6336,6 +6411,15 @@ Battlecannon : 50cm, 1d 5+ (-1)</characteristic>
         <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">None</characteristic>
         <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">N/A</characteristic>
         <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339">See Weirdboyz / Weirdboy Warphead rules. Note that this unit is designed to work with the expanded psychic system published in The Citadel Journal 1992-1994 : usage without these rules is at your own risk (Warphead powers are pretty strong...). Can store Force cards.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7db8-b8b0-2f9f-ff41" name="Heavy Orbital Rokkit Barrage" hidden="false" typeId="0fad-94c1-acf0-3a7d" typeName="Off-Table Ordnance">
+      <characteristics>
+        <characteristic name="Weapon" typeId="5ffa-e063-4631-01ab">Heavy Orbital Rokkit Barrage</characteristic>
+        <characteristic name="Attack Dice" typeId="b93d-0458-172c-9e17">N/A</characteristic>
+        <characteristic name="To Hit" typeId="ba08-b5be-0e67-a119">6SB (4+)</characteristic>
+        <characteristic name="Save Modifier" typeId="2084-64ff-c19d-71ce">-2</characteristic>
+        <characteristic name="Special Rules" typeId="78a1-34c5-8668-59de"/>
       </characteristics>
     </profile>
   </sharedProfiles>

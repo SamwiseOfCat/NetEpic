@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9917-0d8b-7c62-1b5a" name="Adeptus Mechanicus / Knight Households" revision="1" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <readme>v1 notes :
+<catalogue id="9917-0d8b-7c62-1b5a" name="Adeptus Mechanicus / Knight Households" revision="3" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>v3 notes :
+Fixed Psi-Titan spelling and removed bug whereby you could have 3 arm weapons (!!!)
+Major change to Titan weapon cost /VP&apos;s - each weapon now has a VP value that aligns to cost in points for more accurate VP awarding in the event of a Titan being destroyed.
+
+v2 notes :
+Added Light &amp; Heavy Off-Board Barrages.
+
+v1 notes :
 All of these units and their costs are taken from the NetEpic cards. There is a certain amount of discrepancy between the original Titan Legions cards when Tech-Guard were first introduced, so please be wary of this (some units cost more, some less - no real reason given why in NetEpic rule book). This army bears very little resemblance to the Ad Mech 40K army of the current time in 2023 so if you are new to this list please dont expect Skitarii, Magos etc as they just werent invented back then. The Knights also have very little statistical resemblance to the Knights of the current time. This is a retro list.
 
 Anyway, the main thing is you can run an Imperator in this list if you want as a Special Card... all 2250 points of it.</readme>
@@ -15,11 +22,20 @@ Anyway, the main thing is you can run an Imperator in this list if you want as a
         <characteristicType id="6bbe-3d0e-d9dc-5bde" name="Special Rules"/>
       </characteristicTypes>
     </profileType>
+    <profileType id="c99a-36d6-5263-e4a4" name="Off-Table Ordnance">
+      <characteristicTypes>
+        <characteristicType id="61fb-9ece-3dbc-74c3" name="Weapon"/>
+        <characteristicType id="4cbd-9d02-f980-6d65" name="Attack Dice"/>
+        <characteristicType id="a2ce-f5f8-9a0b-8001" name="To Hit"/>
+        <characteristicType id="cf11-6a57-7827-1dcf" name="Save Modifier"/>
+        <characteristicType id="597f-f1d7-25e3-6c89" name="Special Rules"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <forceEntries>
     <forceEntry id="7af3-3318-e6b7-41a7" name="Adeptus Mechanicus / Knight Households Army" hidden="false">
       <rules>
-        <rule id="4589-0022-8b6e-cdfd" name="Adeptus Mechanicus / Knight Households - Allies" publicationId="4e5b-6b9c-595f-6c95" page="4" hidden="false">
+        <rule id="4589-0022-8b6e-cdfd" name="Adeptus Mechanicus / Knight Households Force Composition" publicationId="4e5b-6b9c-595f-6c95" page="4" hidden="false">
           <description>The Standard Army consists of the Imperial Knight Households, a variety of titans and the Tech-Guard support troops. If you choose to run a Standard army you must put at least 50% of your points into the Standard Adeptus Mechanicus List. The other 50% may be spent on any Standard List.</description>
         </rule>
       </rules>
@@ -1675,7 +1691,6 @@ Anyway, the main thing is you can run an Imperator in this list if you want as a
         <selectionEntryGroup id="da19-03b8-63ed-3ad6" name="Reaver Titan Carapace Weapons" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2add-6f36-2fe7-0677" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f3f-c20d-4a94-8311" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="b717-be9c-862e-eb75" name="Doomburner" hidden="false" collective="false" import="true" targetId="a11f-0aff-461e-361d" type="selectionEntry">
@@ -1888,7 +1903,7 @@ Anyway, the main thing is you can run an Imperator in this list if you want as a
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="300.0"/>
-        <cost name=" VP" typeId="points" value="5.0"/>
+        <cost name=" VP" typeId="points" value="3.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -1905,7 +1920,6 @@ Anyway, the main thing is you can run an Imperator in this list if you want as a
         <selectionEntryGroup id="715f-a2ed-f739-dfb1" name="Warlord Titan Carapace Weapons" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c36-ab20-24da-6dac" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9341-2baf-a97b-ea63" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="e0af-39e0-c3ef-65ff" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="54c6-7048-fee2-bd60" type="selectionEntry">
@@ -2200,7 +2214,7 @@ Anyway, the main thing is you can run an Imperator in this list if you want as a
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="500.0"/>
-        <cost name=" VP" typeId="points" value="9.0"/>
+        <cost name=" VP" typeId="points" value="5.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -2267,23 +2281,24 @@ Anyway, the main thing is you can run an Imperator in this list if you want as a
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="125.0"/>
-        <cost name=" VP" typeId="points" value="4.0"/>
+        <cost name=" VP" typeId="points" value="1.25"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3837-32dc-e8ad-8336" name="Warlord Psy-Titan" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="3837-32dc-e8ad-8336" name="Warlord Psi-Titan" hidden="false" collective="false" import="true" type="unit">
+      <comment>Head options not allowed for Psi-Titans - not specifcally stated anywhere, but given they have a specialised &quot;Mage Head&quot; have disallowed on this basis. Spelling changed to &quot;Psi&quot; to match recent Psi Titan release in AT/LI. </comment>
       <rules>
         <rule id="38a0-f907-f5a3-3cc2" name="Psychic Dampeners" publicationId="4e5b-6b9c-595f-6c95" page="24" hidden="false">
-          <description>If the titan has intact void shields the psychic save versus ethereal psychic attacks is 2+ (instead of the normal 4+). If there are no remaining void shields the Psy-Titan gets a 4+ save. The Psychic Dampeners are located in the titan’s head. A damaged head loses the use of the head weapons and the benefit from the Psychic Dampener until repaired.</description>
+          <description>If the titan has intact void shields the psychic save versus ethereal psychic attacks is 2+ (instead of the normal 4+). If there are no remaining void shields the Psi-Titan gets a 4+ save. The Psychic Dampeners are located in the titan’s head. A damaged head loses the use of the head weapons and the benefit from the Psychic Dampener until repaired.</description>
         </rule>
         <rule id="77e5-494e-1082-5056" name="Psychic Resonators" publicationId="4e5b-6b9c-595f-6c95" page="24" hidden="false">
           <description>No psychic power or Chaos reward card can be cast/used within 25 cm of the titan with an active Resonator. Minor daemon and Chaos Marine powers can not work in this field. Farseers, High Slann/Time Mages and Greater Daemons need to roll a 4+ to use any power within the field. All benefits of the Psychic Resonator are lost while damaged and may not be used until it is repaired.</description>
         </rule>
-        <rule id="79ca-472a-547c-7ccd" name="Psy Cannon" hidden="false">
-          <description>Place the large teardrop template anywhere within range and firing arc so that the narrow end points directly towards the Psy Titan. Any troops (friend or foe) even partially under the template are hit by the psychic shockwave on 4+ regardless of cover and must save with a -1 save modifier. Titans and Praetorians without shields use the saving throw of the head/bridge and roll on the corresponding damage table if the save is failed; no scatter dice are used. Daemons and Chaos Titans under the template suffer a -2 modifier to their saving throw and daemons may not use Chaos cards to negate hits. The Psy Cannon has no effect on buildings or fortifications even though it affects the troops inside.</description>
+        <rule id="79ca-472a-547c-7ccd" name="Psi-Cannon" hidden="false">
+          <description>Place the large teardrop template anywhere within range and firing arc so that the narrow end points directly towards the Psi-Titan. Any troops (friend or foe) even partially under the template are hit by the psychic shockwave on 4+ regardless of cover and must save with a -1 save modifier. Titans and Praetorians without shields use the saving throw of the head/bridge and roll on the corresponding damage table if the save is failed; no scatter dice are used. Daemons and Chaos Titans under the template suffer a -2 modifier to their saving throw and daemons may not use Chaos cards to negate hits. The Psi-Cannon has no effect on buildings or fortifications even though it affects the troops inside.</description>
         </rule>
         <rule id="bd10-90ad-44ff-6522" name="Psychic Explosion" hidden="false">
-          <description>If the Warlord Psy-Titan is destroyed, the accumulated psy-forces are discharged in one enormous psychic BOOM! Use the large 12cm diameter template and center it on the Titan. All units covered by the template are automatically hit with a -4 TSM. This explosion counts as an ethereal psychic attack.</description>
+          <description>If the Warlord Psi-Titan is destroyed, the accumulated psy-forces are discharged in one enormous psychic BOOM! Use the large 12cm diameter template and center it on the Titan. All units covered by the template are automatically hit with a -4 TSM. This explosion counts as an ethereal psychic attack.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -2296,9 +2311,10 @@ Anyway, the main thing is you can run an Imperator in this list if you want as a
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="a564-2920-78fa-a396" name="Warlord Titan Arm Weapons" hidden="false" collective="false" import="true">
+          <comment>Psi-Titan is limited to one Arm Weapon as one must be the Psi-Cannon already on the unit profile.</comment>
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7580-ea71-9dea-e280" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7852-6ee1-3f34-ca13" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7580-ea71-9dea-e280" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7852-6ee1-3f34-ca13" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="24a8-e51b-dfd6-f8b6" name="Doomburner" hidden="false" collective="false" import="true" targetId="a11f-0aff-461e-361d" type="selectionEntry">
@@ -2418,10 +2434,132 @@ Anyway, the main thing is you can run an Imperator in this list if you want as a
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="8da4-9af4-5dfb-8e89" name="Warlord Titan Carapace Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="431c-b8a6-9e7e-aff6" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="616e-1c9f-6679-8cb4" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="54c6-7048-fee2-bd60" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28a8-61a9-353a-7758" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="38e2-9d97-4c06-20bb" name="Doomburner" hidden="false" collective="false" import="true" targetId="a11f-0aff-461e-361d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43a6-528b-4a1b-4390" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="1193-c3cd-e9aa-2677" name="Gatling Blaster" hidden="false" collective="false" import="true" targetId="c1de-6a34-9aa5-27d5" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19c4-d6ca-ad3f-fca4" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="1b17-4913-a881-a8bc" name="Laser Blaster" hidden="false" collective="false" import="true" targetId="0345-af42-bfa1-1f70" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c20e-baaf-afe6-5d66" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="3826-96c6-a25d-9445" name="Melta Cannon" hidden="false" collective="false" import="true" targetId="90b7-9938-d43f-5c42" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0652-a63a-82f1-a266" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="7317-5603-20ce-2113" name="Quake Cannon" hidden="false" collective="false" import="true" targetId="a31c-7736-59bc-7c7f" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20b3-e0ae-d673-8789" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="483b-6529-c722-c5dc" name="Turbo-Laser Destructor" hidden="false" collective="false" import="true" targetId="d082-b547-d07b-781e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56a7-f7a6-1876-cf1a" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="aff2-39a7-2f30-a94d" name="Volcano Cannon" hidden="false" collective="false" import="true" targetId="53d4-12cf-1d3f-0d53" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edb7-7ed7-7e7d-7124" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="8168-d361-2220-6d34" name="Plasma Blastgun" hidden="false" collective="false" import="true" targetId="fcee-4146-3e03-6c93" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59bf-dfce-3a79-be65" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="1e69-0d22-df6b-dff0" name="Plasma Destructor (with dedicated reactor)" hidden="false" collective="false" import="true" targetId="308a-b0e2-79fb-afc8" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f87-fb66-d927-363b" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="57b0-43e0-15c6-98a4" name="Plasma Cannon" hidden="false" collective="false" import="true" targetId="58a6-52bd-6839-0447" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19e6-30c6-cd18-8b3a" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="209a-04e1-4ac5-c31c" name="Inferno Gun" hidden="false" collective="false" import="true" targetId="cb96-7e53-cb77-7470" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ade-3811-96d7-5671" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="f82d-b0ec-6f52-6850" name="Plasma Cannon (with dedicated reactor)" hidden="false" collective="false" import="true" targetId="8c1b-5053-d56a-92b3" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e54e-2123-cfe8-4579" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="e4da-c921-4853-5100" name="Plasma Destructor" hidden="false" collective="false" import="true" targetId="01ea-db90-773d-d4aa" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4735-b106-9ba0-23cd" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="7f63-e821-2422-37d9" name="Hellstrike Cannon" hidden="false" collective="false" import="true" targetId="7f21-b2f0-a80c-97c6" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f9d-4afe-a606-fc1e" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="d0cd-409e-0e9a-6109" name="Multiple Rocket Launcher" hidden="false" collective="false" import="true" targetId="ca02-0110-a2a5-8a92" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6ad-8c46-e641-b287" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="b650-d888-56ec-d551" name="Warp Missile" hidden="false" collective="false" import="true" targetId="417c-1a53-541c-aa98" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b172-c3ec-cf44-e4eb" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="15a7-9e5e-c388-6edb" name="Barrage Missile Launcher" hidden="false" collective="false" import="true" targetId="b8ca-5814-f0a6-2c72" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8668-7a66-76bb-92d4" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="6b2c-e45e-41b5-9e77" name="Harpoon Missile" hidden="false" collective="false" import="true" targetId="d175-f59c-e381-ddb8" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ead3-4ec8-7f69-0a9d" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="22ab-c3a8-37bc-5007" name="Vortex Missile" hidden="false" collective="false" import="true" targetId="c5a5-4359-d59d-40e0" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c5c-89b5-4179-ddc1" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="bada-6779-e1ac-9d2e" name="Carapace Landing Pad" hidden="false" collective="false" import="true" targetId="f07a-7127-6eba-0d60" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d9f-e873-c07c-2a9f" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="ead5-471f-4a2a-0d91" name="Cerberus Anti-Aircraft Gun" hidden="false" collective="false" import="true" targetId="bf02-2b7c-4d2e-c8bd" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e790-4cc5-7c08-5e03" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="e015-e351-81d0-fc44" name="Fire Control Center" hidden="false" collective="false" import="true" targetId="5e8c-c284-6768-68f8" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14e3-3068-0d32-ab44" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="650.0"/>
+        <cost name=" VP" typeId="points" value="6.5"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -2498,8 +2636,6 @@ Anyway, the main thing is you can run an Imperator in this list if you want as a
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="125.0"/>
-                <cost name=" VP" typeId="points" value="4.0"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -2512,8 +2648,8 @@ Anyway, the main thing is you can run an Imperator in this list if you want as a
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="250.0"/>
+        <cost name=" VP" typeId="points" value="2.5"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -3318,6 +3454,68 @@ Anyway, the main thing is you can run an Imperator in this list if you want as a
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="df4c-9338-ecf7-5382" name="Light Off-Board Barrage" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f001-7724-4d06-d0ef" name="VP Cost : 1" hidden="false" targetId="84c0-6f33-b928-eb28" type="rule"/>
+        <infoLink id="ef85-d5d9-1128-e26c" name="Off Board / Orbital Barrages" hidden="false" targetId="b085-7066-0cad-eee5" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="de59-f169-aafc-118c" name="Adeptus Mechanicus" hidden="false" targetId="7249-15f4-6dd5-8659" primary="false"/>
+        <categoryLink id="15d5-b3d5-510e-87cd" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="b7a2-a627-4f41-6d82" name="Light Off-Board Barrage" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="831c-f2ef-5db5-ccdc" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8260-6237-9e43-9ffb" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="4312-d14a-a31f-3631" name="Light Orbital Barrage" hidden="false" targetId="3ac5-0666-7769-06d9" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b96b-25a8-da6d-f9cd" name="Heavy Off-Board Barrage" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7385-1d51-02a2-09b3" name="VP Cost : 2" hidden="false" targetId="b09a-df73-fc38-29f6" type="rule"/>
+        <infoLink id="2413-734e-bfaf-e772" name="Off Board / Orbital Barrages" hidden="false" targetId="b085-7066-0cad-eee5" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="a94d-5b29-fa12-2c80" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+        <categoryLink id="fe71-7a37-7421-30f6" name="Adeptus Mechanicus" hidden="false" targetId="7249-15f4-6dd5-8659" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="e031-c8cb-66cf-7324" name="Heavy Off-Board Barrage" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="779e-cea0-f495-b91e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db8e-5d74-c17b-ddf8" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="212d-f272-120b-4792" name="Heavy Orbital Barrage" hidden="false" targetId="440b-a217-7c53-c9b8" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="fab9-25b9-a420-5add" name="Nova Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -3440,16 +3638,16 @@ Power Lance : 15cm, 1d 3+ _-3)</characteristic>
         <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
       </characteristics>
     </profile>
-    <profile id="b8d1-6be8-8fe2-c137" name="Warlord Psy-Titan" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+    <profile id="b8d1-6be8-8fe2-c137" name="Warlord Psi-Titan" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Titan</characteristic>
         <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">15cm</characteristic>
         <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">See hit template</characteristic>
         <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+14</characteristic>
-        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Psy Blasters (Head) : 50cm, 2d 4+ (-2) - Physical Psychic Attack
-Psy Cannon (Carapace) : 100cm, Template 4+ (-1) - See Special Rule</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Psi-Blasters (Head) : 50cm, 2d 4+ (-2) - Physical Psychic Attack
+Psi-Cannon (Carapace) : 100cm, Template 4+ (-1) - See Special Rule</characteristic>
         <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">N/A</characteristic>
-        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339">The Warlord Psy-Titan deals physical psychic Close Combat attacks.</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339">The Warlord Psi-Titan deals physical psychic Close Combat attacks.</characteristic>
       </characteristics>
     </profile>
     <profile id="385f-1915-ca5b-aec9" name="Knight Castellan" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
@@ -3888,6 +4086,24 @@ Maximal Fire (can be up to 6 counters, only one shot per turn) : 1 Counter = 4+ 
         <characteristic name="Range" typeId="ba7a-2961-7043-7cca">200cm</characteristic>
         <characteristic name="Shooting Profile" typeId="dbc4-0417-a648-8bed">8BP per Template, 3+ (-1)</characteristic>
         <characteristic name="Special Rules" typeId="6bbe-3d0e-d9dc-5bde">6 missiles per game. Fire 1 or 2 each turn. D3 adjacent templates per missile. If a unit incurs any casualties, they must pass a morale test or the unit goes on Fall Back orders.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="440b-a217-7c53-c9b8" name="Heavy Orbital Barrage" hidden="false" typeId="c99a-36d6-5263-e4a4" typeName="Off-Table Ordnance">
+      <characteristics>
+        <characteristic name="Weapon" typeId="61fb-9ece-3dbc-74c3">Heavy Orbital Barrage</characteristic>
+        <characteristic name="Attack Dice" typeId="4cbd-9d02-f980-6d65">N/A</characteristic>
+        <characteristic name="To Hit" typeId="a2ce-f5f8-9a0b-8001">10SB (2+)</characteristic>
+        <characteristic name="Save Modifier" typeId="cf11-6a57-7827-1dcf">-2</characteristic>
+        <characteristic name="Special Rules" typeId="597f-f1d7-25e3-6c89"/>
+      </characteristics>
+    </profile>
+    <profile id="3ac5-0666-7769-06d9" name="Light Orbital Barrage" hidden="false" typeId="c99a-36d6-5263-e4a4" typeName="Off-Table Ordnance">
+      <characteristics>
+        <characteristic name="Weapon" typeId="61fb-9ece-3dbc-74c3">Light Orbital Barrage</characteristic>
+        <characteristic name="Attack Dice" typeId="4cbd-9d02-f980-6d65">N/A</characteristic>
+        <characteristic name="To Hit" typeId="a2ce-f5f8-9a0b-8001">6BP (4+)</characteristic>
+        <characteristic name="Save Modifier" typeId="cf11-6a57-7827-1dcf">-1</characteristic>
+        <characteristic name="Special Rules" typeId="597f-f1d7-25e3-6c89"/>
       </characteristics>
     </profile>
   </sharedProfiles>

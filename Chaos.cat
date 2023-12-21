@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a9aa-a2eb-5b74-a29d" name="Chaos" revision="2" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a9aa-a2eb-5b74-a29d" name="Chaos" revision="4" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Added &quot;Unique&quot; rule to all named units like the Primarchs or named titans. Added Chaos Titan-specific weapons.</comment>
-  <readme>v2 notes :
+  <readme>v4 notes : 
+Major change to Titan weapon cost /VP&apos;s - each weapon now has a VP value that aligns to cost in points for more accurate VP awarding in the event of a Titan being destroyed.
+
+v3 notes :
+Added Light &amp; Heavy Off-Board Barrages.
+
+v2 notes :
 You can only pick Greater Daemons if your force is aligned to one of the four main powers - note you can pick ANY of them though, there are no limitations on choosing between Powers. If you pick Chaos Undivided you will still be able to pick various Power-specific units in your list, including Daemon Princes (as they are classified as Special Cards and not Greater Daemons, which are similar to Company Cards in many ways). Each Power-specific unit should have a reference to the Power that they follow in the unit description. Ultimately, it&apos;s down to you to follow the NetEpic rules on force composition as its extremely difficult to narrow each Chaos army down in Battlescribe (anyone else is welcome to try it, use my files as a starter for ten... and good luck!)
 
 v1 notes :
@@ -17,6 +23,15 @@ This was the list I was dreading doing... easily the most complex in regards to 
         <characteristicType id="0f2d-bd53-a384-0081" name="To Hit"/>
         <characteristicType id="6b68-0486-153f-fe91" name="TSM"/>
         <characteristicType id="0ee4-aa22-5440-8df0" name="Special Rules"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="fe90-ca7f-9350-3325" name="Off-Table Ordnance">
+      <characteristicTypes>
+        <characteristicType id="0100-b7a9-70b5-c2c3" name="Weapon"/>
+        <characteristicType id="644f-e435-b74b-f41b" name="Attack Dice"/>
+        <characteristicType id="b87f-c8d1-eb2f-f2f9" name="To Hit"/>
+        <characteristicType id="593e-8f21-8718-71d7" name="Save Modifier"/>
+        <characteristicType id="a61e-6833-5014-f389" name="Special Rules"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -41,7 +56,7 @@ This was the list I was dreading doing... easily the most complex in regards to 
   <forceEntries>
     <forceEntry id="4afe-7c65-f0bd-fcf7" name="Chaos Undivided" hidden="false">
       <rules>
-        <rule id="fd90-ce5b-5728-4fa0" name="Chaos Undivided - Allies" publicationId="114f-d100-94a8-32d5" page="5" hidden="false">
+        <rule id="fd90-ce5b-5728-4fa0" name="Chaos Undivided Force Composition" publicationId="114f-d100-94a8-32d5" page="5" hidden="false">
           <description>The Standard Chaos Army consists of minor Chaos forces such as pirates, raiding parties, small groups of Chaos Marines, rebel Chaos cultists, aspiring champions and so on, known collectively as Chaos Renegades. If you choose to run a Standard Army you must put at least 50% of your points into the Standard Chaos List. The insidiousness of Chaos can corrupt just about everyone, so the rest of your points may go into any one Power, or any one Standard List other than Eldar or Space Marines. If you ally with an Imperial force, it is assumed to be corrupted or traitor and therefore a Chaos force itself, not an Imperial force working with Chaos. This is a technicality however, and makes no difference when purchasing your force. Any Marines bought in a Chaos Marine army are from one of the Legions Excommunicate Traitoris.</description>
         </rule>
       </rules>
@@ -93,8 +108,8 @@ This was the list I was dreading doing... easily the most complex in regards to 
     </forceEntry>
     <forceEntry id="a68b-fb17-7eb0-a873" name="Nurgle" hidden="false">
       <rules>
-        <rule id="3d3a-49e1-6c80-091c" name="Nurgle - Allies" publicationId="114f-d100-94a8-32d5" page="5" hidden="false">
-          <description>A Nurgle army must have 75% of your points into that Power and the Standard Chaos Lists. You may put up to 25% of your points into any of the other Powers, or any one Standard List other than Eldar or Space Marines.</description>
+        <rule id="3d3a-49e1-6c80-091c" name="Nurgle Force Composition" publicationId="114f-d100-94a8-32d5" page="5" hidden="false">
+          <description>A Nurgle army must have 75% of your points into that Power (including Death Guard) and the Standard Chaos Lists. You may put up to 25% of your points into any of the other Powers, or any one Standard List other than Eldar or Space Marines.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -103,7 +118,7 @@ This was the list I was dreading doing... easily the most complex in regards to 
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b65-0bdd-c7e3-a134" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="b4f0-875c-f810-9383" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="false">
+        <categoryLink id="b4f0-875c-f810-9383" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="false">
           <modifiers>
             <modifier type="increment" field="ef05-112f-3133-3f7a" value="5.0">
               <repeats>
@@ -120,7 +135,7 @@ This was the list I was dreading doing... easily the most complex in regards to 
             <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef05-112f-3133-3f7a" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="c9b4-8575-0d91-1c38" name="Special Cards" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="false">
+        <categoryLink id="c9b4-8575-0d91-1c38" name="Special Card" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="false">
           <modifiers>
             <modifier type="increment" field="9794-0bd9-59fb-6444" value="1.0">
               <repeats>
@@ -151,8 +166,8 @@ This was the list I was dreading doing... easily the most complex in regards to 
     </forceEntry>
     <forceEntry id="5b7e-c308-02a9-89eb" name="Khorne" hidden="false">
       <rules>
-        <rule id="be35-53b1-ece9-f874" name="Khorne - Allies" publicationId="114f-d100-94a8-32d5" page="" hidden="false">
-          <description>A Khorne army must have 75% of your points into that Power and the Standard Chaos Lists. You may put up to 25% of your points into any of the other Powers, or any one Standard List other than Eldar or Space Marines.</description>
+        <rule id="be35-53b1-ece9-f874" name="Khorne Force Composition" publicationId="114f-d100-94a8-32d5" page="" hidden="false">
+          <description>A Khorne army must have 75% of your points into that Power (including World Eaters) and the Standard Chaos Lists. You may put up to 25% of your points into any of the other Powers, or any one Standard List other than Eldar or Space Marines.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -209,8 +224,8 @@ This was the list I was dreading doing... easily the most complex in regards to 
     </forceEntry>
     <forceEntry id="13f5-04f5-81f1-45f2" name="Slaanesh" hidden="false">
       <rules>
-        <rule id="4140-1593-c4eb-fbf1" name="Slaanesh - Allies" publicationId="114f-d100-94a8-32d5" page="5" hidden="false">
-          <description>A Slaanesh army must have 75% of your points into that Power and the Standard Chaos Lists. You may put up to 25% of your points into any of the other Powers, or any one Standard List other than Eldar or Space Marines.</description>
+        <rule id="4140-1593-c4eb-fbf1" name="Slaanesh Force Composition" publicationId="114f-d100-94a8-32d5" page="5" hidden="false">
+          <description>A Slaanesh army must have 75% of your points into that Power (including Emperor&apos;s Children) and the Standard Chaos Lists. You may put up to 25% of your points into any of the other Powers, or any one Standard List other than Eldar or Space Marines.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -267,8 +282,8 @@ This was the list I was dreading doing... easily the most complex in regards to 
     </forceEntry>
     <forceEntry id="36bd-d9fb-f2f7-2670" name="Tzeentch" hidden="false">
       <rules>
-        <rule id="04dc-0b36-2fff-64f5" name="Tzeentch - Allies" publicationId="114f-d100-94a8-32d5" page="5" hidden="false">
-          <description>A Tzeentch army must have 75% of your points into that Power and the Standard Chaos Lists. You may put up to 25% of your points into any of the other Powers, or any one Standard List other than Eldar or Space Marines.</description>
+        <rule id="04dc-0b36-2fff-64f5" name="Tzeentch Force Composition" publicationId="114f-d100-94a8-32d5" page="5" hidden="false">
+          <description>A Tzeentch army must have 75% of your points into that Power (including Thousand Sons) and the Standard Chaos Lists. You may put up to 25% of your points into any of the other Powers, or any one Standard List other than Eldar or Space Marines.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -325,7 +340,7 @@ This was the list I was dreading doing... easily the most complex in regards to 
     </forceEntry>
     <forceEntry id="749f-c4c8-425d-fae6" name="Chaos Space Marines" hidden="false">
       <rules>
-        <rule id="44ff-c683-c7a7-3251" name="Chaos Space Marines - Allies" publicationId="114f-d100-94a8-32d5" page="5" hidden="false">
+        <rule id="44ff-c683-c7a7-3251" name="Chaos Space Marines Force Composition" publicationId="114f-d100-94a8-32d5" page="5" hidden="false">
           <description>The Chaos Marine Legions are a special case. You must put at least 75% of your points into that Legion list, the Standard Chaos List and the Standard Chaos Marine List, and may put up to 25% of your points into any of the other Powers (and the Standard Chaos List), or any one Standard List except Eldar or Space Marines.</description>
         </rule>
       </rules>
@@ -570,7 +585,6 @@ This was the list I was dreading doing... easily the most complex in regards to 
         <selectionEntryGroup id="f62a-1659-3cd9-7817" name="Warlord Titan Carapace Weapons" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7083-831a-a02d-82d8" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aafa-a614-47d0-94a2" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="8d86-9403-39d5-b217" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="54c6-7048-fee2-bd60" type="selectionEntry">
@@ -928,12 +942,12 @@ This was the list I was dreading doing... easily the most complex in regards to 
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="500.0"/>
-        <cost name=" VP" typeId="points" value="9.0"/>
+        <cost name=" VP" typeId="points" value="5.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="721b-898e-4cdb-4c82" name="Warlord Titan Battlegroup" hidden="false" collective="false" import="true" type="upgrade">
-      <comment>Added to Space Marines list as Orks can pick Gargant Big Mobs</comment>
+      <comment>Added to Chaos Space Marines list as Orks can pick Gargant Big Mobs, seems only fair</comment>
       <infoLinks>
         <infoLink id="3c68-7886-9de0-5299" name="Titan Battlegroup VP Awards" hidden="false" targetId="76f5-c869-6176-d58d" type="rule"/>
         <infoLink id="d68c-976b-6a25-07e6" name="Titan Coherency" hidden="false" targetId="0a3b-ef73-c45d-713c" type="rule"/>
@@ -962,7 +976,6 @@ This was the list I was dreading doing... easily the most complex in regards to 
                 <selectionEntryGroup id="3925-3695-0f33-6c84" name="Warlord Titan Carapace Weapons" hidden="false" collective="false" import="true">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcd9-16f8-e786-9fed" type="max"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6937-e99d-bde5-5a8d" type="min"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="867a-409f-e15f-2e75" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="54c6-7048-fee2-bd60" type="selectionEntry">
@@ -1314,8 +1327,6 @@ This was the list I was dreading doing... easily the most complex in regards to 
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="500.0"/>
-                <cost name=" VP" typeId="points" value="9.0"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -1328,8 +1339,8 @@ This was the list I was dreading doing... easily the most complex in regards to 
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="1500.0"/>
+        <cost name=" VP" typeId="points" value="15.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -1407,7 +1418,7 @@ This was the list I was dreading doing... easily the most complex in regards to 
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="125.0"/>
-        <cost name=" VP" typeId="points" value="4.0"/>
+        <cost name=" VP" typeId="points" value="1.25"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -1425,7 +1436,6 @@ This was the list I was dreading doing... easily the most complex in regards to 
         <selectionEntryGroup id="4199-37c0-eee1-5f69" name="Reaver Titan Carapace Weapons" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="182f-7783-b3f4-1479" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f47f-6ff0-facd-dda3" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="f2dc-0e3e-4e28-09e3" name="Doomburner" hidden="false" collective="false" import="true" targetId="a11f-0aff-461e-361d" type="selectionEntry">
@@ -1663,7 +1673,7 @@ This was the list I was dreading doing... easily the most complex in regards to 
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="300.0"/>
-        <cost name=" VP" typeId="points" value="5.0"/>
+        <cost name=" VP" typeId="points" value="3.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -1697,7 +1707,6 @@ This was the list I was dreading doing... easily the most complex in regards to 
                 <selectionEntryGroup id="f840-b0f6-cb88-eefa" name="Reaver Titan Carapace Weapons" hidden="false" collective="false" import="true">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b253-0f2e-d114-1b8a" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52f1-fc09-c4d3-e01a" type="min"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="831b-e680-1955-af00" name="Doomburner" hidden="false" collective="false" import="true" targetId="a11f-0aff-461e-361d" type="selectionEntry">
@@ -1934,8 +1943,6 @@ This was the list I was dreading doing... easily the most complex in regards to 
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="300.0"/>
-                <cost name=" VP" typeId="points" value="5.0"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -1948,8 +1955,8 @@ This was the list I was dreading doing... easily the most complex in regards to 
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="900.0"/>
+        <cost name=" VP" typeId="points" value="9.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -9374,6 +9381,68 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="2.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="ac4e-8b29-7dc8-200b" name="Light Off-Board Barrage" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6d6b-d5ad-d265-ca44" name="VP Cost : 1" hidden="false" targetId="84c0-6f33-b928-eb28" type="rule"/>
+        <infoLink id="41ec-bc1c-9f4a-0fe3" name="Off Board / Orbital Barrages" hidden="false" targetId="b085-7066-0cad-eee5" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="4726-cd7a-95cb-31d2" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
+        <categoryLink id="9513-6c28-1acb-52be" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6f5a-8ba8-f249-3753" name="Light Off-Board Barrage" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7742-9222-39b5-e673" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8a9-87f0-f30c-20c5" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="92dd-2738-df28-7242" name="Light Orbital Barrage" hidden="false" targetId="50b4-f031-ef69-0697" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e6f6-db25-584f-279d" name="Heavy Off-Board Barrage" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b375-8b01-9ef3-80bc" name="VP Cost : 2" hidden="false" targetId="b09a-df73-fc38-29f6" type="rule"/>
+        <infoLink id="e68b-d6c4-c4fd-9c20" name="Off Board / Orbital Barrages" hidden="false" targetId="b085-7066-0cad-eee5" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="4a7e-5e39-1088-4881" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
+        <categoryLink id="e1ec-2560-fea8-a945" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="96c8-b585-f482-bf8d" name="Heavy Off-Board Barrage" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12c4-4059-ac21-f272" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3941-9128-3e55-62a9" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="9349-9b12-9b03-e01a" name="Heavy Orbital Barrage" hidden="false" targetId="cd4d-61a1-ac94-eff1" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="65a0-6700-1e9d-68fa" name="Leviathan Battlecannon Turret" hidden="false" collective="false" import="true" type="upgrade">
@@ -9417,6 +9486,7 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.75"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b911-82dc-4ddd-90aa" name="Havoc Missile Rack" hidden="false" collective="false" import="true" type="upgrade">
@@ -9427,6 +9497,7 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.5"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8ac6-cb22-180c-5c24" name="Doomfist" hidden="false" collective="false" import="true" type="upgrade">
@@ -9437,6 +9508,7 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.5"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ac9c-4687-486e-183b" name="Hellblade" hidden="false" collective="false" import="true" type="upgrade">
@@ -9448,6 +9520,7 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.5"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="69f9-e86b-e8b7-8cb7" name="Khornate Chaos Tail" hidden="false" collective="false" import="true" type="upgrade">
@@ -9457,6 +9530,7 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.5"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="dad7-e8d6-a982-bbb9" name="Chaos Energy Whip" hidden="false" collective="false" import="true" type="upgrade">
@@ -9466,7 +9540,7 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="25.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.25"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -9477,6 +9551,7 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.5"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0a19-2fca-07a1-654d" name="Chaos Tail" hidden="false" collective="false" import="true" type="upgrade">
@@ -9485,7 +9560,7 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="25.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.25"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -11299,6 +11374,24 @@ Defiler Cannon : 50cm, 1d 4+ (-2)</characteristic>
         <characteristic name="To Hit" typeId="0f2d-bd53-a384-0081">N/A</characteristic>
         <characteristic name="TSM" typeId="6b68-0486-153f-fe91">N/A</characteristic>
         <characteristic name="Special Rules" typeId="0ee4-aa22-5440-8df0">+2 CAF</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cd4d-61a1-ac94-eff1" name="Heavy Orbital Barrage" hidden="false" typeId="fe90-ca7f-9350-3325" typeName="Off-Table Ordnance">
+      <characteristics>
+        <characteristic name="Weapon" typeId="0100-b7a9-70b5-c2c3">Heavy Orbital Barrage</characteristic>
+        <characteristic name="Attack Dice" typeId="644f-e435-b74b-f41b">N/A</characteristic>
+        <characteristic name="To Hit" typeId="b87f-c8d1-eb2f-f2f9">10SB (2+)</characteristic>
+        <characteristic name="Save Modifier" typeId="593e-8f21-8718-71d7">-2</characteristic>
+        <characteristic name="Special Rules" typeId="a61e-6833-5014-f389"/>
+      </characteristics>
+    </profile>
+    <profile id="50b4-f031-ef69-0697" name="Light Orbital Barrage" hidden="false" typeId="fe90-ca7f-9350-3325" typeName="Off-Table Ordnance">
+      <characteristics>
+        <characteristic name="Weapon" typeId="0100-b7a9-70b5-c2c3">Light Orbital Barrage</characteristic>
+        <characteristic name="Attack Dice" typeId="644f-e435-b74b-f41b">N/A</characteristic>
+        <characteristic name="To Hit" typeId="b87f-c8d1-eb2f-f2f9">6BP (4+)</characteristic>
+        <characteristic name="Save Modifier" typeId="593e-8f21-8718-71d7">-1</characteristic>
+        <characteristic name="Special Rules" typeId="a61e-6833-5014-f389"/>
       </characteristics>
     </profile>
   </sharedProfiles>

@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f34c-bf7e-4778-7d1b" name="Squats" revision="1" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f34c-bf7e-4778-7d1b" name="Squats" revision="3" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>.</comment>
-  <readme>v1 notes : 
+  <readme>v3 notes :
+Added Optional Rules from NetEpic Squats Army Book. I dont like the Defensive Aerial Fire one at all, but hey, YMMV. The rest make sense.
+
+v2 notes :
+Light &amp; Heavy Orbital Barrages added.
+
+v1 notes : 
 Some unique characters have been added (Grimtrek).</readme>
   <publications>
     <publication id="ef70-274e-4025-3861" name="Squats NetEpic Army Book" shortName="Squats Army Book" publisherUrl="netepic.org"/>
@@ -16,12 +22,36 @@ Some unique characters have been added (Grimtrek).</readme>
         <characteristicType id="61a2-f4ee-a632-f585" name="Special Rules"/>
       </characteristicTypes>
     </profileType>
+    <profileType id="05cf-e6d0-ff56-e3dd" name="Off-Table Ordnance">
+      <characteristicTypes>
+        <characteristicType id="02d1-3e5f-078f-c0ed" name="Weapon"/>
+        <characteristicType id="e76e-bdeb-9c4e-69de" name="Attack Dice"/>
+        <characteristicType id="9e2d-8409-e58c-a317" name="To Hit"/>
+        <characteristicType id="724e-3b84-823f-caa4" name="Save Modifier"/>
+        <characteristicType id="f31d-110a-a38a-cda5" name="Special Rules"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="2edf-838a-651e-615d" name="Zutik" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="ba90-6ef0-0de7-4b49" name="Squat Brotherhood" hidden="false">
+      <rules>
+        <rule id="5107-bcab-dfd3-fce8" name="Squat Brotherhood Force Composition" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+          <comment>Removed &quot;Imperial&quot; from wording as Squats as book suggests they will ally with anyone except Orks.</comment>
+          <description>Squats are a Codex Army and you must put 75% of your points into them. Squats will never ally with Orks, but may put up to 25% of your points into any other Standard List. </description>
+        </rule>
+        <rule id="5e6a-d6d1-0283-2376" name="Squats - Eldar Antipathy (Optional Rule)" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+          <description>There is an ages-old antipathy between the two races, and the following options have been suggested: 1) If you field a Squat-Eldar force, you suffer a –1 to all Initiative rolls. 2) You may field a Squat-Eldar force only if your opponent is fielding Chaos or Tyranids. 3) All Squats within 10 cm of an Eldar unit have -1 Morale (because you just can’t trust them...)</description>
+        </rule>
+        <rule id="a98b-d254-fcd7-a957" name="Squats On The Defensive (Optional Rule)" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+          <description>Squats tend to be particularly fierce when defending their home worlds, so Squat infantry defending their home world may reroll Close Combat dice as if they were facing Orks. This rule does not apply to Clans since they have their own special rules. This rule would only be used in a specific scenario or campaign, with the Squats as the defending army.</description>
+        </rule>
+        <rule id="532c-2055-85d8-710c" name="Squats - Defensive Aerial Fire (Optional Rule)" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+          <description>Since the Squats lack an effective air force their Flyers have developed extended defensive capabilities against enemy flyers. If a Flyer is on Advance Orders, it may be activated to Snap Fire at incoming enemy Flyers, and if it is already on First Fire Orders it does not suffer the usual –1 To-Hit penalty for Snap Fire.</description>
+        </rule>
+      </rules>
       <categoryLinks>
         <categoryLink id="46b1-cea7-e387-4fc6" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="false">
           <constraints>
@@ -68,7 +98,7 @@ Some unique characters have been added (Grimtrek).</readme>
     </forceEntry>
     <forceEntry id="627d-6278-bad5-fe15" name="Squat Brotherhood - Makurtu Gabe" hidden="false">
       <rules>
-        <rule id="59d9-201d-df09-455e" name="Makurtu Gabe : Allies" publicationId="ef70-274e-4025-3861" hidden="false">
+        <rule id="59d9-201d-df09-455e" name="Makurtu Gabe Force Composition" publicationId="ef70-274e-4025-3861" hidden="false">
           <description>Makurtu Gabe may put up to 25% of their points into any one Imperial Standard List (note that in some cases this will cause the Enhanced Close Combat Mastery bonus to not apply).</description>
         </rule>
         <rule id="f3be-9481-6e01-a023" name="Makurtu Gabe : Enhanced CC Mastery" publicationId="ef70-274e-4025-3861" hidden="false">
@@ -87,6 +117,15 @@ Some unique characters have been added (Grimtrek).</readme>
         </rule>
         <rule id="abbd-36c2-07d1-4b3b" name="Makurtu Gabe : Prohibited Units" publicationId="ef70-274e-4025-3861" hidden="false">
           <description>Iron Eagle Wing, Air Attack Corps, Observation Balloon Squadron, Land Raider Squadron, Rhino Squadron.</description>
+        </rule>
+        <rule id="4651-1f1f-5adf-4a61" name="Squats - Eldar Antipathy (Optional Rule)" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+          <description>There is an ages-old antipathy between the two races, and the following options have been suggested: 1) If you field a Squat-Eldar force, you suffer a –1 to all Initiative rolls. 2) You may field a Squat-Eldar force only if your opponent is fielding Chaos or Tyranids. 3) All Squats within 10 cm of an Eldar unit have -1 Morale (because you just can’t trust them...)</description>
+        </rule>
+        <rule id="5ee4-2612-2e2e-69bb" name="Squats On The Defensive (Optional Rule)" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+          <description>Squats tend to be particularly fierce when defending their home worlds, so Squat infantry defending their home world may reroll Close Combat dice as if they were facing Orks. This rule does not apply to Clans since they have their own special rules. This rule would only be used in a specific scenario or campaign, with the Squats as the defending army.</description>
+        </rule>
+        <rule id="2d17-4a7c-5948-e90a" name="Squats - Defensive Aerial Fire (Optional Rule)" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+          <description>Since the Squats lack an effective air force their Flyers have developed extended defensive capabilities against enemy flyers. If a Flyer is on Advance Orders, it may be activated to Snap Fire at incoming enemy Flyers, and if it is already on First Fire Orders it does not suffer the usual –1 To-Hit penalty for Snap Fire.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -135,7 +174,7 @@ Some unique characters have been added (Grimtrek).</readme>
     </forceEntry>
     <forceEntry id="0c46-a8c7-7934-277e" name="Squat Brotherhood - Zutik" hidden="false">
       <rules>
-        <rule id="c440-50f4-d2fc-5cc2" name="Zutik : Allies" publicationId="ef70-274e-4025-3861" hidden="false">
+        <rule id="c440-50f4-d2fc-5cc2" name="Zutik Force Composition" publicationId="ef70-274e-4025-3861" hidden="false">
           <description>Zutik forces may put up to 25% of their points into any one Imperial Standard List, but only if facing Chaos, Orks or Tyranids.</description>
         </rule>
         <rule id="f420-ef80-a968-eb8f" name="Zutik : Fast Cavalry" publicationId="ef70-274e-4025-3861" hidden="false">
@@ -160,6 +199,15 @@ Maximum One Each: Hearthlord, Hellfury, Ironbreaker ArmouredRobot Squadron, Squa
         </rule>
         <rule id="cf10-6f7b-d1a2-32e7" name="Zutik : Poor Endurance" publicationId="ef70-274e-4025-3861" hidden="false">
           <description>Since the Zutik army is not accustomed to long battles, on the third and following turn the enemy player receives 5 extra VP points per turn.</description>
+        </rule>
+        <rule id="df16-7516-a000-2991" name="Squats - Eldar Antipathy (Optional Rule)" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+          <description>There is an ages-old antipathy between the two races, and the following options have been suggested: 1) If you field a Squat-Eldar force, you suffer a –1 to all Initiative rolls. 2) You may field a Squat-Eldar force only if your opponent is fielding Chaos or Tyranids. 3) All Squats within 10 cm of an Eldar unit have -1 Morale (because you just can’t trust them...)</description>
+        </rule>
+        <rule id="7abc-c83b-62c0-4d8f" name="Squats On The Defensive (Optional Rule)" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+          <description>Squats tend to be particularly fierce when defending their home worlds, so Squat infantry defending their home world may reroll Close Combat dice as if they were facing Orks. This rule does not apply to Clans since they have their own special rules. This rule would only be used in a specific scenario or campaign, with the Squats as the defending army.</description>
+        </rule>
+        <rule id="34da-3fb5-6068-3e52" name="Squats - Defensive Aerial Fire (Optional Rule)" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+          <description>Since the Squats lack an effective air force their Flyers have developed extended defensive capabilities against enemy flyers. If a Flyer is on Advance Orders, it may be activated to Snap Fire at incoming enemy Flyers, and if it is already on First Fire Orders it does not suffer the usual –1 To-Hit penalty for Snap Fire.</description>
         </rule>
       </rules>
       <categoryLinks>
@@ -208,7 +256,7 @@ Maximum One Each: Hearthlord, Hellfury, Ironbreaker ArmouredRobot Squadron, Squa
     </forceEntry>
     <forceEntry id="f558-36b7-a05a-11ed" name="Squat Brotherhood - Commercial World Clan" hidden="false">
       <rules>
-        <rule id="9b2a-34ab-bb03-e19f" name="Commercial World Clan : Allies" publicationId="ef70-274e-4025-3861" hidden="false">
+        <rule id="9b2a-34ab-bb03-e19f" name="Commercial World Clan Force Composition" publicationId="ef70-274e-4025-3861" hidden="false">
           <description>Commercial Worlds may put up to 25% of their points into any one Standard List other than Orks. In addition they may purchase one Imperial Guard company (Adeptus Militaris book) with appropriate Support &amp; Special cards, without it counting as allies.</description>
         </rule>
         <rule id="e1f0-d09e-6ae7-98d1" name="Commercial World Clan : You Owe Us!" publicationId="ef70-274e-4025-3861" hidden="false">
@@ -227,6 +275,15 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
         <rule id="f28a-75a3-bc5c-4ed2" name="Commercial World Clan : Decreased CC Mastery" publicationId="ef70-274e-4025-3861" hidden="false">
           <description>Poor Close Combat Warriors: Infantry may only reroll 1’s in CC against Orks, and have no special abilities against anyone else.</description>
         </rule>
+        <rule id="0fca-4487-497b-2d5b" name="Squats - Eldar Antipathy (Optional Rule)" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+          <description>There is an ages-old antipathy between the two races, and the following options have been suggested: 1) If you field a Squat-Eldar force, you suffer a –1 to all Initiative rolls. 2) You may field a Squat-Eldar force only if your opponent is fielding Chaos or Tyranids. 3) All Squats within 10 cm of an Eldar unit have -1 Morale (because you just can’t trust them...)</description>
+        </rule>
+        <rule id="42c0-52d2-96e2-29bf" name="Squats On The Defensive (Optional Rule)" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+          <description>Squats tend to be particularly fierce when defending their home worlds, so Squat infantry defending their home world may reroll Close Combat dice as if they were facing Orks. This rule does not apply to Clans since they have their own special rules. This rule would only be used in a specific scenario or campaign, with the Squats as the defending army.</description>
+        </rule>
+        <rule id="2452-d5c2-e93f-a868" name="Squats - Defensive Aerial Fire (Optional Rule)" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+          <description>Since the Squats lack an effective air force their Flyers have developed extended defensive capabilities against enemy flyers. If a Flyer is on Advance Orders, it may be activated to Snap Fire at incoming enemy Flyers, and if it is already on First Fire Orders it does not suffer the usual –1 To-Hit penalty for Snap Fire.</description>
+        </rule>
       </rules>
       <categoryLinks>
         <categoryLink id="fedf-3b7b-93b4-c4f9" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="false">
@@ -234,7 +291,7 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8513-9098-c134-2340" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="daac-d9d9-4152-a1e1" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="false">
+        <categoryLink id="daac-d9d9-4152-a1e1" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="false">
           <modifiers>
             <modifier type="increment" field="ce26-6fcb-b1eb-e20e" value="5.0">
               <repeats>
@@ -297,6 +354,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
                 <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e049-5842-55eb-78e6" type="max"/>
                 <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8e0-f75c-fec4-26ad" type="min"/>
               </constraints>
+              <rules>
+                <rule id="e62e-8fe6-de81-b9de" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+                  <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+                </rule>
+              </rules>
               <infoLinks>
                 <infoLink id="3625-1f1b-c691-a513" name="Warrior Squad" hidden="false" targetId="7d16-d0aa-8b38-50ec" type="profile"/>
               </infoLinks>
@@ -311,6 +373,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5341-b8c8-30c3-3687" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31e7-8de0-9400-1e43" type="min"/>
               </constraints>
+              <rules>
+                <rule id="d671-0686-ff59-5bb4" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+                  <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+                </rule>
+              </rules>
               <infoLinks>
                 <infoLink id="cf36-871f-bd6a-ecae" name="Warlord" hidden="false" targetId="e239-38df-6c3b-1454" type="profile"/>
                 <infoLink id="1162-b913-62b3-a7c2" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
@@ -345,6 +412,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
                 <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13f8-9861-1ed1-e7f3" type="max"/>
                 <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f2b-817d-d13c-7154" type="min"/>
               </constraints>
+              <rules>
+                <rule id="e145-ee08-3fa2-8ed1" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+                  <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+                </rule>
+              </rules>
               <infoLinks>
                 <infoLink id="02b3-9a19-180c-4c5e" name="Thunderer Squad" hidden="false" targetId="275f-270c-376e-914e" type="profile"/>
               </infoLinks>
@@ -359,6 +431,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27d4-4186-a681-0f70" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb12-ece5-893f-804d" type="min"/>
               </constraints>
+              <rules>
+                <rule id="3327-89d2-329d-7c9d" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+                  <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+                </rule>
+              </rules>
               <infoLinks>
                 <infoLink id="9e5b-8384-f3be-db30" name="Hearthguard" hidden="false" targetId="9c10-43a1-1773-e0b4" type="profile"/>
                 <infoLink id="b7a0-c42f-159b-0317" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
@@ -391,6 +468,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
                 <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a247-4841-78a1-b4c6" type="max"/>
                 <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="635c-dc62-290a-41bd" type="min"/>
               </constraints>
+              <rules>
+                <rule id="ca6f-265b-7853-473a" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+                  <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+                </rule>
+              </rules>
               <infoLinks>
                 <infoLink id="3933-d688-9af0-8212" name="Berserker Squad" hidden="false" targetId="eb02-e13b-6f46-35e7" type="profile"/>
               </infoLinks>
@@ -405,6 +487,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b86-febd-11ca-c990" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53ed-636a-f48f-0835" type="min"/>
               </constraints>
+              <rules>
+                <rule id="ad81-9648-3642-2675" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+                  <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+                </rule>
+              </rules>
               <infoLinks>
                 <infoLink id="19fc-03ed-a89c-59d9" name="Hearthguard" hidden="false" targetId="9c10-43a1-1773-e0b4" type="profile"/>
                 <infoLink id="b09d-97d4-b845-5843" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
@@ -525,6 +612,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3ba-22d5-43d9-26ee" type="max"/>
             <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8000-cb49-cf04-c142" type="min"/>
           </constraints>
+          <rules>
+            <rule id="e016-5926-c581-28c2" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+              <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="734f-2c96-a0c9-8c46" name="Warrior Squad" hidden="false" targetId="7d16-d0aa-8b38-50ec" type="profile"/>
           </infoLinks>
@@ -542,6 +634,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ed9-0f61-eadf-1acb" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e6c-6b09-0482-ab5f" type="min"/>
           </constraints>
+          <rules>
+            <rule id="8bd0-4cc6-686a-864a" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+              <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="41f2-de0a-c316-6217" name="Hearthguard" hidden="false" targetId="9c10-43a1-1773-e0b4" type="profile"/>
             <infoLink id="d5cd-9743-8a73-271d" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
@@ -574,6 +671,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5128-724d-8784-6983" type="max"/>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7edf-b528-5474-82a1" type="min"/>
           </constraints>
+          <rules>
+            <rule id="97e9-0250-ba36-8e3d" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+              <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="52fe-21b4-a1e4-1de1" name="Thunderer Squad" hidden="false" targetId="275f-270c-376e-914e" type="profile"/>
           </infoLinks>
@@ -604,6 +706,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5698-4ac3-8b4c-d5f5" type="max"/>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5f6-d49f-27a2-36b0" type="min"/>
           </constraints>
+          <rules>
+            <rule id="3637-3062-3c4d-fa83" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+              <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="48dd-84c1-36cf-783d" name="Berserker Squad" hidden="false" targetId="eb02-e13b-6f46-35e7" type="profile"/>
           </infoLinks>
@@ -643,6 +750,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
                 <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28b7-2d6e-105b-9e2f" type="max"/>
                 <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="016a-b08a-7ef9-39ad" type="min"/>
               </constraints>
+              <rules>
+                <rule id="c872-bfe2-6052-1148" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+                  <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+                </rule>
+              </rules>
               <infoLinks>
                 <infoLink id="a6fd-fd72-2f77-6668" name="Warrior Squad" hidden="false" targetId="7d16-d0aa-8b38-50ec" type="profile"/>
               </infoLinks>
@@ -660,6 +772,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d584-549e-c567-1192" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8965-e9bf-dda1-7abc" type="min"/>
               </constraints>
+              <rules>
+                <rule id="2dc3-b57d-07a5-3af1" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+                  <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+                </rule>
+              </rules>
               <infoLinks>
                 <infoLink id="e5ed-3489-2628-1c44" name="Warlord" hidden="false" targetId="e239-38df-6c3b-1454" type="profile"/>
                 <infoLink id="1f45-b7d5-dea4-e73d" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
@@ -694,6 +811,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
                 <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72a4-69d2-faf4-6493" type="max"/>
                 <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5bc-3da7-d43f-bd50" type="min"/>
               </constraints>
+              <rules>
+                <rule id="b54f-fd11-171b-11a5" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+                  <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+                </rule>
+              </rules>
               <infoLinks>
                 <infoLink id="bb89-5e01-fbcd-04aa" name="Thunderer Squad" hidden="false" targetId="275f-270c-376e-914e" type="profile"/>
               </infoLinks>
@@ -708,6 +830,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8005-aa3b-484f-3ba2" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23c8-7449-8ab9-7947" type="min"/>
               </constraints>
+              <rules>
+                <rule id="5398-f7d1-0962-81c3" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+                  <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+                </rule>
+              </rules>
               <infoLinks>
                 <infoLink id="b7dd-3e4d-790e-6d34" name="Hearthguard" hidden="false" targetId="9c10-43a1-1773-e0b4" type="profile"/>
                 <infoLink id="c9e4-aa31-0fb9-a5cd" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
@@ -743,6 +870,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
                 <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f052-b17d-4ea1-56a6" type="max"/>
                 <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c40e-545a-503b-459b" type="min"/>
               </constraints>
+              <rules>
+                <rule id="3b2e-bdfe-9195-0290" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+                  <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+                </rule>
+              </rules>
               <infoLinks>
                 <infoLink id="8737-18ac-5645-1998" name="Berserker Squad" hidden="false" targetId="eb02-e13b-6f46-35e7" type="profile"/>
               </infoLinks>
@@ -760,6 +892,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c051-4192-3297-5a00" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="464e-87f9-a1a9-4b3a" type="min"/>
               </constraints>
+              <rules>
+                <rule id="f90e-7065-02b8-63c1" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+                  <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+                </rule>
+              </rules>
               <infoLinks>
                 <infoLink id="4146-3b3b-35fb-2057" name="Hearthguard" hidden="false" targetId="9c10-43a1-1773-e0b4" type="profile"/>
                 <infoLink id="8e77-1108-4e68-756e" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
@@ -805,6 +942,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
                 <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ac2-5fdc-4ac5-396a" type="max"/>
                 <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d070-6adf-8d41-bd1e" type="min"/>
               </constraints>
+              <rules>
+                <rule id="9a86-da50-018a-3236" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+                  <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+                </rule>
+              </rules>
               <infoLinks>
                 <infoLink id="4be4-c7c4-a05d-ab24" name="Shortbeard Squad" hidden="false" targetId="be03-10bb-c1b4-2a4e" type="profile"/>
               </infoLinks>
@@ -822,6 +964,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d75-0848-ba4b-2481" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7365-48b5-52d4-8f30" type="min"/>
               </constraints>
+              <rules>
+                <rule id="cfc5-e434-866a-c288" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+                  <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+                </rule>
+              </rules>
               <infoLinks>
                 <infoLink id="91f4-d603-4743-90f2" name="Hearthguard" hidden="false" targetId="9c10-43a1-1773-e0b4" type="profile"/>
                 <infoLink id="f025-3776-b372-86a5" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
@@ -848,6 +995,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4458-6755-cf87-f4dd" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26dc-3b25-be4d-9f1e" type="max"/>
           </constraints>
+          <rules>
+            <rule id="3ad5-c5a7-3a0d-53d0" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+              <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+            </rule>
+          </rules>
           <categoryLinks>
             <categoryLink id="0010-b335-b9eb-d8da" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
@@ -898,6 +1050,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a92-0690-c432-1953" type="max"/>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9109-ba0a-87a3-fa81" type="min"/>
           </constraints>
+          <rules>
+            <rule id="0bf0-6b9c-c00a-4729" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+              <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="81da-4571-d62a-87b6" name="Shortbeard Squad" hidden="false" targetId="be03-10bb-c1b4-2a4e" type="profile"/>
           </infoLinks>
@@ -915,6 +1072,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="baa0-f0d1-0daa-a6fc" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d733-a405-19f3-97b9" type="min"/>
           </constraints>
+          <rules>
+            <rule id="bc35-abfb-5201-ed6e" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+              <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="d1ce-b8b2-f0df-6f01" name="Hearthguard" hidden="false" targetId="9c10-43a1-1773-e0b4" type="profile"/>
             <infoLink id="1198-4de9-d720-dfdd" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
@@ -1071,6 +1233,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
                 <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fde3-1e97-bfac-fe46" type="max"/>
                 <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ad2-2257-15a6-6198" type="min"/>
               </constraints>
+              <rules>
+                <rule id="3410-fc47-efb4-71d1" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+                  <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+                </rule>
+              </rules>
               <infoLinks>
                 <infoLink id="35b7-54f1-b27c-0b96" name="Warrior Squad" hidden="false" targetId="7d16-d0aa-8b38-50ec" type="profile"/>
               </infoLinks>
@@ -1085,6 +1252,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fd5-d38c-1c74-5043" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5d3-a6da-0adf-49c8" type="min"/>
               </constraints>
+              <rules>
+                <rule id="0ea6-5526-1f5e-e4bc" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+                  <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+                </rule>
+              </rules>
               <infoLinks>
                 <infoLink id="f01c-636b-fa87-246f" name="Warlord" hidden="false" targetId="e239-38df-6c3b-1454" type="profile"/>
                 <infoLink id="8a82-36c2-c03f-ddbb" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
@@ -1119,6 +1291,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
                 <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab29-cc32-ce9c-f593" type="max"/>
                 <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd99-d0ca-a483-8853" type="min"/>
               </constraints>
+              <rules>
+                <rule id="b3aa-2913-5d55-d6fa" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+                  <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+                </rule>
+              </rules>
               <infoLinks>
                 <infoLink id="888d-65df-8c42-a85f" name="Berserker Squad" hidden="false" targetId="eb02-e13b-6f46-35e7" type="profile"/>
               </infoLinks>
@@ -1133,6 +1310,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a15-32d0-ebc9-e669" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1fd-4ed5-91ef-8807" type="min"/>
               </constraints>
+              <rules>
+                <rule id="651b-4b7c-c093-1126" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+                  <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+                </rule>
+              </rules>
               <infoLinks>
                 <infoLink id="10ae-ab94-802f-41f8" name="Hearthguard" hidden="false" targetId="9c10-43a1-1773-e0b4" type="profile"/>
                 <infoLink id="a05d-18a7-b07e-3765" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
@@ -1516,6 +1698,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f67-0ff1-08e0-d7a4" type="max"/>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7676-94ae-6954-6a49" type="min"/>
           </constraints>
+          <rules>
+            <rule id="e2ac-39fa-8b2e-9e5e" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+              <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="e169-a981-be42-114c" name="Berserker Squad" hidden="false" targetId="eb02-e13b-6f46-35e7" type="profile"/>
           </infoLinks>
@@ -1533,6 +1720,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df39-1781-935b-7d09" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afdb-5a0e-e49e-2bfe" type="min"/>
           </constraints>
+          <rules>
+            <rule id="5e3c-9b5e-d0c5-ad69" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+              <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="3048-a575-7b44-190e" name="Hearthguard" hidden="false" targetId="9c10-43a1-1773-e0b4" type="profile"/>
             <infoLink id="1ef8-56c5-d4ed-bd31" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
@@ -1590,6 +1782,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
                 <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="023d-3aa0-461e-036f" type="max"/>
                 <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1af-6116-e586-6e7c" type="min"/>
               </constraints>
+              <rules>
+                <rule id="19f1-d9c1-03c5-9abe" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+                  <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+                </rule>
+              </rules>
               <infoLinks>
                 <infoLink id="5d60-697b-c066-9351" name="Berserker Squad" hidden="false" targetId="eb02-e13b-6f46-35e7" type="profile"/>
               </infoLinks>
@@ -1607,6 +1804,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0fd-c5cb-15cf-69bd" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eedc-e9cf-6e71-b284" type="min"/>
               </constraints>
+              <rules>
+                <rule id="9a7c-78d6-7b6a-9dab" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+                  <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+                </rule>
+              </rules>
               <infoLinks>
                 <infoLink id="8108-5487-2800-b99b" name="Hearthguard" hidden="false" targetId="9c10-43a1-1773-e0b4" type="profile"/>
                 <infoLink id="7919-5bcd-4c54-c9b7" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
@@ -1658,6 +1860,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5a1-9293-54f9-d0a5" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec0b-37be-6af6-27c4" type="min"/>
               </constraints>
+              <rules>
+                <rule id="0213-ffc6-142c-c52f" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+                  <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+                </rule>
+              </rules>
               <infoLinks>
                 <infoLink id="3706-17bc-8af1-9705" name="Warlord" hidden="false" targetId="e239-38df-6c3b-1454" type="profile"/>
                 <infoLink id="0d60-a942-0d19-d20c" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
@@ -2709,6 +2916,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88a2-5416-8d8b-4a04" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bbe-98c0-1b8b-b119" type="min"/>
           </constraints>
+          <rules>
+            <rule id="f5d3-b653-e741-ce72" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+              <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="1616-7085-3cbe-fb46" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
             <infoLink id="318e-38bb-9604-9e7d" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
@@ -2745,6 +2957,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8098-691e-5334-6c1b" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba2d-7f20-9ca4-9cbe" type="min"/>
           </constraints>
+          <rules>
+            <rule id="8311-3c00-aa5b-35bb" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+              <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="4fd1-9711-0a15-23bb" name="Command" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
             <infoLink id="1ab1-aace-e2cd-6926" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
@@ -2769,6 +2986,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
       </costs>
     </selectionEntry>
     <selectionEntry id="1974-075f-ac37-faf9" name="Fundamentalist" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="1586-e1bc-6c70-8ebb" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+          <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+        </rule>
+      </rules>
       <categoryLinks>
         <categoryLink id="864a-e940-67f5-8253" name="Special Cards" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
         <categoryLink id="fbcc-cde2-cbd8-075a" name="Squats" hidden="false" targetId="f3bd-9505-bea6-fef5" primary="false"/>
@@ -2813,6 +3035,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42a7-2940-6676-e04c" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d3b-b32d-121e-da24" type="min"/>
           </constraints>
+          <rules>
+            <rule id="993d-e831-af4c-e836" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+              <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="2055-67c6-c2d5-64ef" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
             <infoLink id="2f3f-7ba4-f06a-e9f6" name="Stealth" hidden="false" targetId="60b5-deb4-dac3-89a1" type="rule"/>
@@ -2924,6 +3151,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50c5-8e9f-2e2f-3077" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="971a-5827-988a-93be" type="min"/>
           </constraints>
+          <rules>
+            <rule id="fc83-c18b-e661-0f18" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+              <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="4c2d-a2ca-e647-3b6c" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
             <infoLink id="38ce-56d8-6103-af4b" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
@@ -3065,6 +3297,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4433-4fa9-2632-0096" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3913-1cbd-db30-5ade" type="min"/>
           </constraints>
+          <rules>
+            <rule id="090e-9001-5808-d000" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+              <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="b65f-d293-bd29-40eb" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
             <infoLink id="cf83-e2aa-34dc-3733" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
@@ -3157,6 +3394,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d0c-0a41-f7c9-8efd" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1391-a45f-d7eb-50dc" type="min"/>
           </constraints>
+          <rules>
+            <rule id="055c-b5d8-2e49-f4e6" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+              <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="78e2-4b04-23a1-f611" name="Slayer Champion" hidden="false" targetId="2745-868b-5d64-456e" type="profile"/>
             <infoLink id="5767-280b-3017-9f05" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
@@ -3176,6 +3418,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="710d-7003-fc0b-3808" type="max"/>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f87-2565-7dd6-b1b9" type="min"/>
           </constraints>
+          <rules>
+            <rule id="d532-3691-3212-ab5a" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+              <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="1197-b1e0-aaa4-6d9a" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
             <infoLink id="55c4-a2f0-6fd1-e0bd" name="Slayer Squad" hidden="false" targetId="0d96-6985-c1ac-b26e" type="profile"/>
@@ -3207,6 +3454,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bad-feeb-4110-c3da" type="max"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04c6-671f-12e4-0ffb" type="min"/>
           </constraints>
+          <rules>
+            <rule id="0e6a-aba4-328a-d47a" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+              <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="75f5-fff5-037a-74bc" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
             <infoLink id="a119-4fc3-1ca5-466a" name="Squat Bodyguards" hidden="false" targetId="e218-f19c-d700-4c69" type="rule"/>
@@ -3239,6 +3491,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6408-f657-8355-f76d" type="max"/>
             <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ed7-fd2d-2ca0-5eed" type="min"/>
           </constraints>
+          <rules>
+            <rule id="c2e2-9d3f-0b60-a23b" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+              <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="5e2d-268f-63df-4073" name="Burner Squad" hidden="false" targetId="254a-005b-cfbc-6438" type="profile"/>
             <infoLink id="1ada-6cf8-4ed5-baa7" name="Ignores Cover" hidden="false" targetId="68e8-8b1e-49cc-e8ef" type="rule"/>
@@ -3257,6 +3514,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebfd-a924-305d-2a89" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f49-6ad5-2d98-4031" type="min"/>
           </constraints>
+          <rules>
+            <rule id="572e-4a5f-1afc-b1b7" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+              <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="b0ed-c46a-2c8b-eacd" name="Hearthguard" hidden="false" targetId="9c10-43a1-1773-e0b4" type="profile"/>
             <infoLink id="86c9-6ac9-dd22-17fd" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
@@ -3289,6 +3551,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8855-6f7e-b031-1b58" type="max"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e122-d7a2-6a16-0dcc" type="min"/>
           </constraints>
+          <rules>
+            <rule id="5894-c103-d3fd-77eb" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+              <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="53a2-f7f2-3130-6b68" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
             <infoLink id="81bc-c62a-1654-b492" name="Squat Bodyguards" hidden="false" targetId="e218-f19c-d700-4c69" type="rule"/>
@@ -3321,6 +3588,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c022-7693-9446-d188" type="max"/>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f2a-736b-453c-d532" type="min"/>
           </constraints>
+          <rules>
+            <rule id="2224-c2a1-59d2-ee5b" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+              <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="0c6c-6f1b-8d34-529e" name="Combat Engineer" hidden="false" targetId="727d-cb08-49ce-a693" type="rule"/>
             <infoLink id="2dd4-6986-0b6e-f8a7" name="Engineer Squad" hidden="false" targetId="c440-24de-46c1-630d" type="profile"/>
@@ -3352,6 +3624,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f74-a75e-2008-1780" type="max"/>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f67-1c87-dfb5-8b86" type="min"/>
           </constraints>
+          <rules>
+            <rule id="c6fa-54c0-e97b-5774" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+              <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="a7a7-ff85-effb-4bc1" name="Infiltration" hidden="false" targetId="ede4-cc45-d7c4-7f78" type="rule"/>
             <infoLink id="22a6-9c3f-0fcd-0f67" name="Expeditioner Squad" hidden="false" targetId="05d3-6aa6-94a7-841e" type="profile"/>
@@ -3402,6 +3679,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af10-11d5-e0d9-e763" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82ed-1316-0ca5-9a17" type="min"/>
           </constraints>
+          <rules>
+            <rule id="29f5-7999-618e-aff1" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+              <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="f886-d5b8-0110-623c" name="Hearthguard" hidden="false" targetId="9c10-43a1-1773-e0b4" type="profile"/>
             <infoLink id="8590-f3b6-acf8-1940" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
@@ -3421,6 +3703,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="693f-1e81-c044-7794" type="max"/>
             <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea05-e60a-4a6f-cc33" type="min"/>
           </constraints>
+          <rules>
+            <rule id="b1bf-8bee-f041-3df1" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+              <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="9332-ce6d-cdf9-b73a" name="Warrior Squad" hidden="false" targetId="7d16-d0aa-8b38-50ec" type="profile"/>
           </infoLinks>
@@ -3451,6 +3738,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9082-dd40-b4d9-d3f5" type="max"/>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa13-83a6-6852-de9a" type="min"/>
           </constraints>
+          <rules>
+            <rule id="5685-196a-28be-ad64" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+              <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="613f-86b5-8cc1-d55a" name="Stormer Squad" hidden="false" targetId="4945-15b2-7a50-4fdc" type="profile"/>
           </infoLinks>
@@ -4019,6 +4311,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e8d-1824-0a04-5fc7" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1948-93eb-392d-5a5a" type="min"/>
           </constraints>
+          <rules>
+            <rule id="3eef-8f89-aaf7-31bd" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+              <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="26a4-30da-2b85-08d7" name="Command" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
             <infoLink id="ca10-9e2a-d378-7db0" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
@@ -4041,6 +4338,11 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="deae-3a0a-49e9-6ac7" type="max"/>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66bb-332d-c5c7-d66a" type="min"/>
           </constraints>
+          <rules>
+            <rule id="3cc9-3a1f-cd64-6eed" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+              <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
+            </rule>
+          </rules>
           <infoLinks>
             <infoLink id="855c-9af4-f19a-a11f" name="Hearthguard" hidden="false" targetId="9c10-43a1-1773-e0b4" type="profile"/>
             <infoLink id="84f8-be7b-1ff6-4465" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
@@ -4117,6 +4419,68 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
         <cost name=" VP" typeId="points" value="1.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f9a9-661a-fc22-7be4" name="Heavy Off-Board Barrage" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1749-6b3e-b010-86b4" name="VP Cost : 2" hidden="false" targetId="b09a-df73-fc38-29f6" type="rule"/>
+        <infoLink id="52ff-cc2f-5662-ab11" name="Off Board / Orbital Barrages" hidden="false" targetId="b085-7066-0cad-eee5" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="05d8-426f-f69d-5f6a" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+        <categoryLink id="0e70-d73f-dcef-3def" name="Squats" hidden="false" targetId="f3bd-9505-bea6-fef5" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="b00b-e080-d964-b34d" name="Heavy Off-Board Barrage" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5186-1e24-5d41-6c81" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2c2-9e1f-dcaf-ac20" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="9283-9f8d-bbac-aeec" name="Heavy Orbital Barrage" hidden="false" targetId="e7a5-b4a8-9e53-bb34" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f831-550a-d094-6e25" name="Light Off-Board Barrage" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7eb7-25fe-4ed5-97aa" name="VP Cost : 1" hidden="false" targetId="84c0-6f33-b928-eb28" type="rule"/>
+        <infoLink id="07ec-c41d-d723-e49a" name="Off Board / Orbital Barrages" hidden="false" targetId="b085-7066-0cad-eee5" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="526f-0ecd-bffb-110d" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+        <categoryLink id="801e-df69-febf-1618" name="Squats" hidden="false" targetId="f3bd-9505-bea6-fef5" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d09b-2131-9adb-7c66" name="Light Off-Board Barrage" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbbe-8c1e-5f51-24d0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="399b-b80b-3657-30f8" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="f388-df52-0f92-bd0a" name="Light Orbital Barrage" hidden="false" targetId="c01f-4780-a322-8fa7" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -4602,6 +4966,9 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
     </rule>
     <rule id="1a12-c251-d3ef-a535" name="Zutik Snipers" hidden="false">
       <description>This unit may not shoot and move in the same turn.</description>
+    </rule>
+    <rule id="5b35-2f8a-6479-8249" name="Squat Close Combat Mastery / Hatred Of Orks" publicationId="ef70-274e-4025-3861" page="4" hidden="false">
+      <description>Due their resilience and skill in Close Combat, Squat infantry may reroll any “1” on one or both Close Combat dice. Due to the intense hatred of Orks, any Squat infantry stand fighting Orks can re-roll any die that comes up a 1 or 2. This bonus applies only to Squat infantry and not walkers, bikes or other units. Each stand may only reroll dice once per turn.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -5566,6 +5933,24 @@ This weapon fires in a 90° forward arc.</characteristic>
         <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Bolters : 50cm, 2d 5+ (-2)</characteristic>
         <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">N/A</characteristic>
         <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+      </characteristics>
+    </profile>
+    <profile id="e7a5-b4a8-9e53-bb34" name="Heavy Orbital Barrage" hidden="false" typeId="05cf-e6d0-ff56-e3dd" typeName="Off-Table Ordnance">
+      <characteristics>
+        <characteristic name="Weapon" typeId="02d1-3e5f-078f-c0ed">Heavy Orbital Barrage</characteristic>
+        <characteristic name="Attack Dice" typeId="e76e-bdeb-9c4e-69de">N/A</characteristic>
+        <characteristic name="To Hit" typeId="9e2d-8409-e58c-a317">10SB (2+)</characteristic>
+        <characteristic name="Save Modifier" typeId="724e-3b84-823f-caa4">-2</characteristic>
+        <characteristic name="Special Rules" typeId="f31d-110a-a38a-cda5"/>
+      </characteristics>
+    </profile>
+    <profile id="c01f-4780-a322-8fa7" name="Light Orbital Barrage" hidden="false" typeId="05cf-e6d0-ff56-e3dd" typeName="Off-Table Ordnance">
+      <characteristics>
+        <characteristic name="Weapon" typeId="02d1-3e5f-078f-c0ed">Light Orbital Barrage</characteristic>
+        <characteristic name="Attack Dice" typeId="e76e-bdeb-9c4e-69de">N/A</characteristic>
+        <characteristic name="To Hit" typeId="9e2d-8409-e58c-a317">6BP (4+)</characteristic>
+        <characteristic name="Save Modifier" typeId="724e-3b84-823f-caa4">-1</characteristic>
+        <characteristic name="Special Rules" typeId="f31d-110a-a38a-cda5"/>
       </characteristics>
     </profile>
   </sharedProfiles>

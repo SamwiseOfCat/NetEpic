@@ -1,0 +1,1944 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="d092-dc22-1a4b-45b6" name="Dark Eldar" revision="1" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>v1 notes :
+
+Initial Drukhari list from NetEpic Eldar Army Book. Treated as a separate army here as they cannot ally with normal Eldar lists.</readme>
+  <publications>
+    <publication id="b3f2-9186-f17e-45c7" name="Eldar NetEpic Army Book"/>
+  </publications>
+  <profileTypes>
+    <profileType id="0c25-dbc0-dc69-7cca" name="Eldar Special Powers">
+      <characteristicTypes>
+        <characteristicType id="a0e8-8840-d6e2-97ba" name="Range"/>
+        <characteristicType id="579b-edb2-7b3d-c17b" name="Shooting Profile"/>
+        <characteristicType id="cd8a-7eb4-6321-ad36" name="Special Rules"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="b8db-7933-9ff5-7a74" name="Eldar Titan Weapons">
+      <characteristicTypes>
+        <characteristicType id="2213-6aba-9a6a-7a81" name="Range"/>
+        <characteristicType id="b28c-201d-9a05-f620" name="Shooting Profile"/>
+        <characteristicType id="3b17-11dd-01c7-db69" name="Special Rules"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="6408-9a12-0fdb-887b" name="Off-Table Ordnance">
+      <characteristicTypes>
+        <characteristicType id="459d-7c5a-7f74-928a" name="Weapon"/>
+        <characteristicType id="e324-88e6-1c9e-b030" name="Attack Dice"/>
+        <characteristicType id="2ce4-716a-2d23-b3c0" name="To Hit"/>
+        <characteristicType id="1aa1-8d72-7ed4-8d5c" name="Save Modifier"/>
+        <characteristicType id="8b23-1c1c-1e1c-8650" name="Special Rules"/>
+      </characteristicTypes>
+    </profileType>
+  </profileTypes>
+  <categoryEntries>
+    <categoryEntry id="0904-744f-a1b5-0816" name="Archon / Archite" hidden="false"/>
+    <categoryEntry id="8698-3842-9041-d52b" name="Dark Eldar" hidden="false"/>
+  </categoryEntries>
+  <forceEntries>
+    <forceEntry id="46d5-cb9a-8688-a901" name="Dark Eldar" hidden="false">
+      <rules>
+        <rule id="a531-fdd1-3b78-b4d4" name="Dark Eldar Force Composition" publicationId="b3f2-9186-f17e-45c7" page="4" hidden="false">
+          <description>Dark Eldar are a Codex army, and are willing to consider working with Chaos. You must put at least 75% of your points into them and may put up to 25% of your points into any one Standard List except Eldar.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="b245-099a-3dc5-ac47" name="Prisoners" hidden="false" targetId="559b-b1da-795a-74be" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="1f64-d11a-9f66-3d9a" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20c3-f92c-0ccb-8118" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="48c4-c8b8-917e-6add" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="false">
+          <modifiers>
+            <modifier type="increment" field="ba10-e86e-132b-eb3f" value="5.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="704c-e54e-0e5c-2d2f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba10-e86e-132b-eb3f" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="b494-340c-5e7a-ef5b" name="Special Cards" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="false">
+          <modifiers>
+            <modifier type="increment" field="4550-12ae-7a53-cd10" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="704c-e54e-0e5c-2d2f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4550-12ae-7a53-cd10" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="cc9f-186e-558f-28f1" name="Free Cards" hidden="false" targetId="8e49-5810-e088-7dc4" primary="false">
+          <modifiers>
+            <modifier type="increment" field="3fb5-9814-1c65-18c6" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="704c-e54e-0e5c-2d2f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fb5-9814-1c65-18c6" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="d8d3-ecc2-e735-61a6" name="Archon / Archite" hidden="false" targetId="0904-744f-a1b5-0816" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="002e-fb89-aa90-340e" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="abaa-7508-a704-2996" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <selectionEntries>
+    <selectionEntry id="fdd3-aaf4-7e94-f5fb" name="Raider Kabal" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="e040-ca2f-75cd-2b61" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+        <categoryLink id="651c-8d1c-2ac3-e624" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="f1b4-953d-391c-5033" name="Dracon &amp; Retinue" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf8e-30ad-373e-4cd2" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc60-9aca-315e-028f" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="32d4-88f1-e445-676c" name="Dracon" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5bb-2084-0153-4db8" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8004-0f1e-83cc-3ba5" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="e819-4eb9-ff17-6d1c" name="Dracon" hidden="false" targetId="1a49-1f41-ce9d-9ec4" type="profile"/>
+                <infoLink id="1dfe-4d94-63f3-b6ac" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
+                <infoLink id="9d03-9c55-4990-9ada" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
+                <infoLink id="cf67-e16d-c7ce-94f9" name="Dodge" hidden="false" targetId="2c6f-3c21-2dda-e13e" type="rule"/>
+                <infoLink id="aece-1507-5e88-426e" name="Ignores Cover" publicationId="b3f2-9186-f17e-45c7" page="13" hidden="false" targetId="68e8-8b1e-49cc-e8ef" type="rule">
+                  <comment>Not mentioned on NetEpic card but IS mentioned in the NE Eldar Army Book.</comment>
+                </infoLink>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="bf71-ae8c-cb25-8221" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4d91-a9fc-8b47-621c" name="Incubi" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b27-9362-0d90-9537" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39c6-751c-ec02-509d" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="4abf-1fed-8e5c-3f33" name="Incubi" hidden="false" targetId="dfe6-d058-ae55-1dc3" type="profile"/>
+                <infoLink id="d989-9f5a-ccfc-a50d" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
+                <infoLink id="fd61-ba22-8c43-786f" name="Dodge" hidden="false" targetId="2c6f-3c21-2dda-e13e" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="35fd-74dd-37e9-e996" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2dd8-2252-4cb8-0996" name="Command Raider" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4098-7fb5-d1da-e0a5" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c014-bbb1-68c5-57e9" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="b97d-ea62-a75f-052f" name="Raider" hidden="false" targetId="aae0-c5bb-3933-d075" type="profile"/>
+                <infoLink id="1a83-d70d-a70e-6cda" name="Open-Top Vehicle (OTV)" hidden="false" targetId="92c2-e5ef-b021-b866" type="rule"/>
+                <infoLink id="4cef-43ed-30ce-7155" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
+                <infoLink id="a839-e7ab-14e0-106f" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
+                <infoLink id="b510-ab28-e99b-d432" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="1fcf-8743-ce66-f6b1" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1338-3f25-efb2-999c" name="Warrior Cadre" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3570-0261-6671-9516" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2cc-ecb5-4d22-3d9c" type="min"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="653d-c5c7-5591-9cee" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="27f9-d4ce-2d2b-b027" name="Raiders" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5af9-41a3-acd0-cf4f" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6699-ac99-b3b6-1e0f" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="a56c-63f2-a404-2b13" name="Raider" hidden="false" targetId="aae0-c5bb-3933-d075" type="profile"/>
+                <infoLink id="c45c-eeec-54cb-412b" name="Open-Top Vehicle (OTV)" hidden="false" targetId="92c2-e5ef-b021-b866" type="rule"/>
+                <infoLink id="a34e-ab5d-04fd-6f12" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
+                <infoLink id="b67b-a894-6ef8-c50d" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
+                <infoLink id="bf97-bfbf-4f18-f0e0" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="5cdb-c394-c904-e71f" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e005-8245-bbac-1a17" name="Warriors" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8dc0-007d-90cc-6668" type="max"/>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c670-21df-7679-1a6b" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="8c36-8b86-a971-c24a" name="Warrior Squad" hidden="false" targetId="87df-87db-ab06-2284" type="profile"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="adde-ec02-ac4c-8bdd" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="900.0"/>
+        <cost name=" VP" typeId="points" value="9.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e919-947c-4bc6-0aa8" name="Warrior Cadre" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="bce4-1b77-b60d-568a" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+        <categoryLink id="b01e-77fa-1835-0fd4" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="765d-c817-62d9-31c1" name="Raiders" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="451a-be86-0d72-5c81" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c5b-907e-a044-9815" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="90aa-a760-5be3-44de" name="Raider" hidden="false" targetId="aae0-c5bb-3933-d075" type="profile"/>
+            <infoLink id="bcaa-d680-04df-07c5" name="Open-Top Vehicle (OTV)" hidden="false" targetId="92c2-e5ef-b021-b866" type="rule"/>
+            <infoLink id="77f8-9397-67a8-5676" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
+            <infoLink id="7ca4-2aea-5dff-1d56" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
+            <infoLink id="4c96-7ce1-c97d-0c23" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="3368-fc89-0679-caa4" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="42f6-0d7c-1858-be6e" name="Warriors" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f37c-ea71-b2c6-3544" type="max"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c90-2e23-3466-1b5c" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="7d0a-36bc-058b-5b1c" name="Warrior Squad" hidden="false" targetId="87df-87db-ab06-2284" type="profile"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="fd97-0cd3-0f66-8499" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="300.0"/>
+        <cost name=" VP" typeId="points" value="3.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7646-0c3a-945c-985c" name="Wych Cadre" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="d404-d208-1145-504e" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+        <categoryLink id="b98f-4963-1eee-18dd" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+        <categoryLink id="c20a-8e1c-0efc-c9d0" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5cc1-ca62-35a6-473a" name="Wyches" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a248-39ff-64a9-76bc" type="max"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="014a-0f3c-27e1-a086" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="5df4-a457-97e7-91a0" name="Wych Squad" hidden="false" targetId="4575-b5d4-6ec6-8513" type="profile"/>
+            <infoLink id="64c7-e7e0-5696-d68c" name="Dodge" hidden="false" targetId="2c6f-3c21-2dda-e13e" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="411e-14bc-6249-2e07" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="200.0"/>
+        <cost name=" VP" typeId="points" value="2.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d043-1c76-3000-f144" name="Wych Cult" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="b3b4-b709-7952-a8b2" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="true"/>
+        <categoryLink id="ca78-0cdd-f455-d5eb" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="2478-bd92-7c42-1a4a" name="Wych Cadre" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c150-e859-4f12-a51e" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fd8-4b2f-58b3-9a10" type="min"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="b044-b704-0143-4cee" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+            <categoryLink id="b96b-4aa6-5551-7d70" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="2380-3160-6367-c8e2" name="Wyches" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ff6-53bd-1158-7a0b" type="max"/>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdcb-9075-1fcc-ba22" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="71a9-2618-12de-f7bd" name="Wych Squad" hidden="false" targetId="4575-b5d4-6ec6-8513" type="profile"/>
+                <infoLink id="b2b8-0250-1c2d-6ca8" name="Dodge" hidden="false" targetId="2c6f-3c21-2dda-e13e" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="c8ff-118f-9f98-52fe" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d843-5013-dc3a-4dac" name="Warp Beasts Pack" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="824f-db03-30ac-0570" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0839-442b-446d-f331" type="min"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="cc22-756b-d50e-92c9" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="844b-33f1-738b-eb01" name="Beastmaster" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7014-cff8-d01e-728c" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="faaf-86a1-408c-db7a" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="35e9-9de9-a9d9-fd08" name="Beastmaster" hidden="false" targetId="9689-178f-bebf-ba9a" type="profile"/>
+                <infoLink id="6b31-a4e6-4c79-7aa8" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
+                <infoLink id="40d9-f35f-718e-f360" name="Dodge" hidden="false" targetId="2c6f-3c21-2dda-e13e" type="rule"/>
+                <infoLink id="5f45-66d9-94e1-09f8" name="Triple Charge" hidden="false" targetId="e0b7-0bb6-ae52-f14d" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="6696-b321-0ff6-5b30" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1de4-5d96-e72f-070e" name="Warp Beasts" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7a2-7e8e-e0c1-7271" type="max"/>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c097-ced0-6d6f-b468" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="0154-80e3-c809-c1fa" name="Warp Beast Pack" hidden="false" targetId="e086-ea3c-2026-878e" type="profile"/>
+                <infoLink id="3a5a-5acf-a17f-c0fa" name="Triple Charge" hidden="false" targetId="e0b7-0bb6-ae52-f14d" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="5a6c-65a9-7f7f-0187" name="Cavalry" hidden="false" targetId="755d-5211-ce54-6b21" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ba41-0844-e226-6480" name="Dracite &amp; Retinue" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99fb-e0ac-c19f-e913" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df03-5fa9-67f5-26f9" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1a03-3ad0-4581-7d2c" name="Dracite" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="592f-adbe-0ce5-7c7c" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="117e-bf41-7385-065f" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="ef03-3491-4e89-f43f" name="Dracite" hidden="false" targetId="d33f-173e-883d-85a3" type="profile"/>
+                <infoLink id="e3c8-2713-0486-dced" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
+                <infoLink id="4106-fd77-d3c4-0855" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
+                <infoLink id="7d15-ae9a-bf52-6684" name="Dodge" hidden="false" targetId="2c6f-3c21-2dda-e13e" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="788b-c35b-2262-c445" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7fc9-6def-8bee-fdb6" name="Incubi" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5fe-b4f7-aad7-6f7f" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="846c-bec6-7673-9b8c" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="21d7-223c-9135-7cd3" name="Incubi" hidden="false" targetId="dfe6-d058-ae55-1dc3" type="profile"/>
+                <infoLink id="2bb5-2e95-0517-a11e" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
+                <infoLink id="d23b-06ba-c3da-f5e5" name="Dodge" hidden="false" targetId="2c6f-3c21-2dda-e13e" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="0b0d-6777-d23c-90b9" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3927-ee71-3559-4a6b" name="Command Raider" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d28-b23c-cec2-188f" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1486-2ec6-7665-e12f" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="b981-b49b-2bf8-6afd" name="Raider" hidden="false" targetId="aae0-c5bb-3933-d075" type="profile"/>
+                <infoLink id="0684-318b-fbd3-c717" name="Open-Top Vehicle (OTV)" hidden="false" targetId="92c2-e5ef-b021-b866" type="rule"/>
+                <infoLink id="16e1-d67b-afda-82db" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
+                <infoLink id="91fd-9c46-13f6-5ebe" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="8649-49b9-218c-9c67" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="800.0"/>
+        <cost name=" VP" typeId="points" value="8.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="14.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="33df-722f-edda-0153" name="Grotesque Cult" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="44c9-07f0-8f30-ddba" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+        <categoryLink id="77db-eb9d-1c36-17ca" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="b96a-fb6b-c8ca-370d" name="Talos Battery" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3687-eaf7-dca1-ccaa" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e23-ac74-11ff-1d72" type="min"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="680f-642b-f52c-8b4b" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="6382-e64f-8ad8-d4a4" name="Talos" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b5a-b30d-4f03-9924" type="max"/>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="889e-1893-dff0-d282" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="ec0c-6eac-46c1-0b34" name="Talos" hidden="false" targetId="3492-8999-1f97-8fc2" type="profile"/>
+                <infoLink id="50c7-9472-deda-61db" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
+                <infoLink id="686a-df5f-7b85-ae48" name="Artificial Intelligence" hidden="false" targetId="c901-6acf-5a78-0935" type="rule"/>
+                <infoLink id="5b15-625f-9770-4296" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="bb01-3250-e516-4558" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="08fd-1edb-9e6e-8c02" name="Haemonculus &amp; Retinue" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fc6-4e68-c4dc-c0b2" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbc4-d86f-9274-d66f" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="68c7-c183-5377-4b5f" name="Haemonculus" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c2e-1510-3e39-4ca6" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bd3-7d42-1e8d-f705" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="9eb7-b22a-cf6f-902a" name="Haemonculus" hidden="false" targetId="42c0-8364-46fa-6964" type="profile"/>
+                <infoLink id="e593-d806-fcf8-cd4d" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
+                <infoLink id="8d66-4220-6559-51b8" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="d304-9914-ddb9-d20c" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6ba0-b9ca-29cf-1c15" name="Grotesques" hidden="false" collective="false" import="true" type="unit">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfcd-998d-f4c0-8221" type="max"/>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61d5-c920-5631-512f" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="94b4-2dcc-f752-6c86" name="Grotesque Squad" hidden="false" targetId="60f9-4b56-e28a-2569" type="profile"/>
+                <infoLink id="ea08-2381-adb8-b49a" name="Terror" hidden="false" targetId="1f26-d712-95f4-c56e" type="rule"/>
+                <infoLink id="fcc9-53c6-5fb2-4d68" name="Stupid" hidden="false" targetId="b64c-f8b3-648b-5809" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="77fa-02b3-0aa1-5a1f" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="bd39-ef18-48eb-46c3" name="Raiders" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8351-94c0-b1f1-7384" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1517-5a8d-af1c-3a43" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="a265-a946-f3ba-8c5e" name="Raider" hidden="false" targetId="aae0-c5bb-3933-d075" type="profile"/>
+                <infoLink id="b4e1-e94d-df99-708c" name="Open-Top Vehicle (OTV)" hidden="false" targetId="92c2-e5ef-b021-b866" type="rule"/>
+                <infoLink id="e5a5-bdaa-8c99-2f33" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
+                <infoLink id="f6e1-782e-796d-685b" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
+                <infoLink id="56f1-8695-9e5d-92ca" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="c0f0-6b76-2e81-2762" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="600.0"/>
+        <cost name=" VP" typeId="points" value="6.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="8.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bc37-3a18-698f-e3e9" name="Talos Battery" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="b3be-a1c6-ad13-519c" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+        <categoryLink id="abcd-661d-d530-ac26" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="4a4d-da0b-4672-449c" name="Talos" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f380-3047-b785-ef9f" type="max"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da95-e997-dc81-329e" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="8d68-9bca-153e-4ff8" name="Talos" hidden="false" targetId="3492-8999-1f97-8fc2" type="profile"/>
+            <infoLink id="ef89-9287-736d-ef19" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
+            <infoLink id="6637-cef6-c83b-7813" name="Artificial Intelligence" hidden="false" targetId="c901-6acf-5a78-0935" type="rule"/>
+            <infoLink id="c520-3db3-e95d-5ba3" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="7b10-6ea0-1bd5-1a91" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="300.0"/>
+        <cost name=" VP" typeId="points" value="3.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4ad2-6d78-d31f-889c" name="Reaver Jetbike Squadron" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="e6ab-c4e8-0654-5f8c" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+        <categoryLink id="81bf-31b1-a071-2a3c" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="561b-4736-6e88-897e" name="Reaver Jetbikes" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a78-cae2-64a2-b141" type="max"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1f0-b274-9c5c-6c9b" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="5afc-95d5-1b27-0f6a" name="Reaver Jetbike" hidden="false" targetId="a514-bdf9-5553-c081" type="profile"/>
+            <infoLink id="262c-27df-4f2b-97ad" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
+            <infoLink id="fcf6-0de8-68ee-e5ff" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="c47e-2cf4-6ca5-e6bf" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="200.0"/>
+        <cost name=" VP" typeId="points" value="2.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b11f-3928-7054-5481" name="Reaver Kabal" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="cfd3-e473-aa89-6fa2" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="true"/>
+        <categoryLink id="6b4c-746a-5e83-307f" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1330-386d-cda2-f87c" name="Reaver Jetbike Squadron" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73fb-2714-52e4-8fc8" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5994-4572-572f-01e4" type="min"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="a9b8-31f8-7243-d65f" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="db52-5ced-3612-8095" name="Reaver Jetbikes" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7e8-9184-702c-14e1" type="max"/>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb8e-28c6-d643-3d79" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="cea6-9e09-db07-144a" name="Reaver Jetbike" hidden="false" targetId="a514-bdf9-5553-c081" type="profile"/>
+                <infoLink id="1eec-00de-2a0d-bb6f" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
+                <infoLink id="07ae-77e9-a4e4-30e0" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="ef9d-06dd-ba7e-3553" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="600.0"/>
+        <cost name=" VP" typeId="points" value="6.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="9.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="028c-e505-8ca1-156f" name="Ravager Squadron" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="868a-3497-bb76-1366" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+        <categoryLink id="0473-8f1b-45de-ebbf" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="4046-00fb-410b-8b25" name="Ravagers" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8797-fcb7-e5c6-f2c1" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="942f-10b6-ec96-9a3d" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="5ba9-191b-777d-eb29" name="Ravager" hidden="false" targetId="4077-87bd-5c96-e2da" type="profile"/>
+            <infoLink id="52b4-313a-285b-4293" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
+            <infoLink id="738e-8d0d-30fb-9ae6" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="0f8a-19eb-d945-3735" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="225.0"/>
+        <cost name=" VP" typeId="points" value="2.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ce7e-1d8d-e6ec-e007" name="Ravager Kabal" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="4d90-46fc-233a-0f3b" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="true"/>
+        <categoryLink id="6f01-2eb6-241e-d46a" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="30de-98b3-d622-6b9f" name="Ravager Squadron" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="136b-3bdd-8e7c-d69a" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb3e-59ac-4caf-d6a2" type="min"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="54f4-5b0f-b52d-9ccd" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="a5c1-2c0e-570c-ddab" name="Ravagers" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d856-26a2-ee78-3ef8" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6948-8f54-9b37-07a5" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="0c20-3b2d-5258-f6c6" name="Ravager" hidden="false" targetId="4077-87bd-5c96-e2da" type="profile"/>
+                <infoLink id="926e-16f5-67cb-90a3" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
+                <infoLink id="0586-67be-bd28-79e0" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="a0d0-816a-d1f4-af00" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="650.0"/>
+        <cost name=" VP" typeId="points" value="7.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6a73-18ed-c9e7-e3e2" name="Archite" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="5282-3d6c-5c81-2207" name="Archon / Archite VP" hidden="false" targetId="d1e7-4f6a-2676-a850" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e8cc-cf4b-8936-d907" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+        <categoryLink id="389d-8afc-3b0a-b046" name="Archon / Archite" hidden="false" targetId="0904-744f-a1b5-0816" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="016b-5944-3fb2-0cb0" name="Archite" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45ed-0715-1eac-e58f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e396-7810-973a-841a" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="2a37-8422-3dbd-aa82" name="Archite" hidden="false" targetId="0dfd-6231-b9fc-6c35" type="profile"/>
+            <infoLink id="186d-28f1-7692-b1ca" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
+            <infoLink id="a6e1-a577-ec9c-2734" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
+            <infoLink id="a6ce-84d4-9e63-7836" name="Dodge" hidden="false" targetId="2c6f-3c21-2dda-e13e" type="rule"/>
+            <infoLink id="6cac-5134-7cd1-e00b" name="Command" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
+            <infoLink id="de6a-af6e-aa21-a6b6" name="Shadow Field" hidden="false" targetId="1e89-9144-3e13-cea8" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="cb2d-c0d9-d9e2-37d3" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e81a-ab43-3136-d8d7" name="Wych" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1ae-38e7-f59a-d440" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e739-efdf-79b4-281f" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="a329-71a5-53c3-9c18" name="Wych Squad" hidden="false" targetId="4575-b5d4-6ec6-8513" type="profile"/>
+            <infoLink id="82a1-92f4-df6c-f1f8" name="Dodge" hidden="false" targetId="2c6f-3c21-2dda-e13e" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="65e3-f3cb-a9fd-3739" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="559a-e709-c820-df5f" name="Combat Barge" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="282c-a0bb-5672-0e3b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4f8-9324-5e75-04c5" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="3345-4b19-687c-27ce" name="Combat Barge" hidden="false" targetId="0249-c86f-5b71-31aa" type="profile"/>
+            <infoLink id="640c-2137-07fe-ebd3" name="Open-Top Vehicle (OTV)" hidden="false" targetId="92c2-e5ef-b021-b866" type="rule"/>
+            <infoLink id="c4b8-b810-6832-e519" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
+            <infoLink id="a4af-d12f-0e00-2bdc" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
+            <infoLink id="80ea-f97c-32db-31f1" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="207e-f109-4d8f-f2f2" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
+        <cost name=" VP" typeId="points" value="1.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="805c-5118-5da6-1f50" name="Archon" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="34a6-a5bf-9047-b33a" name="Archon / Archite VP" hidden="false" targetId="d1e7-4f6a-2676-a850" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5dc9-1ecc-83b7-9056" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+        <categoryLink id="71e8-1a95-468d-c825" name="Archon / Archite" hidden="false" targetId="0904-744f-a1b5-0816" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="bc91-28f0-5a06-2795" name="Archon" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fab-928f-c571-a917" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6ae-fa3e-38f0-fa00" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="f3d0-a5ce-2ed4-966e" name="Archon" hidden="false" targetId="426b-2a28-482c-e2c5" type="profile"/>
+            <infoLink id="b9cc-5275-d14e-a73a" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
+            <infoLink id="37e4-6b7f-4ee1-9e62" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
+            <infoLink id="f1a1-1aae-a58b-b2d3" name="Dodge" hidden="false" targetId="2c6f-3c21-2dda-e13e" type="rule"/>
+            <infoLink id="9e37-cc46-a2f0-61d2" name="Command" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
+            <infoLink id="5d3b-3ce9-79a1-35c4" name="Shadow Field" hidden="false" targetId="1e89-9144-3e13-cea8" type="rule"/>
+            <infoLink id="a981-c1c6-6a7f-a2eb" name="Ignores Cover" publicationId="b3f2-9186-f17e-45c7" page="12" hidden="false" targetId="68e8-8b1e-49cc-e8ef" type="rule">
+              <comment>Not mentioned on NetEpic card but is mentioned in the NE Eldar Army Book.</comment>
+            </infoLink>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="852f-1a46-6080-550f" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="350d-48ad-f43b-0336" name="Incubi" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c23a-63ae-b361-e7e3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8db-76b4-cece-de0c" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="0326-e104-8148-6662" name="Incubi" hidden="false" targetId="dfe6-d058-ae55-1dc3" type="profile"/>
+            <infoLink id="45d7-0e0d-3d7a-e6ca" name="Dodge" hidden="false" targetId="2c6f-3c21-2dda-e13e" type="rule"/>
+            <infoLink id="6975-6103-7437-40ae" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="31d4-14a3-c06b-5238" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c69d-653e-aae4-fbaf" name="Combat Barge" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b80-ad0f-d5d9-6a83" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7c8-ba32-7f78-5f3a" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="4a1e-0026-7fac-9672" name="Combat Barge" hidden="false" targetId="0249-c86f-5b71-31aa" type="profile"/>
+            <infoLink id="9d5d-e40d-6eb8-9b66" name="Open-Top Vehicle (OTV)" hidden="false" targetId="92c2-e5ef-b021-b866" type="rule"/>
+            <infoLink id="537e-014b-864d-6d33" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
+            <infoLink id="6e4a-7237-b07e-4258" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
+            <infoLink id="5f31-e911-cf65-23e8" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="cca6-2427-9f69-df41" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
+        <cost name=" VP" typeId="points" value="1.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1a7d-c5d1-70c8-24b5" name="Incubi Cadre" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="1691-ea92-2c76-8ff4" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+        <categoryLink id="ac51-64b3-1dcb-27c7" name="Special Card" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="df67-6444-b5db-7fa5" name="Incubi" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cf6-5de3-5cd2-02f6" type="max"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fae-dec5-8b96-4f66" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="d6b8-ba2e-60f4-8116" name="Incubi" hidden="false" targetId="dfe6-d058-ae55-1dc3" type="profile"/>
+            <infoLink id="e615-07bc-3a09-df96" name="Dodge" hidden="false" targetId="2c6f-3c21-2dda-e13e" type="rule"/>
+            <infoLink id="b630-7721-3be5-2230" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="7d33-04ac-e00c-31e5" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="150.0"/>
+        <cost name=" VP" typeId="points" value="2.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a8c2-c245-c480-3323" name="Shadow Spinner" hidden="false" collective="false" import="true" type="unit">
+      <comment>Seems very very cheap!</comment>
+      <categoryLinks>
+        <categoryLink id="faca-41fe-3fe9-fe48" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+        <categoryLink id="de68-a7fc-6d1a-3ba5" name="Special Card" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5fba-2180-6a32-d800" name="Shadow Spinner" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a612-0e9b-9c1b-aced" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c454-c215-e182-4656" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="e252-ef6f-77e9-decc" name="Shadow Spinner" hidden="false" targetId="bef6-138c-0941-d162" type="profile"/>
+            <infoLink id="d3d0-187d-b3f5-4c73" name="Agile" hidden="false" targetId="b210-d2d7-79f5-7fcb" type="rule"/>
+            <infoLink id="cd45-19a7-139f-2211" name="Shadow Field" hidden="false" targetId="1e89-9144-3e13-cea8" type="rule"/>
+            <infoLink id="dd86-42b2-fa76-6967" name="Dodge" hidden="false" targetId="2c6f-3c21-2dda-e13e" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="6d0c-a57a-c739-815c" name="Titan" hidden="false" targetId="31e8-9840-fb3a-3b8d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="200.0"/>
+        <cost name=" VP" typeId="points" value="2.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="782b-2fb8-54b4-cf5d" name="Shadow Spinner Squadron" hidden="false" collective="false" import="true" type="unit">
+      <comment>Seems very very cheap!</comment>
+      <rules>
+        <rule id="b80d-ccff-e2cf-ffc3" name="Shadow Spinner Squadron VP" hidden="false">
+          <description>VP are awarded when each Shadow Spinner is destroyed - destroying one will not break the unit.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="4949-a52f-6f57-b955" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+        <categoryLink id="88db-1ae2-5319-3c8a" name="Special Card" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="4f3f-a9a1-68a8-be89" name="Shadow Spinners" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8328-ee63-d0ad-af7a" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5133-62ce-15b2-2b5a" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="2d5e-681e-f7cf-4d8a" name="Shadow Spinner" hidden="false" targetId="bef6-138c-0941-d162" type="profile"/>
+            <infoLink id="5a2f-44a5-93cf-e02b" name="Agile" hidden="false" targetId="b210-d2d7-79f5-7fcb" type="rule"/>
+            <infoLink id="7ddf-7977-57f8-a494" name="Shadow Field" hidden="false" targetId="1e89-9144-3e13-cea8" type="rule"/>
+            <infoLink id="a459-7dcf-9369-b64e" name="Dodge" hidden="false" targetId="2c6f-3c21-2dda-e13e" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="3ad3-3c71-e16e-dc5e" name="Titan" hidden="false" targetId="31e8-9840-fb3a-3b8d" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="400.0"/>
+        <cost name=" VP" typeId="points" value="4.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="38b5-3c2e-3c5a-57fc" name="Webway Portal" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="74a4-15cd-b420-c068" name="Webway Portal" publicationId="b3f2-9186-f17e-45c7" page="12" hidden="false">
+          <description>This is a mobile form of the portal used by the Dark Eldar to link together places via the webway. The detachments of the Company card it is assigned to act as teleported, along with any detachment taken as Support card of that company. The Webway Portal may be activated at the start of any Orders phase: place a Barrage template on any point of the table and scatter it twice, determining the final position of the portal. All teleporting units exit from the portal in the subsequent Compulsory Movement phase, and must be placed within 5cm of it. Though considered teleported units, they can be assigned any order. Only one Webway Portal may be taken in a Dark Eldar army.</description>
+        </rule>
+        <rule id="34a8-6706-2c5b-8bcf" name="Webway Portal - Prohibited Units" publicationId="b3f2-9186-f17e-45c7" page="12" hidden="false">
+          <description>An army that includes a Webway Portal may not take Phoenix Fighter-Bombers, Spectre Assault Transports or orbital bombardments.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="e2ac-ba64-75ca-398b" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+        <categoryLink id="419f-ec56-56c7-3ce8" name="Special Card" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="300.0"/>
+        <cost name=" VP" typeId="points" value="3.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cf99-5a4a-3465-b226" name="Combat Drugs" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="3bb0-7241-857a-db5e" name="Combat Drugs" publicationId="b3f2-9186-f17e-45c7" page="12" hidden="false">
+          <description>Many Dark Eldar troops use drugs to artificially boost their already finely honed abilities. To represent this, specific individual detachments may purchase combat drugs at a cost of 50 points. Units that may purchase combat drugs are Wyches, Reavers, Hellions, and Beastmasters. Roll 1D6 at beginning of the game for each detachment that receive Combat drugs: 1-2 = Triple normal move on Charge orders, 3-4 = +1 CAF, 5-6 = Unit becomes Fearless. Hellion and Reaver detachments must re-roll any 1-2 results. Combat Drug results only apply to the Beastmaster stand in a Warp Beast Pack.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="d9bd-0d49-99d0-3556" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+        <categoryLink id="cebb-205e-8bcd-87dd" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7cb7-181d-86e6-5fc4" name="Hellion Cadre" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="178a-0d75-c55c-bd7d" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+        <categoryLink id="5bc9-1cba-f260-5f77" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1535-8cf8-f2a5-a5bc" name="Hellions" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b27-445c-c98a-88d4" type="max"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb88-ef7c-29c1-25ed" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="8399-21a0-cbde-f36b" name="Hellion Squad" hidden="false" targetId="496e-1a45-2a81-c77e" type="profile"/>
+            <infoLink id="e331-a670-4ee2-7e49" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
+            <infoLink id="176b-c588-9be1-4c19" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="bdd0-d365-1658-11d9" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="250.0"/>
+        <cost name=" VP" typeId="points" value="3.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e850-15e8-1d0c-130d" name="Warp Beasts Pack" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="f7d5-d91e-ec16-6832" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+        <categoryLink id="f756-5eed-56f6-c26f" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="2d6b-7e3c-f02a-ef96" name="Beastmaster" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a82e-c560-f238-9213" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcee-9248-70f3-6f81" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="ab93-4291-d58d-9962" name="Beastmaster" hidden="false" targetId="9689-178f-bebf-ba9a" type="profile"/>
+            <infoLink id="f6f6-9c71-2272-266b" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
+            <infoLink id="ea27-c6ce-4c40-c363" name="Dodge" hidden="false" targetId="2c6f-3c21-2dda-e13e" type="rule"/>
+            <infoLink id="b92a-19b9-80de-cdee" name="Triple Charge" hidden="false" targetId="e0b7-0bb6-ae52-f14d" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="b14f-0149-305e-ce53" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c117-0435-67b4-7159" name="Warp Beasts" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a64d-bc8c-fe8e-c860" type="max"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfc9-6351-bfc4-2918" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="fe70-1885-ca57-5455" name="Triple Charge" hidden="false" targetId="e0b7-0bb6-ae52-f14d" type="rule"/>
+            <infoLink id="d329-04b2-4ec4-ef29" name="Warp Beast Pack" hidden="false" targetId="e086-ea3c-2026-878e" type="profile"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="a76b-179a-8946-aa6f" name="Cavalry" hidden="false" targetId="755d-5211-ce54-6b21" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="200.0"/>
+        <cost name=" VP" typeId="points" value="2.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4f6a-d349-9ecd-e83a" name="Scourge Cadre" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="c6e2-1f3f-0add-4f65" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+        <categoryLink id="566a-2d1b-5ca3-fe2d" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5e59-6a93-0ad4-eed4" name="Scourges" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60a7-2459-753f-591e" type="max"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7370-6884-28a2-3a51" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="169d-7607-dd0c-e24c" name="Scourge Squad" hidden="false" targetId="9563-6af0-32e2-1499" type="profile"/>
+            <infoLink id="ca7d-0862-bc2b-793b" name="Jump Packs" hidden="false" targetId="6d0a-c605-e4ec-dd51" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="c561-adb2-a2df-ff0b" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="300.0"/>
+        <cost name=" VP" typeId="points" value="3.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="290c-b0d5-6eeb-988e" name="Mandrake Cadre" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="58ab-d5e7-3a57-e5a5" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+        <categoryLink id="c321-22ee-a3cc-2177" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="30e3-9f07-62cf-e6a4" name="Mandrakes" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="237d-d934-c96f-bdd4" type="max"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51fd-a7a4-e715-3d04" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="3b95-d522-a45c-e162" name="Mandrake Squad" hidden="false" targetId="424b-a471-05aa-e612" type="profile"/>
+            <infoLink id="cec4-132e-675b-ee2b" name="Infiltration" hidden="false" targetId="ede4-cc45-d7c4-7f78" type="rule"/>
+            <infoLink id="c065-1abd-3b7b-82c2" name="Stealth" hidden="false" targetId="60b5-deb4-dac3-89a1" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="fb69-846f-fe6d-7d73" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="200.0"/>
+        <cost name=" VP" typeId="points" value="2.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="3.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f999-31e1-6328-54e5" name="Shadow Raider" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="19d2-08c4-b79b-8f87" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+        <categoryLink id="59de-34d8-90aa-7d19" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="59a5-67b9-d465-df65" name="Shadow Raider" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1533-56eb-2487-180d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a15-9569-1836-9609" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="bdb3-54bd-21d5-ec73" name="Shadow Raider" hidden="false" targetId="d175-555c-6ebd-6fa1" type="profile"/>
+            <infoLink id="c91b-643f-056a-f2dd" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
+            <infoLink id="57bf-dadf-85bf-29b8" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
+            <infoLink id="6165-0fc4-ccea-7bbd" name="Shadow Field" hidden="false" targetId="1e89-9144-3e13-cea8" type="rule"/>
+            <infoLink id="ffb5-9eb5-3686-94a7" name="Penetrating (+3)" hidden="false" targetId="af8f-61cb-cc42-2f21" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="74c8-3b19-0269-efe0" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="150.0"/>
+        <cost name=" VP" typeId="points" value="2.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0962-02bf-f486-c03e" name="Phoenix Fighter-Bomber" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="2b7e-1275-c695-0a13" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+        <categoryLink id="3f28-06ac-a976-b0c3" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="3830-f14e-241b-b0ca" name="Phoenix" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="300d-6776-7cc7-73f2" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1123-5533-9bb4-4f6b" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="a562-fdb7-eb14-2de1" name="Phoenix Fighter-Bomber" hidden="false" targetId="4b12-5d3c-9369-f50a" type="profile"/>
+            <infoLink id="5876-f8cf-c435-4ff1" name="Flyer" hidden="false" targetId="f081-2b42-2559-361e" type="rule"/>
+            <infoLink id="43e8-e5d9-d327-b545" name="Ignores Cover" hidden="false" targetId="68e8-8b1e-49cc-e8ef" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="2c6b-082b-0db8-3778" name="Flyer" hidden="false" targetId="d6b7-fbc6-dca0-1682" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="300.0"/>
+        <cost name=" VP" typeId="points" value="3.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="25ba-8b48-73f1-63a6" name="Banshee Battery" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="448c-43f6-062d-1fa8" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+        <categoryLink id="bbb0-f6c7-277f-3466" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="a714-b561-b0d1-825c" name="Banshees" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80db-59d1-ad8f-f0ec" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e08b-06f5-f79e-bdef" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="7c06-1b8d-8118-b287" name="Banshee AA Raider" hidden="false" targetId="cf78-bd5c-0e8d-4dbc" type="profile"/>
+            <infoLink id="e3a4-d49c-69da-eecf" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
+            <infoLink id="da83-6519-cda7-8bdf" name="Anti-Aircraft" hidden="false" targetId="fcc4-1801-9767-124b" type="rule"/>
+            <infoLink id="8274-0739-cbc2-6167" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="bbd1-2e68-cc30-2200" name="Flyer" hidden="false" targetId="d6b7-fbc6-dca0-1682" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="225.0"/>
+        <cost name=" VP" typeId="points" value="2.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="43b8-b3a9-4c8e-930f" name="Raider Squadron" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="aaf9-12c6-894b-6255" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+        <categoryLink id="0092-c1c6-9ecd-3752" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6163-e657-2e73-a9f2" name="Raiders" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f1c-9057-f8b1-7adf" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="068c-a6bd-4191-ae4d" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="4cac-b97a-4d2a-2de7" name="Raider" hidden="false" targetId="aae0-c5bb-3933-d075" type="profile"/>
+            <infoLink id="018c-94a2-16b6-752c" name="Open-Top Vehicle (OTV)" hidden="false" targetId="92c2-e5ef-b021-b866" type="rule"/>
+            <infoLink id="8946-84d2-5152-03ac" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
+            <infoLink id="46b7-c8ca-cc65-5343" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
+            <infoLink id="ef0f-be20-36e4-63f2" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="91d7-7dcd-deb3-3de3" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="150.0"/>
+        <cost name=" VP" typeId="points" value="2.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cd6d-a4b1-905b-357f" name="Raven Squadron" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="8cd7-9c4a-4d46-da4f" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+        <categoryLink id="a0db-0221-282c-5823" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="ca85-5c86-216f-160a" name="Ravens" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c084-3a68-a47a-2d4a" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b679-e7de-5736-39fc" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="2449-2277-5183-c6ae" name="Raven Interceptor" hidden="false" targetId="ca71-368f-ab51-65aa" type="profile"/>
+            <infoLink id="ec2a-9fc3-f092-b49e" name="Flyer" hidden="false" targetId="f081-2b42-2559-361e" type="rule"/>
+            <infoLink id="b9f5-6489-a2ec-63f8" name="Shadow Field" hidden="false" targetId="1e89-9144-3e13-cea8" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="6939-e786-f7f0-d54c" name="Flyer" hidden="false" targetId="d6b7-fbc6-dca0-1682" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="275.0"/>
+        <cost name=" VP" typeId="points" value="3.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dff5-fbf8-e635-34e2" name="Enslaver Battery" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="49f2-ae16-d3a8-5be5" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+        <categoryLink id="2bc5-7fac-18f4-9e42" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5434-7b19-5320-9f16" name="Enslavers" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c7f-8656-f771-f38f" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67cf-5072-9411-2451" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="b2d3-05eb-ec28-a309" name="Enslaver Raider" hidden="false" targetId="d076-137d-26fd-f0ff" type="profile"/>
+            <infoLink id="b556-f881-87fb-dce6" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
+            <infoLink id="3ade-2614-fb30-e197" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="6fde-f953-de42-737a" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+            <categoryLink id="2423-81b2-8ff2-6e41" name="Heavy Artillery" hidden="false" targetId="83c3-b2b8-ac74-c25c" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="225.0"/>
+        <cost name=" VP" typeId="points" value="2.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8366-02ff-24e7-d661" name="Spectre Assault Transport" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="03f3-41ac-f8f5-8370" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+        <categoryLink id="5173-9dfb-5551-6dd1" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="625d-5ed5-1667-8044" name="Spectre" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c97-f2ef-4a67-d28f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3f7-b635-3248-6db3" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="409b-02b9-9591-4abd" name="Spectre Assault Transport" hidden="false" targetId="443a-0b6c-0145-8b03" type="profile"/>
+            <infoLink id="beb5-6400-ae41-5559" name="Flyer" hidden="false" targetId="f081-2b42-2559-361e" type="rule"/>
+            <infoLink id="e8b4-9c60-7b6c-7870" name="Shadow Field" hidden="false" targetId="1e89-9144-3e13-cea8" type="rule"/>
+            <infoLink id="6bfb-6981-867c-72ca" name="Transport (6)" hidden="false" targetId="1bfb-1bc3-45b7-ccd9" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="7f37-c3ad-b90f-ac15" name="Flyer" hidden="false" targetId="d6b7-fbc6-dca0-1682" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="150.0"/>
+        <cost name=" VP" typeId="points" value="2.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6a5a-d328-4cd3-33e4" name="Razorwing Fighter-Bomber" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="286e-d733-1dbb-5321" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+        <categoryLink id="ef7e-bea9-528b-71d6" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="11ad-2dd3-1509-d843" name="Razorwing" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc2a-ffce-4661-f9f9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35da-e054-4be7-36aa" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="3b29-9653-0f18-b6ec" name="Razorwing Fighter-Bomber" hidden="false" targetId="5b27-5b79-3d38-70fa" type="profile"/>
+            <infoLink id="cc73-87fc-89bc-953c" name="Flyer" hidden="false" targetId="f081-2b42-2559-361e" type="rule"/>
+            <infoLink id="1dc1-2218-7fd7-4fe0" name="Shadow Field" hidden="false" targetId="1e89-9144-3e13-cea8" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="d55a-ca98-691e-8122" name="Flyer" hidden="false" targetId="d6b7-fbc6-dca0-1682" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="200.0"/>
+        <cost name=" VP" typeId="points" value="2.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a2bd-278b-2d08-9610" name="Orbital Web Bomb" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c8c0-17c1-19b4-a4c5" name="VP Cost : 2" hidden="false" targetId="b09a-df73-fc38-29f6" type="rule"/>
+        <infoLink id="337b-2d20-4779-014b" name="Off Board / Orbital Barrages" hidden="false" targetId="b085-7066-0cad-eee5" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e875-36b1-17ef-436a" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+        <categoryLink id="b563-d106-ec56-4190" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="b1e6-07fd-83a4-1c62" name="Orbital Web Bomb" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b13-08ef-b1e2-4beb" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2a8-c9be-ec83-c26f" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="653f-b485-b65e-985c" name="Web Bomb" hidden="false" targetId="d3a2-0265-3f29-82d0" type="profile"/>
+            <infoLink id="87ec-45ca-0aea-5b5f" name="Orbital Web Bomb" hidden="false" targetId="67c5-296b-a984-bc27" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1934-a2d5-608f-91b0" name="Raptor Missile Barrage" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9efa-ce26-837f-5e84" name="VP Cost : 2" hidden="false" targetId="b09a-df73-fc38-29f6" type="rule"/>
+        <infoLink id="586f-6b89-f342-26e8" name="Destroys Buildings" hidden="false" targetId="7db7-4fc2-dcb1-aa01" type="rule"/>
+        <infoLink id="8e8e-8820-dd68-c3e5" name="Off Board / Orbital Barrages" hidden="false" targetId="b085-7066-0cad-eee5" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3169-4757-c418-e7fb" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+        <categoryLink id="bf43-80cd-a5fe-19d4" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="c16e-0ce6-714d-1df8" name="Raptor Missile Barrage" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4580-c845-c296-8a57" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bd0-4986-0e8e-0b5a" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="62ed-5287-24ac-52dc" name="Raptor Missile" hidden="false" targetId="aad9-ad86-70db-73c0" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedRules>
+    <rule id="5b24-1937-df6d-78ed" name="Horrorfex" publicationId="b3f2-9186-f17e-45c7" page="15" hidden="false">
+      <description>The dreaded Horrorfex fires a devastating Psychic barrage. Place the 6 cm template within line of sight, and if any models under the template are hit, the entire unit’s detachment must pass a Morale check or go on Fall-back orders. The check is modified by -1 for any models hit in excess of one. Since the Terrorfex produces psychic hallucinations, a successful Psychic save by any member of the unit negates the need to make a Morale check.</description>
+    </rule>
+    <rule id="2ed3-6214-1ab0-af80" name="Net-Thrower" hidden="false">
+      <description>The Net-thrower fires an individual web template (the Doomweaver template): take one template and place it over the intended target anywhere within LoS and range. Roll a Scatter die, and if you roll an arrow the template scatters 1d6cm it the arrow’s direction. Place the template number side up in the location indicated with the number 1 printed on it towards the firing model, 2 other templates are placed joining the original template on a random edge determined by rolling 2d6 (if you roll the same edge twice the second template is wasted). Anything under the templates is hit on 4+, but is only effective only against infantry. Since the net’s charge is psychic, Psychic saves apply but armor saves do not. Place any successfully netted Eldar unit moves into base-to-base contact with a netted stand, it is captured and counts as a prisoner (+1 Victory Point each). A netted unit does not count toward the units’ break point while it remains on the table, but once captured it also counts as destroyed for break point calculations.</description>
+    </rule>
+    <rule id="67c5-296b-a984-bc27" name="Orbital Web Bomb" publicationId="b3f2-9186-f17e-45c7" page="33 / 34" hidden="false">
+      <description>Take one template and place it anywhere on the tabletop. Place the template number side up the number one printed on it towards the firing model. Then, place 6 further templates surrounding the central template already laid. Models under any of the templates that have active shields/fields or a 1+ armor save are unaffected. All other units are destroyed on a 4+. If the model makes the 4+ roll, move it to the closest outer edge of the webbed area. Models displaced that are on First Fire orders will not be able to shoot until Advance Fire (if it hasn’t fired already). Units with a hit location template and no shields are struck once on a random location for the highest damage listed in that particular template. If the location struck has a 1+ save no damage is caused. Infantry in buildings roll 4+ as normal to avoid the web. In the open the web disperses in 2 turns. To keep track of this, in the End Phase remove any un-numbered templates, and flip numbered templates to their un-numbered sides. Any buildings or significant terrain that is covered by web will be impassable for the rest of the game.</description>
+    </rule>
+    <rule id="2c6f-3c21-2dda-e13e" name="Dodge" publicationId="b3f2-9186-f17e-45c7" page="12" hidden="false">
+      <description>Many of the Dark Eldar troops were raised in the Gladiatorial arenas of Commorragh and their years of hand to hand combat experience have made them extremely hard to defeat. Dark Eldar units with the Dodge ability gain a 5+ fixed save that can only be used in Close Combat.</description>
+    </rule>
+    <rule id="e0b7-0bb6-ae52-f14d" name="Triple Charge" hidden="false">
+      <description>Warp Beasts &amp; Beastmasters on Charge orders are allowed to move up to triple their basic movement distance.</description>
+    </rule>
+    <rule id="1e89-9144-3e13-cea8" name="Shadow Field" publicationId="b3f2-9186-f17e-45c7" page="12" hidden="false">
+      <description>Surrounding the unit wearing it in a dark miasma of energy, a Shadow Field absorbs the energy of any hits inflicted, making protected units almost immune to any damage. Shadow Fields are identical to Holofields - they provide a unit with a Fixed Save depending on their current orders : First Fire 4+, Advance 3+, Charge 2+. Barrages ignore the Holofields save.</description>
+    </rule>
+    <rule id="d1e7-4f6a-2676-a850" name="Archon / Archite VP" hidden="false">
+      <description>VP for this unit is only awarded if the Archon or Archite model is destroyed.</description>
+    </rule>
+    <rule id="559b-b1da-795a-74be" name="Prisoners" publicationId="b3f2-9186-f17e-45c7" page="12" hidden="false">
+      <comment>Added &quot;Infantry Unit&quot; to this rule wording as the Drukhari taking tanks etc as prisoners makes no sense.</comment>
+      <description>The Dark Eldar almost always take prisoners during their raids. When an infantry unit in Close Combat with the Dark Eldar is broken and fails it’s Morale check, roll a D6 for each stand still in base-to-base contact with a Dark Eldar stand in the End Phase: on a roll of 4+ the stand is taken prisoner (removed) and the Dark Eldar player is awarded 1 Victory Point.</description>
+    </rule>
+  </sharedRules>
+  <sharedProfiles>
+    <profile id="1a49-1f41-ce9d-9ec4" name="Dracon" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Infantry</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">10cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">N/A</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+5</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Terrorfex &amp; Agoniser : 35cm, 2d 5+ (-1)</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">3+</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+      </characteristics>
+    </profile>
+    <profile id="dfe6-d058-ae55-1dc3" name="Incubi" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Infantry</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">10cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">6+</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+4</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Tormentor Helm : 25cm, 1d 5+ (0)</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">3+</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+      </characteristics>
+    </profile>
+    <profile id="aae0-c5bb-3933-d075" name="Raider" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Skimmer</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">30cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">5+</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+0</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Dark Lance : 75cm, 1d 4+ (-2)</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">3+</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+      </characteristics>
+    </profile>
+    <profile id="87df-87db-ab06-2284" name="Warrior Squad" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Infantry</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">10cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">N/A</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+0</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Splinter Rifle : 50cm, 1d 5+ (0)</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">3+</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+      </characteristics>
+    </profile>
+    <profile id="4575-b5d4-6ec6-8513" name="Wych Squad" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Infantry</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">10cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">N/A</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+3</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Pistol / Blades : 25cm, 1d 5+ (0)</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">3+</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+      </characteristics>
+    </profile>
+    <profile id="d33f-173e-883d-85a3" name="Dracite" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Infantry</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">10cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">N/A</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+5</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Terrorfex &amp; Agoniser : 35cm, 2d 5+ (-1)</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">3+</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+      </characteristics>
+    </profile>
+    <profile id="42c0-8364-46fa-6964" name="Haemonculus" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Infantry</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">10cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">N/A</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+4</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Destructor : LT, 4+ (-1)</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">3+</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339">Any psyker that attempts to use a Psychic power within 50cm of a Haemonculus must first roll a 4+ or be destroyed.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="60f9-4b56-e28a-2569" name="Grotesque Squad" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Infantry</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">10cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">6+ Fixed</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+3</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Close Combat Only</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">3+</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+      </characteristics>
+    </profile>
+    <profile id="3492-8999-1f97-8fc2" name="Talos" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Skimmer</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">10cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">4+</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+5</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Talos Stinger : 50cm, D6d 5+ (-1)</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">3+</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+      </characteristics>
+    </profile>
+    <profile id="9689-178f-bebf-ba9a" name="Beastmaster" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Infantry</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">10cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">N/A</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+3</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Pistol &amp; Agoniser : 25cm, 1d 5+ (0)</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">3+</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+      </characteristics>
+    </profile>
+    <profile id="e086-ea3c-2026-878e" name="Warp Beast Pack" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Cavalry</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">20cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">N/A</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+4</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Close Combat Only</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">3+</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+      </characteristics>
+    </profile>
+    <profile id="a514-bdf9-5553-c081" name="Reaver Jetbike" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Skimmer</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">35cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">N/A</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+3</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Blasters : 15cm, 1d 4+ (-1)</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">3+</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+      </characteristics>
+    </profile>
+    <profile id="4077-87bd-5c96-e2da" name="Ravager" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Skimmer</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">30cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">4+</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+2</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Dark Lance : 75cm, 1d 4+ (-2)
+Disintegrators : 50cm, 2d 5+ (-1)</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">3+</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+      </characteristics>
+    </profile>
+    <profile id="0dfd-6231-b9fc-6c35" name="Archite" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <comment>Fixed Save not on NetEpic unit card but is clearly stated in the Army Book, pg 12</comment>
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Infantry</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">10cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">5+ Fixed</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+7</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Xenospasm : 35cm, 2d 5+ (-2)</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">1+</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+      </characteristics>
+    </profile>
+    <profile id="426b-2a28-482c-e2c5" name="Archon" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <comment>Fixed Save not on NetEpic unit card but is clearly stated in the Army Book, pg 12</comment>
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Infantry</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">10cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">5+ Fixed</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+7</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Xenospasm : 35cm, 2d 5+ (-2)</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">1+</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+      </characteristics>
+    </profile>
+    <profile id="0249-c86f-5b71-31aa" name="Combat Barge" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Skimmer</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">30cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">4+</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+4</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Dark Lance : 75cm, 1d 4+ (-2)
+Disintegrators : 50cm, 2d 5+ (-1)</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">1+</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+      </characteristics>
+    </profile>
+    <profile id="bef6-138c-0941-d162" name="Shadow Spinner" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Titan</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">35cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">See template</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+6</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Shadow Weaver : See Special Rule
+Dark Lances : 75cm, 2d 4+ (-2)
+Heavy Disintegrator : 75cm, 1d 5+ (-2)</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">N/A</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+      </characteristics>
+    </profile>
+    <profile id="496e-1a45-2a81-c77e" name="Hellion Squad" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Skimmer</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">25cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">6+ Fixed</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+2</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Hellglaives : 50cm, 1d 5+ (0)</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">3+</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+      </characteristics>
+    </profile>
+    <profile id="424b-a471-05aa-e612" name="Mandrake Squad" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Infantry</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">10cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">6+ Fixed</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+2</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Pistol &amp; Blades : 25cm, 1d 5+ (0)</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">3+</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+      </characteristics>
+    </profile>
+    <profile id="9563-6af0-32e2-1499" name="Scourge Squad" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Infantry</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">15cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">N/A</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+0</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Splinter Cannon : 75cm, 2d 5+ (-1)</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">3+</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+      </characteristics>
+    </profile>
+    <profile id="d175-555c-6ebd-6fa1" name="Shadow Raider" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Skimmer</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">30cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">5+</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+2</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Shadow Cannon : 100cm, 1d 3+ (-4)
+Heavy Disintegrator : 75cm, 2d 5+ (-2)</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">3+</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339">Shadow Cannon is Penetrating +3.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4b12-5d3c-9369-f50a" name="Phoenix Fighter-Bomber" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Flyer</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">75cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">3+</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+2</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Sonic Cannon : 75cm, 2d 4+ (-3)
+Shuriken Cannon : 50cm, 4d 5+ (0)
+Plasma Bombs : Special, 8SB, 3+ (-3)</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">3+</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339">Drops 2 Plasma Bombs during movement.
+Sonic Cannon ignores cover.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ca71-368f-ab51-65aa" name="Raven Interceptor" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Flyer</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">115cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">5+</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+5</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Dark Lances : 25cm, 2d 4+ (-2)
+Splinter Cannon : 25cm, 2d 5+ (0)</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">3+</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+      </characteristics>
+    </profile>
+    <profile id="cf78-bd5c-0e8d-4dbc" name="Banshee AA Raider" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Skimmer</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">30cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">5+</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+0</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Splinterstorm : 75cm, 3d 4+ (-1)</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">3+</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+      </characteristics>
+    </profile>
+    <profile id="5b27-5b79-3d38-70fa" name="Razorwing Fighter-Bomber" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Flyer</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">90cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">5+</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+2</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Dark Lances : 25cm, 2d 4+ (-2)
+Splinter Cannon : 25cm, 2d 5+ (0)
+Horrorfex : See Special Rules</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">3+</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+      </characteristics>
+    </profile>
+    <profile id="d076-137d-26fd-f0ff" name="Enslaver Raider" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Skimmer</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">30cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">5+</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+0</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Net-Thrower - See Special Rule</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">3+</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+      </characteristics>
+    </profile>
+    <profile id="443a-0b6c-0145-8b03" name="Spectre Assault Transport" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Flyer</characteristic>
+        <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">100cm</characteristic>
+        <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">4+</characteristic>
+        <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+1</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Splinter Cannon : 25cm, 6d 5+ (-1)
+Missiles : 25cm, 4SB 5+ (-1)</characteristic>
+        <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">3+</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+      </characteristics>
+    </profile>
+    <profile id="d3a2-0265-3f29-82d0" name="Web Bomb" publicationId="b3f2-9186-f17e-45c7" page="34" hidden="false" typeId="6408-9a12-0fdb-887b" typeName="Off-Table Ordnance">
+      <characteristics>
+        <characteristic name="Weapon" typeId="459d-7c5a-7f74-928a">Web Bomb</characteristic>
+        <characteristic name="Attack Dice" typeId="e324-88e6-1c9e-b030">Special</characteristic>
+        <characteristic name="To Hit" typeId="2ce4-716a-2d23-b3c0">Special</characteristic>
+        <characteristic name="Save Modifier" typeId="1aa1-8d72-7ed4-8d5c"/>
+        <characteristic name="Special Rules" typeId="8b23-1c1c-1e1c-8650"/>
+      </characteristics>
+    </profile>
+    <profile id="aad9-ad86-70db-73c0" name="Raptor Missile" hidden="false" typeId="6408-9a12-0fdb-887b" typeName="Off-Table Ordnance">
+      <characteristics>
+        <characteristic name="Weapon" typeId="459d-7c5a-7f74-928a">Raptor Missile</characteristic>
+        <characteristic name="Attack Dice" typeId="e324-88e6-1c9e-b030">8SB</characteristic>
+        <characteristic name="To Hit" typeId="2ce4-716a-2d23-b3c0">3+</characteristic>
+        <characteristic name="Save Modifier" typeId="1aa1-8d72-7ed4-8d5c">-3</characteristic>
+        <characteristic name="Special Rules" typeId="8b23-1c1c-1e1c-8650">Scatters 1d6cm</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>

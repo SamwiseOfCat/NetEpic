@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="b6ca-ebfc-974f-eaae" name="NetEpic Gold" revision="2" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com   " xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
-  <comment>Added &quot;Unique&quot; Shared Rule to account for unique units.
+<gameSystem id="b6ca-ebfc-974f-eaae" name="NetEpic Gold" revision="5" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com   " xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+  <comment>v5 notes :
+Overhaul to the VP / points cost of Titans - changing from the v2 approach of standard costs regardless of what weapons were picked (like SM 2nd Ed) to a more fair and balanced feel to Titan construction.
+Some other minor fixes like typos / missing rules (Transport 12, etc)
+
+v4 notes :
+Small changes. Added a rule (Undisciplined)
+
+v3 notes :
+Amended Support Cards to 5 per Company from 6
+Amended Special Cards per Company to 1
+Added Off Board / Orbital Barrage rule
+Amended wording of Forward Observer rule
+Added Transport (8) / Transport (24) rules
+Added Turret rule
+Categorizations added for multiple races / specific unit types
+
+v2 notes :
+
+Added &quot;Unique&quot; Shared Rule to account for unique units.
 Any Titan weapons over 100 points have had an extra VP added to their profile to account for the increased points cost to field them (base VP is accounted for in Titan base profile on presumption that the Titan will field weapons of 50-100 points in each slot).</comment>
-  <readme>This is Version 1.2.
+  <readme>How to use the NetEpic Gold BS Army Builders :
 
 Click &quot;Add Force&quot; to the left of this text. Pick your Race from the drop-down menu, then select the Faction you wish to use. You can pick mutiple factions within a Race if you are creating a multi-Faction army using Allies. Notes on the creation of the Race files can be found by clicking on the Force you have created in the menu to the left.
 
 List creation has very few constraints other than : 1) minimum 1 Company Card, 2) min 0, max 5 Support Cards per Company Card, 3) min 0, Max 1 Special Card per Company card and 4) min 0, max 1 Free Card per Company Card. Faction-specific cards are not prohibited by the code - YET - but will be soon. In the meantime, the limitations on Faction-specific cards are made clear by text &quot;Rules&quot; applied to each Force Organisation, as well as Prohibited units that named Factions cant take.
 
-Revision notes and reasoning behind the code applied / naming conventions etc can be read on the master &quot;Comment&quot; for the GS file, viewable with the BS Data Editor.
+Revision notes and reasoning behind the code applied / naming conventions etc can be read on the master &quot;Comment&quot; on this GS file, viewable with the BS Data Editor.
 
 All information is taken from https://netepic.org/ and is (c) The NetEpic Discussion Group.
 
-Special thanks to Mad_Spy &amp; Techno on the BS Discord for their help in ironing out some issues I was having around Force Construction.</readme>
+Special thanks to Mad_Spy &amp; Techno on the BS Discord for their help in ironing out some issues I was having around Force Construction, and Drewski from the FB E40K Middlehammer Group for initial list testing in Beta.</readme>
   <publications>
     <publication id="c6ff-1c0c-e89b-f854" name="NetEpic 5.0 Core Rules" publicationDate="2009" publisherUrl="https://files.netepic.org/01_netepic_core_rules_v5_final_1.pdf"/>
     <publication id="bd06-115b-2046-6848" name="NetEpic Gold" publicationDate="2009" publisherUrl="https://files.netepic.org/netepicgoldcorerules_1.pdf"/>
@@ -141,7 +159,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.5"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a11f-0aff-461e-361d" name="Doomburner" hidden="false" collective="false" import="true" type="upgrade">
@@ -154,6 +172,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.75"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a31c-7736-59bc-7c7f" name="Quake Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -164,6 +183,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+        <cost name=" VP" typeId="points" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d082-b547-d07b-781e" name="Turbo-Laser Destructor" hidden="false" collective="false" import="true" type="upgrade">
@@ -172,7 +192,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.75"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -182,7 +202,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.5"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -194,6 +214,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+        <cost name=" VP" typeId="points" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="90b7-9938-d43f-5c42" name="Melta Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -202,7 +223,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.5"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -212,7 +233,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.5"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -223,6 +244,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.75"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="308a-b0e2-79fb-afc8" name="Plasma Destructor (with dedicated reactor)" hidden="false" collective="false" import="true" type="upgrade">
@@ -231,7 +253,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="225.0"/>
-        <cost name=" VP" typeId="points" value="2.0"/>
+        <cost name=" VP" typeId="points" value="2.25"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -241,7 +263,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="150.0"/>
-        <cost name=" VP" typeId="points" value="1.0"/>
+        <cost name=" VP" typeId="points" value="1.5"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -254,7 +276,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.5"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -265,6 +287,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.75"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="417c-1a53-541c-aa98" name="Warp Missile" hidden="false" collective="false" import="true" type="upgrade">
@@ -275,7 +298,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="125.0"/>
-        <cost name=" VP" typeId="points" value="1.0"/>
+        <cost name=" VP" typeId="points" value="1.25"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -286,6 +309,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+        <cost name=" VP" typeId="points" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="01ea-db90-773d-d4aa" name="Plasma Destructor" hidden="false" collective="false" import="true" type="upgrade">
@@ -294,7 +318,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="125.0"/>
-        <cost name=" VP" typeId="points" value="1.0"/>
+        <cost name=" VP" typeId="points" value="1.25"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -305,7 +329,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.5"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -317,6 +341,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.75"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b8ca-5814-f0a6-2c72" name="Barrage Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
@@ -327,6 +352,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+        <cost name=" VP" typeId="points" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cf99-1072-a612-0787" name="Chain Fist" hidden="false" collective="false" import="true" type="upgrade">
@@ -336,7 +362,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="25.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.25"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -349,6 +375,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.75"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e218-649f-38cb-036b" name="Close Combat Head" hidden="false" collective="false" import="true" type="upgrade">
@@ -359,7 +386,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="25.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.25"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c5a5-4359-d59d-40e0" name="Vortex Missile" hidden="false" collective="false" import="true" type="upgrade">
@@ -370,7 +397,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="150.0"/>
-        <cost name=" VP" typeId="points" value="1.0"/>
+        <cost name=" VP" typeId="points" value="1.5"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -381,7 +408,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="25.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.25"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -391,7 +418,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="150.0"/>
-        <cost name=" VP" typeId="points" value="1.0"/>
+        <cost name=" VP" typeId="points" value="1.5"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -402,7 +429,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.5"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -414,6 +441,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.5"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3203-14fd-af57-a776" name="Devotional Bell" hidden="false" collective="false" import="true" type="upgrade">
@@ -423,16 +451,17 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.5"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f0d5-b92a-9ff8-af8b" name="Weapon Head" hidden="false" collective="false" import="true" type="upgrade">
-      <comment>Attack of this is pretty weak so have left this as a free upgrade and no VP increase given the armour tradeoff</comment>
+      <comment></comment>
       <infoLinks>
         <infoLink id="b9e0-270d-a87d-9e9b" name="Weapon Head" hidden="false" targetId="49a4-e09d-2eac-fa93" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="25.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.25"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -442,7 +471,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.75"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -454,7 +483,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="25.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.25"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -464,7 +493,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.5"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -476,7 +505,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="25.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.25"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -487,7 +516,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="25.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.25"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -499,7 +528,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="25.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.25"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -521,6 +550,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+        <cost name=" VP" typeId="points" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8590-69ae-0382-2f2b" name="Corvus Assault Head" hidden="false" collective="false" import="true" type="upgrade">
@@ -530,6 +560,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+        <cost name=" VP" typeId="points" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="39ac-659e-48e8-34e8" name="Plasma Annihilator" hidden="false" collective="false" import="true" type="upgrade">
@@ -655,7 +686,7 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       <description>Fliers are fast-moving aerial units such as attack helicopters and vectored-thrust aircaft. See &quot;Modes of Movement&quot; for details.</description>
     </rule>
     <rule id="b99f-ff4d-1584-d7fe" name="Forward Observer (FO)" publicationId="c6ff-1c0c-e89b-f854" hidden="false">
-      <description>The unit is skilled at calling in artillery. See &quot;Artillery&quot; for details.</description>
+      <description>These troops are capable of relaying precise coordinates and deciding on the appropriate ammunition to use. Any barrage directed by a Forward Observer will scatter 1D6 cm (instead of 2D6). All FO units are HQ units and have the Stealth ability.</description>
     </rule>
     <rule id="2d0e-02b6-1d6f-c8c4" name="Hard To Hit" publicationId="c6ff-1c0c-e89b-f854" hidden="false">
       <description>All non-template ranged fire at the unit suffers a –1 To-Hit penalty.</description>
@@ -725,13 +756,13 @@ Robots must be programmed before a battle, and are almost always Inorganic.</des
       <description>The unit moves just above the ground. See &quot;Modes of Movement&quot; for details.</description>
     </rule>
     <rule id="e099-99e1-f428-3a50" name="Sniper" publicationId="c6ff-1c0c-e89b-f854" hidden="false">
-      <description>The unit may recognize and target HQ models on a 4+.</description>
+      <description>The unit may recognize and target HQ models on a 4+ - this is rolled on a &quot;Per Shooter&quot; basis, ie. if the sniper team has 4 stands and are all attempting to target a single enemy HQ unit, 4 dice must be rolled - one for each shooter . If the roll is failed for any stand, the shooter may target another non-HQ unit instead.</description>
     </rule>
     <rule id="e999-7301-fdd1-10aa" name="Static Artillery" publicationId="c6ff-1c0c-e89b-f854" hidden="false">
       <description>A heavy artillery unit that may not move, and routs on any failed Morale test.</description>
     </rule>
     <rule id="60b5-deb4-dac3-89a1" name="Stealth" publicationId="c6ff-1c0c-e89b-f854" hidden="false">
-      <description>If the unit is in cover, it may not be seen from over 25 cm away.</description>
+      <description>If the unit is in cover, it may not be seen from over 25cm away.</description>
     </rule>
     <rule id="b64c-f8b3-648b-5809" name="Stupid" publicationId="c6ff-1c0c-e89b-f854" hidden="false">
       <description>Unless someone gives the unit orders, roll a D6: 1-2 Advance Orders, 4+ Charge.</description>
@@ -747,22 +778,22 @@ must test morale or go on Fall Back Orders. See &quot;Morale&quot; for details.<
       <description>The unit moves underground. See &quot;Modes of Movement&quot; for details.</description>
     </rule>
     <rule id="1313-2183-20de-05dc" name="Transport (3)" hidden="false">
-      <description>The unit may carry up to 3 infantry stands, and tow one light artillery.</description>
+      <description>The unit may carry up to 3 infantry stands, and tow one light artillery (if the transport is ground-based).</description>
     </rule>
     <rule id="7cf4-a678-e2b1-347c" name="Transport (4)" hidden="false">
-      <description>The unit may carry up to 4 infantry stands, and tow one light artillery.</description>
+      <description>The unit may carry up to 4 infantry stands, and tow one light artillery (if the transport is ground-based).</description>
     </rule>
     <rule id="8a21-8c7b-a831-8883" name="Transport (5)" hidden="false">
-      <description>The unit may carry up to 5 infantry stands, and tow one light artillery.</description>
+      <description>The unit may carry up to 5 infantry stands, and tow one light artillery (if the transport is ground-based).</description>
     </rule>
     <rule id="1bfb-1bc3-45b7-ccd9" name="Transport (6)" hidden="false">
-      <description>The unit may carry up to 6 infantry stands, and tow one light artillery.</description>
+      <description>The unit may carry up to 6 infantry stands, and tow one light artillery (if the transport is ground-based).</description>
     </rule>
     <rule id="63bd-f880-cdfc-fc58" name="Transport (2)" publicationId="c6ff-1c0c-e89b-f854" hidden="false">
-      <description>The unit may carry up to 2 infantry stands, and tow one light artillery.</description>
+      <description>The unit may carry up to 2 infantry stands, and tow one light artillery (if the transport is ground-based).</description>
     </rule>
     <rule id="1c7a-d5c9-5e57-caa2" name="Transport (1)" publicationId="c6ff-1c0c-e89b-f854" hidden="false">
-      <description>The unit may carry up to 1 infantry stands, and tow one light artillery.</description>
+      <description>The unit may carry up to 1 infantry stands, and tow one light artillery (if the transport is ground-based).</description>
     </rule>
     <rule id="ab62-7903-96a0-403d" name="Ignores Shields" publicationId="c6ff-1c0c-e89b-f854" hidden="false">
       <description>Attacks made by this weapon ignore shield of any kind.</description>
@@ -804,16 +835,16 @@ must test morale or go on Fall Back Orders. See &quot;Morale&quot; for details.<
       <description>This unit has a turreted weapon that has a 360 degree arc of fire.</description>
     </rule>
     <rule id="5bcd-b7b7-52f0-8ec1" name="Transport (10)" hidden="false">
-      <description>The unit may carry up to 10 infantry stands, and tow one light artillery.</description>
+      <description>The unit may carry up to 10 infantry stands, and tow one light artillery (if the transport is ground-based).</description>
     </rule>
     <rule id="08f6-4445-454d-55a5" name="Transport (30)" hidden="false">
-      <description>The unit may carry up to 30 infantry stands, and tow one light artillery.</description>
+      <description>The unit may carry up to 30 infantry stands.</description>
     </rule>
     <rule id="99e4-6278-346f-7d92" name="Tow" hidden="false">
       <description>This unit may tow Light Artillery units. Light Artillery units can be towed as well as move on their own, trading their ability to fire in exchange for an increased movement rate. A transport unit may tow one Light Artillery piece in addition to any transport capability it has. When a unit is towed it is considered to be transported by the towing vehicle and thus subject to the Bail-Out roll. It costs both the artillery piece and the towing unit the usual 5 cm of movement to load or unload the artillery.</description>
     </rule>
     <rule id="2e89-024f-c477-ee37" name="Transport (7)" hidden="false">
-      <description>The unit may carry up to 7 infantry stands, and tow one light artillery.</description>
+      <description>The unit may carry up to 7 infantry stands, and tow one light artillery (if the transport is ground-based).</description>
     </rule>
     <rule id="f805-12a4-2e85-71ad" name="Free Support Card" hidden="false">
       <description>This Support Card Unit is free, but still counts towards the maximum cards you can have per Company Card.</description>
@@ -909,13 +940,40 @@ must test morale or go on Fall Back Orders. See &quot;Morale&quot; for details.<
       <description>The unit may carry up to 18 infantry stands.</description>
     </rule>
     <rule id="2637-f0ec-5992-1001" name="Transport (11)" hidden="false">
-      <description>The unit may carry up to 10 infantry stands, and tow one light artillery.</description>
+      <description>The unit may carry up to 11 infantry stands, and tow one light artillery (if the transport is ground-based).</description>
     </rule>
     <rule id="26fd-a3dc-3f98-f6c0" name="Void Shields (12)" publicationId="c6ff-1c0c-e89b-f854" hidden="false">
       <description>This unit has a number of Void Shields, indicated by the number contained in the brackets (&quot;X&quot;). These absorb all incoming hits until knocked down. Weapons must have a TSM of at least –1 in order to knock down shields. Downed shields may be repaired on a 4+ in the End Phase, rolling once for each shield. Void Shields provide a 4+ Psychic Save.</description>
     </rule>
     <rule id="26d7-77f7-4250-b347" name="Floater" publicationId="c6ff-1c0c-e89b-f854" hidden="false">
       <description>Floaters are a relatively slow-moving unit that moves through the air, such as a balloon or zeppelin. See &quot;Modes of Movement&quot; for more details.</description>
+    </rule>
+    <rule id="8ed7-2ea3-cc79-4980" name="Transport (8)" hidden="false">
+      <description>The unit may carry up to 8 infantry stands, and tow one light artillery (if the transport is ground-based).</description>
+    </rule>
+    <rule id="cbb2-efc0-5fdd-ad25" name="Transport (24)" hidden="false">
+      <description>The unit may carry up to 24 infantry stands.</description>
+    </rule>
+    <rule id="ce8d-efac-8880-e4f5" name="Tactical Genius" publicationId="c6ff-1c0c-e89b-f854" hidden="false">
+      <description>One detachment within 10cm may shift their orders one place between Charge, Advance and First Fire after orders have been committed to both armies. This means a unit cannot switch directly from Charge to First Fire.</description>
+    </rule>
+    <rule id="84c0-6f33-b928-eb28" name="VP Cost : 1" hidden="false">
+      <description>This card costs 1 VP to play.</description>
+    </rule>
+    <rule id="b09a-df73-fc38-29f6" name="VP Cost : 2" hidden="false">
+      <description>This card costs 2 VP to play.</description>
+    </rule>
+    <rule id="d7b3-45da-4909-a64f" name="VP Cost : 3" hidden="false">
+      <description>This card costs 3 VP to play.</description>
+    </rule>
+    <rule id="b085-7066-0cad-eee5" name="Off Board / Orbital Barrages" hidden="false">
+      <description>A player planning to use Off-Board Artillery must write down before the battle the number of Victory Points he is willing to give up for Off-Board barrages. Each Victory Point of barrage requires one Support Card slot, and a maximum of five VPs per Company Card may be chosen. The firing player need only give up Victory Points for barrages actually used – unused Off-Board barrages are ignored. Forward Observers are the only units capable of calling in an Off-Board Barrage, unless an army-specific rule contradicts this (Orks, for example). A single FO stand may call in any number of indirect barrages against any number of targets, OR a single Off-Board Barrage. FOs may not request fire if they are involved in Close Combat, and may not both call in fire and shoot. To call in an Off-Board barrage, the FO must make a communications roll of 3+ on a D6. If the roll is successful then the barrage arrives anywhere in the FO’s line of sight. Failure indicates the spotter has given the battery the wrong coordinates, or the battery is preoccupied with other things. Multiple Off-Board Barrages do not combine fire – they are resolved separately (including separate scatter rolls), even if they are called in on the same target by different stands belonging to the same Forward Observer Team.</description>
+    </rule>
+    <rule id="718c-5553-7543-a6da" name="Undisciplined" hidden="false">
+      <description>These units are neither well trained nor organized. If no model in the detachment is within coherency (6 cm) from a commander (any infantry stand with the HQ ability) during the Orders Phase, the unit must make a morale test. If it passes it may be given Advance Orders (only), or else it may not be given orders at all (i.e. the unit may not move and will fire in the Advance Fire Segment).</description>
+    </rule>
+    <rule id="15a5-f78f-d1c5-2f67" name="Transport (12)" hidden="false">
+      <description>The unit may carry up to 12 infantry stands, and tow one light artillery (if the transport is ground-based).</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

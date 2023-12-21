@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e7fc-3623-dfb1-db57" name="Imperial Guard" revision="2" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <readme>v2 notes :
+<catalogue id="e7fc-3623-dfb1-db57" name="Imperial Guard" revision="5" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>v5 notes :
+Major change to Titan weapon cost /VP&apos;s - each weapon now has a VP value that aligns to cost in points for more accurate VP awarding in the event of a Titan being destroyed.
+
+v4 notes:
+Added missing Confessor Special Card.
+Considered adding Imperial Knights as selectable Company / Support cards as per the GW Citadel Journal but the rules seemed extremely out of date compared to current (pretty old!) NetEpic rules, so left them out. If you want to run Knights as allies then go for it, use the AdMech list for that.
+
+v3 notes :
+Added Light &amp; Heavy Off-Board Barrages.
+Fixed typo in Tactical Company.
+Added Imperial Confessor.
+
+v2 notes :
 Added Krueger&apos;s Heroes special card and Catachan Devils company from WD198. Added Imperial Confessor from Citadel Journal. The Imperial Guard Colonel card from the Citadel Journal has not been added as the NetEpic Regimental Command card covers this need already (note that the NetEpic unit is slightly inferior to the CJ/SM 2Ed unit as the Tactical troops provided have a better CAF).
 
 v1 notes :
@@ -17,6 +29,15 @@ Imperial Guard (aka. Adeptus Militaris, Astra Militarum) armies are either usual
         <characteristicType id="f261-a52e-ab57-6aa0" name="Special Rules"/>
       </characteristicTypes>
     </profileType>
+    <profileType id="913d-b3e2-5b97-b05b" name="Off-Table Ordnance">
+      <characteristicTypes>
+        <characteristicType id="691c-0a85-300c-9117" name="Weapon"/>
+        <characteristicType id="fc0e-dc47-b542-3157" name="Attack Dice"/>
+        <characteristicType id="bbd4-0d70-f48d-4f81" name="To Hit"/>
+        <characteristicType id="4f45-76d3-f454-dcb7" name="Save Modifier"/>
+        <characteristicType id="df24-4f9f-4253-8478" name="Special Rules"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="9c94-2689-8ab9-8a0c" name="Planetary Defence Force" hidden="false"/>
@@ -24,7 +45,7 @@ Imperial Guard (aka. Adeptus Militaris, Astra Militarum) armies are either usual
   <forceEntries>
     <forceEntry id="4677-a756-c295-2843" name="Imperial Guard Army" hidden="false">
       <rules>
-        <rule id="5416-9eb5-61b6-86f9" name="Imperial Guard - Allies" publicationId="05b1-5ac1-9e42-fdf3" page="4" hidden="false">
+        <rule id="5416-9eb5-61b6-86f9" name="Imperial Guard Force Composition" publicationId="05b1-5ac1-9e42-fdf3" page="4" hidden="false">
           <description>The Standard Army consists of the various and sundry Imperial Guard troops found throughout the Imperium. If you choose to run a Standard army you must put at least 50% of your points into the Standard Adeptus Militaris List. The other 50% may be spent on any one Standard List, as the Imperial Guard has fought with and against just about everyone at one time or another.</description>
         </rule>
         <rule id="5dac-162d-aa50-4eaf" name="The Chain Of Command" hidden="false">
@@ -82,7 +103,7 @@ Imperial Guard detachments may only be given orders if they are connected to a C
     </forceEntry>
     <forceEntry id="2425-357d-9938-7f66" name="Planetary Defence Force" hidden="false">
       <rules>
-        <rule id="ab2a-9ea2-1a9d-6e34" name="Planetary Defence Force - Allies" publicationId="05b1-5ac1-9e42-fdf3" page="4" hidden="false">
+        <rule id="ab2a-9ea2-1a9d-6e34" name="PDF Force Composition" publicationId="05b1-5ac1-9e42-fdf3" page="4" hidden="false">
           <description>The Planetary Defense Force is a Codex army. If you want to run the PDF you must put 75% of your points into PDF troops, and up to 25% into any one Standard Army list. This division was made so that you could field the generic Imperial Guard troops as allies to other armies, but you couldn’t get the PDF low-quality-but-really-cheap infantry unless you concentrate on an Imperial force.</description>
         </rule>
         <rule id="19ed-63ee-331e-1428" name="The Chain Of Command" publicationId="05b1-5ac1-9e42-fdf3" page="4-6" hidden="false">
@@ -475,7 +496,7 @@ Imperial Guard detachments may only be given orders if they are connected to a C
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="9.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9dbe-4e82-b58a-8e9a" name="Tactical Infantry Companyc" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="9dbe-4e82-b58a-8e9a" name="Tactical Infantry Company" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="3659-11cc-7125-5a95" name="Company Commissar - VP" hidden="false" targetId="76b2-9193-21e6-c456" type="rule"/>
       </infoLinks>
@@ -6566,7 +6587,6 @@ Imperial Guard detachments may only be given orders if they are connected to a C
         <selectionEntryGroup id="d6bb-26be-be94-35b5" name="Reaver Titan Carapace Weapons" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cec-c1a3-753b-5f34" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e149-c210-e120-319c" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="0d48-1cc4-98a9-eeb2" name="Doomburner" hidden="false" collective="false" import="true" targetId="a11f-0aff-461e-361d" type="selectionEntry">
@@ -6779,7 +6799,7 @@ Imperial Guard detachments may only be given orders if they are connected to a C
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="300.0"/>
-        <cost name=" VP" typeId="points" value="5.0"/>
+        <cost name=" VP" typeId="points" value="3.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -6809,7 +6829,6 @@ Imperial Guard detachments may only be given orders if they are connected to a C
                 <selectionEntryGroup id="8887-cda6-fe2b-9126" name="Reaver Titan Carapace Weapons" hidden="false" collective="false" import="true">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91fe-aa48-0a63-2926" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8967-0a3f-4699-efbc" type="min"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="d519-f60d-05e6-626a" name="Doomburner" hidden="false" collective="false" import="true" targetId="a11f-0aff-461e-361d" type="selectionEntry">
@@ -7021,8 +7040,6 @@ Imperial Guard detachments may only be given orders if they are connected to a C
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="300.0"/>
-                <cost name=" VP" typeId="points" value="5.0"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -7035,8 +7052,8 @@ Imperial Guard detachments may only be given orders if they are connected to a C
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="900.0"/>
+        <cost name=" VP" typeId="points" value="9.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -7102,7 +7119,7 @@ Imperial Guard detachments may only be given orders if they are connected to a C
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="125.0"/>
-        <cost name=" VP" typeId="points" value="4.0"/>
+        <cost name=" VP" typeId="points" value="1.25"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -7177,8 +7194,6 @@ Imperial Guard detachments may only be given orders if they are connected to a C
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="125.0"/>
-                <cost name=" VP" typeId="points" value="4.0"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -7191,8 +7206,8 @@ Imperial Guard detachments may only be given orders if they are connected to a C
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="250.0"/>
+        <cost name=" VP" typeId="points" value="2.5"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -7208,7 +7223,6 @@ Imperial Guard detachments may only be given orders if they are connected to a C
         <selectionEntryGroup id="aa84-6660-9f90-a8ca" name="Warlord Titan Carapace Weapons" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="084b-90a9-15fe-d23b" type="max"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d839-db58-e7e7-c2fe" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="f29f-d8d7-a994-4cff" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="54c6-7048-fee2-bd60" type="selectionEntry">
@@ -7503,12 +7517,12 @@ Imperial Guard detachments may only be given orders if they are connected to a C
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="500.0"/>
-        <cost name=" VP" typeId="points" value="9.0"/>
+        <cost name=" VP" typeId="points" value="5.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0b43-b278-8b7e-03a7" name="Warlord Titan Battlegroup" hidden="false" collective="false" import="true" type="unit">
-      <comment>Added to Imperial Guard list as Orks can pick Gargant Big Mobs</comment>
+      <comment>Added to Imperial Guard list as Orks can pick Gargant Big Mobs, seems only fair</comment>
       <infoLinks>
         <infoLink id="a2c3-4ef8-cbcc-f495" name="Titan Battlegroup VP Awards" hidden="false" targetId="76f5-c869-6176-d58d" type="rule"/>
         <infoLink id="0a4f-b231-37cd-2238" name="Titan Coherency" hidden="false" targetId="0a3b-ef73-c45d-713c" type="rule"/>
@@ -7534,7 +7548,6 @@ Imperial Guard detachments may only be given orders if they are connected to a C
                 <selectionEntryGroup id="1d9c-7f74-13d2-58cf" name="Warlord Titan Carapace Weapons" hidden="false" collective="false" import="true">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ee1-94d8-2d80-c093" type="max"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4ad-8e6c-b958-4c52" type="min"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="2a5c-d4b4-cc7a-fde6" name="Vulcan Mega-Bolter" hidden="false" collective="false" import="true" targetId="54c6-7048-fee2-bd60" type="selectionEntry">
@@ -7828,8 +7841,6 @@ Imperial Guard detachments may only be given orders if they are connected to a C
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="500.0"/>
-                <cost name=" VP" typeId="points" value="9.0"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -7842,8 +7853,8 @@ Imperial Guard detachments may only be given orders if they are connected to a C
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="1500.0"/>
+        <cost name=" VP" typeId="points" value="15.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -10392,9 +10403,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="c6e9-c243-3e09-8eb6" name="Commissar" hidden="false" collective="false" import="true" type="unit">
-      <infoLinks>
-        <infoLink id="3189-ecab-04bc-c4a1" name="PDF Only Card" hidden="false" targetId="3833-a53d-8ee6-e0c9" type="rule"/>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="c381-2ad6-b731-6422" name="Planetary Defence Force" hidden="false" targetId="9c94-2689-8ab9-8a0c" primary="false"/>
         <categoryLink id="f37b-7549-b6eb-1497" name="Planetary Defence Force" hidden="false" targetId="9c94-2689-8ab9-8a0c" primary="false"/>
@@ -11147,26 +11155,188 @@ E) Ignore: Ignore the question and move on to the next one.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="ea7a-2e60-8205-f969" name="Imperial Confessor" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69c3-a4e2-62ce-1a22" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66d8-71ea-6422-ce28" type="min"/>
-      </constraints>
-      <rules>
-        <rule id="6401-dfd7-e262-d446" name="Imperial Confessor : Break Point" publicationId="c1a5-0905-d6e8-335a" hidden="false">
-          <description>The Imperial Confessor adds + 1 to the break point of any unit that he joins. If he joins a detachment that is part of a company then he adds + I to the company&apos;s break point.</description>
-        </rule>
-        <rule id="63b7-1275-b6e4-3137" name="Imperial Confessor : Orders" publicationId="c1a5-0905-d6e8-335a" hidden="false">
-          <description>The Confessor is a command unit and can therefore charge and first fire while unattached. During the game a Confessor can attach to one of your infantry detachments and lead it, he may not leave the detachment during the game. Although the Confessor leads the detachment he may not give it orders (the standard Chain Of Command applies), however if the detachment is unable to be given orders they will automatically be given charge orders if they are lead by a Confessor and will charge at full movement towards the closest enemy.</description>
-        </rule>
-        <rule id="2836-d7a6-4497-a4be" name="Imperial Confessor : Zealous Devotion" publicationId="c1a5-0905-d6e8-335a" hidden="false">
-          <description>Any unit that is lead by a Confessor becomes utterly fearless and the Confessors rantings drive them into a killing frenzy. As a result of this, troops that are lead by a Confessor never need to take a morale test for any reason and their CAF is increased by +1 for the rest of the game.</description>
-        </rule>
-      </rules>
+      <categoryLinks>
+        <categoryLink id="7f1a-aac6-3565-bdf1" name="Special Card" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
+        <categoryLink id="b264-5552-2bde-972f" name="Imperial Guard" hidden="false" targetId="6ba7-0180-55a8-6861" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="48bf-d3fc-dcd5-9ec2" name="Imperial Confessor" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c41a-04c8-0ab2-17b1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4943-1279-0e53-2dc9" type="min"/>
+          </constraints>
+          <rules>
+            <rule id="f3d6-a04a-68e6-d7cf" name="Imperial Confessor : Break Point" publicationId="c1a5-0905-d6e8-335a" hidden="false">
+              <description>The Imperial Confessor adds + 1 to the break point of any unit that he joins. If he joins a detachment that is part of a company then he adds + I to the company&apos;s break point.</description>
+            </rule>
+            <rule id="66af-1be4-5fef-61a6" name="Imperial Confessor : Orders" publicationId="c1a5-0905-d6e8-335a" hidden="false">
+              <description>The Confessor is a command unit and can therefore charge and first fire while unattached. During the game a Confessor can attach to one of your infantry detachments and lead it, he may not leave the detachment during the game. Although the Confessor leads the detachment he may not give it orders (the standard Chain Of Command applies), however if the detachment is unable to be given orders they will automatically be given charge orders if they are lead by a Confessor and will charge at full movement towards the closest enemy.</description>
+            </rule>
+            <rule id="5ee9-ee10-20c4-b98f" name="Imperial Confessor : Zealous Devotion" publicationId="c1a5-0905-d6e8-335a" hidden="false">
+              <description>Any unit that is lead by a Confessor becomes utterly fearless and the Confessors rantings drive them into a killing frenzy. As a result of this, troops that are lead by a Confessor never need to take a morale test for any reason and their CAF is increased by +1 for the rest of the game.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="bb0f-1bba-d486-5021" name="Imperial Confessor" hidden="false" targetId="4571-8ff8-89b5-caaa" type="profile"/>
+            <infoLink id="9652-b9b2-f6e4-fd33" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
+            <infoLink id="ceaf-87a6-386b-57a8" name="Command" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="b726-9700-0da8-2234" name="Special Card" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
+            <categoryLink id="62cc-224d-9ec1-6f1f" name="Imperial Guard" hidden="false" targetId="6ba7-0180-55a8-6861" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
+            <cost name=" VP" typeId="points" value="1.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
+        <cost name=" VP" typeId="points" value="1.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ba50-5c4b-884b-7ab3" name="Heavy Off-Board Barrage" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="4619-d74d-e8df-85dc" name="Imperial Confessor" hidden="false" targetId="4571-8ff8-89b5-caaa" type="profile"/>
-        <infoLink id="0560-15e9-f903-c132" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
-        <infoLink id="2898-1078-c2ce-3b2e" name="Command" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
+        <infoLink id="0181-7980-565a-7a5c" name="VP Cost : 2" hidden="false" targetId="b09a-df73-fc38-29f6" type="rule"/>
+        <infoLink id="01bd-fae1-11ee-e745" name="Off Board / Orbital Barrages" hidden="false" targetId="b085-7066-0cad-eee5" type="rule"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="78de-284f-d3aa-9a86" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+        <categoryLink id="6707-6a39-86b6-3d47" name="Imperial Guard" hidden="false" targetId="6ba7-0180-55a8-6861" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="77a6-ad83-f08d-d129" name="Heavy Off-Board Barrage" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b536-ddf6-513b-e5cd" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6385-a376-9efa-f2cc" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="9882-c531-a7b7-8149" name="Heavy Orbital Barrage" hidden="false" targetId="271f-7489-413b-c32b" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9682-daf9-eb08-2ad7" name="Light Off-Board Barrage" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="97d3-9ddc-8fd7-a0ad" name="VP Cost : 1" hidden="false" targetId="84c0-6f33-b928-eb28" type="rule"/>
+        <infoLink id="9d80-4a74-cfce-5679" name="Off Board / Orbital Barrages" hidden="false" targetId="b085-7066-0cad-eee5" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="afb5-c983-fe65-18b6" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+        <categoryLink id="4e10-aa15-7df2-a3f5" name="Imperial Guard" hidden="false" targetId="6ba7-0180-55a8-6861" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6b82-207d-3881-625a" name="Light Off-Board Barrage" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd15-6e58-4a6e-408a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8131-b897-61f8-07e4" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="f63c-8fe8-fc45-e643" name="Light Orbital Barrage" hidden="false" targetId="037c-ea6e-8016-9490" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4bc3-e16c-b0da-67f7" name="Confessor" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="1a81-4a28-3437-2b38" name="PDF Only Card" hidden="false" targetId="3833-a53d-8ee6-e0c9" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="159c-80a1-1990-0af6" name="Special Cards" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
+        <categoryLink id="91f2-c65d-7b7d-dad5" name="Imperial Guard" hidden="false" targetId="6ba7-0180-55a8-6861" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d450-fc60-ce32-b192" name="Confessor" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7958-a260-fdb0-2f82" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d976-f759-0004-a281" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="b616-af44-db11-2f05" name="Confessor" hidden="false" targetId="f478-f294-bc23-87a9" type="profile"/>
+            <infoLink id="9a23-54bd-1877-8c50" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
+            <infoLink id="7c1b-b02e-a731-7be1" name="Confessors" hidden="false" targetId="3491-7b30-81bf-45f2" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="ff74-17ce-d1e4-1136" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2b0b-6fad-3b56-64f8" name="Confessor Transport" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa90-63e9-d57b-10f4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b50-406a-f5a2-cec5" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c13a-19e4-5e3e-2679" name="Command Rhino" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f6c-f365-cad5-b13e" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="f954-0107-56b4-494d" name="Rhino" hidden="false" targetId="0e99-14f8-5517-1a6b" type="profile"/>
+                <infoLink id="009f-7538-6792-f887" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
+                <infoLink id="699e-6126-7f0f-9540" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
+                <infoLink id="536f-a521-c132-7871" name="Command" publicationId="05b1-5ac1-9e42-fdf3" page="11" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="bde8-e4db-9706-65bc" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fc6e-7c1b-adac-7559" name="Command Chimera" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55cc-bcb5-8fa2-ad70" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="84ed-64c5-3201-9cbf" name="Chimera" hidden="false" targetId="abf3-7774-b2d6-2c05" type="profile"/>
+                <infoLink id="106f-7676-566f-1748" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
+                <infoLink id="fe89-073d-7642-97c5" name="Command" publicationId="05b1-5ac1-9e42-fdf3" page="11" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
+                <infoLink id="2ada-7dd8-c0d3-69de" name="Turret" hidden="false" targetId="6d2d-fa7d-8436-5def" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="4bfa-3287-5794-d1d1" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
         <cost name=" VP" typeId="points" value="1.0"/>
@@ -11309,7 +11479,7 @@ All Support Cards attached to a Stormtrooper Company have their Morale increased
       <description>There must be an Imperial unit within 25cm of the Astropath that can see the target, and the artillery detachment being sighted for must be within 75cm of the Astropath. The artillery makes a direct fire</description>
     </rule>
     <rule id="770f-cea7-96a1-90be" name="Tactical Experience" publicationId="bd06-115b-2046-6848" hidden="false">
-      <description>Due to their superb tactical experience, Imperial Guard Majors &amp; Colonels maychange the orders of one Imperial Guard detachment that is within 25cm immediately after you activate it.</description>
+      <description>Due to their superb tactical experience, Imperial Guard Majors &amp; Colonels may change the orders of one Imperial Guard detachment that is within 25cm immediately after you activate it.</description>
     </rule>
     <rule id="be64-1edb-1dfe-4b62" name="Two Companies Transport" publicationId="05b1-5ac1-9e42-fdf3" hidden="false">
       <description>The Capitol Imperialis can transport two full companies of any type, including vehicle companies (but not those that include other praetorians). Multiple firing ports are scattered thoughout the Capitol’s broadside, permitting infantry to fire from these positions. All infantry stands that compose a company may fire from one side of the Capitol Imperialis, for a total of 2 companies each side. These troops count as if on First Fire orders and are activated separately from the Capitol Imperialis. All weapons have a 360° arc of fire.</description>
@@ -11343,6 +11513,9 @@ All Support Cards attached to a Stormtrooper Company have their Morale increased
     </rule>
     <rule id="e3f4-b508-6dd9-3765" name="Penal Company Support" publicationId="05b1-5ac1-9e42-fdf3" hidden="false">
       <description>This squad may only be attached to Penal Companies.</description>
+    </rule>
+    <rule id="3491-7b30-81bf-45f2" name="Confessors" publicationId="05b1-5ac1-9e42-fdf3" page="10" hidden="false">
+      <description>Confessors are HQ units, and may join any infantry detachment. That detachment gains +1 CAF, +1 to its Break and Victory Points (to the Company if appropriate), and becomes immune to all morale tests and effects. Soldiers led by a Confessor must be given Charge Orders if they are not within the Chain of Command.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -12739,6 +12912,24 @@ Autocannon : 75cm, 2d 5+ (-1)</characteristic>
         <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Pistols : 25cm, 1d 5+ (0)</characteristic>
         <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">N/A</characteristic>
         <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339">The Imperial Confessor and any detachment that he has joined is completely immune to morale tests and never has to take one for any reason.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="271f-7489-413b-c32b" name="Heavy Orbital Barrage" hidden="false" typeId="913d-b3e2-5b97-b05b" typeName="Off-Table Ordnance">
+      <characteristics>
+        <characteristic name="Weapon" typeId="691c-0a85-300c-9117">Heavy Orbital Barrage</characteristic>
+        <characteristic name="Attack Dice" typeId="fc0e-dc47-b542-3157">N/A</characteristic>
+        <characteristic name="To Hit" typeId="bbd4-0d70-f48d-4f81">10SB (2+)</characteristic>
+        <characteristic name="Save Modifier" typeId="4f45-76d3-f454-dcb7">-2</characteristic>
+        <characteristic name="Special Rules" typeId="df24-4f9f-4253-8478"/>
+      </characteristics>
+    </profile>
+    <profile id="037c-ea6e-8016-9490" name="Light Orbital Barrage" hidden="false" typeId="913d-b3e2-5b97-b05b" typeName="Off-Table Ordnance">
+      <characteristics>
+        <characteristic name="Weapon" typeId="691c-0a85-300c-9117">Light Orbital Barrage</characteristic>
+        <characteristic name="Attack Dice" typeId="fc0e-dc47-b542-3157">N/A</characteristic>
+        <characteristic name="To Hit" typeId="bbd4-0d70-f48d-4f81">6BP (4+)</characteristic>
+        <characteristic name="Save Modifier" typeId="4f45-76d3-f454-dcb7">-1</characteristic>
+        <characteristic name="Special Rules" typeId="df24-4f9f-4253-8478"/>
       </characteristics>
     </profile>
   </sharedProfiles>
