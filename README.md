@@ -30,6 +30,24 @@ Manual Installation Steps (do this if you cannot install via the above method, o
 
 Release Notes
 -------------
+v5 notes :
+
+Yes I know v4 notes didnt get added :-)
+This is hopefully the final release as there will presumably be no NetEpic / SM 2nd Ed armies to add, and also hopefully because there arent any glaring errors in the lists ive made.
+It is a BIG release which has been a LOT of work, and in conjunction with v4 it adds :
+
+* Dark Eldar
+* Slann / Exodus / Dracon
+* Harlequin Masques / Exodites
+* Chaos
+* Sisters Of Battle
+* Tyranids
+
+It also changes the way you pay for weapons on Titans, as well as the way VP is awarded for them which seems a lot fairer. This will result in the odd "fraction" value in adding up VP though, a small price to pay.
+Hopefully people out there find it useful, its been a labour of love getting all this done (and in some cases less "love" more "urgghhhh").
+
+Cheers - Steve
+
 v3 notes :
 
 This release adds Tau to the list of races you can now build armies for in Battlescribe! I can hear the handful of Tau NetEpic players out there whooping from here. This list caters for "pure" Tau and also Kroot Mercenary armies.
