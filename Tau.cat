@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="82c5-1daa-f99f-62e4" name="Tau" revision="1" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <readme>v1 Notes :
+<catalogue id="82c5-1daa-f99f-62e4" name="Tau" revision="2" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>v2 notes :
+Fixed Kroot Tracker company card unit selection.
+
+v1 notes :
 
 First version of the Tau list. Allows Tau and Kroot Mercenaries as separate army constructs.
 Duplicate entries have been created for units that can use the Ta&apos;lissa Ritual Special Rule. Initially I added this as a new Cost Type to all units to this master army schema but it made everything very ugly and unwieldy - its much cleaner in the Battlescribe &quot;All Army&quot; view to see units wich have opted for Ta&apos;lissa, and those which have not, and obviously makes counting everything up a lot easier in one sum. It has resulted in what appears to be a larger number of Company and Support Cards, but this is a small price to pay IMO given how difficult it was before to get everything to reflect accurately and not look a mess.
@@ -1967,9 +1970,12 @@ There is very little point in applying the Ta&apos;lissera Ritual to this unit.<
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="e50c-1ba0-d5a2-a086" name="Kroot Carnivore Horde" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69c1-a9b6-6af7-140d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18cf-f5c3-3eec-3867" type="min"/>
+          </constraints>
           <categoryLinks>
             <categoryLink id="3b5c-a665-7884-92c6" name="Tau" hidden="false" targetId="a4a7-e99c-60e8-e41c" primary="false"/>
-            <categoryLink id="64cd-2137-270c-9518" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry id="8d3d-e850-0887-67f7" name="Kroot Carnivores" hidden="false" collective="false" import="true" type="model">
@@ -2001,9 +2007,12 @@ There is very little point in applying the Ta&apos;lissera Ritual to this unit.<
           </costs>
         </selectionEntry>
         <selectionEntry id="04fb-4043-0f88-3c78" name="Kroot Shaper Horde" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4dbe-13af-18e4-8633" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37c0-beb3-49a9-2980" type="max"/>
+          </constraints>
           <categoryLinks>
             <categoryLink id="82ed-7934-7286-1ca9" name="Tau" hidden="false" targetId="a4a7-e99c-60e8-e41c" primary="false"/>
-            <categoryLink id="947a-144a-1d9f-35ec" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry id="312d-15e0-6bf6-56d6" name="Kroot Shapers" hidden="false" collective="false" import="true" type="model">
@@ -2034,9 +2043,12 @@ There is very little point in applying the Ta&apos;lissera Ritual to this unit.<
           </costs>
         </selectionEntry>
         <selectionEntry id="2855-407a-0539-49c2" name="Kroot Hound Horde" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91e9-87e1-6f1f-4d7d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e308-3a46-e839-eab3" type="min"/>
+          </constraints>
           <categoryLinks>
             <categoryLink id="dd9d-0b33-b942-6498" name="Tau" hidden="false" targetId="a4a7-e99c-60e8-e41c" primary="false"/>
-            <categoryLink id="1c73-c191-f15b-ad58" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry id="a65f-be98-d42c-3e8c" name="Kroot Hounds" hidden="false" collective="false" import="true" type="model">

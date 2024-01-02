@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6a64-81d6-8354-a8c3" name="Eldar" revision="4" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <readme>v4 notes :
+<catalogue id="6a64-81d6-8354-a8c3" name="Eldar" revision="5" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>v5 notes :
+Fixed missing points values and VP&apos;s on a couple of units.
+
+v4 notes :
 Major change to Titan weapon cost /VP&apos;s - each weapon now has a VP value that aligns to cost in points for more accurate VP awarding in the event of a Titan being destroyed.
 
 v3 notes :
@@ -1490,7 +1493,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7bb0-2bf6-d086-2726" name="Master Mime" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7bb0-2bf6-d086-2726" name="Master Mime" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="0de1-c81c-1403-4498" name="Master Mime" hidden="false" targetId="2b1b-c560-aefc-912f" type="rule"/>
       </infoLinks>
@@ -1505,10 +1508,6 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
       </costs>
     </selectionEntry>
     <selectionEntry id="ea29-9a77-e96e-043c" name="Phantom Titan" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89bc-a204-eca9-d3b6" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f431-d588-9953-13f0" type="min"/>
-      </constraints>
       <infoLinks>
         <infoLink id="3757-0db9-e0d3-0e65" name="Phantom Titan" hidden="false" targetId="5058-894c-37d7-304e" type="profile"/>
         <infoLink id="6050-4e61-46ae-1576" name="Agile" hidden="false" targetId="b210-d2d7-79f5-7fcb" type="rule"/>
@@ -1800,6 +1799,8 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
               </selectionEntryGroups>
               <costs>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1817,10 +1818,6 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
       </costs>
     </selectionEntry>
     <selectionEntry id="715f-1026-b87b-7aa6" name="Warlock Titan" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a45-d5f3-f07a-ae67" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a21b-e1f0-e63a-c266" type="min"/>
-      </constraints>
       <infoLinks>
         <infoLink id="f427-3430-53c8-d0d9" name="Warlock Titan" hidden="false" targetId="fd2c-eff9-874a-21cd" type="profile"/>
         <infoLink id="2bef-8738-43ee-d2dc" name="Agile" hidden="false" targetId="b210-d2d7-79f5-7fcb" type="rule"/>
@@ -1992,7 +1989,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="500.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="5.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -2413,7 +2410,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="1.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3646-fa60-0168-5c60" name="Bright Lance Battery" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="3646-fa60-0168-5c60" name="Bright Lance Battery" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="f426-ec4c-f612-92e1" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
         <categoryLink id="dee2-8b87-a1f3-a47c" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
@@ -2601,6 +2598,8 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="03b7-2c25-74e1-713d" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
             <infoLink id="5a5b-85de-2cf4-b7ac" name="Cobra" hidden="false" targetId="18de-ca19-e1a1-2157" type="profile"/>
             <infoLink id="782b-501d-503d-a047" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+            <infoLink id="3b8b-64af-5435-0663" name="D-Cannons" hidden="false" targetId="ad4d-4d47-8719-dd03" type="rule"/>
+            <infoLink id="d63a-ab1b-3711-9d9b" name="Destroys Buildings" hidden="false" targetId="7db7-4fc2-dcb1-aa01" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -3457,7 +3456,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="18e6-19c7-6485-295a" name="Saim-Hann - Wind Rider Host" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="18e6-19c7-6485-295a" name="Saim-Hann - Wind Rider Host" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="3748-8c06-4a35-d388" name="Unique" hidden="false" targetId="8872-7902-38c1-08d1" type="rule"/>
       </infoLinks>
@@ -4026,7 +4025,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
       <costs>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="3.0"/>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="2.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c75e-e619-e441-156a" name="Ulthwe - Black Guardians of Ulthwe" hidden="false" collective="false" import="true" type="unit">
@@ -4053,7 +4052,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
       <costs>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="3.0"/>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="2.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5a5b-4790-21b6-d74e" name="Defender Detachment" hidden="false" collective="false" import="true" type="unit">
@@ -4162,7 +4161,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
       <costs>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="1.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c098-d08f-775b-5dc1" name="Biel-Tan - Dire Avengers" hidden="false" collective="false" import="true" type="unit">
@@ -4190,7 +4189,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" VP" typeId="points" value="1.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="2.0"/>
       </costs>
     </selectionEntry>
@@ -4257,7 +4256,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2bef-1f34-0ce3-46ed" name="Harlequins - Master Mime (Harlequin Masque Ally use only)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2bef-1f34-0ce3-46ed" name="Harlequins - Master Mime (Harlequin Masque Ally use only)" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="561d-c481-2579-38a4" name="Master Mime" hidden="false" targetId="2b1b-c560-aefc-912f" type="rule"/>
       </infoLinks>
@@ -4411,7 +4410,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="9.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9c98-bc98-7ccd-4ad0" name="Harlequins - Death Jester Troupe" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="9c98-bc98-7ccd-4ad0" name="Harlequins - Death Jester Troupe" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="5870-b4f9-fb77-715e" name="Harlequin Masque" hidden="false" targetId="cd45-df8f-fec2-9e8e" primary="false"/>
         <categoryLink id="fef4-9985-1e56-1e45" name="Harlequin Masque" hidden="false" targetId="cd45-df8f-fec2-9e8e" primary="false"/>
@@ -5213,7 +5212,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="3.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b57f-b82e-8f03-97b2" name="Exodite Pentasaur Host" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="b57f-b82e-8f03-97b2" name="Exodite Pentasaur Host" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="0eb8-8616-278e-1bee" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="true"/>
         <categoryLink id="18f6-7036-2333-826c" name="Exodites" hidden="false" targetId="3e7c-f14b-198c-ce5c" primary="false"/>
@@ -5503,7 +5502,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="2.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0c4a-23c0-3105-80d0" name="Exodite Scout Host" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0c4a-23c0-3105-80d0" name="Exodite Scout Host" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="38f9-b074-76c8-b9e0" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="true"/>
         <categoryLink id="6cde-c352-908b-3d48" name="Exodites" hidden="false" targetId="3e7c-f14b-198c-ce5c" primary="false"/>
@@ -5778,7 +5777,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="2.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="89b6-5053-e6de-f5d4" name="Exodite Vyper Carrier Squadron" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="89b6-5053-e6de-f5d4" name="Exodite Vyper Carrier Squadron" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="2fb8-c72a-6986-8cd6" name="Exodites" hidden="false" targetId="3e7c-f14b-198c-ce5c" primary="false"/>
         <categoryLink id="92bb-c215-8bcf-cef4" name="Exodites" hidden="false" targetId="3e7c-f14b-198c-ce5c" primary="false"/>
@@ -5805,9 +5804,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
-        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="175.0"/>
+        <cost name=" VP" typeId="points" value="2.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="3.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fcb3-fcd0-b5b2-cb5e" name="Exodite Hellbenders" hidden="false" collective="false" import="true" type="unit">
@@ -5880,6 +5879,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
         <infoLink id="bd6f-a69c-2bee-0e98" name="Penetrating (+3)" hidden="false" targetId="af8f-61cb-cc42-2f21" type="rule"/>
         <infoLink id="dbb2-e9b9-b280-fe79" name="Destroys Buildings" hidden="false" targetId="7db7-4fc2-dcb1-aa01" type="rule"/>
         <infoLink id="6618-4b2a-f301-5cb5" name="Distortion Cannon" hidden="false" targetId="fb53-00f6-5c2f-5ff7" type="profile"/>
+        <infoLink id="2a44-851d-3339-afc6" name="D-Cannons" hidden="false" targetId="ad4d-4d47-8719-dd03" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
@@ -5968,7 +5968,6 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
       </costs>
     </selectionEntry>
     <selectionEntry id="5e3d-3978-1b76-c961" name="Wing Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
-      <comment></comment>
       <infoLinks>
         <infoLink id="f505-5d2e-9ab7-7ce9" name="Wing Missile Launcher" hidden="false" targetId="05d9-5c99-a1b4-a8c7" type="profile"/>
       </infoLinks>
@@ -6177,6 +6176,9 @@ Daemons. When a Greater Daemon is attacked, it must make its basic saving throw 
     </rule>
     <rule id="a48b-ddcf-0952-748b" name="Psychic Power : Heal" publicationId="fb48-538b-b59c-f951" hidden="false">
       <description>The Visionary gains the Medic ability until the end of the turn.</description>
+    </rule>
+    <rule id="ad4d-4d47-8719-dd03" name="D-Cannons" hidden="false">
+      <description>Roll for scatter as per an indirect barrage (2D6cm). Instantly destroys any target under the template, except targets with a Hit Template who take a hit (after rolling for scatter) at +3 on the relevent damage chart. Does not effect shielded targets. This weapon destroys buildings if they fail a basic save.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -6394,7 +6396,7 @@ Holofields</characteristic>
       <characteristics>
         <characteristic name="Range" typeId="844b-36c0-eaa1-5158">75cm</characteristic>
         <characteristic name="Shooting Profile" typeId="c573-6741-2e61-1642">Barrage Template</characteristic>
-        <characteristic name="Special Rules" typeId="0aa3-ca6c-3b0e-e404">Roll for scatter as per an indirect barrage. Instantly destroys any target under the template, except targets with a Hit Template who take a hit (after rolling for scatter) at +3 on the relevent damage chart. Does not effect shielded targets.</characteristic>
+        <characteristic name="Special Rules" typeId="0aa3-ca6c-3b0e-e404">See Special Rule.</characteristic>
       </characteristics>
     </profile>
     <profile id="3112-5527-a410-64d3" name="Heat Lance" hidden="false" typeId="6cab-14fd-d162-8ecc" typeName="Eldar Titan Weapons">

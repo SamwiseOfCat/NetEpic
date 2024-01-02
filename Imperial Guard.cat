@@ -7041,6 +7041,8 @@ Imperial Guard detachments may only be given orders if they are connected to a C
               </selectionEntryGroups>
               <costs>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -7195,6 +7197,8 @@ Imperial Guard detachments may only be given orders if they are connected to a C
               </selectionEntryGroups>
               <costs>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -7842,6 +7846,8 @@ Imperial Guard detachments may only be given orders if they are connected to a C
               </selectionEntryGroups>
               <costs>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -8273,7 +8279,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="1.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7d27-49e9-f4a0-5c96" name="Chimerax Assault Squadron" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7d27-49e9-f4a0-5c96" name="Chimerax Assault Squadron" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="d162-75a1-41bc-4c1b" name="Additional Transports" hidden="false" targetId="9f0a-b8a5-f0f2-cc2c" type="rule"/>
       </infoLinks>
@@ -8308,7 +8314,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="2.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7840-90e9-8fa8-9d45" name="Chimera Assault Squadron" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7840-90e9-8fa8-9d45" name="Chimera Assault Squadron" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="cf86-f122-7640-1de7" name="Additional Transports" hidden="false" targetId="9f0a-b8a5-f0f2-cc2c" type="rule"/>
       </infoLinks>
@@ -8343,7 +8349,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="2.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a6bc-766b-1c42-d97b" name="Chimerro Assault Squadron" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="a6bc-766b-1c42-d97b" name="Chimerro Assault Squadron" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="b9b2-6742-7567-e6c8" name="Additional Transports" hidden="false" targetId="9f0a-b8a5-f0f2-cc2c" type="rule"/>
       </infoLinks>
@@ -8375,7 +8381,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="2.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="00ab-01e5-0c27-7bc0" name="Chimedon Assault Squadron" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="00ab-01e5-0c27-7bc0" name="Chimedon Assault Squadron" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="68dc-ea9f-2798-8862" name="Additional Transports" hidden="false" targetId="9f0a-b8a5-f0f2-cc2c" type="rule"/>
       </infoLinks>
@@ -8410,7 +8416,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="2.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b285-c672-cf14-4fba" name="Chimedon Tactical Squadron" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="b285-c672-cf14-4fba" name="Chimedon Tactical Squadron" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="208d-9360-bcbf-69fb" name="Additional Transports" hidden="false" targetId="9f0a-b8a5-f0f2-cc2c" type="rule"/>
       </infoLinks>
@@ -8445,7 +8451,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="2.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cdc4-1d8e-493e-7579" name="Chimera Tactical Squadron" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="cdc4-1d8e-493e-7579" name="Chimera Tactical Squadron" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="857c-9380-39fe-123c" name="Additional Transports" hidden="false" targetId="9f0a-b8a5-f0f2-cc2c" type="rule"/>
       </infoLinks>
@@ -8480,7 +8486,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="2.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="37b8-d980-3cd0-d8df" name="Chimerax Tactical Squadron" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="37b8-d980-3cd0-d8df" name="Chimerax Tactical Squadron" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="3bcf-21a3-5907-dc03" name="Additional Transports" hidden="false" targetId="9f0a-b8a5-f0f2-cc2c" type="rule"/>
       </infoLinks>
@@ -8515,7 +8521,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="2.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="221a-d2cb-caa5-5e1b" name="Chimerro Tactical Squadron" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="221a-d2cb-caa5-5e1b" name="Chimerro Tactical Squadron" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="b2ee-d442-1f20-67d2" name="Additional Transports" hidden="false" targetId="9f0a-b8a5-f0f2-cc2c" type="rule"/>
       </infoLinks>
@@ -9061,8 +9067,8 @@ E) Ignore: Ignore the question and move on to the next one.</description>
       <selectionEntries>
         <selectionEntry id="9bbe-3f07-409c-2128" name="Valkyries" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7352-ca2f-6556-f687" type="max"/>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad43-91bb-f907-d1e7" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7352-ca2f-6556-f687" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad43-91bb-f907-d1e7" type="min"/>
           </constraints>
           <infoLinks>
             <infoLink id="e4f3-9820-c0a2-08a8" name="Valkyrie" hidden="false" targetId="fe5a-fe30-ff60-6077" type="profile"/>

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a9aa-a2eb-5b74-a29d" name="Chaos" revision="4" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a9aa-a2eb-5b74-a29d" name="Chaos" revision="5" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Added &quot;Unique&quot; rule to all named units like the Primarchs or named titans. Added Chaos Titan-specific weapons.</comment>
-  <readme>v4 notes : 
+  <readme>v5 notes :
+Fixed some Company Card unit composition min/maxes.
+
+v4 notes : 
 Major change to Titan weapon cost /VP&apos;s - each weapon now has a VP value that aligns to cost in points for more accurate VP awarding in the event of a Titan being destroyed.
 
 v3 notes :
@@ -1328,6 +1331,8 @@ This was the list I was dreading doing... easily the most complex in regards to 
               </selectionEntryGroups>
               <costs>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1944,6 +1949,8 @@ This was the list I was dreading doing... easily the most complex in regards to 
               </selectionEntryGroups>
               <costs>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2315,6 +2322,10 @@ This was the list I was dreading doing... easily the most complex in regards to 
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="b25b-2c1f-bf83-6aaa" name="Minotaur Warband" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1966-aef9-2d8e-e80f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a7a-b210-adfd-364c" type="min"/>
+          </constraints>
           <categoryLinks>
             <categoryLink id="1ef5-4701-a61d-70a3" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
           </categoryLinks>
@@ -2386,13 +2397,12 @@ This was the list I was dreading doing... easily the most complex in regards to 
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="250.0"/>
-            <cost name=" VP" typeId="points" value="3.0"/>
-            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="6.0"/>
-          </costs>
         </selectionEntry>
         <selectionEntry id="668e-44f6-47c3-2699" name="Troll Warband" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d730-fe6d-5079-9ad5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1ba-723c-5e00-c110" type="min"/>
+          </constraints>
           <categoryLinks>
             <categoryLink id="0166-dfe1-ca04-e5ab" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
           </categoryLinks>
@@ -2462,11 +2472,6 @@ This was the list I was dreading doing... easily the most complex in regards to 
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="250.0"/>
-            <cost name=" VP" typeId="points" value="3.0"/>
-            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="6.0"/>
-          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -5686,6 +5691,7 @@ This was the list I was dreading doing... easily the most complex in regards to 
       </costs>
     </selectionEntry>
     <selectionEntry id="0233-b210-ea6c-85b3" name="Thousand Sons Century" hidden="false" collective="false" import="true" type="unit">
+      <comment>Card doesnt have Chaos Champion on it, oddly</comment>
       <infoLinks>
         <infoLink id="dfd5-0cbd-6ad6-4071" name="Thousand Sons Chaos Reward : Magic of Tzeentch" hidden="false" targetId="2e59-666a-796f-6564" type="rule"/>
       </infoLinks>
@@ -5728,6 +5734,10 @@ This was the list I was dreading doing... easily the most complex in regards to 
           </costs>
         </selectionEntry>
         <selectionEntry id="3021-f513-fef2-8fbe" name="Automaton Squad" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ee6-c58f-ac8a-9f1f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a10e-3160-355c-fcca" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="c3d5-8332-d4d1-4bed" name="Automatons" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -6119,7 +6129,7 @@ This was the list I was dreading doing... easily the most complex in regards to 
       </costs>
     </selectionEntry>
     <selectionEntry id="38ad-9da9-fbca-d0cf" name="Horrors" hidden="false" collective="false" import="true" type="unit">
-      <comment>Spelling amended to &quot;Rider&quot; from &quot;Raider&quot; on NE card</comment>
+      <comment></comment>
       <categoryLinks>
         <categoryLink id="d6ea-7e63-e7f4-0bbf" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
         <categoryLink id="6bd1-6b73-ec91-6d81" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
@@ -6265,6 +6275,10 @@ This was the list I was dreading doing... easily the most complex in regards to 
           </costs>
         </selectionEntry>
         <selectionEntry id="8661-ef23-711d-f29a" name="Chaos Champion" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c0c-10bb-5a41-c09f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="deca-1036-1ad9-0865" type="min"/>
+          </constraints>
           <categoryLinks>
             <categoryLink id="36db-1a7a-acde-158e" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
           </categoryLinks>
@@ -6630,11 +6644,6 @@ This was the list I was dreading doing... easily the most complex in regards to 
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="250.0"/>
-            <cost name=" VP" typeId="points" value="3.0"/>
-            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="3.0"/>
-          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -6690,6 +6699,10 @@ This was the list I was dreading doing... easily the most complex in regards to 
           </costs>
         </selectionEntry>
         <selectionEntry id="737c-9121-1096-6b51" name="Chaos Champion" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e069-dbac-acf5-19a0" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d59-c4a0-dbea-a226" type="max"/>
+          </constraints>
           <categoryLinks>
             <categoryLink id="8545-884b-7ae6-1b87" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
           </categoryLinks>
@@ -6803,6 +6816,10 @@ This was the list I was dreading doing... easily the most complex in regards to 
           </costs>
         </selectionEntry>
         <selectionEntry id="4356-2d7c-830a-82bf" name="Chaos Champion" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0ef-60e8-9a36-f776" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa6d-6386-0fc4-3271" type="min"/>
+          </constraints>
           <categoryLinks>
             <categoryLink id="aa6c-fb67-11ef-e826" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
           </categoryLinks>
@@ -6919,6 +6936,10 @@ This was the list I was dreading doing... easily the most complex in regards to 
           </costs>
         </selectionEntry>
         <selectionEntry id="0d4f-4530-0e77-22d2" name="Chaos Champion" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5ab-b329-536f-5018" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="579b-82a1-f75a-66ad" type="min"/>
+          </constraints>
           <categoryLinks>
             <categoryLink id="570f-3754-fd33-ed13" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
           </categoryLinks>
@@ -6985,6 +7006,10 @@ This was the list I was dreading doing... easily the most complex in regards to 
           </costs>
         </selectionEntry>
         <selectionEntry id="d82d-2c33-bb98-fe55" name="Havok Squad" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8372-d8d2-0fa1-55ce" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1735-66b4-2e4f-f44f" type="min"/>
+          </constraints>
           <categoryLinks>
             <categoryLink id="460d-f67a-f170-cf57" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
           </categoryLinks>
@@ -7068,6 +7093,10 @@ This was the list I was dreading doing... easily the most complex in regards to 
           </costs>
         </selectionEntry>
         <selectionEntry id="c94f-e2e0-96ef-be9a" name="Chaos Champion" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b51-5736-c2fb-ca66" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8184-3fb8-4c02-bc6f" type="min"/>
+          </constraints>
           <categoryLinks>
             <categoryLink id="27ec-60a9-9f6e-118c" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
           </categoryLinks>
@@ -7124,7 +7153,6 @@ This was the list I was dreading doing... easily the most complex in regards to 
           <categoryLinks>
             <categoryLink id="4382-7d29-421e-229d" name="Chaos Space Marines" hidden="false" targetId="876a-a1c2-7f18-2798" primary="false"/>
             <categoryLink id="27e5-5735-8d1f-c7fe" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
-            <categoryLink id="d351-d8d8-a603-0c6b" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry id="78e1-0ac9-b349-7f89" name="Chaos Space Marine Detachment" hidden="false" collective="false" import="true" type="model">
@@ -7159,7 +7187,6 @@ This was the list I was dreading doing... easily the most complex in regards to 
           </constraints>
           <categoryLinks>
             <categoryLink id="f083-e593-6aad-dfb6" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
-            <categoryLink id="dfb9-bfa4-2ac5-6bfd" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry id="473d-bee5-7c5c-d2fc" name="Havoks" hidden="false" collective="false" import="true" type="model">
@@ -7187,6 +7214,10 @@ This was the list I was dreading doing... easily the most complex in regards to 
           </costs>
         </selectionEntry>
         <selectionEntry id="d60b-84ce-eeab-8d0a" name="Warsmith" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abcd-7c2d-bf14-5c57" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dc9-6923-81ea-636e" type="min"/>
+          </constraints>
           <categoryLinks>
             <categoryLink id="b9d4-8ab4-4272-4e18" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
             <categoryLink id="8331-fc79-9b05-1826" name="Iron Warriors" hidden="false" targetId="5062-536b-7a25-c109" primary="false"/>
@@ -7240,6 +7271,10 @@ This was the list I was dreading doing... easily the most complex in regards to 
           </costs>
         </selectionEntry>
         <selectionEntry id="936b-e8e5-3f50-6913" name="Iron Dreadnoughts" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e7e-da8b-0b38-e44c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a95-da79-45c9-108c" type="min"/>
+          </constraints>
           <categoryLinks>
             <categoryLink id="5857-ffc2-de24-dfb7" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
             <categoryLink id="9a3a-ac98-a793-dab8" name="Iron Warriors" hidden="false" targetId="5062-536b-7a25-c109" primary="false"/>
@@ -7371,6 +7406,10 @@ This was the list I was dreading doing... easily the most complex in regards to 
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="8a8c-8ebe-fb4b-dc89" name="Warsmith" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d2c-b6b3-6c59-a042" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e9a-27c9-84b3-b491" type="min"/>
+          </constraints>
           <categoryLinks>
             <categoryLink id="c701-65b3-6368-89fb" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
             <categoryLink id="8f46-ba2f-99d7-ba79" name="Iron Warriors" hidden="false" targetId="5062-536b-7a25-c109" primary="false"/>
@@ -7545,6 +7584,10 @@ This was the list I was dreading doing... easily the most complex in regards to 
           </costs>
         </selectionEntry>
         <selectionEntry id="1537-e916-d7cd-43d9" name="Chaos Champion" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88d2-e056-1f58-8bcf" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f421-166b-1095-f224" type="min"/>
+          </constraints>
           <categoryLinks>
             <categoryLink id="2b02-12b8-8f8b-0fbc" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
           </categoryLinks>
@@ -7630,6 +7673,10 @@ This was the list I was dreading doing... easily the most complex in regards to 
           </costs>
         </selectionEntry>
         <selectionEntry id="a2d2-176e-701e-8057" name="Chaos Champion" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4635-64b2-7a19-f1ca" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84a1-ce22-745f-ae77" type="min"/>
+          </constraints>
           <categoryLinks>
             <categoryLink id="c577-033d-4e2b-d883" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
           </categoryLinks>
@@ -7853,7 +7900,7 @@ This was the list I was dreading doing... easily the most complex in regards to 
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="8.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="03f8-de1b-c649-b1c7" name="Chaos Marine Bike Squad" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="03f8-de1b-c649-b1c7" name="Chaos Space Marine Bike Squad" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="6d9d-16d3-226a-73b4" name="Chaos Space Marines" hidden="false" targetId="876a-a1c2-7f18-2798" primary="false"/>
         <categoryLink id="f84e-a28d-ca51-534d" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
@@ -7930,11 +7977,6 @@ This was the list I was dreading doing... easily the most complex in regards to 
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a591-5e68-6b60-c552" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cff-2814-10d5-7206" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="3315-65d6-d9e8-2200" name="Chaos Space Marines" hidden="false" targetId="876a-a1c2-7f18-2798" primary="false"/>
-            <categoryLink id="f842-fe9a-6967-99cb" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
-            <categoryLink id="5d0a-3734-0ccd-0a2a" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="af67-e3d5-5d17-1a3d" name="Chaos Space Marine Detachment" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -7962,6 +8004,10 @@ This was the list I was dreading doing... easily the most complex in regards to 
           </costs>
         </selectionEntry>
         <selectionEntry id="e218-e821-6aef-d7a0" name="Chaos Champion" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15d4-67c9-735c-aa8a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eef2-a514-a39a-d6fc" type="min"/>
+          </constraints>
           <categoryLinks>
             <categoryLink id="9b25-e941-27fa-8129" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
           </categoryLinks>
@@ -8015,7 +8061,6 @@ This was the list I was dreading doing... easily the most complex in regards to 
           <categoryLinks>
             <categoryLink id="da17-f457-b945-ab5a" name="Chaos Space Marines" hidden="false" targetId="876a-a1c2-7f18-2798" primary="false"/>
             <categoryLink id="4b43-693f-3847-f054" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
-            <categoryLink id="14c3-9e7c-9004-c731" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry id="ce89-36b6-4b68-6878" name="Chaos Space Marine Detachment" hidden="false" collective="false" import="true" type="model">
@@ -8044,6 +8089,10 @@ This was the list I was dreading doing... easily the most complex in regards to 
           </costs>
         </selectionEntry>
         <selectionEntry id="da8b-e04e-1a11-2c47" name="Chaos Champion" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f279-ef3b-e243-27cf" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc2a-ab58-b709-8d38" type="min"/>
+          </constraints>
           <categoryLinks>
             <categoryLink id="db74-2b4f-72a9-cc1f" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
           </categoryLinks>
@@ -8110,6 +8159,10 @@ This was the list I was dreading doing... easily the most complex in regards to 
           </costs>
         </selectionEntry>
         <selectionEntry id="add2-e273-93a2-2733" name="Havok Squad" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c26-38df-47a5-0f4a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c2c-0bb1-e0c2-d5ce" type="min"/>
+          </constraints>
           <categoryLinks>
             <categoryLink id="e91e-3ec2-f40d-8d08" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
           </categoryLinks>
@@ -8215,11 +8268,6 @@ This was the list I was dreading doing... easily the most complex in regards to 
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0003-942b-cb82-b185" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3802-ccec-f225-de14" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="d105-b6aa-2a1e-3b03" name="Chaos Space Marines" hidden="false" targetId="876a-a1c2-7f18-2798" primary="false"/>
-            <categoryLink id="2efa-9f3a-8cf2-e8f3" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
-            <categoryLink id="086d-f9fe-d0a1-c150" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="7dc4-5892-63ba-8cf4" name="Chaos Space Marine Detachment" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -8247,6 +8295,10 @@ This was the list I was dreading doing... easily the most complex in regards to 
           </costs>
         </selectionEntry>
         <selectionEntry id="decc-e9d5-4faa-f3d0" name="Dark Apostle" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0df0-5fbe-0243-6719" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="214c-a23d-906e-f5a7" type="min"/>
+          </constraints>
           <categoryLinks>
             <categoryLink id="3635-060b-e1ec-a20a" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
             <categoryLink id="fd59-33a8-3967-0d6c" name="Word Bearers" hidden="false" targetId="4e20-0bb5-a240-99d4" primary="false"/>
@@ -8389,14 +8441,9 @@ This was the list I was dreading doing... easily the most complex in regards to 
                   </costs>
                 </selectionEntry>
               </selectionEntries>
-              <costs>
-                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="150.0"/>
-                <cost name=" VP" typeId="points" value="2.0"/>
-                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="3.0"/>
-              </costs>
             </selectionEntry>
             <selectionEntry id="448a-8455-a8f2-2235" name="Horrors" hidden="false" collective="false" import="true" type="unit">
-              <comment>Spelling amended to &quot;Rider&quot; from &quot;Raider&quot; on NE card</comment>
+              <comment></comment>
               <categoryLinks>
                 <categoryLink id="0416-bfb6-f167-85e8" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
               </categoryLinks>
@@ -8419,11 +8466,6 @@ This was the list I was dreading doing... easily the most complex in regards to 
                   </costs>
                 </selectionEntry>
               </selectionEntries>
-              <costs>
-                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="150.0"/>
-                <cost name=" VP" typeId="points" value="2.0"/>
-                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="3.0"/>
-              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -8434,7 +8476,7 @@ This was the list I was dreading doing... easily the most complex in regards to 
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="9.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ca5c-3f4e-1ef1-0940" name="Chaos Marine Company" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="ca5c-3f4e-1ef1-0940" name="Chaos Space Marine Company" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="4246-1ef0-98cd-6dd8" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
         <categoryLink id="bc85-ba70-12b5-080c" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="true"/>
@@ -8478,6 +8520,10 @@ This was the list I was dreading doing... easily the most complex in regards to 
           </costs>
         </selectionEntry>
         <selectionEntry id="2e17-ff64-b0b1-d865" name="Chaos Champion" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bffd-043c-3fdd-5734" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20d0-1361-6ce1-b9e9" type="max"/>
+          </constraints>
           <categoryLinks>
             <categoryLink id="9249-041e-a31d-e23a" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
           </categoryLinks>
@@ -8530,7 +8576,6 @@ This was the list I was dreading doing... easily the most complex in regards to 
           </constraints>
           <categoryLinks>
             <categoryLink id="fef3-a431-9074-c250" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
-            <categoryLink id="ecb6-8a7d-6dc4-fdaf" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry id="81e6-3275-d134-d88b" name="Havoks" hidden="false" collective="false" import="true" type="model">
@@ -8551,13 +8596,12 @@ This was the list I was dreading doing... easily the most complex in regards to 
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="300.0"/>
-            <cost name=" VP" typeId="points" value="3.0"/>
-            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="3.0"/>
-          </costs>
         </selectionEntry>
         <selectionEntry id="8293-6c14-dec7-1590" name="Chaos Champion" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af16-cb8a-4403-71c7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fc7-1807-acfc-3b0b" type="min"/>
+          </constraints>
           <categoryLinks>
             <categoryLink id="d3cb-a1ee-f044-d986" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
           </categoryLinks>
@@ -8896,6 +8940,10 @@ This was the list I was dreading doing... easily the most complex in regards to 
           </costs>
         </selectionEntry>
         <selectionEntry id="732e-0dc4-36a2-94b7" name="Chaos Terminator Command" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6924-2cd7-be09-975d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5deb-c708-5289-7492" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="3979-3923-4b4c-de34" name="Terminator HQ" hidden="false" collective="false" import="true" type="model">
               <constraints>

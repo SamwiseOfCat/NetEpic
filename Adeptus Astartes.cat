@@ -4984,59 +4984,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="abb5-d728-9f6f-0bc9" name="Death Company Detachment" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21c1-fdb8-098f-a680" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5671-0f44-8c7d-f6b4" type="max"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="2df4-e539-2097-27f0" name="Blood Angels" hidden="false" targetId="efc6-06ea-e3a8-fa42" primary="false"/>
-          </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="51ad-972c-ec1a-82cb" name="Death Company Marines" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d525-e03d-fbbf-5630" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="3fa5-9181-b082-ae7b" name="Death Company Marine Squad" hidden="false" targetId="6fd4-45b8-d067-3ffc" type="profile"/>
-                <infoLink id="1346-6e2c-6c1c-df9c" name="Fearless" hidden="false" targetId="266e-884d-c911-ba95" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="7d05-287f-5aaf-f7a0" name="Blood Angels" hidden="false" targetId="efc6-06ea-e3a8-fa42" primary="false"/>
-                <categoryLink id="3ad3-d4f8-8d99-467a" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-                <cost name=" VP" typeId="points" value="0.0"/>
-                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8c40-185f-8e47-69e0" name="Death Company Rhinos" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f088-5c13-d4f4-4031" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="08a2-85d5-fe71-4706" name="Rhino" hidden="false" targetId="f85a-fa0b-759a-d2eb" type="profile"/>
-                <infoLink id="7b99-03b9-3b06-3aa8" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
-                <infoLink id="405c-2ea0-8928-8f30" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="50d6-e81b-cdf0-9141" name="Blood Angels" hidden="false" targetId="efc6-06ea-e3a8-fa42" primary="false"/>
-                <categoryLink id="6a31-0bcd-baab-8c08" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-                <cost name=" VP" typeId="points" value="0.0"/>
-                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-            <cost name=" VP" typeId="points" value="0.0"/>
-            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>

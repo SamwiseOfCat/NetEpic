@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f23e-c6f0-c6f2-9690" name="Slann" revision="1" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f23e-c6f0-c6f2-9690" name="Slann" revision="1" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>v1 notes :
 
 Initial Slann Army Lists.</readme>
@@ -2401,6 +2401,11 @@ Initial Slann Army Lists.</readme>
           <categoryLinks>
             <categoryLink id="e6ea-4193-364a-5f27" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -2426,6 +2431,11 @@ Initial Slann Army Lists.</readme>
           <categoryLinks>
             <categoryLink id="4ef0-34d9-2e51-44ed" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -2451,6 +2461,11 @@ Initial Slann Army Lists.</readme>
           <categoryLinks>
             <categoryLink id="3307-4726-03fe-4150" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -2479,6 +2494,11 @@ Initial Slann Army Lists.</readme>
           <categoryLinks>
             <categoryLink id="dd4c-2ba2-ad6d-0650" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="a248-c679-b2e5-3b23" name="Great Crested Skink" hidden="false" collective="false" import="true" type="model">
           <constraints>
@@ -2495,6 +2515,11 @@ Initial Slann Army Lists.</readme>
           <categoryLinks>
             <categoryLink id="b0dc-e6fe-7143-aca7" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -2552,11 +2577,17 @@ Initial Slann Army Lists.</readme>
           <categoryLinks>
             <categoryLink id="c728-8097-9cc3-92cd" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
         <cost name=" VP" typeId="points" value="1.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3ea1-95d7-aa72-3a26" name="Dracon Regulators" hidden="false" collective="false" import="true" type="unit">
@@ -2587,8 +2618,18 @@ Initial Slann Army Lists.</readme>
               <categoryLinks>
                 <categoryLink id="0aab-722c-8b20-fafa" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="8a41-e829-7ff9-6b6b" name="Kroxigor Detachment" hidden="false" collective="false" import="true" type="unit">
           <constraints>
@@ -2610,8 +2651,18 @@ Initial Slann Army Lists.</readme>
               <categoryLinks>
                 <categoryLink id="e24a-08ac-4a0c-5d1c" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="52ea-1263-0908-5b7a" name="Saurus Regular Detachment" hidden="false" collective="false" import="true" type="unit">
           <constraints>
@@ -2633,8 +2684,18 @@ Initial Slann Army Lists.</readme>
               <categoryLinks>
                 <categoryLink id="04a2-648b-e3f1-921e" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -2671,8 +2732,18 @@ Initial Slann Army Lists.</readme>
               <categoryLinks>
                 <categoryLink id="93f7-29d7-ba20-d8ec" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="71de-5ee6-ab13-102b" name="Kroxigor Detachment" hidden="false" collective="false" import="true" type="unit">
           <constraints>
@@ -2694,8 +2765,18 @@ Initial Slann Army Lists.</readme>
               <categoryLinks>
                 <categoryLink id="dbdf-0055-8c5a-5b17" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="cce0-1aac-dcdf-8087" name="Saurus Heavy Detachment" hidden="false" collective="false" import="true" type="unit">
           <constraints>
@@ -2717,8 +2798,18 @@ Initial Slann Army Lists.</readme>
               <categoryLinks>
                 <categoryLink id="49b9-c8aa-db1b-c766" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -2728,6 +2819,10 @@ Initial Slann Army Lists.</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="999e-8251-5532-0172" name="Dracon Skirmishers" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="8973-1121-e18b-a4c1" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="true"/>
+        <categoryLink id="afb6-8e37-9168-d1f5" name="Dracon" hidden="false" targetId="c7e2-5b5a-3f4e-34df" primary="false"/>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="f215-c182-dcd8-626d" name="Skink Scout Detachment" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -2752,6 +2847,11 @@ Initial Slann Army Lists.</readme>
               <categoryLinks>
                 <categoryLink id="0c98-ae29-3f31-bc6e" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="5e9e-bcd5-380a-7f96" name="Great Crested Skink" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -2768,8 +2868,18 @@ Initial Slann Army Lists.</readme>
               <categoryLinks>
                 <categoryLink id="52e0-2c33-5d84-2d6a" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -2806,8 +2916,18 @@ Initial Slann Army Lists.</readme>
               <categoryLinks>
                 <categoryLink id="bb0d-6cda-2303-f297" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="648d-5f61-c8a4-7a66" name="Dracon Cold One Rider Squad" hidden="false" collective="false" import="true" type="unit">
           <constraints>
@@ -2836,6 +2956,11 @@ Initial Slann Army Lists.</readme>
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="a503-547b-4e95-672f" name="Dracon Raptor Riders" hidden="false" collective="false" import="true" type="unit">
           <constraints>
@@ -2857,8 +2982,18 @@ Initial Slann Army Lists.</readme>
               <categoryLinks>
                 <categoryLink id="78c2-7488-740e-976d" name="Cavalry" hidden="false" targetId="755d-5211-ce54-6b21" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -2884,6 +3019,11 @@ Initial Slann Army Lists.</readme>
           <categoryLinks>
             <categoryLink id="7b6b-adbe-2408-321a" name="Cavalry" hidden="false" targetId="755d-5211-ce54-6b21" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -2916,11 +3056,17 @@ Initial Slann Army Lists.</readme>
           <categoryLinks>
             <categoryLink id="5809-adce-be98-3119" name="Superheavy" hidden="false" targetId="e3d7-eb22-9df1-719b" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="800.0"/>
         <cost name=" VP" typeId="points" value="8.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7365-1b4d-caa3-0e29" name="Dracon Shaman" hidden="false" collective="false" import="true" type="unit">
@@ -2943,6 +3089,11 @@ Initial Slann Army Lists.</readme>
             <infoLink id="ce53-1c59-71cf-bbbc" name="Shaman Power : The Shield of the Old Ones" hidden="false" targetId="761c-53aa-64a5-3552" type="rule"/>
             <infoLink id="beb9-49c1-4e95-caf3" name="Shaman Power : Wings in the Jungle" hidden="false" targetId="f1ff-255d-5569-17c2" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="1cad-9e16-e116-77d9" name="Dracon Temple Guard" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -2954,11 +3105,17 @@ Initial Slann Army Lists.</readme>
             <infoLink id="6aaa-e440-fe8e-1fe9" name="Command" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
             <infoLink id="5e8c-1618-58ab-df30" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
         <cost name=" VP" typeId="points" value="1.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="14ff-64e5-75f6-1fc0" name="Dracon Salamanders" hidden="false" collective="false" import="true" type="unit">
@@ -2979,6 +3136,11 @@ Initial Slann Army Lists.</readme>
           <categoryLinks>
             <categoryLink id="d485-9d67-6de1-f69e" name="Walker" hidden="false" targetId="f082-d1ca-f340-1ce8" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -3005,11 +3167,17 @@ Initial Slann Army Lists.</readme>
           <categoryLinks>
             <categoryLink id="fbc7-c679-e474-b4fb" name="Walker" hidden="false" targetId="f082-d1ca-f340-1ce8" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
         <cost name=" VP" typeId="points" value="1.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6989-9b81-5e93-7e26" name="Taradon Riders" hidden="false" collective="false" import="true" type="unit">
@@ -3030,6 +3198,11 @@ Initial Slann Army Lists.</readme>
           <categoryLinks>
             <categoryLink id="de8f-8feb-da5a-32b8" name="Cavalry" hidden="false" targetId="755d-5211-ce54-6b21" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -3058,11 +3231,17 @@ Initial Slann Army Lists.</readme>
           <categoryLinks>
             <categoryLink id="0f0d-b09f-42e4-c65d" name="Superheavy" hidden="false" targetId="e3d7-eb22-9df1-719b" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="200.0"/>
         <cost name=" VP" typeId="points" value="2.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="387c-daf4-d90b-e83f" name="Megadon" hidden="false" collective="false" import="true" type="unit">
@@ -3089,11 +3268,17 @@ Initial Slann Army Lists.</readme>
           <categoryLinks>
             <categoryLink id="027d-8f09-f538-99d7" name="Superheavy" hidden="false" targetId="e3d7-eb22-9df1-719b" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="300.0"/>
         <cost name=" VP" typeId="points" value="3.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
