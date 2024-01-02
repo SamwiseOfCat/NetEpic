@@ -30,6 +30,10 @@ Manual Installation Steps (do this if you cannot install via the above method, o
 
 Release Notes
 -------------
+v6 notes :
+
+Minor fixes to some army Company Cards.
+
 v5 notes :
 
 Yes I know v4 notes didnt get added :-)
