@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f23e-c6f0-c6f2-9690" name="Slann" revision="1" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f23e-c6f0-c6f2-9690" name="Slann" revision="1" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>v1 notes :
 
 Initial Slann Army Lists.</readme>
@@ -388,9 +388,6 @@ Initial Slann Army Lists.</readme>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97ff-2b94-c882-b966" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b5d-82a9-ee94-8d6b" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="aa8b-aae4-7912-2507" name="True Slann" hidden="false" targetId="1d9f-76be-7b93-efed" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="4aa5-bc7f-4fea-befc" name="Spawnguard" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -466,9 +463,6 @@ Initial Slann Army Lists.</readme>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d80-e62b-0600-2b93" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fae-eb4c-e55f-4cb9" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="18c5-4acb-3be0-459f" name="True Slann" hidden="false" targetId="1d9f-76be-7b93-efed" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="31aa-c9e4-9921-0376" name="Gravguard" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -575,14 +569,11 @@ Initial Slann Army Lists.</readme>
           </costs>
         </selectionEntry>
         <selectionEntry id="1c42-365b-85d4-94ad" name="Tadpole Detachment" hidden="false" collective="false" import="true" type="unit">
-          <comment>NE Card is wrong and suggests these break when completely wiped out - changed BP to 2 to match BP of all other 3-stand mech units.</comment>
+          <comment></comment>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="494a-1fcb-2cf2-9b6e" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4366-0f10-3c8d-551b" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="a79f-b13a-9f43-47f3" name="True Slann" hidden="false" targetId="1d9f-76be-7b93-efed" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="8aa2-1fef-7a09-b442" name="Tadpoles" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -664,9 +655,6 @@ Initial Slann Army Lists.</readme>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5204-e767-6301-5a6f" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2d8-8f07-4e91-742f" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="d7a4-cd08-0de9-aa29" name="True Slann" hidden="false" targetId="1d9f-76be-7b93-efed" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="0c6c-ab67-7336-699f" name="Frogs" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -911,6 +899,9 @@ Initial Slann Army Lists.</readme>
             <infoLink id="61f3-0a39-7b52-6f0c" name="Warp Jumps" hidden="false" targetId="f928-0606-598f-43ec" type="rule"/>
             <infoLink id="236d-d899-26d3-0c55" name="Slann Titan Warp Displacement Fields" hidden="false" targetId="870a-372e-ba9d-3231" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="b104-faac-0ea5-2f91" name="Titan" hidden="false" targetId="31e8-9840-fb3a-3b8d" primary="false"/>
+          </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="4dfb-0686-d718-1a66" name="Komodo Weapons" hidden="false" collective="false" import="true">
               <selectionEntries>
@@ -1032,6 +1023,9 @@ Initial Slann Army Lists.</readme>
             <infoLink id="699c-8c1e-867c-d9d9" name="Warp Jumps" hidden="false" targetId="f928-0606-598f-43ec" type="rule"/>
             <infoLink id="d638-782d-4ac0-0bef" name="Slann Titan Warp Displacement Fields" hidden="false" targetId="870a-372e-ba9d-3231" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="682e-1410-7dfa-02e2" name="Titan" hidden="false" targetId="31e8-9840-fb3a-3b8d" primary="false"/>
+          </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="6100-3d68-0ee3-8f32" name="Dragonking Weapons" hidden="false" collective="false" import="true">
               <selectionEntries>
@@ -1143,6 +1137,9 @@ Initial Slann Army Lists.</readme>
             <infoLink id="7834-6f5e-95c2-8237" name="Warp Jumps" hidden="false" targetId="f928-0606-598f-43ec" type="rule"/>
             <infoLink id="315f-51d2-9c75-a0ab" name="Slann Titan Warp Displacement Fields" hidden="false" targetId="870a-372e-ba9d-3231" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="b811-df91-c18f-a486" name="Titan" hidden="false" targetId="31e8-9840-fb3a-3b8d" primary="false"/>
+          </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="cf77-4e54-321c-bb8a" name="Razorfang Weapons" hidden="false" collective="false" import="true">
               <selectionEntries>
@@ -1326,9 +1323,6 @@ Initial Slann Army Lists.</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdc4-40f1-47b8-4ea7" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="322e-555a-8752-5bce" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="aadd-ca51-1cc4-2c0c" name="Exodus Slann" hidden="false" targetId="5b1d-eed6-ec81-0b5d" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="5226-9a5c-3664-9edc" name="Newts" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -1652,9 +1646,6 @@ Initial Slann Army Lists.</readme>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33ad-7e77-1aac-8d19" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ffb-c9da-5ca0-ba36" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="af4e-9fce-f1a4-3f5a" name="Exodus Slann" hidden="false" targetId="5b1d-eed6-ec81-0b5d" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="1b81-213a-e6bb-6735" name="Warriors" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -1800,9 +1791,6 @@ Initial Slann Army Lists.</readme>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fb5-dba3-a6d2-6c98" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5695-a131-2d4a-51eb" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="db15-5ec0-5e31-e1f7" name="Exodus Slann" hidden="false" targetId="5b1d-eed6-ec81-0b5d" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="10d6-c6b1-901e-a00e" name="Warp Walkers" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -1929,9 +1917,6 @@ Initial Slann Army Lists.</readme>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="842b-e819-79d9-7bac" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0252-b04a-a211-01c3" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="2a2b-b4ee-da18-fb5c" name="Exodus Slann" hidden="false" targetId="5b1d-eed6-ec81-0b5d" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="bda0-6bc7-ceaf-894d" name="Warrior Detachment" hidden="false" collective="false" import="true" type="unit">
               <constraints>
@@ -2051,9 +2036,6 @@ Initial Slann Army Lists.</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c60-d4b7-254e-e52f" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6622-9fd7-3b6f-f23f" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="9ddc-0240-47a2-c77d" name="Exodus Slann" hidden="false" targetId="5b1d-eed6-ec81-0b5d" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="5533-96fc-4eb7-60b9" name="Cold One Riders" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -2084,9 +2066,6 @@ Initial Slann Army Lists.</readme>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1786-7254-5e37-f786" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efb5-a06a-d462-94d6" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="8731-bea7-bc52-c3be" name="Exodus Slann" hidden="false" targetId="5b1d-eed6-ec81-0b5d" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="3af8-9e4e-37e8-592d" name="Raptor Riders" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -2131,9 +2110,6 @@ Initial Slann Army Lists.</readme>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ad5-248c-c55d-929d" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e622-eb62-235f-291a" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="1fbb-f136-8aa6-b0da" name="Exodus Slann" hidden="false" targetId="5b1d-eed6-ec81-0b5d" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="006e-169e-6b2f-dbf8" name="Frog MBT&apos;s" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -2601,9 +2577,6 @@ Initial Slann Army Lists.</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="353f-d5d6-0e02-d880" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cd3-19bb-88b5-41ba" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="9518-6a87-c301-aed1" name="Dracon" hidden="false" targetId="c7e2-5b5a-3f4e-34df" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="6c77-525e-1b56-92c9" name="Dracon Temple Guard" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -2636,9 +2609,6 @@ Initial Slann Army Lists.</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddfe-c979-fe6c-3c27" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4068-3200-f7b2-4f45" type="max"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="e7d2-9e0d-befb-e9a8" name="Dracon" hidden="false" targetId="c7e2-5b5a-3f4e-34df" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="0d55-42dc-dcd6-ecac" name="Kroxigors" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -2669,9 +2639,6 @@ Initial Slann Army Lists.</readme>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3201-cf27-bab8-9779" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="594c-31a5-a123-a86d" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="c72a-377a-630e-cb95" name="Dracon" hidden="false" targetId="c7e2-5b5a-3f4e-34df" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="da72-5409-b460-7a75" name="Saurus Squads" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -2715,9 +2682,6 @@ Initial Slann Army Lists.</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69a7-1ba5-1971-b167" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bef1-8ecf-4612-258f" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="fd46-5d26-9856-01a3" name="Dracon" hidden="false" targetId="c7e2-5b5a-3f4e-34df" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="9f06-a8b2-da23-9e1d" name="Dracon Temple Guard" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -2750,9 +2714,6 @@ Initial Slann Army Lists.</readme>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d850-e09f-ad53-3230" type="min"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41dd-7427-05d6-8e19" type="max"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="5cec-dba1-3e61-a87f" name="Dracon" hidden="false" targetId="c7e2-5b5a-3f4e-34df" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="1363-1bda-5024-a921" name="Kroxigors" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -2783,9 +2744,6 @@ Initial Slann Army Lists.</readme>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="797a-2d8a-867b-5767" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e681-7806-da35-78af" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="d992-c3a8-e9f0-de3b" name="Dracon" hidden="false" targetId="c7e2-5b5a-3f4e-34df" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="8d51-d793-414e-7c5a" name="Saurus Heavy Squads" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -2829,9 +2787,6 @@ Initial Slann Army Lists.</readme>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2863-1e4a-5c4b-cf3c" type="max"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d05-79de-820f-4456" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="bd49-953b-b1f2-b902" name="Dracon" hidden="false" targetId="c7e2-5b5a-3f4e-34df" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="b2ce-4a7d-85ca-1b03" name="Skinks" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -2899,9 +2854,6 @@ Initial Slann Army Lists.</readme>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fe6-ccf1-5ef1-368c" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10cd-0c09-b9f6-1cb6" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="6628-76ea-c62c-1753" name="Dracon" hidden="false" targetId="c7e2-5b5a-3f4e-34df" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="b1d0-8dca-e2fa-f8a4" name="Dracon Temple Guard" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -2934,9 +2886,6 @@ Initial Slann Army Lists.</readme>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2436-8a26-9ec6-b107" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5562-ec3a-0602-0b10" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="f41a-9dbb-0df5-17f6" name="Exodus Slann" hidden="false" targetId="5b1d-eed6-ec81-0b5d" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="1d78-7074-7bb8-184f" name="Dracon Cold One Riders" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -2967,9 +2916,6 @@ Initial Slann Army Lists.</readme>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="722e-dfc0-1d87-2436" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b5c-e9bc-d6cb-790e" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="1263-4bcf-9c07-30b0" name="Dracon" hidden="false" targetId="c7e2-5b5a-3f4e-34df" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="a18b-12c7-91a1-40eb" name="Dracon Raptor Riders" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -3089,6 +3035,9 @@ Initial Slann Army Lists.</readme>
             <infoLink id="ce53-1c59-71cf-bbbc" name="Shaman Power : The Shield of the Old Ones" hidden="false" targetId="761c-53aa-64a5-3552" type="rule"/>
             <infoLink id="beb9-49c1-4e95-caf3" name="Shaman Power : Wings in the Jungle" hidden="false" targetId="f1ff-255d-5569-17c2" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="81a9-c626-7ef1-b034" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -3105,6 +3054,9 @@ Initial Slann Army Lists.</readme>
             <infoLink id="6aaa-e440-fe8e-1fe9" name="Command" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
             <infoLink id="5e8c-1618-58ab-df30" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="3ba1-a80c-964d-07ba" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>

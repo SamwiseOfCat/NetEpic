@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="b6ca-ebfc-974f-eaae" name="NetEpic Gold" revision="5" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com   " xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
-  <comment>v5 notes :
+<gameSystem id="b6ca-ebfc-974f-eaae" name="NetEpic Gold" revision="6" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com   " xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+  <comment>v6 notes :
+Minor typo fixes.
+
+v5 notes :
 Overhaul to the VP / points cost of Titans - changing from the v2 approach of standard costs regardless of what weapons were picked (like SM 2nd Ed) to a more fair and balanced feel to Titan construction.
 Some other minor fixes like typos / missing rules (Transport 12, etc)
 
@@ -455,7 +458,6 @@ GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhamme
       </costs>
     </selectionEntry>
     <selectionEntry id="f0d5-b92a-9ff8-af8b" name="Weapon Head" hidden="false" collective="false" import="true" type="upgrade">
-      <comment></comment>
       <infoLinks>
         <infoLink id="b9e0-270d-a87d-9e9b" name="Weapon Head" hidden="false" targetId="49a4-e09d-2eac-fa93" type="profile"/>
       </infoLinks>
@@ -1108,7 +1110,7 @@ Shotgun Mode : 4LBP 5+ (0)</characteristic>
       <characteristics>
         <characteristic name="Range" typeId="4603-1233-33c5-ebf7">Unlimited in LoS</characteristic>
         <characteristic name="Shooting Profile" typeId="19db-740e-c633-8293">8BP 3+ (-2)</characteristic>
-        <characteristic name="Special Rules" typeId="de6c-313a-39ce-6a68">Add D6 extra templates when fired which must touch at least two others (if D6 is more than 1).</characteristic>
+        <characteristic name="Special Rules" typeId="de6c-313a-39ce-6a68">When you decide to fire the missile, first place one barrage template within line of sight of the firing Titan and scatter it 2D6cm. This weapon will always scatter even though the template is placed within line of sight. Add D6 extra templates when fired which must touch at least two others (if D6 is more than 1).</characteristic>
       </characteristics>
     </profile>
     <profile id="f5da-992c-b616-69d7" name="Chain Fist" hidden="false" typeId="abf7-45c3-faa7-0a1f" typeName="Imperial Titan Weapons">

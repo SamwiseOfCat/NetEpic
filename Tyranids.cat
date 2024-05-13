@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f50d-f091-2fc4-1fda" name="Tyranids" revision="1" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f50d-f091-2fc4-1fda" name="Tyranids" revision="1" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>v1 Tyranids list :
 
 There may be some issues with this list as 1) the rules for army composition are very different to all the other races, 2) I never used Tyranids (not even once!) in 2nd Edition SM so I am totally unfamiliar with their rules and 3) the NetEpic cards are really hard to read!
@@ -121,6 +121,7 @@ If there are any issues - sorry - please let me know and ill fix them.</readme>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="b8c4-4f0d-4912-1a19" name="Superheavy" hidden="false" targetId="e3d7-eb22-9df1-719b" primary="false"/>
+            <categoryLink id="1021-a3fa-4602-2682" name="Flyer" hidden="false" targetId="d6b7-fbc6-dca0-1682" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -1615,12 +1616,22 @@ If there are any issues - sorry - please let me know and ill fix them.</readme>
             <infoLink id="08bb-7498-3b46-71bf" name="Mycetic Spores : Deep Strike" hidden="false" targetId="ab3a-4025-028d-d698" type="rule"/>
             <infoLink id="d416-a997-a5f7-c142" name="Mycetic Spores : Unit Deployment" hidden="false" targetId="f96a-d134-0fbc-8b0a" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="1607-e8c4-27d6-7e2a" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Mind" typeId="a0da-1d87-b864-3dfa" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
         <cost name=" VP" typeId="points" value="1.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="3.0"/>
+        <cost name=" Mind" typeId="a0da-1d87-b864-3dfa" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c15a-74da-4365-b735" name="Mycetic Spores (10)" hidden="false" collective="false" import="true" type="upgrade">
@@ -1639,12 +1650,22 @@ If there are any issues - sorry - please let me know and ill fix them.</readme>
             <infoLink id="a614-5a9e-12ae-37d7" name="Mycetic Spores : Deep Strike" hidden="false" targetId="ab3a-4025-028d-d698" type="rule"/>
             <infoLink id="e03b-524d-5409-15e0" name="Mycetic Spores : Unit Deployment" hidden="false" targetId="f96a-d134-0fbc-8b0a" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="97fc-07e9-8b22-c372" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Mind" typeId="a0da-1d87-b864-3dfa" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
         <cost name=" VP" typeId="points" value="1.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="5.0"/>
+        <cost name=" Mind" typeId="a0da-1d87-b864-3dfa" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>

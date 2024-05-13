@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f34c-bf7e-4778-7d1b" name="Squats" revision="3" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f34c-bf7e-4778-7d1b" name="Squats" revision="4" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>.</comment>
   <readme>v4 notes :
 Fixed Doomanvil Company Card / Robot Company VP and points.
@@ -808,6 +808,9 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee0c-3de4-599d-73ed" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e08-d914-471e-95b9" type="max"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink id="a225-432a-432b-3d74" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="6627-c2e9-1579-85a4" name="Thunderers" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -1418,6 +1421,9 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
                 <infoLink id="aacb-9e06-cd64-45e6" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
                 <infoLink id="e839-576b-7681-1dc0" name="Inspirational" hidden="false" targetId="f151-2964-483d-b06d" type="rule"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="9c32-66b5-87d9-4303" name="Cavalry" hidden="false" targetId="755d-5211-ce54-6b21" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -1466,6 +1472,9 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
                 <infoLink id="d38f-1357-fd3c-234f" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
                 <infoLink id="efe6-5860-a45c-59f8" name="Inspirational" hidden="false" targetId="f151-2964-483d-b06d" type="rule"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="d430-4a75-2984-b456" name="Cavalry" hidden="false" targetId="755d-5211-ce54-6b21" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -1931,11 +1940,6 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
           </constraints>
           <selectionEntries>
             <selectionEntry id="1a05-d33a-40e6-6111" name="Iron Eagle Gyrocopter Squadron" hidden="false" collective="false" import="true" type="unit">
-              <categoryLinks>
-                <categoryLink id="3388-06b7-93e1-ffc1" name="Squats" hidden="false" targetId="f3bd-9505-bea6-fef5" primary="false"/>
-                <categoryLink id="1a04-e1aa-26b7-3c42" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-                <categoryLink id="56f4-c48c-e7c8-a4b4" name="Flyer" hidden="false" targetId="d6b7-fbc6-dca0-1682" primary="false"/>
-              </categoryLinks>
               <selectionEntries>
                 <selectionEntry id="eea4-d648-e5bc-bec7" name="Iron Eagle Gyrocopters" hidden="false" collective="false" import="true" type="model">
                   <constraints>
@@ -1947,6 +1951,9 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
                     <infoLink id="01c5-652c-0b0b-f30e" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
                     <infoLink id="add8-7d44-0fee-aa97" name="360° Firing" hidden="false" targetId="687c-75a3-312c-a769" type="rule"/>
                   </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="372e-fd5e-b135-1fef" name="Flyer" hidden="false" targetId="d6b7-fbc6-dca0-1682" primary="false"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                     <cost name=" VP" typeId="points" value="0.0"/>
@@ -1961,11 +1968,6 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
               </costs>
             </selectionEntry>
             <selectionEntry id="60c5-a078-74d4-1376" name="Steel Hawk Gyrocopter Squadron" hidden="false" collective="false" import="true" type="unit">
-              <categoryLinks>
-                <categoryLink id="17a0-0a04-e9bc-ddf6" name="Squats" hidden="false" targetId="f3bd-9505-bea6-fef5" primary="false"/>
-                <categoryLink id="98a0-2222-d0e6-55ad" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-                <categoryLink id="f711-9632-669f-885e" name="Flyer" hidden="false" targetId="d6b7-fbc6-dca0-1682" primary="false"/>
-              </categoryLinks>
               <selectionEntries>
                 <selectionEntry id="ec7d-e492-7ba7-8330" name="Steel Hawk Gyrocopters" hidden="false" collective="false" import="true" type="model">
                   <constraints>
@@ -1977,6 +1979,9 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
                     <infoLink id="2ed1-cd8d-14b5-6a2a" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
                     <infoLink id="78fb-e120-7ac0-edb5" name="360° Firing" hidden="false" targetId="687c-75a3-312c-a769" type="rule"/>
                   </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="cfcc-55ee-4270-54ba" name="Flyer" hidden="false" targetId="d6b7-fbc6-dca0-1682" primary="false"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                     <cost name=" VP" typeId="points" value="0.0"/>
@@ -1991,11 +1996,6 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
               </costs>
             </selectionEntry>
             <selectionEntry id="ef45-9c3f-cde3-3aca" name="War Hawk Gyrocopter Squadron" hidden="false" collective="false" import="true" type="unit">
-              <categoryLinks>
-                <categoryLink id="bf36-4c29-8765-2bd1" name="Squats" hidden="false" targetId="f3bd-9505-bea6-fef5" primary="false"/>
-                <categoryLink id="b033-1324-69ba-90f0" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-                <categoryLink id="4de4-9105-41df-0a50" name="Flyer" hidden="false" targetId="d6b7-fbc6-dca0-1682" primary="false"/>
-              </categoryLinks>
               <selectionEntries>
                 <selectionEntry id="bdb1-cc85-386a-aa17" name="War Hawk Gyrocopters" hidden="false" collective="false" import="true" type="model">
                   <constraints>
@@ -2008,6 +2008,9 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
                     <infoLink id="de18-5670-d2c5-5b9a" name="360° Firing" hidden="false" targetId="687c-75a3-312c-a769" type="rule"/>
                     <infoLink id="3abc-db27-41a6-7858" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
                   </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="7c6e-5f5d-b11f-7d04" name="Flyer" hidden="false" targetId="d6b7-fbc6-dca0-1682" primary="false"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                     <cost name=" VP" typeId="points" value="0.0"/>
@@ -2200,10 +2203,6 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d86-d2b9-c9bd-46f0" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64a0-8998-9afe-b0a1" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="ee12-8edc-a176-36e1" name="Squats" hidden="false" targetId="f3bd-9505-bea6-fef5" primary="false"/>
-            <categoryLink id="f37d-b81b-cd4d-c2ae" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="cb16-bf21-a549-61fe" name="Mole Mortars" hidden="false" collective="false" import="true" type="unit">
               <constraints>
@@ -2236,10 +2235,6 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41bd-3363-264f-a8ec" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2bf-77f1-4922-9a97" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="22fd-da79-1e29-951b" name="Squats" hidden="false" targetId="f3bd-9505-bea6-fef5" primary="false"/>
-            <categoryLink id="58b7-0bd2-e425-ddf2" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="e42c-8581-9912-5b5c" name="Thudd Guns" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -2293,6 +2288,7 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
           </infoLinks>
           <categoryLinks>
             <categoryLink id="4b83-63ed-b4f0-5741" name="Flyer" hidden="false" targetId="d6b7-fbc6-dca0-1682" primary="false"/>
+            <categoryLink id="81a2-8458-4cd0-2175" name="Floater" hidden="false" targetId="f543-0a98-d34d-f604" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -2334,6 +2330,7 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="1859-cf85-a936-3baa" name="Flyer" hidden="false" targetId="d6b7-fbc6-dca0-1682" primary="false"/>
+                <categoryLink id="0a1e-bb72-96ad-fe3e" name="Floater" hidden="false" targetId="f543-0a98-d34d-f604" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -2544,6 +2541,8 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
           </selectionEntries>
           <costs>
             <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d3eb-0287-4128-47ff" name="Colossus" hidden="false" collective="false" import="true" type="unit">
@@ -2666,6 +2665,8 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
           </selectionEntries>
           <costs>
             <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4245,6 +4246,7 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
           </infoLinks>
           <categoryLinks>
             <categoryLink id="6d4a-2c63-e955-4555" name="Flyer" hidden="false" targetId="d6b7-fbc6-dca0-1682" primary="false"/>
+            <categoryLink id="2630-ffe3-d908-dafd" name="Floater" hidden="false" targetId="f543-0a98-d34d-f604" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>

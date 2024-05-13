@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0d18-39a5-d423-b431" name="Space Marines" revision="6" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <readme>v6 notes :
-Major change to Titan weapon cost /VP&apos;s - each weapon now has a VP value that aligns to cost in points for more accurate VP awarding in the event of a Titan being destroyed.
+<catalogue id="0d18-39a5-d423-b431" name="Space Marines" revision="8" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>v8 notes :
+Fixes to some unit classifications.
+
+v7 notes :
+Reaver / Warlord Battlegroups fixed. VP/BP/Points fixed on Deathwing / Silver Skills Company Cards.
+
+v6 notes :
+Major change to Titan weapon cost/VP&apos;s - each weapon now has a VP value that aligns to cost in points for more accurate VP awarding in the event of a Titan being destroyed.
 
 v5 notes :
 Added Light &amp; Heavy Off-Board Barrages.
@@ -1149,6 +1155,9 @@ Many thanks to Drewski for initial Alpha testing of this list.</readme>
             <infoLink id="3d4c-d353-1b84-a0ba" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
             <infoLink id="3843-7ccc-8a24-c046" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="5b7a-fd7d-0fd4-94b3" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1842,6 +1851,9 @@ Many thanks to Drewski for initial Alpha testing of this list.</readme>
                 <infoLink id="6b7b-4493-b33b-971e" name="Infiltration" hidden="false" targetId="ede4-cc45-d7c4-7f78" type="rule"/>
                 <infoLink id="44d7-ab41-e147-84b0" name="Scout Marine" hidden="false" targetId="9d27-f718-785c-fcba" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="3f50-fb77-2376-8d64" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -2277,9 +2289,6 @@ Many thanks to Drewski for initial Alpha testing of this list.</readme>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="759e-d136-385c-4db4" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0971-6357-fbb5-768c" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="402d-f773-77ec-a3f5" name="New CategoryLink" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="d971-04aa-b856-a251" name="Land Raiders (Terminators)" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -4020,9 +4029,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f05c-d3ff-5f2e-e8e2" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3f8-ae24-9c04-a756" type="max"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="769f-2eed-455b-9451" name="Black Templars" hidden="false" targetId="0fa7-1982-bb1e-f396" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="5a3b-a1d4-bd54-2538" name="Company HQ Squad" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -4076,9 +4082,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c644-e11c-d66f-7622" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdb5-b275-5493-ec05" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="48d0-56c3-bc30-633b" name="Black Templars" hidden="false" targetId="0fa7-1982-bb1e-f396" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="41ac-6ded-932a-e57f" name="Black Templar Tactical Squad" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -4163,7 +4166,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="acb6-b59a-90c6-9d3d" name="Tactical Squad" hidden="false" targetId="ce5f-6715-9e99-2adc" type="profile"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="a6d4-51e0-4c6b-9849" name="Black Templars" hidden="false" targetId="0fa7-1982-bb1e-f396" primary="false"/>
             <categoryLink id="4a68-3dba-f949-c515" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
           <costs>
@@ -4181,7 +4183,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="a5db-9051-f156-943e" name="Black Templar Neophyte Squad" hidden="false" targetId="8580-fd80-2a78-e42f" type="profile"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="7035-1cb5-3528-179f" name="Black Templars" hidden="false" targetId="0fa7-1982-bb1e-f396" primary="false"/>
             <categoryLink id="9241-2e59-8ca7-f706" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
           <costs>
@@ -4201,7 +4202,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="aed9-8eb2-88e7-110f" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="a5f3-3b0c-8a8c-00bf" name="Black Templars" hidden="false" targetId="0fa7-1982-bb1e-f396" primary="false"/>
             <categoryLink id="bbc7-c875-52bf-f96b" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
           </categoryLinks>
           <costs>
@@ -4229,9 +4229,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82cc-63ec-1218-22de" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0049-aa12-e4ea-3ab2" type="max"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="cd48-0a9e-2730-b290" name="Black Templars" hidden="false" targetId="0fa7-1982-bb1e-f396" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="52a8-5df9-21d6-7684" name="Company HQ Squad" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -4285,9 +4282,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fbd-988f-6efa-d00a" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20df-dc63-0773-35b1" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="f6c6-2601-e7a4-d09a" name="Black Templars" hidden="false" targetId="0fa7-1982-bb1e-f396" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="8637-d297-3ba8-a199" name="Black Templar Tactical Squad" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -4354,9 +4348,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbfd-4b68-a23c-ddad" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01f6-c840-ed22-2f61" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="0a72-d9d1-7b5a-b4db" name="Black Templars" hidden="false" targetId="0fa7-1982-bb1e-f396" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="1fab-55ad-2cb6-ac6d" name="Rhinos" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -4421,9 +4412,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a29-cebf-d141-700f" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ff3-4bf0-ef40-7d9b" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="30aa-c82a-a753-f62c" name="Black Templars" hidden="false" targetId="0fa7-1982-bb1e-f396" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="becf-16d1-4b31-80b8" name="Terminator Squad" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -4476,9 +4464,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="029d-537b-2aef-4807" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8ee-c970-7735-ea41" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="eed7-9733-162b-53ff" name="Black Templars" hidden="false" targetId="0fa7-1982-bb1e-f396" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="93e6-1c35-3eaf-e46e" name="Terminator HQ" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -4531,9 +4516,9 @@ E) Ignore: Ignore the question and move on to the next one.</description>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
-        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="1000.0"/>
+        <cost name=" VP" typeId="points" value="10.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="10.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6e3d-8892-cba8-0f38" name="Black Templars - Crusade Terminator Detachment" hidden="false" collective="false" import="true" type="unit">
@@ -4602,7 +4587,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c8c-ebf0-92ee-9ee1" type="min"/>
           </constraints>
           <categoryLinks>
-            <categoryLink id="cefd-7fcd-9e23-bf8a" name="Black Templars" hidden="false" targetId="0fa7-1982-bb1e-f396" primary="false"/>
             <categoryLink id="7b91-8c5d-eb47-01a1" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
           </categoryLinks>
           <selectionEntries>
@@ -4641,7 +4625,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d049-3b6a-109f-54c6" type="min"/>
           </constraints>
           <categoryLinks>
-            <categoryLink id="c1bd-ab88-2abe-243f" name="Black Templars" hidden="false" targetId="0fa7-1982-bb1e-f396" primary="false"/>
             <categoryLink id="91ba-5d59-9f5d-b0b8" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
           </categoryLinks>
           <selectionEntries>
@@ -4696,7 +4679,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="d3e5-80c7-dd03-3e34" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="6e0b-f24b-2d7c-a7a2" name="Black Templars" hidden="false" targetId="0fa7-1982-bb1e-f396" primary="false"/>
             <categoryLink id="a682-11b2-4b28-ee5d" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
           </categoryLinks>
           <costs>
@@ -4780,7 +4762,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="b250-aca3-c1ae-d57c" name="Black Templar Scout Squad" hidden="false" targetId="ad73-62e9-5afc-ae42" type="profile"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="d45f-5ba7-aee2-91d6" name="Black Templars" hidden="false" targetId="0fa7-1982-bb1e-f396" primary="false"/>
             <categoryLink id="1c49-55f0-5237-13bf" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
           <costs>
@@ -4820,7 +4801,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="5cfd-3330-d3d8-1de1" name="Inspirational" hidden="false" targetId="f151-2964-483d-b06d" type="rule"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="7203-5c02-209f-a1de" name="Black Templars" hidden="false" targetId="0fa7-1982-bb1e-f396" primary="false"/>
             <categoryLink id="d2a2-cb84-3e27-1c8a" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
           <costs>
@@ -4840,7 +4820,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="2e9b-47a2-b849-2ef4" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="fef1-4e94-4a89-4024" name="Black Templars" hidden="false" targetId="0fa7-1982-bb1e-f396" primary="false"/>
             <categoryLink id="6d3b-398e-8462-e176" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
           </categoryLinks>
           <costs>
@@ -4874,7 +4853,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="e18a-d517-218a-8e1c" name="Veteran Assault Squad" hidden="false" targetId="1a56-4285-7475-3790" type="profile"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="1015-c676-d456-4d34" name="Blood Angels" hidden="false" targetId="efc6-06ea-e3a8-fa42" primary="false"/>
             <categoryLink id="ceb6-90d4-180b-b66c" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
           <costs>
@@ -4894,7 +4872,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="c9c6-79e5-52e9-e37f" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="6738-82f6-7f00-c738" name="Blood Angels" hidden="false" targetId="efc6-06ea-e3a8-fa42" primary="false"/>
             <categoryLink id="71db-f31b-7680-4c33" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
           </categoryLinks>
           <costs>
@@ -4927,9 +4904,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="877d-518d-8a5f-13c9" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8aac-666f-7290-e62b" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="8287-f7c9-d672-8b84" name="Blood Angels" hidden="false" targetId="efc6-06ea-e3a8-fa42" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="b55c-b328-2967-5fc2" name="Death Company Chaplain" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -5009,7 +4983,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="b157-6857-e980-9b65" name="Sanguinary Priest" hidden="false" targetId="9b4f-bb9f-1b26-b2a0" type="profile"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="c951-f164-cf3c-21cf" name="Blood Angels" hidden="false" targetId="efc6-06ea-e3a8-fa42" primary="false"/>
             <categoryLink id="564c-1032-f679-8e2e" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
           <costs>
@@ -5029,7 +5002,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="1ab5-5adc-f1b6-5445" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="ec4d-1664-b157-0e30" name="Blood Angels" hidden="false" targetId="efc6-06ea-e3a8-fa42" primary="false"/>
             <categoryLink id="65be-0498-b1d6-e0fd" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
           </categoryLinks>
           <costs>
@@ -5057,9 +5029,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96e6-33fd-6b4d-caf5" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a82a-464f-a8cf-e84a" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="30ee-a19d-130e-4ebe" name="Blood Angels" hidden="false" targetId="efc6-06ea-e3a8-fa42" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="ed2c-dbc0-3861-5c76" name="Veteran Assault HQ" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -5113,9 +5082,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59c8-d092-4dbd-d047" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec64-eef6-7016-165f" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="7450-2dc6-330c-0b3e" name="Blood Angels" hidden="false" targetId="efc6-06ea-e3a8-fa42" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="d5a4-e7b1-7e15-56fd" name="Veteran Assault Marine Squads" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -5185,7 +5151,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="8f6f-136b-12c9-1231" name="Baal Predator" hidden="false" targetId="cb8f-a3ca-8aae-0879" type="profile"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="2a90-e546-0c2e-318a" name="Blood Angels" hidden="false" targetId="efc6-06ea-e3a8-fa42" primary="false"/>
             <categoryLink id="0a8f-9917-328d-df4b" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
           </categoryLinks>
           <costs>
@@ -5217,7 +5182,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="47c4-6612-b149-8305" name="Furioso Dreadnought" hidden="false" targetId="308a-1c49-d73c-966b" type="profile"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="eac9-6760-6668-aff7" name="Blood Angels" hidden="false" targetId="efc6-06ea-e3a8-fa42" primary="false"/>
             <categoryLink id="a2dc-3c0a-e008-2c0b" name="Walker" hidden="false" targetId="f082-d1ca-f340-1ce8" primary="false"/>
           </categoryLinks>
           <costs>
@@ -5244,9 +5208,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0eb6-4535-64e2-ed7f" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16e3-4680-dfa4-dc00" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="78c6-35a4-c3ec-2c80" name="Crimson Fists" hidden="false" targetId="4c2b-1868-a6e9-d7d3" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="4c96-a97e-ae8f-b7ec" name="Terminator Command Land Raider" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -5300,9 +5261,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79dd-86cf-73af-beeb" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe79-f487-6dc7-a024" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="bffb-72a0-1676-b120" name="Crimson Fists" hidden="false" targetId="4c2b-1868-a6e9-d7d3" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="d00c-5c95-6f73-02fd" name="Chapter Master" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -5358,9 +5316,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4247-376a-946e-c23e" type="max"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02f8-d911-3286-932a" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="74aa-f273-0d6e-0489" name="Crimson Fists" hidden="false" targetId="4c2b-1868-a6e9-d7d3" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="11da-ac1c-6a22-38f5" name="Land Raiders (Terminators)" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -5424,9 +5379,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5411-5af9-31f2-3da0" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4a5-91b1-643f-0207" type="max"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="d21e-7685-2c04-2469" name="Crimson Suns" hidden="false" targetId="dffc-ab6f-df92-a1ee" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="2d7c-f09f-e772-a3a1" name="Company HQ Squad" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -5480,10 +5432,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2624-6adf-8090-7b22" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28a5-5003-fb4d-c183" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="8352-67a5-9bfe-fed8" name="Crimson Suns" hidden="false" targetId="dffc-ab6f-df92-a1ee" primary="false"/>
-            <categoryLink id="3900-40d8-cebc-d39d" name="Crimson Suns" hidden="false" targetId="dffc-ab6f-df92-a1ee" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="184e-21ac-4a13-4816" name="Ashigaru Scout Squads" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -5551,7 +5499,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="c9e4-5caa-fa56-14fd" name="Crimson Suns Scout Marine Squad" hidden="false" targetId="af7a-849f-4bd3-8e4a" type="profile"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="6f7b-3fe9-084b-2daa" name="Crimson Suns" hidden="false" targetId="dffc-ab6f-df92-a1ee" primary="false"/>
             <categoryLink id="699c-4c2b-201c-a60e" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
           <costs>
@@ -5571,7 +5518,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="b281-71cf-38ac-9283" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="c633-3d67-8016-09dd" name="Crimson Suns" hidden="false" targetId="dffc-ab6f-df92-a1ee" primary="false"/>
             <categoryLink id="6c0e-8629-1401-a1a8" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
           </categoryLinks>
           <costs>
@@ -5598,9 +5544,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65e0-d946-825f-a2c4" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c35-f2f9-347d-849d" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="e54e-31f9-4cd1-309f" name="Crimson Suns" hidden="false" targetId="dffc-ab6f-df92-a1ee" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="9ab0-2f58-4c23-a39d" name="Land Raiders (Terminators)" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -5651,9 +5594,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2ff-d2f5-2a52-91aa" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d9c-528e-dd62-3e89" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="400a-2c82-375a-f167" name="Crimson Suns" hidden="false" targetId="dffc-ab6f-df92-a1ee" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="6caf-fa27-b336-91b7" name="Land Raider HQ" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -5760,9 +5700,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc81-e872-a6f3-8058" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e28-3e73-b35a-1033" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="9962-8650-8836-a490" name="Dark Angels" hidden="false" targetId="fecc-4c20-910f-92fe" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="5843-e553-f6dd-a1f7" name="Terminator Command Land Raider" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -5816,9 +5753,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e904-14f3-d654-9da3" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87f7-a483-d38d-d567" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="7ba8-afb1-3c2a-8c33" name="Dark Angels" hidden="false" targetId="fecc-4c20-910f-92fe" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="247b-18f4-e987-520d" name="Land Raiders (Terminators)" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -5869,7 +5803,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="1000.0"/>
         <cost name=" VP" typeId="points" value="10.0"/>
-        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="10.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d763-c2b8-2d54-7090" name="Dark Angels - Deathwing Terminator Detachment" hidden="false" collective="false" import="true" type="upgrade">
@@ -5889,7 +5823,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="3a16-f686-195d-9f1c" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="7e80-d15a-42db-b6ee" name="Dark Angels" hidden="false" targetId="fecc-4c20-910f-92fe" primary="false"/>
             <categoryLink id="dd0d-dc5c-e294-066a" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
           </categoryLinks>
           <costs>
@@ -5909,7 +5842,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="865b-b021-dc16-4dfa" name="Fearless" hidden="false" targetId="266e-884d-c911-ba95" type="rule"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="893f-a0ec-f713-4ed7" name="Dark Angels" hidden="false" targetId="fecc-4c20-910f-92fe" primary="false"/>
             <categoryLink id="ed7f-740f-28e6-618f" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
           <costs>
@@ -6008,7 +5940,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="d245-364c-a612-ac3a" name="Master Of The Ravenwing" hidden="false" targetId="28ec-def5-2b17-9f97" type="profile"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="7484-c492-e1a8-4694" name="Dark Angels" hidden="false" targetId="fecc-4c20-910f-92fe" primary="false"/>
             <categoryLink id="2a01-eadc-fbbe-0511" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
           </categoryLinks>
           <costs>
@@ -6023,7 +5954,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="582d-c8ae-d9b7-c8dd" type="min"/>
           </constraints>
           <categoryLinks>
-            <categoryLink id="111c-d96b-60ec-fcc5" name="Dark Angels" hidden="false" targetId="fecc-4c20-910f-92fe" primary="false"/>
             <categoryLink id="8bcd-af39-0f15-828f" name="Cavalry" hidden="false" targetId="755d-5211-ce54-6b21" primary="false"/>
           </categoryLinks>
           <selectionEntries>
@@ -6054,7 +5984,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b823-63f0-bfa8-baf8" type="min"/>
           </constraints>
           <categoryLinks>
-            <categoryLink id="62c6-c7dd-8ac1-f23a" name="Dark Angels" hidden="false" targetId="fecc-4c20-910f-92fe" primary="false"/>
             <categoryLink id="04c5-1b09-a68c-baa8" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
           </categoryLinks>
           <selectionEntries>
@@ -6098,9 +6027,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32ec-57a2-b486-9279" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2820-f0c5-a43b-65a8" type="max"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="66f4-c3f2-4d13-0ec1" name="Desert Lions" hidden="false" targetId="af8b-f5d6-73e4-1793" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="6e42-95da-3e3a-2012" name="Company HQ Squad" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -6155,7 +6081,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f25b-0418-47aa-0953" type="min"/>
           </constraints>
           <categoryLinks>
-            <categoryLink id="6097-a9cb-d8b6-3983" name="Desert Lions" hidden="false" targetId="af8b-f5d6-73e4-1793" primary="false"/>
             <categoryLink id="10e4-c622-e98b-256d" name="Walker" hidden="false" targetId="f082-d1ca-f340-1ce8" primary="false"/>
           </categoryLinks>
           <selectionEntries>
@@ -6204,9 +6129,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd09-9c1f-fe50-0900" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7f5-7fc2-d442-b27c" type="max"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="dbf0-49b7-e76c-7ba2" name="Flesh Eaters" hidden="false" targetId="3217-2b48-f772-705e" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="741c-7ff2-0b1a-d167" name="Assault HQ Squad" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -6263,9 +6185,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4607-7462-8156-925c" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d676-6b03-d074-c311" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="7e06-fbf1-9cb1-80a6" name="Flesh Eaters" hidden="false" targetId="3217-2b48-f772-705e" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="2d75-c30a-0196-0068" name="Rhinos" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -6337,7 +6256,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="70bf-24cf-90c8-cb4a" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="731d-63ae-d91c-1438" name="Flesh Eaters" hidden="false" targetId="3217-2b48-f772-705e" primary="false"/>
             <categoryLink id="9943-c1b2-c7c3-feb4" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
           </categoryLinks>
           <costs>
@@ -6357,7 +6275,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="a1c3-f105-26af-42ea" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
-            <categoryLink id="a790-4968-edc3-8636" name="Flesh Eaters" hidden="false" targetId="3217-2b48-f772-705e" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -6469,9 +6386,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1a4-1c05-40a4-3bad" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cad-99d9-5b9f-a94b" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="fe2f-72ba-ee9b-bf3e" name="Iron Hands" hidden="false" targetId="9c19-a8a4-7af9-a2df" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="a9c1-e025-7af3-d64b" name="Iron Hands Rhinos" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -6485,7 +6399,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="bed4-174f-e03a-2c04" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
-                <categoryLink id="2ddc-ecb8-a313-03bd" name="Iron Hands" hidden="false" targetId="9c19-a8a4-7af9-a2df" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -6522,9 +6435,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee16-b7cb-aaeb-09f6" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d7b-b648-8588-264c" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="19c9-d619-1e70-a79c" name="Iron Hands" hidden="false" targetId="9c19-a8a4-7af9-a2df" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="c4d6-87d6-9f33-ca37" name="Clan Tactical" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -6535,7 +6445,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
                 <infoLink id="8d76-4638-f24d-12d4" name="Tactical Squad" hidden="false" targetId="ce5f-6715-9e99-2adc" type="profile"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="d0ed-69c7-e5e7-4aec" name="Iron Hands" hidden="false" targetId="9c19-a8a4-7af9-a2df" primary="false"/>
                 <categoryLink id="cc0e-8843-a01b-da40" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
               </categoryLinks>
               <costs>
@@ -6555,7 +6464,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
                 <infoLink id="790a-7962-ff5b-47c6" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="0026-09b1-d73c-729f" name="Iron Hands" hidden="false" targetId="9c19-a8a4-7af9-a2df" primary="false"/>
                 <categoryLink id="89d8-b6fd-8dc8-0e77" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
               </categoryLinks>
               <costs>
@@ -6576,9 +6484,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00cf-3589-553f-ed58" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0ea-a274-f64c-a597" type="max"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="9c87-2547-9971-5e90" name="Iron Hands" hidden="false" targetId="9c19-a8a4-7af9-a2df" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="24ad-8800-e55f-796a" name="Company HQ Squad" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -6593,7 +6498,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
                 <infoLink id="ca37-2f84-2871-57c4" name="Inspirational" hidden="false" targetId="f151-2964-483d-b06d" type="rule"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="f0f8-ac3e-9c4e-c48c" name="Iron Hands" hidden="false" targetId="9c19-a8a4-7af9-a2df" primary="false"/>
                 <categoryLink id="4078-8d7c-f519-7acf" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
               </categoryLinks>
               <costs>
@@ -6613,7 +6517,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
                 <infoLink id="6443-7e18-5f76-90b6" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="fcaa-9a39-559c-fc9f" name="Iron Hands" hidden="false" targetId="9c19-a8a4-7af9-a2df" primary="false"/>
                 <categoryLink id="78c0-5b41-7498-60c3" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
               </categoryLinks>
               <costs>
@@ -6653,7 +6556,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="e4c2-a23f-91dc-c066" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="e974-4cdf-0dfd-5959" name="Iron Hands" hidden="false" targetId="9c19-a8a4-7af9-a2df" primary="false"/>
             <categoryLink id="aa7e-b613-fe92-ac9b" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
           </categoryLinks>
           <costs>
@@ -6671,7 +6573,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="01aa-3c5e-0287-41bf" name="Devastator Squad" hidden="false" targetId="68e6-1e57-9f1b-44e1" type="profile"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="e758-d4dd-e524-9a93" name="Iron Hands" hidden="false" targetId="9c19-a8a4-7af9-a2df" primary="false"/>
             <categoryLink id="0c58-616b-e971-d648" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
           <costs>
@@ -6702,7 +6603,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="add2-5fbf-515d-1a36" name="Tactical Squad" hidden="false" targetId="ce5f-6715-9e99-2adc" type="profile"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="8073-23a0-258d-a06f" name="Iron Hands" hidden="false" targetId="9c19-a8a4-7af9-a2df" primary="false"/>
             <categoryLink id="f84b-0fcd-ff5a-7602" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
           <costs>
@@ -6722,7 +6622,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="328c-05eb-5f39-2427" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="7e81-e09e-5b12-c860" name="Iron Hands" hidden="false" targetId="9c19-a8a4-7af9-a2df" primary="false"/>
             <categoryLink id="739a-33a8-40e2-3ef2" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
           </categoryLinks>
           <costs>
@@ -6754,7 +6653,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="0541-9970-2d2a-4bc6" name="Jump Packs" hidden="false" targetId="6d0a-c605-e4ec-dd51" type="rule"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="8224-f0e0-3ce0-c035" name="Iron Hands" hidden="false" targetId="9c19-a8a4-7af9-a2df" primary="false"/>
             <categoryLink id="55de-4b9f-cc3d-f5b7" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
           <costs>
@@ -6774,7 +6672,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="7854-9ffd-b4c7-8759" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="471a-6a5f-e6e4-0e65" name="Iron Hands" hidden="false" targetId="9c19-a8a4-7af9-a2df" primary="false"/>
             <categoryLink id="67ed-cd08-7ca9-bc27" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
           </categoryLinks>
           <costs>
@@ -6801,9 +6698,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="164f-a411-a213-9000" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d834-105e-145f-43fb" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="3fb0-b834-8f86-63f3" name="Iron Hands" hidden="false" targetId="9c19-a8a4-7af9-a2df" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="f965-cc7d-f04d-53a4" name="Clan Assault" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -6815,7 +6709,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
                 <infoLink id="0b96-2d48-c144-f481" name="Jump Packs" hidden="false" targetId="6d0a-c605-e4ec-dd51" type="rule"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="9856-912b-f03c-a867" name="Iron Hands" hidden="false" targetId="9c19-a8a4-7af9-a2df" primary="false"/>
                 <categoryLink id="f1b9-09be-5893-66eb" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
               </categoryLinks>
               <costs>
@@ -6835,7 +6728,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
                 <infoLink id="5629-a0b2-b9df-cb96" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="92e7-48f7-a73c-9492" name="Iron Hands" hidden="false" targetId="9c19-a8a4-7af9-a2df" primary="false"/>
                 <categoryLink id="6b01-f0d7-4b35-4aa4" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
               </categoryLinks>
               <costs>
@@ -6856,9 +6748,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44e9-7ebb-95c8-aecc" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bced-98b0-7da9-6881" type="max"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="cf65-077a-a075-eb40" name="Iron Hands" hidden="false" targetId="9c19-a8a4-7af9-a2df" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="66ea-f8fd-c3b5-8a67" name="Assault HQ Squad" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -6875,7 +6764,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="0a51-7da0-6362-100d" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
-                <categoryLink id="bcaa-9dfe-3f72-5cf7" name="Iron Hands" hidden="false" targetId="9c19-a8a4-7af9-a2df" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -6934,7 +6822,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="c40f-421f-5151-6720" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="7507-5e7e-258a-8eab" name="Iron Hands" hidden="false" targetId="9c19-a8a4-7af9-a2df" primary="false"/>
             <categoryLink id="df31-d27d-c74a-e790" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
           </categoryLinks>
           <costs>
@@ -6953,7 +6840,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="38a4-73f2-82d7-6e69" name="Veteran Devastator Squad" hidden="false" targetId="50a3-f8c1-12d0-8fbf" type="profile"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="782b-21da-f437-f949" name="Iron Hands" hidden="false" targetId="9c19-a8a4-7af9-a2df" primary="false"/>
             <categoryLink id="8f31-a650-947d-5cc5" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
           <costs>
@@ -6985,7 +6871,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="0c68-b301-3754-2b8f" name="Bombard" hidden="false" targetId="023d-4300-06b3-f894" type="profile"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="f20a-9903-6940-5d24" name="Iron Hands" hidden="false" targetId="9c19-a8a4-7af9-a2df" primary="false"/>
             <categoryLink id="ec72-4d72-2e65-097b" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
           </categoryLinks>
           <costs>
@@ -7025,6 +6910,9 @@ E) Ignore: Ignore the question and move on to the next one.</description>
                 <infoLink id="7894-5590-5f8b-e52f" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
                 <infoLink id="997f-f719-a0e7-5a02" name="Inspirational" hidden="false" targetId="f151-2964-483d-b06d" type="rule"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="e114-85e5-def6-2816" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -7041,6 +6929,9 @@ E) Ignore: Ignore the question and move on to the next one.</description>
                 <infoLink id="6bc3-6d14-3551-b252" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
                 <infoLink id="c6ce-15b3-5688-91bf" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="4f93-3963-4b47-a69b" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -7059,9 +6950,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4515-ba58-29cf-c082" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6339-66e5-2c77-7710" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="bfb1-8c9c-05cc-39aa" name="Iron Hands" hidden="false" targetId="9c19-a8a4-7af9-a2df" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="32fb-c91d-6e50-a9c4" name="Iron Hands Rhinos" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -7073,6 +6961,9 @@ E) Ignore: Ignore the question and move on to the next one.</description>
                 <infoLink id="c6fa-5f9f-003b-b934" name="Rhino" hidden="false" targetId="f85a-fa0b-759a-d2eb" type="profile"/>
                 <infoLink id="f8d5-19fc-4c65-1348" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="731d-3862-2424-9e3d" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -7088,6 +6979,9 @@ E) Ignore: Ignore the question and move on to the next one.</description>
                 <infoLink id="ccd3-79a1-5750-febc" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
                 <infoLink id="6a56-4a57-81bc-7435" name="Veteran Devastator Squad" hidden="false" targetId="50a3-f8c1-12d0-8fbf" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="e961-c7a8-08a4-815f" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -7106,9 +7000,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f182-b3f4-7658-8df0" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59b2-2c14-ee96-1cb2" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="93de-cabb-e06f-6882" name="Iron Hands" hidden="false" targetId="9c19-a8a4-7af9-a2df" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="fa1c-7233-9ecf-8be2" name="Iron Hands Rhinos" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -7120,6 +7011,9 @@ E) Ignore: Ignore the question and move on to the next one.</description>
                 <infoLink id="752c-c892-ca9c-a554" name="Rhino" hidden="false" targetId="f85a-fa0b-759a-d2eb" type="profile"/>
                 <infoLink id="e98d-f3ff-5905-44b9" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="5cf5-b00d-150c-5d03" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -7134,6 +7028,9 @@ E) Ignore: Ignore the question and move on to the next one.</description>
               <infoLinks>
                 <infoLink id="1738-dd05-1956-d7b8" name="Devastator Squad" hidden="false" targetId="68e6-1e57-9f1b-44e1" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="0914-5c0a-6de9-45b9" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -7173,7 +7070,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="2a37-d054-2c2a-381b" name="Iron Father" hidden="false" targetId="3236-dd71-c32e-cfa0" type="profile"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="6a38-4fb7-f69a-c235" name="Iron Hands" hidden="false" targetId="9c19-a8a4-7af9-a2df" primary="false"/>
             <categoryLink id="bd93-b91b-e36f-a496" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
           <costs>
@@ -7193,7 +7089,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="8fb4-2ce0-c09b-528b" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="08c4-c302-225b-12d2" name="Iron Hands" hidden="false" targetId="9c19-a8a4-7af9-a2df" primary="false"/>
             <categoryLink id="5f0e-11e4-dad4-53bf" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
           </categoryLinks>
           <costs>
@@ -7225,7 +7120,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="95a7-ae11-608d-e7f7" name="Heavy Weapon Terminator Squad" hidden="false" targetId="5e19-90a9-e1b1-68eb" type="profile"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="2cd0-e0fd-3318-e043" name="Iron Hands" hidden="false" targetId="9c19-a8a4-7af9-a2df" primary="false"/>
             <categoryLink id="e040-0486-a445-07dc" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
           <costs>
@@ -7245,7 +7139,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="5597-7f91-8e86-e7b9" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="65ff-cfed-46f1-b1e7" name="Iron Hands" hidden="false" targetId="9c19-a8a4-7af9-a2df" primary="false"/>
             <categoryLink id="51ae-29a3-2d72-5233" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
           </categoryLinks>
           <costs>
@@ -7278,6 +7171,9 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="f91f-fa27-2685-a961" name="Inspirational" hidden="false" targetId="f151-2964-483d-b06d" type="rule"/>
             <infoLink id="8e70-12cf-7039-82f0" name="Venerable Dreadnought" hidden="false" targetId="2e75-1562-6c54-f57e" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="26f8-b45e-1066-b24d" name="Walker" hidden="false" targetId="f082-d1ca-f340-1ce8" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -7302,9 +7198,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab50-9873-7f04-e466" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2c1-0222-642a-fb8a" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="56ea-6324-099a-4576" name="Salamanders" hidden="false" targetId="53a6-4b46-5800-9458" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="240c-7831-0312-765f" name="Rhinos" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -7356,9 +7249,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a36-e98e-a14f-5ef7" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b26-6d9f-033b-9997" type="max"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="dacd-ea7b-3045-b09b" name="Salamanders" hidden="false" targetId="53a6-4b46-5800-9458" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="3aee-dff0-6065-0cc3" name="Assault HQ Squad" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -7566,7 +7456,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c18e-50fc-c14b-c7d5" type="min"/>
           </constraints>
           <categoryLinks>
-            <categoryLink id="aba1-dbde-91ee-ae48" name="Raptor Legion" hidden="false" targetId="7617-8859-2b18-e350" primary="false"/>
             <categoryLink id="16b4-53f8-4f1f-1e82" name="Cavalry" hidden="false" targetId="755d-5211-ce54-6b21" primary="false"/>
           </categoryLinks>
           <selectionEntries>
@@ -7602,7 +7491,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="aef3-9b29-0aff-e624" name="Attack Bike HQ" hidden="false" targetId="8a6c-b609-2e19-2d0f" type="profile"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="edf6-5893-f1a6-3818" name="Raptor Legion" hidden="false" targetId="7617-8859-2b18-e350" primary="false"/>
             <categoryLink id="7c2e-1698-011d-ff00" name="Cavalry" hidden="false" targetId="755d-5211-ce54-6b21" primary="false"/>
           </categoryLinks>
           <costs>
@@ -7635,10 +7523,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8053-a10e-3300-7f01" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1e6-9277-c1a0-187d" type="max"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="0890-63f9-5747-4230" name="Silver Skulls" hidden="false" targetId="a748-a79f-3cb6-b5f0" primary="false"/>
-            <categoryLink id="59f1-8cd5-52b8-742e" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="c4a2-82e9-9ff7-984b" name="Company HQ Squad" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -7673,10 +7557,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f218-3eb2-aa18-703d" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a68a-656e-1c3f-79a3" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="ba13-1a36-6a6b-ce1e" name="Silver Skulls" hidden="false" targetId="a748-a79f-3cb6-b5f0" primary="false"/>
-            <categoryLink id="f40e-9d4c-9e99-db5c" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="2fa0-fa04-a48d-c099" name="Assault Squad" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -7708,9 +7588,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f203-6722-2c1b-a3dd" type="max"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35ba-c55b-8453-8576" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="cf59-749a-fef7-0a58" name="Silver Skulls" hidden="false" targetId="a748-a79f-3cb6-b5f0" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="099f-11bc-64e2-e3ed" name="Thunderhawk Gunship" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -7741,8 +7618,8 @@ E) Ignore: Ignore the question and move on to the next one.</description>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="1000.0"/>
-        <cost name=" VP" typeId="points" value="0.0"/>
-        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+        <cost name=" VP" typeId="points" value="10.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="12.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="364c-c5ce-d54b-c6ee" name="Space Wolves - Wolf Guard Detachment" hidden="false" collective="false" import="true" type="unit">
@@ -7906,9 +7783,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e52d-1def-4127-585e" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86b3-4cb6-18f6-1455" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="60be-bdc7-4eb2-d6e1" name="Space Wolves" hidden="false" targetId="fd72-ac75-ffa3-77b0" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="ab3d-61c9-b028-b266" name="Grey Hunters" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -7958,9 +7832,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7884-64e4-1b4d-a71c" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85fb-d660-833d-6913" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="9659-1265-202a-ca68" name="Space Wolves" hidden="false" targetId="fd72-ac75-ffa3-77b0" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="2201-b218-33f5-62cb" name="Wolf Guard" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -8026,9 +7897,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d98-abf2-25d4-0195" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9833-5f51-a89d-d90a" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="c382-b085-b690-8edb" name="Space Wolves" hidden="false" targetId="fd72-ac75-ffa3-77b0" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="c64f-40b1-36ce-186d" name="Grey Hunters" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -8078,9 +7946,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8513-0f42-7536-1c98" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bc4-4cf0-fd37-bfd7" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="8fed-f20a-2fcb-79c0" name="Space Wolves" hidden="false" targetId="fd72-ac75-ffa3-77b0" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="bb05-84b6-2c35-1dbb" name="Land Raiders (Terminators)" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -8198,10 +8063,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e07e-b3a6-d61f-fa89" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cb9-570a-f3d2-9083" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="b8fa-aa83-0fa9-643e" name="Detachment Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-            <categoryLink id="d3b1-3671-8e34-a20e" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="fe27-ded5-4296-6cce" name="Space Wolf Razorbacks" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -8213,6 +8074,9 @@ E) Ignore: Ignore the question and move on to the next one.</description>
                 <infoLink id="94ca-69b7-5d75-125c" name="Transport (1)" hidden="false" targetId="1c7a-d5c9-5e57-caa2" type="rule"/>
                 <infoLink id="ebd1-7e78-7433-c08f" name="Replaces Rhinos" hidden="false" targetId="1e43-a5d5-ae66-fb9f" type="rule"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="88cb-2951-50cd-52ae" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -8607,8 +8471,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="e337-38e1-d3e8-b22a" name="Veteran Marine Attack Bike HQ" hidden="false" targetId="8685-9669-a462-974a" type="profile"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="a88a-6170-b2d3-ea7b" name="White Scars" hidden="false" targetId="0f4a-02b3-451f-6ebf" primary="false"/>
-            <categoryLink id="b766-0662-fbbb-44c2" name="Cavalry" hidden="false" targetId="755d-5211-ce54-6b21" primary="false"/>
+            <categoryLink id="ad24-6416-aa33-c093" name="Cavalry" hidden="false" targetId="755d-5211-ce54-6b21" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -8621,10 +8484,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3680-6133-35f9-66e2" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e276-eb88-5a56-452b" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="890b-f725-c181-2c33" name="White Scars" hidden="false" targetId="0f4a-02b3-451f-6ebf" primary="false"/>
-            <categoryLink id="5a2b-3b42-13bd-576d" name="Cavalry" hidden="false" targetId="755d-5211-ce54-6b21" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="e3b1-3083-1787-b33e" name="Veteran Attack Bikes" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -8834,7 +8693,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a188-ca79-adb8-94e1" type="min"/>
           </constraints>
           <categoryLinks>
-            <categoryLink id="e678-7778-7d7b-b6ed" name="White Scars" hidden="false" targetId="0f4a-02b3-451f-6ebf" primary="false"/>
             <categoryLink id="d792-da7d-d037-67d1" name="Cavalry" hidden="false" targetId="755d-5211-ce54-6b21" primary="false"/>
           </categoryLinks>
           <selectionEntries>
@@ -8881,9 +8739,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="396a-3cae-8461-2bb8" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="474a-1ab3-1fe3-d325" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="257e-42bd-d962-bd9d" name="White Scars" hidden="false" targetId="0f4a-02b3-451f-6ebf" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="25ff-8d5f-71fe-ce99" name="Land Raider Crusaders (Terminators)" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -8950,6 +8805,9 @@ E) Ignore: Ignore the question and move on to the next one.</description>
                 <infoLink id="0828-6fd7-c374-bce5" name="Inspirational" hidden="false" targetId="f151-2964-483d-b06d" type="rule"/>
                 <infoLink id="e1f4-43bc-9f4a-0d57" name="Terminator HQ" hidden="false" targetId="332b-dbe6-3b87-2b5f" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="1364-6962-a793-2ce8" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -8966,6 +8824,9 @@ E) Ignore: Ignore the question and move on to the next one.</description>
                 <infoLink id="ecea-9743-8efc-610c" name="Land Raider Crusader" hidden="false" targetId="2ec2-5cfa-cfd7-f056" type="profile"/>
                 <infoLink id="4d25-3474-3c67-c12e" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="9208-7083-5253-5635" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -9052,7 +8913,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfc8-71d1-950d-5659" type="min"/>
           </constraints>
           <categoryLinks>
-            <categoryLink id="1f1e-1ce0-ec1f-26b5" name="White Scars" hidden="false" targetId="0f4a-02b3-451f-6ebf" primary="false"/>
             <categoryLink id="d232-8574-236e-9d51" name="Cavalry" hidden="false" targetId="755d-5211-ce54-6b21" primary="false"/>
           </categoryLinks>
           <selectionEntries>
@@ -9086,9 +8946,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6f1-035c-dab1-0849" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f93b-0ac8-3532-802b" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="5111-3047-ad0a-d706" name="White Scars" hidden="false" targetId="0f4a-02b3-451f-6ebf" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="c3fc-e23b-03c8-e031" name="Land Raider Crusaders (Terminators)" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -9159,7 +9016,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="4cb8-3074-898d-6b6a" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="734c-f3d2-e8c7-206d" name="White Scars" hidden="false" targetId="0f4a-02b3-451f-6ebf" primary="false"/>
             <categoryLink id="4bf4-3e1d-314b-c0f0" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
           </categoryLinks>
           <costs>
@@ -9173,9 +9029,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43ef-f92f-4392-ee25" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1ea-1c9a-6371-aa0b" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="d024-d64a-7504-9273" name="White Scars" hidden="false" targetId="0f4a-02b3-451f-6ebf" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="349e-7bc9-52f8-3807" name="White Scars Tactical Squad" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -9224,9 +9077,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11be-95fb-ccf2-17c5" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53a9-a67e-f200-c9dd" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="4d00-d828-d8cd-37ae" name="White Scars" hidden="false" targetId="0f4a-02b3-451f-6ebf" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="4c53-9528-89f1-8341" name="Predator Jaghatai Khans" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -9334,10 +9184,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed18-e5b8-24a2-af89" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b68-1d74-ba71-5e20" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="b4a4-3557-43dd-29a2" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
-            <categoryLink id="495e-5487-c6e6-0830" name="White Scars" hidden="false" targetId="0f4a-02b3-451f-6ebf" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="d94e-49cd-f843-5746" name="Command Land Raider Crusader" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -9372,10 +9218,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0d8-0123-8cd5-562e" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83a5-3aee-9d3d-8da1" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="4ab7-98f1-563d-e39c" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
-            <categoryLink id="211d-311e-6f89-c1b5" name="White Scars" hidden="false" targetId="0f4a-02b3-451f-6ebf" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="1487-90ee-a247-c197" name="Land Raider Crusaders" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -9428,7 +9270,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="da45-bcd3-d6f6-d5bd" name="White Scars Scout Bike Squad" hidden="false" targetId="9619-a71a-f9a2-3a06" type="profile"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="e837-648d-d6cf-557a" name="White Scars" hidden="false" targetId="0f4a-02b3-451f-6ebf" primary="false"/>
             <categoryLink id="d9b7-3bba-e64f-d37e" name="Cavalry" hidden="false" targetId="755d-5211-ce54-6b21" primary="false"/>
           </categoryLinks>
           <costs>
@@ -9442,9 +9283,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2b6-3121-c8fa-c793" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ae8-bf13-1f92-fb19" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="13eb-c766-47b4-cb49" name="White Scars" hidden="false" targetId="0f4a-02b3-451f-6ebf" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="b471-5280-f092-3506" name="White Scars Scout Bikes" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -10093,13 +9931,17 @@ E) Ignore: Ignore the question and move on to the next one.</description>
         <categoryLink id="db97-239f-c941-6c6a" name="Special Cards" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="4df8-71c4-025b-f57b" name="Warlord Titans" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="4df8-71c4-025b-f57b" name="Warlord Titan" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a046-d6a3-f98f-5357" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff90-0183-39cc-2b3f" type="min"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="9688-ca06-86df-542e" name="Warlord Titan" hidden="false" collective="false" import="true" type="unit">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5a5-1af3-6b7e-20e8" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40be-fa92-bc71-8233" type="min"/>
+              </constraints>
               <infoLinks>
                 <infoLink id="d5b6-42ff-1a94-42af" name="Warlord Titan" hidden="false" targetId="7302-5019-be56-8465" type="profile"/>
               </infoLinks>
@@ -10432,13 +10274,17 @@ E) Ignore: Ignore the question and move on to the next one.</description>
         <categoryLink id="a2f1-bff4-770c-b35e" name="Special Cards" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="58a5-1882-7fad-9632" name="Reaver Titans" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="58a5-1882-7fad-9632" name="Reaver Titan" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2201-8e63-aecf-dda2" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa93-a08a-da67-e205" type="min"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="a901-8d65-bc27-3d60" name="Reaver Titan" hidden="false" collective="false" import="true" type="unit">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28d1-3d1e-30b8-4ac7" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57c3-6962-deaa-26d1" type="min"/>
+              </constraints>
               <infoLinks>
                 <infoLink id="0763-46b7-8fb4-b9ea" name="Reaver Titan" hidden="false" targetId="cc99-aaa1-f5ef-734c" type="profile"/>
               </infoLinks>
@@ -10793,7 +10639,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="b644-8076-b878-27dd" name="Psychic Power : Purge Psyker" hidden="false" targetId="00ad-7d35-6cdf-8ac0" type="rule"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="a7cb-c5eb-b44f-bbde" name="Blood Angels" hidden="false" targetId="efc6-06ea-e3a8-fa42" primary="false"/>
             <categoryLink id="05e0-d062-dd1d-5517" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
           <costs>
@@ -10849,7 +10694,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="2ba7-fd22-aa12-8a5b" name="Psychic Power : Purge Psyker" hidden="false" targetId="00ad-7d35-6cdf-8ac0" type="rule"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="7fee-ff77-9bf8-e1f1" name="Dark Angels" hidden="false" targetId="fecc-4c20-910f-92fe" primary="false"/>
             <categoryLink id="a792-d42c-4af8-0053" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
           <costs>
@@ -10903,7 +10747,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="5c95-b32c-a050-fe06" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="4d7e-0b7a-5ee9-9503" name="Dark Angels" hidden="false" targetId="fecc-4c20-910f-92fe" primary="false"/>
             <categoryLink id="e21d-2008-efd3-27e9" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
           <costs>
@@ -10923,7 +10766,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="8e44-8d0a-0745-df98" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="68f1-09cf-eb58-ae42" name="Dark Angels" hidden="false" targetId="fecc-4c20-910f-92fe" primary="false"/>
             <categoryLink id="a117-fb78-f032-ca3e" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
           </categoryLinks>
           <costs>
@@ -11039,7 +10881,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
     <selectionEntry id="cc5e-6fe3-a70f-40db" name="Salamanders - Librarian" hidden="false" collective="false" import="true" type="model">
       <categoryLinks>
         <categoryLink id="d683-9853-0ba5-1ad9" name="Special Cards" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
-        <categoryLink id="e8d0-432d-b9c6-ac0f" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
         <categoryLink id="30fc-c306-65cb-487b" name="Salamanders" hidden="false" targetId="53a6-4b46-5800-9458" primary="false"/>
       </categoryLinks>
       <selectionEntries>
@@ -12709,7 +12550,7 @@ Point Defence (1)</characteristic>
         <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">20cm</characteristic>
         <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">See Card</characteristic>
         <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+12</characteristic>
-        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Choose three from list</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Choose at least two arm weapons from list. Carapace weapons are optional.</characteristic>
         <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">N/A</characteristic>
         <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339">4 Void Shields</characteristic>
       </characteristics>

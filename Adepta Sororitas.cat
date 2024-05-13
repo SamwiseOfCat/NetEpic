@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="bde7-dd3b-3d60-67c5" name="Sisters Of Battle" revision="3" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <readme>v3 notes :
+<catalogue id="bde7-dd3b-3d60-67c5" name="Sisters Of Battle" revision="5" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>v5 notes :
+Fixes to some unit classifications.
+
+v4 notes:
+Added &quot;Frateris Militia&quot; rule to all units that can only be taken in a Frateris Militia Codex list for ease of identification. Fixed the Frateris Militia Company cost as was incorrect. Changed all Arbites cards to Special Cards as per the Army Book rules.
+
+v3 notes :
 Fixed some Break Point values and company card detachment selections.
 
 v2 notes :
@@ -9,7 +15,7 @@ Major change to Titan weapon cost /VP&apos;s - each weapon now has a VP value th
 
 v1 notes :
 
-Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains the &quot;New&quot; (!) Frateris Militia army lists as well if you have a burning need to field your own army of Judge Dredd wannabe Arbites.</readme>
+Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains the &quot;New&quot; (!) Frateris Militia army lists as well if you have a burning need to field your own army of Judge Dredd-wannabe Arbites.</readme>
   <publications>
     <publication id="e5fd-79dd-be0b-24b5" name="Adeptus Ministorum NetEpic Army Book" shortName="Adeptus Ministorum NetEpic Army Book" publisher="Adeptus Ministorum NetEpic Army Book" publisherUrl="netepic.org"/>
   </publications>
@@ -265,6 +271,9 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
       </costs>
     </selectionEntry>
     <selectionEntry id="6148-17d9-67f2-f298" name="Rapier Battery" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="b61d-abae-f26b-58d2" name="Frateris Militia" hidden="false" targetId="0387-348a-cfbc-d6e4" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="5bfd-fdf7-eec1-def9" name="Detachment Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
         <categoryLink id="f141-3ad0-928a-eb77" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
@@ -295,6 +304,9 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
       </costs>
     </selectionEntry>
     <selectionEntry id="b4c7-d33f-3433-c668" name="Sabre Tank-Hunter Squadron" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="1bf8-1159-ba7f-cb61" name="Frateris Militia" hidden="false" targetId="0387-348a-cfbc-d6e4" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="58e8-0d71-0a5f-36c8" name="Detachment Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
         <categoryLink id="139d-58a2-56af-786a" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
@@ -325,6 +337,9 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
       </costs>
     </selectionEntry>
     <selectionEntry id="52f9-6d65-0398-0cce" name="Mole Mortar Battery" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="06ab-5e9f-e918-a47e" name="Frateris Militia" hidden="false" targetId="0387-348a-cfbc-d6e4" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="6cac-87e2-0bfe-5abe" name="Detachment Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
         <categoryLink id="2719-cff2-76af-e297" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
@@ -357,6 +372,9 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
       </costs>
     </selectionEntry>
     <selectionEntry id="1542-efb8-8dd0-abaf" name="Thudd Gun Battery" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="ba57-a597-ba3f-696f" name="Frateris Militia" hidden="false" targetId="0387-348a-cfbc-d6e4" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="739b-1ee5-87e8-54c2" name="Detachment Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
         <categoryLink id="4bc6-93f1-1314-1de3" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
@@ -558,6 +576,9 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
       </costs>
     </selectionEntry>
     <selectionEntry id="c2a7-6d8d-e26a-c59f" name="Infantry Gun Battery" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="6db3-f8b0-f88e-0943" name="Frateris Militia" hidden="false" targetId="0387-348a-cfbc-d6e4" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="fde0-51c8-8f5b-0d77" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
         <categoryLink id="04ec-1e67-0379-cbf0" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
@@ -588,6 +609,9 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
       </costs>
     </selectionEntry>
     <selectionEntry id="15a7-c377-60c8-681e" name="Zulu Anti-Aircraft Battery" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="0be4-c5a9-5036-575e" name="Frateris Militia" hidden="false" targetId="0387-348a-cfbc-d6e4" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="4b31-461a-5e2d-ba5e" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
         <categoryLink id="296a-7726-fb9b-3bc0" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
@@ -657,6 +681,9 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
       </costs>
     </selectionEntry>
     <selectionEntry id="e2fc-802e-0933-bd07" name="Militia Platoon" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="564a-12ac-1e26-d70b" name="Frateris Militia" hidden="false" targetId="0387-348a-cfbc-d6e4" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="6adb-354f-2214-a42e" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
         <categoryLink id="cc57-85f3-d14f-e3f8" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
@@ -759,9 +786,6 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3375-2187-6423-72fe" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d980-34b7-134b-0f91" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="728b-934f-877b-9c17" name="Sisters Of Battle" hidden="false" targetId="e8be-4b64-fae6-b342" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="9fc9-79e8-1bd1-d471" name="Sisters of Battle" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -860,9 +884,6 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
           <infoLinks>
             <infoLink id="1a4d-cb66-922c-bd6c" name="Retributors - Urban Fighting" hidden="false" targetId="113a-38d0-b3fc-c8fd" type="rule"/>
           </infoLinks>
-          <categoryLinks>
-            <categoryLink id="0aff-f299-71a0-1b88" name="Sisters Of Battle" hidden="false" targetId="e8be-4b64-fae6-b342" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="63fe-04d9-e455-7ebc" name="Retributors" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -927,9 +948,6 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
             <infoLink id="41ef-158b-db99-f59a" name="Jump Packs" hidden="false" targetId="6d0a-c605-e4ec-dd51" type="rule"/>
             <infoLink id="d34e-ae7a-9f97-12a0" name="Ignores Cover" hidden="false" targetId="68e8-8b1e-49cc-e8ef" type="rule"/>
           </infoLinks>
-          <categoryLinks>
-            <categoryLink id="304d-8dd7-b96e-1b1c" name="Sisters Of Battle" hidden="false" targetId="e8be-4b64-fae6-b342" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="e770-d6ee-ccb9-8ddb" name="Seraphim" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -1028,9 +1046,6 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
           <infoLinks>
             <infoLink id="2796-43ef-42e2-e27b" name="Infiltration" hidden="false" targetId="ede4-cc45-d7c4-7f78" type="rule"/>
           </infoLinks>
-          <categoryLinks>
-            <categoryLink id="4afc-6385-22c2-2450" name="Sisters Of Battle" hidden="false" targetId="e8be-4b64-fae6-b342" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="b995-f199-9593-872b" name="Novitiates" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -1124,10 +1139,6 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2db9-79ee-9750-9106" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="883f-93b9-5aeb-f9d3" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="7926-ee04-a27f-ede0" name="Detachment Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-            <categoryLink id="ae01-b027-4642-7d61" name="Sisters Of Battle" hidden="false" targetId="e8be-4b64-fae6-b342" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="981f-8024-6915-8cf6" name="Rhinos" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -1189,10 +1200,6 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1dbf-003d-21e1-b323" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="437c-1dda-9f4e-0de1" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="14e5-9025-779a-f669" name="Detachment Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-            <categoryLink id="13a7-16d7-f83f-756c" name="Sisters Of Battle" hidden="false" targetId="e8be-4b64-fae6-b342" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="eda4-1228-0eeb-1c57" name="Immolators" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -1254,10 +1261,6 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c94-1be4-0e4e-9a0d" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="111d-648b-0f29-94fb" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="9623-728a-8fdf-9688" name="Detachment Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-            <categoryLink id="5301-20e5-9564-9f32" name="Sisters Of Battle" hidden="false" targetId="e8be-4b64-fae6-b342" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="6142-a660-b7c1-0021" name="Exorcists" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -1315,10 +1318,6 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="809b-88c8-f813-02e6" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99eb-34ed-7a30-971b" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="e6fc-cdfd-c84e-0b6f" name="Detachment Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-            <categoryLink id="7f00-cb42-6074-c7e6" name="Sisters Of Battle" hidden="false" targetId="e8be-4b64-fae6-b342" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="c2a3-9cf6-fef7-cd93" name="Punisher Bikes" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -1381,10 +1380,6 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08b2-30d1-3710-f458" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dae7-e21f-a2e2-7c12" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="8550-0d10-5de1-ab0e" name="Detachment Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-            <categoryLink id="c1db-969b-4869-8f15" name="Sisters Of Battle" hidden="false" targetId="e8be-4b64-fae6-b342" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="0f2f-c0d5-8ce8-ccb4" name="Vindicators" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -1946,6 +1941,9 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
       </costs>
     </selectionEntry>
     <selectionEntry id="9fd4-6a97-6e55-c881" name="Bike Squad" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="cf4d-e34b-fcef-5fe6" name="Frateris Militia" hidden="false" targetId="0387-348a-cfbc-d6e4" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="b15f-976d-7efc-97e9" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
         <categoryLink id="9323-f83a-8924-4fcb" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
@@ -2292,6 +2290,9 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
       </costs>
     </selectionEntry>
     <selectionEntry id="1410-a1d3-2cf5-62ad" name="Frateris Militia" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c986-7a5a-3120-5b7b" name="Frateris Militia" hidden="false" targetId="0387-348a-cfbc-d6e4" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="055e-1940-b7f0-01bd" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
         <categoryLink id="bc98-98e3-d65a-cb03" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
@@ -2328,8 +2329,9 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
-            <cost name=" VP" typeId="points" value="1.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="fca4-500f-11c0-b55f" name="Preacher" hidden="false" collective="false" import="true" type="upgrade">
@@ -2389,6 +2391,9 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
       </costs>
     </selectionEntry>
     <selectionEntry id="6b32-50ff-bde5-49a8" name="Support Company" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8776-3537-31e2-58d6" name="Frateris Militia" hidden="false" targetId="0387-348a-cfbc-d6e4" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="8cc4-3255-dd2c-5e1e" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="true"/>
         <categoryLink id="0531-adb7-a7e9-5fdd" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
@@ -2448,10 +2453,6 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b165-8307-d56c-aafe" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8b2-efe4-52cd-a1b6" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="3953-3568-cec7-52c9" name="Detachment Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-            <categoryLink id="bab5-3f64-a8f3-acdd" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="536d-f768-b88f-f7d5" name="Rapier Laser Destroyer" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -2482,10 +2483,6 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5c0-db2f-221d-c678" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="317d-a3d1-0ee0-3ee1" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="d01f-9fab-6684-72c5" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
-            <categoryLink id="76d4-6547-172f-4b8a" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="7c2c-64da-67f2-1552" name="Rocket Squads" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -2516,6 +2513,9 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
       </costs>
     </selectionEntry>
     <selectionEntry id="4c93-f096-4320-99fa" name="Rocket Platoon" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="285e-10aa-fc2d-5e5b" name="Frateris Militia" hidden="false" targetId="0387-348a-cfbc-d6e4" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="7c7e-d76c-758d-662a" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
         <categoryLink id="213e-74ae-5b38-06ec" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
@@ -2543,6 +2543,9 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
       </costs>
     </selectionEntry>
     <selectionEntry id="e67c-46ce-ea6f-0760" name="Sabre Company" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="6496-d75a-3b6c-bf47" name="Frateris Militia" hidden="false" targetId="0387-348a-cfbc-d6e4" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="a29e-8847-2d16-3934" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="true"/>
         <categoryLink id="632e-5842-c6c0-ed47" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
@@ -2553,9 +2556,6 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e03e-bd02-6188-3b32" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c01d-9428-7c8d-2d3e" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="334b-cae4-b5d1-a062" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="d488-990f-188d-46d6" name="Sabre Tank-Hunters" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -2638,6 +2638,9 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
       </costs>
     </selectionEntry>
     <selectionEntry id="4a9f-6930-7e12-e7e6" name="Light Artillery Company" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="3d1a-8ae9-64c2-7381" name="Frateris Militia" hidden="false" targetId="0387-348a-cfbc-d6e4" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="959a-fc26-b73a-dd9e" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="true"/>
         <categoryLink id="5b93-2216-7dcb-6a66" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
@@ -2766,6 +2769,9 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
       </costs>
     </selectionEntry>
     <selectionEntry id="ff37-614b-c9af-cde4" name="Confessor" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="5b4e-c43f-7c59-eaae" name="Frateris Militia" hidden="false" targetId="0387-348a-cfbc-d6e4" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="c295-2af3-7463-8151" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
         <categoryLink id="ea44-958f-02e3-3a70" name="Special Card" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
@@ -2817,6 +2823,9 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
       </costs>
     </selectionEntry>
     <selectionEntry id="6e27-5f94-cd63-9e8c" name="Missionary" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="833e-4c2c-bc89-9b49" name="Frateris Militia" hidden="false" targetId="0387-348a-cfbc-d6e4" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="7c49-c54c-60bf-43b1" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
         <categoryLink id="4599-8715-1bb5-ca4d" name="Special Card" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
@@ -2870,14 +2879,14 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
       </costs>
     </selectionEntry>
     <selectionEntry id="5dbe-691a-88cc-3b76" name="Arbites Assault Squad" hidden="false" collective="false" import="true" type="unit">
-      <comment>Unit cost seems very cheap for what you are getting here</comment>
       <infoLinks>
         <infoLink id="e070-389d-d9c7-cc2a" name="Adeptus Arbites Cards" hidden="false" targetId="1f77-c832-1c21-1445" type="rule"/>
+        <infoLink id="de79-4825-2536-1ec2" name="Frateris Militia" hidden="false" targetId="0387-348a-cfbc-d6e4" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c8c9-f662-7756-dea5" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
-        <categoryLink id="be82-978e-d710-d69c" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
         <categoryLink id="3839-c7a4-4186-f224" name="Adeptus Arbites" hidden="false" targetId="bb76-d10a-f348-7f2b" primary="false"/>
+        <categoryLink id="8f10-95d4-38a3-a2f9" name="Special Card" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="d741-34e0-d732-4950" name="Adeptus Arbites Assault Squads" hidden="false" collective="false" import="true" type="model">
@@ -2928,14 +2937,14 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
       </costs>
     </selectionEntry>
     <selectionEntry id="137e-2426-2406-e8ee" name="Arbites Riot Squad" hidden="false" collective="false" import="true" type="unit">
-      <comment>Unit cost seems very cheap for what you are getting here</comment>
       <infoLinks>
         <infoLink id="b329-207b-b177-de96" name="Adeptus Arbites Cards" hidden="false" targetId="1f77-c832-1c21-1445" type="rule"/>
+        <infoLink id="b152-8be4-b1ca-b75e" name="Frateris Militia" hidden="false" targetId="0387-348a-cfbc-d6e4" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="396b-f1f9-cfeb-9451" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
-        <categoryLink id="aefb-00a7-7fb5-d2e6" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
         <categoryLink id="2a55-b078-ac31-432d" name="Adeptus Arbites" hidden="false" targetId="bb76-d10a-f348-7f2b" primary="false"/>
+        <categoryLink id="a9a7-b680-00f7-f6ef" name="Special Card" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="a6b5-1bbe-e2cb-be6c" name="Adeptus Arbites Riot Squads" hidden="false" collective="false" import="true" type="model">
@@ -2984,11 +2993,12 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
     <selectionEntry id="4ae2-1408-183b-53d7" name="Arbites Support Squad" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="ccc9-44e0-fc4f-b26a" name="Adeptus Arbites Cards" hidden="false" targetId="1f77-c832-1c21-1445" type="rule"/>
+        <infoLink id="b18e-2e17-c85f-82ee" name="Frateris Militia" hidden="false" targetId="0387-348a-cfbc-d6e4" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="449e-fe67-2fc0-e0cb" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
-        <categoryLink id="0434-5018-53f0-0aab" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
         <categoryLink id="fbf6-1e0c-f81a-112d" name="Adeptus Arbites" hidden="false" targetId="bb76-d10a-f348-7f2b" primary="false"/>
+        <categoryLink id="9179-fc8d-f566-4b4c" name="Special Card" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="ce51-a5da-c9cb-4fd5" name="Adeptus Arbites Support Squads" hidden="false" collective="false" import="true" type="model">
@@ -3034,11 +3044,12 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
     <selectionEntry id="1116-2970-1787-3ef6" name="Arbites Company" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="5307-5906-1038-ebf0" name="Adeptus Arbites Cards" hidden="false" targetId="1f77-c832-1c21-1445" type="rule"/>
+        <infoLink id="0c98-3328-92f6-81cc" name="Frateris Militia" hidden="false" targetId="0387-348a-cfbc-d6e4" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c008-dd93-18db-c2ac" name="Adeptus Arbites" hidden="false" targetId="bb76-d10a-f348-7f2b" primary="false"/>
         <categoryLink id="eb2d-07ab-3bbb-c8c6" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
-        <categoryLink id="77e4-fa4f-c06f-8ba1" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="true"/>
+        <categoryLink id="aa2f-3015-9895-0f68" name="Special Card" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="d789-1e00-b926-fe07" name="Arbites Riot Squad" hidden="false" collective="false" import="true" type="unit">
@@ -3232,6 +3243,7 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
       </costs>
     </selectionEntry>
     <selectionEntry id="fffa-b1b7-b2c4-5e1b" name="Arco-Flagellant Platoon" hidden="false" collective="false" import="true" type="unit">
+      <comment>Whilst these are specified as &quot;Frateris Only&quot; in the NE book, this seems unfair given Arco-Flagellants now appear in SoB lists in 40K. Therefore they are allowed in both SoB and FM lists here.</comment>
       <rules>
         <rule id="7aba-7797-8583-7d2f" name="Arco-Flagellant - Unit Limits" publicationId="e5fd-79dd-be0b-24b5" page="10" hidden="false">
           <description>You may only have one Arco- Flagellant Platoon per Confessor and/or Inquisitor in your army.</description>
@@ -3268,6 +3280,9 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
       </costs>
     </selectionEntry>
     <selectionEntry id="e59a-18f4-24c0-7b7a" name="Death Cult" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="47e9-ffce-a45a-1666" name="Frateris Militia" hidden="false" targetId="0387-348a-cfbc-d6e4" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="e61b-40d9-1da6-cd52" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
         <categoryLink id="fb05-e201-cc6f-84fa" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
@@ -3301,6 +3316,9 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
       </costs>
     </selectionEntry>
     <selectionEntry id="0cb1-ad21-2847-827d" name="Zealots" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="0ff2-06e4-6648-282f" name="Frateris Militia" hidden="false" targetId="0387-348a-cfbc-d6e4" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="eadf-b789-1fb8-7e9f" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
         <categoryLink id="da78-1a02-1df9-ded0" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
@@ -3333,6 +3351,9 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
       </costs>
     </selectionEntry>
     <selectionEntry id="bd60-1a66-6586-a7d9" name="Recon Platoon" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="96eb-1bd2-8de7-2923" name="Frateris Militia" hidden="false" targetId="0387-348a-cfbc-d6e4" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="8423-83bf-2d5f-29ac" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
         <categoryLink id="1c00-d6ad-79bc-c615" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
@@ -3382,6 +3403,9 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
       </costs>
     </selectionEntry>
     <selectionEntry id="f5b7-9041-4206-f9b0" name="Cavalry Squad" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="1130-66dc-0774-7e1c" name="Frateris Militia" hidden="false" targetId="0387-348a-cfbc-d6e4" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="ed5f-5bcc-4fce-7e28" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
         <categoryLink id="887e-ec9f-eacd-4d4b" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
@@ -3416,6 +3440,7 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
     <selectionEntry id="73bc-f1d5-0b1c-a665" name="Martyr Platoon" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="9223-3123-6195-efa6" name="Martyrs" hidden="false" targetId="f100-253b-fd9b-3a20" type="rule"/>
+        <infoLink id="fc62-3d2d-7b39-bc46" name="Frateris Militia" hidden="false" targetId="0387-348a-cfbc-d6e4" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="735c-a8d8-17c3-ac26" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
@@ -3447,6 +3472,9 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
       </costs>
     </selectionEntry>
     <selectionEntry id="76f4-41ab-f072-18bb" name="Laud Hailer Squadron" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="eb0f-c244-d323-e1dc" name="Frateris Militia" hidden="false" targetId="0387-348a-cfbc-d6e4" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="0c65-b7e6-f170-be56" name="Detachment Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
         <categoryLink id="2a6a-84bc-ca1d-11fb" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
@@ -3478,6 +3506,9 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
       </costs>
     </selectionEntry>
     <selectionEntry id="6929-fcaa-47c6-5e68" name="Truck Transport Squadron" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="c123-b709-fd38-e787" name="Frateris Militia" hidden="false" targetId="0387-348a-cfbc-d6e4" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="790d-cabb-ad4c-7856" name="Detachment Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
         <categoryLink id="b567-1b3d-2fdf-89ee" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
@@ -3511,6 +3542,9 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
       </costs>
     </selectionEntry>
     <selectionEntry id="d60a-754f-d9f9-b108" name="Mammoth Squadron" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="cf44-6514-3c14-0528" name="Frateris Militia" hidden="false" targetId="0387-348a-cfbc-d6e4" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="70e9-e9ff-2cd6-643c" name="Detachment Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
         <categoryLink id="35e6-8ee9-1746-4224" name="Frateris Militia" hidden="false" targetId="56ca-311c-6e01-baa3" primary="false"/>
@@ -3583,7 +3617,7 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
       <description>Due to their intense hatred of Chaos, any Sister of Battle infantry stand fighting in Close Combat with any Chaos or Chaos-allied unit may re-roll any Close Combat dice that roll a 1 or 2.</description>
     </rule>
     <rule id="41dd-25cd-e1e6-37e7" name="Holy Rage" hidden="false">
-      <description>A unit with the Holy Rage ability may target one Imperial infantry detachment within 15 cm and line of sight. A unit affected by Holy Rage gains +2 CAF, must be given Charge Orders every turn and must engage the enemy if it can. If a unit affected by Holy Rage needs to make a morale test, it instead loses a random stand as the fanatics purge the traitors and cowards within their ranks. In the End Phase you must test morale for every unit on Holy Rage. If the unit passes its fine, but if it fails it loses both a random stand and Holy Rage. Penitent Engines may CHOOSE to &quot;suffer&quot; gfrom Holy Rage at any time.</description>
+      <description>A unit with the Holy Rage ability may target one Imperial infantry detachment within 15 cm and line of sight. A unit affected by Holy Rage gains +2 CAF, must be given Charge Orders every turn and must engage the enemy if it can. If a unit affected by Holy Rage needs to make a morale test, it instead loses a random stand as the fanatics purge the traitors and cowards within their ranks. In the End Phase you must test morale for every unit on Holy Rage. If the unit passes its fine, but if it fails it loses both a random stand and Holy Rage. Penitent Engines may CHOOSE to &quot;suffer&quot; from Holy Rage at any time.</description>
     </rule>
     <rule id="113a-38d0-b3fc-c8fd" name="Retributors - Urban Fighting" publicationId="e5fd-79dd-be0b-24b5" page="11" hidden="false">
       <description>Due to their experience in urban fighting the cover of their targets counts as one level less than it is. It may not be reduced further than no cover.</description>
@@ -3611,6 +3645,9 @@ Initial (and probably only!) Sisters Of Battle list for NetEpic. Also contains t
     </rule>
     <rule id="1a5e-3b80-e9da-38c6" name="Arco-Flagellant - Unit Limits" publicationId="e5fd-79dd-be0b-24b5" page="10" hidden="false">
       <description>You may only have one Arco- Flagellant Platoon per Confessor and/or Inquisitor in your army.</description>
+    </rule>
+    <rule id="0387-348a-cfbc-d6e4" name="Frateris Militia" publicationId="e5fd-79dd-be0b-24b5" page="5" hidden="false">
+      <description>This unit can only be picked as part of a Frateris Milita Codex force.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

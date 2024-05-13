@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d092-dc22-1a4b-45b6" name="Dark Eldar" revision="1" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <readme>v1 notes :
+<catalogue id="d092-dc22-1a4b-45b6" name="Dark Eldar" revision="1" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>v2 notes :
+Very minor fixes to unit classifications.
 
+v1 notes :
 Initial Drukhari list from NetEpic Eldar Army Book. Treated as a separate army here as they cannot ally with normal Eldar lists.</readme>
   <publications>
     <publication id="b3f2-9186-f17e-45c7" name="Eldar NetEpic Army Book"/>
@@ -184,9 +186,6 @@ Initial Drukhari list from NetEpic Eldar Army Book. Treated as a separate army h
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3570-0261-6671-9516" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2cc-ecb5-4d22-3d9c" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="653d-c5c7-5591-9cee" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="27f9-d4ce-2d2b-b027" name="Raiders" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -293,7 +292,6 @@ Initial Drukhari list from NetEpic Eldar Army Book. Treated as a separate army h
     </selectionEntry>
     <selectionEntry id="7646-0c3a-945c-985c" name="Wych Cadre" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
-        <categoryLink id="d404-d208-1145-504e" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
         <categoryLink id="b98f-4963-1eee-18dd" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
         <categoryLink id="c20a-8e1c-0efc-c9d0" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
       </categoryLinks>
@@ -334,10 +332,6 @@ Initial Drukhari list from NetEpic Eldar Army Book. Treated as a separate army h
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c150-e859-4f12-a51e" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fd8-4b2f-58b3-9a10" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="b044-b704-0143-4cee" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
-            <categoryLink id="b96b-4aa6-5551-7d70" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="2380-3160-6367-c8e2" name="Wyches" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -369,9 +363,6 @@ Initial Drukhari list from NetEpic Eldar Army Book. Treated as a separate army h
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="824f-db03-30ac-0570" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0839-442b-446d-f331" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="cc22-756b-d50e-92c9" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="844b-33f1-738b-eb01" name="Beastmaster" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -508,9 +499,6 @@ Initial Drukhari list from NetEpic Eldar Army Book. Treated as a separate army h
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3687-eaf7-dca1-ccaa" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e23-ac74-11ff-1d72" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="680f-642b-f52c-8b4b" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="6382-e64f-8ad8-d4a4" name="Talos" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -694,9 +682,6 @@ Initial Drukhari list from NetEpic Eldar Army Book. Treated as a separate army h
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73fb-2714-52e4-8fc8" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5994-4572-572f-01e4" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="a9b8-31f8-7243-d65f" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="db52-5ced-3612-8095" name="Reaver Jetbikes" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -774,9 +759,6 @@ Initial Drukhari list from NetEpic Eldar Army Book. Treated as a separate army h
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="136b-3bdd-8e7c-d69a" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb3e-59ac-4caf-d6a2" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="54f4-5b0f-b52d-9ccd" name="Dark Eldar" hidden="false" targetId="8698-3842-9041-d52b" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="a5c1-2c0e-570c-ddab" name="Ravagers" hidden="false" collective="false" import="true" type="model">
               <constraints>

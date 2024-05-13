@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="96e7-de04-00de-819d" name="Titan Legions" revision="2" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <readme>v2 notes :
+<catalogue id="96e7-de04-00de-819d" name="Titan Legions" revision="3" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>v3 notes :
+Fixed Reaver / Titan Battlegroup mandatory options.
+
+v2 notes :
 Major change to Titan weapon cost /VP&apos;s - each weapon now has a VP value that aligns to cost in points for more accurate VP awarding in the event of a Titan being destroyed.
 
 v1 notes : 
@@ -129,15 +132,23 @@ You pick this army for two reasons : 1) so you can have Company Cards of about 3
       <categoryLinks>
         <categoryLink id="9dbd-910e-3a64-dce5" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="true"/>
         <categoryLink id="db91-e366-fe0b-91eb" name="Titan Legions" hidden="false" targetId="e10e-1be4-cbde-b0d1" primary="false"/>
+        <categoryLink id="527d-d8a7-b2fe-e1e7" name="Titan" hidden="false" targetId="31e8-9840-fb3a-3b8d" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="e010-a7b9-08b9-4be8" name="Reaver Titans" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="e010-a7b9-08b9-4be8" name="Reaver Titan" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d08-7cc7-a0a4-7de1" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fcc-d790-805f-b5bb" type="min"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink id="e783-dbec-8091-06cc" name="Titan Legions" hidden="false" targetId="e10e-1be4-cbde-b0d1" primary="false"/>
+          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="684c-aabf-1a11-00bd" name="Reaver Titan" hidden="false" collective="false" import="true" type="unit">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59bf-9356-195d-6972" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9196-f598-4d3f-a9bd" type="min"/>
+              </constraints>
               <infoLinks>
                 <infoLink id="4c3c-8563-a61c-911a" name="Reaver Titan" hidden="false" targetId="7ac8-35c0-6725-7148" type="profile"/>
               </infoLinks>
@@ -360,6 +371,8 @@ You pick this army for two reasons : 1) so you can have Company Cards of about 3
               </selectionEntryGroups>
               <costs>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -377,7 +390,6 @@ You pick this army for two reasons : 1) so you can have Company Cards of about 3
       </costs>
     </selectionEntry>
     <selectionEntry id="2a21-f0a5-ab79-9736" name="Warlord Titan Battlegroup" hidden="false" collective="false" import="true" type="unit">
-      <comment></comment>
       <infoLinks>
         <infoLink id="4018-1d8b-3452-064f" name="Titan Battlegroup VP Awards" hidden="false" targetId="76f5-c869-6176-d58d" type="rule"/>
         <infoLink id="cfec-83d8-a6e8-24ec" name="Titan Coherency" hidden="false" targetId="0a3b-ef73-c45d-713c" type="rule"/>
@@ -387,13 +399,20 @@ You pick this army for two reasons : 1) so you can have Company Cards of about 3
         <categoryLink id="db84-2026-4702-df51" name="Titan Legions" hidden="false" targetId="e10e-1be4-cbde-b0d1" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="90fe-0e72-6eb8-30c6" name="Warlord Titans" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="90fe-0e72-6eb8-30c6" name="Warlord Titan" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db15-ba02-8830-0890" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0b6-48cb-c38b-ca39" type="min"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink id="c37d-f903-794e-2539" name="Titan" hidden="false" targetId="31e8-9840-fb3a-3b8d" primary="false"/>
+          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="0a29-d18c-4a65-5032" name="Warlord Titan" hidden="false" collective="false" import="true" type="unit">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6187-dca9-51c5-639a" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1ef-8a02-e778-eefc" type="min"/>
+              </constraints>
               <infoLinks>
                 <infoLink id="b0cf-e240-015e-3932" name="Warlord Titan" hidden="false" targetId="a3a3-18d6-61ac-e2a0" type="profile"/>
               </infoLinks>
@@ -698,6 +717,8 @@ You pick this army for two reasons : 1) so you can have Company Cards of about 3
               </selectionEntryGroups>
               <costs>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1336,6 +1357,9 @@ You pick this army for two reasons : 1) so you can have Company Cards of about 3
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4e7-a100-4f06-13f3" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78d4-2466-b4a6-41c9" type="min"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink id="f4f0-5d81-da5c-85a3" name="Titan" hidden="false" targetId="31e8-9840-fb3a-3b8d" primary="false"/>
+          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="4da3-fbb2-6657-6ba1" name="Warhound Titan" hidden="false" collective="false" import="true" type="unit">
               <infoLinks>
@@ -1398,6 +1422,8 @@ You pick this army for two reasons : 1) so you can have Company Cards of about 3
               </selectionEntryGroups>
               <costs>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>

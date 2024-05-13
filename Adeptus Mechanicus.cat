@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9917-0d8b-7c62-1b5a" name="Adeptus Mechanicus / Knight Households" revision="3" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <readme>v3 notes :
+<catalogue id="9917-0d8b-7c62-1b5a" name="Adeptus Mechanicus / Knight Households" revision="4" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>v4 notes :
+Fixed a couple of mandatory units for company cards.
+
+v3 notes :
 Fixed Psi-Titan spelling and removed bug whereby you could have 3 arm weapons (!!!)
 Major change to Titan weapon cost /VP&apos;s - each weapon now has a VP value that aligns to cost in points for more accurate VP awarding in the event of a Titan being destroyed.
 
@@ -345,6 +348,10 @@ Anyway, the main thing is you can run an Imperator in this list if you want as a
         </selectionEntry>
         <selectionEntry id="6d4e-3808-d456-ea55" name="Leman Russ CHQ" hidden="false" collective="false" import="true" type="upgrade">
           <comment>Added Command &amp; HQ rules as standard for Tank Company CHQ (not on NetEpic card)</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d840-3566-8dcc-e1ce" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d3d-93e8-4d3c-dc94" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="07e3-87d8-cabd-6756" name="Leman Russ CHQ" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1064,7 +1071,7 @@ Anyway, the main thing is you can run an Imperator in this list if you want as a
         <categoryLink id="13ae-9f5a-c90a-b0ad" name="Special Cards" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="a490-90fb-583f-ac5a" name="Adeptus Mechanicus Team" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a490-90fb-583f-ac5a" name="Adeptus Mechanicus Team" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfd3-e455-d50f-a9e5" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0db-9832-62b4-1a58" type="min"/>
@@ -1083,37 +1090,27 @@ Anyway, the main thing is you can run an Imperator in this list if you want as a
             <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
           </costs>
         </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="5140-2ff4-4224-22bb" name="HQ Transport" hidden="false" collective="false" import="true">
+        <selectionEntry id="3f78-4450-3b25-588f" name="Command Rhino" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb4e-d548-2d9a-37fe" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="976b-551a-21ef-ac70" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b5e-dcbb-a7a4-a4fd" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29e6-2b44-14a0-f414" type="min"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="5341-7e16-d886-b6d0" name="Command Rhino" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2992-5d5d-f04c-165d" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cc2-14e6-96b0-1656" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="6c3a-ca76-d3f7-5444" name="Rhino" hidden="false" targetId="1fab-71a7-43b4-6370" type="profile"/>
-                <infoLink id="b772-6364-d832-3043" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
-                <infoLink id="c567-c6b4-80e4-e1b1" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
-                <infoLink id="090e-4192-92c1-746b" name="Command" publicationId="bd06-115b-2046-6848" page="11" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="524e-faf2-d9e6-99e5" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-                <cost name=" VP" typeId="points" value="0.0"/>
-                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+          <infoLinks>
+            <infoLink id="7507-e277-a936-2d61" name="Rhino" hidden="false" targetId="1fab-71a7-43b4-6370" type="profile"/>
+            <infoLink id="dace-d984-3bc5-15e6" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
+            <infoLink id="339e-c6d9-9bb0-674c" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
+            <infoLink id="8493-b2de-0c19-6120" name="Command" publicationId="bd06-115b-2046-6848" page="11" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="90ce-e7c6-e75d-2009" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
         <cost name=" VP" typeId="points" value="1.0"/>
@@ -1148,37 +1145,27 @@ Anyway, the main thing is you can run an Imperator in this list if you want as a
             <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
           </costs>
         </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="2103-efbc-59b8-0d86" name="HQ Transport" hidden="false" collective="false" import="true">
+        <selectionEntry id="353e-991f-0b49-4990" name="Command Rhino" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0580-6cd9-97c6-b358" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a78-2039-227d-4227" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6968-8aa8-a3cc-ddda" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1878-34bc-f269-bfe3" type="min"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="14cc-557e-0618-0d76" name="Command Rhino" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="235e-4993-9786-bece" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d257-2281-c674-2502" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="7df4-63c2-8e5a-c1a7" name="Rhino" hidden="false" targetId="1fab-71a7-43b4-6370" type="profile"/>
-                <infoLink id="cbaa-094a-d1e6-705d" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
-                <infoLink id="ed67-e5d3-750c-3689" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
-                <infoLink id="e9f6-01c8-72f0-928e" name="Command" publicationId="bd06-115b-2046-6848" page="11" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="3949-6b2c-57f3-f3f4" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-                <cost name=" VP" typeId="points" value="0.0"/>
-                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+          <infoLinks>
+            <infoLink id="5fad-bafa-a56d-c01e" name="Rhino" hidden="false" targetId="1fab-71a7-43b4-6370" type="profile"/>
+            <infoLink id="b502-1aae-5fd8-71f0" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
+            <infoLink id="1a76-3f66-fb84-99a9" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
+            <infoLink id="9244-cfdc-677b-9b4f" name="Command" publicationId="bd06-115b-2046-6848" page="11" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="3e8a-0a08-75d1-92a6" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
         <cost name=" VP" typeId="points" value="1.0"/>
@@ -1191,7 +1178,7 @@ Anyway, the main thing is you can run an Imperator in this list if you want as a
         <categoryLink id="6bcb-e4e1-6ed3-47bb" name="Adeptus Mechanicus" hidden="false" targetId="7249-15f4-6dd5-8659" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="0538-cd71-3208-15a9" name="Adeptus Psyker" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="0538-cd71-3208-15a9" name="Adeptus Psyker" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1ce-73aa-88dc-d78e" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e459-68f8-4394-2a82" type="min"/>
@@ -1213,37 +1200,27 @@ Anyway, the main thing is you can run an Imperator in this list if you want as a
             <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
           </costs>
         </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="510b-8007-f88b-e7e6" name="HQ Transport" hidden="false" collective="false" import="true">
+        <selectionEntry id="dded-94bd-7451-f6c7" name="Command Rhino" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4452-98f6-fe45-ea9e" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5930-9f56-4a94-9724" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0eab-d686-9a77-378b" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcb9-d60a-9391-3d23" type="min"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="065e-eb2a-19c9-49e2" name="Command Rhino" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b1c-7486-b08b-3491" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d905-8bd5-18b8-6842" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="81e1-f2d9-4def-c552" name="Rhino" hidden="false" targetId="1fab-71a7-43b4-6370" type="profile"/>
-                <infoLink id="d7a9-bcc0-8f32-075e" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
-                <infoLink id="86d0-f021-6be3-cfc9" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
-                <infoLink id="4bc4-248f-2b0a-f27a" name="Command" publicationId="bd06-115b-2046-6848" page="11" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="b1c7-ab29-8068-2e55" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-                <cost name=" VP" typeId="points" value="0.0"/>
-                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+          <infoLinks>
+            <infoLink id="e617-7f08-2e13-3afb" name="Rhino" hidden="false" targetId="1fab-71a7-43b4-6370" type="profile"/>
+            <infoLink id="6cdb-19b0-4ed2-c27c" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
+            <infoLink id="b0a2-ef54-1105-589d" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
+            <infoLink id="03ac-414f-aff4-2f1b" name="Command" publicationId="bd06-115b-2046-6848" page="11" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="1a95-8387-be55-b745" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
         <cost name=" VP" typeId="points" value="1.0"/>
@@ -1276,37 +1253,27 @@ Anyway, the main thing is you can run an Imperator in this list if you want as a
             <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
           </costs>
         </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="8449-4f70-6e58-9c4d" name="HQ Transport" hidden="false" collective="false" import="true">
+        <selectionEntry id="5b86-0605-e6c6-056a" name="FO Rhino" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6110-f294-f8b3-0982" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1739-f4ac-7754-9c97" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71ef-0e35-29cd-e0fa" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39fc-a345-4da8-a2a4" type="min"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="3259-58c6-a36b-80a9" name="Command Rhino" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="165c-2c2b-23ca-97f4" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9c4-9068-176b-fe7e" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="f39c-2175-694e-0f4d" name="Rhino" hidden="false" targetId="1fab-71a7-43b4-6370" type="profile"/>
-                <infoLink id="7a87-a68e-3701-33c1" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
-                <infoLink id="fd11-b653-4e13-683f" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
-                <infoLink id="e0e0-53e2-ce5b-7532" name="Command" publicationId="bd06-115b-2046-6848" page="11" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="436b-4db8-9ee8-f7de" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-                <cost name=" VP" typeId="points" value="0.0"/>
-                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+          <infoLinks>
+            <infoLink id="19d0-b7f4-1417-e7af" name="Rhino" hidden="false" targetId="1fab-71a7-43b4-6370" type="profile"/>
+            <infoLink id="d1d7-c0fb-378f-ac38" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
+            <infoLink id="000e-688a-2d06-95bc" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
+            <infoLink id="077b-cf4d-0746-6810" name="Command" publicationId="bd06-115b-2046-6848" page="11" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="bc4d-7042-855b-996c" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
         <cost name=" VP" typeId="points" value="1.0"/>
@@ -1320,7 +1287,7 @@ Anyway, the main thing is you can run an Imperator in this list if you want as a
         <categoryLink id="f00c-3683-c792-883d" name="Adeptus Mechanicus" hidden="false" targetId="7249-15f4-6dd5-8659" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="34c5-07e7-c3b1-7c69" name="Grey Knights" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="34c5-07e7-c3b1-7c69" name="Grey Knights" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5417-53e6-1b24-adc7" type="max"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf3e-7029-a414-07ec" type="min"/>
@@ -1367,6 +1334,9 @@ Anyway, the main thing is you can run an Imperator in this list if you want as a
             <infoLink id="44af-15b5-2392-73e6" name="Power Lance" hidden="false" targetId="2277-1d92-50ff-afcd" type="rule"/>
             <infoLink id="2105-dc00-3303-6c1a" name="Imperial Knight Ion Shields" hidden="false" targetId="d27f-8f2c-ccd3-a132" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="5ece-27c8-0829-0bf3" name="Knight" hidden="false" targetId="d0cd-8c36-3467-ff79" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1407,37 +1377,27 @@ Anyway, the main thing is you can run an Imperator in this list if you want as a
             <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
           </costs>
         </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="45e9-288c-1e28-e8da" name="HQ Transport" hidden="false" collective="false" import="true">
+        <selectionEntry id="49ab-309a-8cc3-522d" name="Command Rhino" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="879c-777d-e84a-7f3a" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3625-ed75-0422-87bf" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df12-b63d-e2a6-7338" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23ca-c0aa-8ae1-5e4d" type="min"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="6027-308f-79d2-c700" name="Command Rhino" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c1b-e629-3c67-0c59" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed72-2671-5dfd-9e21" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="e563-561d-71fe-dbd7" name="Rhino" hidden="false" targetId="1fab-71a7-43b4-6370" type="profile"/>
-                <infoLink id="68a1-378b-26df-9f6b" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
-                <infoLink id="c80f-2fbc-aafc-99f3" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
-                <infoLink id="2b4b-0c11-fba0-40d6" name="Command" publicationId="bd06-115b-2046-6848" page="11" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="6329-fe1e-a220-8812" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-                <cost name=" VP" typeId="points" value="0.0"/>
-                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+          <infoLinks>
+            <infoLink id="7ead-c69d-8115-8e74" name="Rhino" hidden="false" targetId="1fab-71a7-43b4-6370" type="profile"/>
+            <infoLink id="6a0a-821d-94f7-b88b" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
+            <infoLink id="3efa-b9f0-b05b-5489" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
+            <infoLink id="c32d-7d83-28f9-8427" name="Command" publicationId="bd06-115b-2046-6848" page="11" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="e841-154a-81f2-3b0e" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
         <cost name=" VP" typeId="points" value="1.0"/>
@@ -1471,37 +1431,27 @@ Anyway, the main thing is you can run an Imperator in this list if you want as a
             <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
           </costs>
         </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="2244-451e-e9be-5cba" name="HQ Transport" hidden="false" collective="false" import="true">
+        <selectionEntry id="20c9-70ce-7064-c551" name="Command Rhino" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c98-0859-030b-b66e" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bed2-f156-0518-e09d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da4b-f7c3-5590-1407" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03d9-e8b2-8073-321a" type="min"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry id="7da6-8e03-133b-38a3" name="Command Rhino" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b043-8751-be84-bbcc" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f861-200b-e73c-5547" type="min"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="3f72-65ce-d7c7-29ca" name="Rhino" hidden="false" targetId="1fab-71a7-43b4-6370" type="profile"/>
-                <infoLink id="3474-e014-34c7-d77c" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
-                <infoLink id="c25c-ab5e-f017-15bb" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
-                <infoLink id="25a8-7b7e-2826-024c" name="Command" publicationId="bd06-115b-2046-6848" page="11" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="c9a8-1a1a-cb6e-1110" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
-              </categoryLinks>
-              <costs>
-                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-                <cost name=" VP" typeId="points" value="0.0"/>
-                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+          <infoLinks>
+            <infoLink id="b1c9-2d1b-eeb5-80c4" name="Rhino" hidden="false" targetId="1fab-71a7-43b4-6370" type="profile"/>
+            <infoLink id="2045-1afe-de2e-16cb" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
+            <infoLink id="1df0-2cde-c84c-5339" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
+            <infoLink id="dfbd-ba80-615d-791e" name="Command" publicationId="bd06-115b-2046-6848" page="11" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="ea54-4269-d5e0-0f84" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
         <cost name=" VP" typeId="points" value="1.0"/>
@@ -2637,6 +2587,8 @@ Anyway, the main thing is you can run an Imperator in this list if you want as a
               </selectionEntryGroups>
               <costs>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3039,6 +2991,9 @@ Anyway, the main thing is you can run an Imperator in this list if you want as a
             <infoLink id="2090-752e-fb12-9dfc" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
             <infoLink id="ef08-87b1-7e9a-9122" name="Turret" hidden="false" targetId="6d2d-fa7d-8436-5def" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="7772-8dc2-b5d0-111a" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -3639,13 +3594,14 @@ Power Lance : 15cm, 1d 3+ _-3)</characteristic>
       </characteristics>
     </profile>
     <profile id="b8d1-6be8-8fe2-c137" name="Warlord Psi-Titan" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
+      <comment>The Psi-Cannon has been moved to the Arm position to match the current AT2018 model.</comment>
       <characteristics>
         <characteristic name="Type" typeId="a4c9-dbfe-e22d-4989">Titan</characteristic>
         <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">15cm</characteristic>
         <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">See hit template</characteristic>
         <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+14</characteristic>
         <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Psi-Blasters (Head) : 50cm, 2d 4+ (-2) - Physical Psychic Attack
-Psi-Cannon (Carapace) : 100cm, Template 4+ (-1) - See Special Rule</characteristic>
+Psi-Cannon (Arm) : 100cm, Template 4+ (-1) - See Special Rule</characteristic>
         <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">N/A</characteristic>
         <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339">The Warlord Psi-Titan deals physical psychic Close Combat attacks.</characteristic>
       </characteristics>

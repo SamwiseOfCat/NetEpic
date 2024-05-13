@@ -1,6 +1,10 @@
 NetEpic / Epic Space Marine 2nd Edition Battlescribe Game System & Army Lists
 -----------------------------------------------------------------------------
 
+Please feel free to email me with any issues you find in the lists - typos, incorrect points values, missing stats etc and I will add them to a list to get fixed in the next release. All feedback is welcome - please use stagletto at gmail dot com and ill get back to you when I can.
+
+Enjoy!
+
 Internet Installation Notes (best/easiest way!)
 ---------------------------------------
 
@@ -8,7 +12,7 @@ Internet Installation Notes (best/easiest way!)
 2) Run Battlescribe.
 3) Click the "Manage Data" icon at the top of the BS window.
 4) Click "Import Data".
-5) Click "Import Data From URL" then enter the following URL: "https://github.com/SamwiseOfCat/NetEpic/releases/download/v5/NetEpic.latest.bsi"
+5) Click "Import Data From URL" then enter the following URL: "https://github.com/SamwiseOfCat/NetEpic/releases/download/v6/NetEpic.latest.bsi"
 6) Battlescribe will then download the files for you.
 7) Once complete, Click the "Create A New Roster" icon in the top left.
 8) Select "NetEpic Gold" from the first dropdown.
@@ -30,6 +34,9 @@ Manual Installation Steps (do this if you cannot install via the above method, o
 
 Release Notes
 -------------
+
+v6 notes :
+Final fixes to main GST file.
 
 v5 notes :
 
@@ -90,9 +97,6 @@ Known Bugs / Improvements In The Pipeline
 
 #2:  Faction-specific cards are not prohibited by the code - YET - but will be soon, maybe not for Version 1.2 though. In the meantime, the limitations on Faction-specific cards are made clear by text "Rules" applied to each Force Organisation, as well as Prohibited units that named Factions cant take, so anyone with any experience of list-building with cards will be able to easily identify faction-specific units in a list where they shouldnt be...
 
-Please feel free to email me with any issues you find in the lists - typos, incorrect points values, missing stats etc and I will add them to a list to get fixed in the next release. All feedback is welcome - please use stagletto at gmail dot com and ill get back to you when I can.
-
-Enjoy!
 
 Steve
 

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6a64-81d6-8354-a8c3" name="Eldar" revision="5" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <readme>v5 notes :
+<catalogue id="6a64-81d6-8354-a8c3" name="Eldar" revision="6" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>v6 notes :
+Minor change to mandatory detatchments on a couple of company cards and Point Defence values for multiple vehicles.
+
+v5 notes :
 Fixed missing points values and VP&apos;s on a couple of units.
 
 v4 notes :
@@ -599,6 +602,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
           <infoLinks>
             <infoLink id="03be-cdfd-56d9-2473" name="Guardian Squad" hidden="false" targetId="73c7-f37c-fefa-7e14" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="3fab-5fe8-92c4-1e78" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -630,6 +636,10 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="70b5-121f-709d-0ba4" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
             <infoLink id="d493-ee2f-b088-2ce5" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="4a42-cf18-241b-a98a" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+            <categoryLink id="5f07-2cc1-8afc-f2a5" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -654,9 +664,6 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b30-f7d6-2a35-925a" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0438-4f90-19c2-3a07" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="1b31-0d3c-93e1-c82b" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="f220-7168-eb96-c48c" name="Guardian Squad" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -666,6 +673,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
               <infoLinks>
                 <infoLink id="417d-7982-bfb4-e904" name="Guardian Squad" hidden="false" targetId="73c7-f37c-fefa-7e14" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="32b0-4d3a-9c9c-fe4f" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -698,9 +708,6 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73ef-a70b-e624-e446" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fff-723c-70d0-1dd4" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="b353-3aa5-1b17-04e3" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="d48a-d87e-10ee-669c" name="Falcon Squadron" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -713,6 +720,10 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                 <infoLink id="3fe0-4771-b7d5-ec05" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
                 <infoLink id="f36f-c939-659d-36cf" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="2979-d162-f02d-81b2" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+                <categoryLink id="08d3-bf45-25e7-5711" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -731,9 +742,6 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="183d-f7e5-d9cf-0c3b" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="989d-82aa-c344-063c" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="f0eb-352b-ab74-ee4c" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="bbf3-1eb0-30a7-e7d1" name="Guardian Detachment" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -743,6 +751,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
               <infoLinks>
                 <infoLink id="b4a7-8805-3079-8587" name="Guardian Squad" hidden="false" targetId="73c7-f37c-fefa-7e14" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="3f3d-9d30-194f-df46" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -788,6 +799,10 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                 <infoLink id="78b1-fb2a-b65c-4d80" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
                 <infoLink id="3ed6-11ae-700a-fe1c" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="07e7-8154-d8ad-3b47" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+                <categoryLink id="97a2-9c13-f8c1-3ab1" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -825,6 +840,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="4b2a-7f63-bb36-50ec" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
             <infoLink id="906e-d44f-baed-98de" name="Vyper Jetbike" hidden="false" targetId="a071-0c5b-6a29-87f3" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="9da8-ad26-201f-3aa7" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -855,6 +873,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="0bd1-0327-a064-1b10" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
             <infoLink id="82f1-821e-d595-0803" name="Jetbike" hidden="false" targetId="cca1-8bc4-7c6c-0d8e" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="0c27-4310-356e-88ee" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -880,9 +901,6 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bfa-c494-fbbb-ae73" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa0c-9a1a-e67a-9ddf" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="6f8b-694b-0478-a987" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="8c04-b88c-87ed-d89d" name="Jetbikes" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -894,6 +912,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                 <infoLink id="68dd-652c-092c-764d" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
                 <infoLink id="4501-ea0e-6be9-1852" name="Jetbike" hidden="false" targetId="cca1-8bc4-7c6c-0d8e" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="bfd3-c4dc-71f0-8fa9" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -912,9 +933,6 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce65-5a67-28e3-9985" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e25-18c8-8c6b-e340" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="df8b-8234-1036-0bb8" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="5372-2cde-539c-80bb" name="Vyper Jetbikes" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -926,6 +944,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                 <infoLink id="76a0-e98c-3936-ef56" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
                 <infoLink id="77fd-badf-b4f9-fbc6" name="Vyper Jetbike" hidden="false" targetId="a071-0c5b-6a29-87f3" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="942f-d848-921e-97b9" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -963,6 +984,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="2509-6dcb-2926-7bfa" name="Artificial Intelligence" hidden="false" targetId="c901-6acf-5a78-0935" type="rule"/>
             <infoLink id="a576-7b27-4e13-7d79" name="Wraithguard" hidden="false" targetId="aa81-ab98-596c-7c3e" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="67c7-efb1-ef86-3cc7" name="Walker" hidden="false" targetId="f082-d1ca-f340-1ce8" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -993,6 +1017,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="5d8b-e784-3da5-5cb9" name="Waystone Spirit" hidden="false" targetId="9ee3-0d9c-3917-602d" type="rule"/>
             <infoLink id="792b-1de6-b278-fc68" name="Wraithlord" hidden="false" targetId="dd5a-5826-348e-c50c" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="addb-95e0-8d02-6d36" name="Walker" hidden="false" targetId="f082-d1ca-f340-1ce8" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1020,10 +1047,6 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1470-11be-a121-c85c" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a998-465a-3f40-06be" type="max"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="c86f-2ba5-cffc-1f56" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
-            <categoryLink id="e65b-8947-03b1-8389" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="34d0-3f1d-023d-8aaa" name="Wraithguard Squad" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -1036,6 +1059,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                 <infoLink id="3fd5-999c-d418-97a7" name="Artificial Intelligence" hidden="false" targetId="c901-6acf-5a78-0935" type="rule"/>
                 <infoLink id="8482-0058-2ed7-77e9" name="Wraithguard" hidden="false" targetId="aa81-ab98-596c-7c3e" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="d8de-ae68-4e67-b28c" name="Walker" hidden="false" targetId="f082-d1ca-f340-1ce8" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -1054,9 +1080,6 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e07d-a85b-fad7-9266" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21db-edb8-38c9-5bff" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="84f4-61be-a7a7-27a4" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="c4ee-4997-42e1-e44e" name="Wraithlords" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -1069,6 +1092,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                 <infoLink id="c948-60d9-7a94-45d4" name="Waystone Spirit" hidden="false" targetId="9ee3-0d9c-3917-602d" type="rule"/>
                 <infoLink id="e598-6ce2-17d3-c3e0" name="Wraithlord" hidden="false" targetId="dd5a-5826-348e-c50c" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="7d86-739b-b9dd-1e65" name="Walker" hidden="false" targetId="f082-d1ca-f340-1ce8" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -1087,9 +1113,6 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6029-c623-33ee-7d43" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c02-aa5b-775c-ab91" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="1dc1-8497-a44b-8417" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="7d24-2442-c441-6d00" name="Warlock" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -1107,7 +1130,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                 <infoLink id="522a-2bed-2fb8-45cf" name="Psychic Power : Eldritch Storm" hidden="false" targetId="ef11-a186-89a9-9bee" type="rule"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="e1ef-7be2-2de1-d566" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
+                <categoryLink id="d012-7f12-d0bd-0cc2" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -1126,6 +1149,10 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                 <infoLink id="2d40-ac1e-a9f3-88b6" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
                 <infoLink id="8885-2ba6-8735-7bcf" name="Falcon" hidden="false" targetId="c815-7079-63f6-4908" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="39e4-c830-8911-06a0" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+                <categoryLink id="eabb-ef6a-1e9a-0dd3" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -1169,7 +1196,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="e852-ca6a-3af6-c47b" name="Psychic Power : Eldritch Storm" hidden="false" targetId="ef11-a186-89a9-9bee" type="rule"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="58b6-d7d1-e984-5293" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
+            <categoryLink id="8706-61c2-fcaa-c710" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -1188,6 +1215,10 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="9ca3-aab5-0b96-343b" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
             <infoLink id="d621-a72a-5d2f-3198" name="Falcon" hidden="false" targetId="c815-7079-63f6-4908" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="8732-18ee-e06e-0958" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+            <categoryLink id="4c31-8050-31be-a88c" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1216,8 +1247,12 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="4bd4-54e7-ec3c-1284" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
             <infoLink id="99d8-cea3-4c61-581f" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
             <infoLink id="db2f-1f09-20b4-2458" name="Tempest" hidden="false" targetId="ed46-53d8-7998-01e1" type="profile"/>
-            <infoLink id="cec9-6f4d-c915-136a" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+            <infoLink id="cec9-6f4d-c915-136a" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="4634-6b89-857c-db7f" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+            <categoryLink id="d782-3f3d-0ef7-6ecc" name="Superheavy" hidden="false" targetId="e3d7-eb22-9df1-719b" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1242,9 +1277,6 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6de-ab6b-92a0-649e" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d35f-bb55-03af-2817" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="1e00-bba9-f20a-4d83" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="a6fe-2a7f-389f-b9b3" name="Tempests" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -1255,8 +1287,12 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                 <infoLink id="e4ff-f8c7-33bd-2467" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
                 <infoLink id="e998-2a7b-6bbf-ec5e" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
                 <infoLink id="9a22-e3b5-f4bb-88cd" name="Tempest Grav-Tank" hidden="false" targetId="ed46-53d8-7998-01e1" type="profile"/>
-                <infoLink id="6ae0-ad3a-f7f6-4291" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="6ae0-ad3a-f7f6-4291" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="d46a-0b34-a1cc-66fe" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+                <categoryLink id="7d97-b3ed-be61-09ce" name="Superheavy" hidden="false" targetId="e3d7-eb22-9df1-719b" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -1294,7 +1330,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="9ca1-20b5-c549-9ee8" name="Bonesinger" hidden="false" targetId="e4e4-fafc-f1a0-ce3c" type="profile"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="eff8-a07a-6bae-0afd" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
+            <categoryLink id="a243-998d-8f2f-a1e5" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -1313,6 +1349,10 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="a0dc-e37b-7f5e-e3d6" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
             <infoLink id="0c97-dbce-a532-644e" name="Falcon" hidden="false" targetId="c815-7079-63f6-4908" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="0ac4-2ff2-0968-0770" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+            <categoryLink id="805d-2f13-8c98-2db7" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1344,7 +1384,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="47a4-68a2-eb4e-3399" name="Exarchs" hidden="false" targetId="0902-f870-e0cd-bedb" type="profile"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="8b4d-a81a-144c-6b73" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
+            <categoryLink id="e55d-750d-726a-3280" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -1376,6 +1416,10 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="653f-fb14-3ac6-718b" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
             <infoLink id="bcdc-9df5-5436-de87" name="Falcon" hidden="false" targetId="c815-7079-63f6-4908" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="7cec-a3d8-4687-4e6f" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+            <categoryLink id="d7a1-b0ae-0fee-b6dd" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1397,6 +1441,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="e250-963b-8b06-cdad" name="Psychic Power : Guide" hidden="false" targetId="f537-e71f-09ef-186c" type="rule"/>
             <infoLink id="8692-9d75-91c4-9ff9" name="Psychic Power : Coercion" hidden="false" targetId="04a4-274d-99e1-6f59" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="8298-1a58-7102-6729" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1463,6 +1510,10 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="0ab9-4a1f-b749-48d2" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
             <infoLink id="51dc-70ef-a0bc-bafd" name="Falcon" hidden="false" targetId="c815-7079-63f6-4908" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="c201-a008-2722-8d60" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+            <categoryLink id="39eb-2bfa-0734-885a" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1480,6 +1531,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="1cc3-802d-0e47-7501" name="Stealth" hidden="false" targetId="60b5-deb4-dac3-89a1" type="rule"/>
             <infoLink id="7cac-9c3a-cc5f-b8d9" name="Forward Observer (FO)" hidden="false" targetId="b99f-ff4d-1584-d7fe" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="dc40-4db3-6db0-d5eb" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1980,6 +2034,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="3f45-0526-afd4-5c66" name="Holofields" hidden="false" targetId="c5bc-0c20-6b4e-f76e" type="rule"/>
             <infoLink id="3036-90ea-2dbb-c0ff" name="Hard To Hit" hidden="false" targetId="2d0e-02b6-1d6f-c8c4" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="d32a-a931-81a0-ae41" name="Titan" hidden="false" targetId="31e8-9840-fb3a-3b8d" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2009,6 +2066,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="72d3-854d-fa2a-ae54" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
             <infoLink id="7171-308a-1198-ad66" name="Howling Banshee Squad" hidden="false" targetId="855c-057a-1e8c-12f1" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="5d60-9fbb-2ddc-e8d8" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2039,6 +2099,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="9d3f-4ba9-2693-34c0" name="Quickdraw" hidden="false" targetId="5609-df6a-1b5d-bc43" type="rule"/>
             <infoLink id="5ac6-6b4a-c65e-8281" name="Dark Reaper Squad" hidden="false" targetId="9c7f-b265-2cd0-b1e7" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="6768-fd65-ac55-c991" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2070,6 +2133,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="6406-5ef6-a857-ee76" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
             <infoLink id="fdfb-ae55-4451-2eb8" name="Shining Spear" hidden="false" targetId="32ec-c56e-e4a9-f3bd" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="7c8d-c752-934d-2b83" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2099,6 +2165,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="40e0-a660-b692-7bcc" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
             <infoLink id="f2df-4f26-e4b8-179d" name="Dire Avenger Squad" hidden="false" targetId="2e67-0df9-5e9a-aa07" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="b290-02ec-c9db-5b24" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2128,6 +2197,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="7a3a-46ac-6f04-9ec6" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
             <infoLink id="9884-351d-ed7b-08e2" name="Striking Scorpion Squad" hidden="false" targetId="2b29-569c-8711-f29e" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="0f5a-e75d-190b-136d" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2158,6 +2230,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="c927-ccc2-8105-7568" name="Ignores Cover" hidden="false" targetId="68e8-8b1e-49cc-e8ef" type="rule"/>
             <infoLink id="c434-b441-622b-a507" name="Fire Dragon Squad" hidden="false" targetId="2f8e-516a-9c04-0c25" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="0c60-41ee-6b20-2f63" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2190,6 +2265,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="3067-be1a-5c7d-3f21" name="Jump Packs" hidden="false" targetId="6d0a-c605-e4ec-dd51" type="rule"/>
             <infoLink id="5426-6d1b-0135-02c2" name="Swooping Hawk Squad" hidden="false" targetId="fa79-47c0-57bb-ddec" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="094c-0f96-b816-d5b6" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2220,6 +2298,10 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="06ce-a54a-bad4-93e7" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
             <infoLink id="c748-911f-cff3-3bb2" name="Fire Prism" hidden="false" targetId="7d13-561f-c1fa-4dd2" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="9116-bcc7-bb86-4ac5" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+            <categoryLink id="fbb0-71a0-66a5-d3c3" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2251,6 +2333,10 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="f23b-f627-fa50-94ed" name="Anti-Aircraft" hidden="false" targetId="fcc4-1801-9767-124b" type="rule"/>
             <infoLink id="3773-1fbb-f968-e666" name="Firestorm" hidden="false" targetId="a571-ec35-0b91-7ebe" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="9e02-c3c8-4e7c-bdea" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+            <categoryLink id="90d5-ee00-1ab7-813d" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2280,6 +2366,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
           <infoLinks>
             <infoLink id="9c9a-5366-3ec1-7959" name="War Walker" hidden="false" targetId="b7d3-e3c3-9d01-af1f" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="e210-fe4c-ace2-db36" name="Walker" hidden="false" targetId="f082-d1ca-f340-1ce8" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2309,8 +2398,12 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="058e-c533-2340-13e7" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
             <infoLink id="2085-ae33-6de3-cdfd" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
             <infoLink id="0ce2-255a-7e7f-6ae1" name="Peregrine" hidden="false" targetId="b208-cf37-4644-b45e" type="profile"/>
-            <infoLink id="7ca7-fd7c-1f05-6994" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+            <infoLink id="7ca7-fd7c-1f05-6994" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="77de-0ffc-75ca-df18" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+            <categoryLink id="5a5f-351e-983b-14d9" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2338,6 +2431,10 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
           <infoLinks>
             <infoLink id="8f0b-eb69-f0ba-fcde" name="Doomweaver" hidden="false" targetId="e0b1-dbbc-d3b0-2071" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="7e07-d435-f4c3-a64f" name="Heavy Artillery" hidden="false" targetId="83c3-b2b8-ac74-c25c" primary="false"/>
+            <categoryLink id="38cf-219c-e26b-28ff" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2368,6 +2465,10 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="eee7-8793-5ae6-8f60" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
             <infoLink id="ca9d-6a8d-7ae0-fa48" name="Wave Serpent" hidden="false" targetId="72fb-c1d0-a19d-c179" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="d235-af02-2201-f563" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+            <categoryLink id="f44e-1d02-a5f7-7229" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2397,6 +2498,10 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="2344-e5da-7b44-e14e" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
             <infoLink id="41d5-c38f-bd16-78eb" name="Unicorn" hidden="false" targetId="c122-9cd9-e2c1-8b64" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="0021-d834-0d8d-6f3a" name="Heavy Artillery" hidden="false" targetId="83c3-b2b8-ac74-c25c" primary="false"/>
+            <categoryLink id="38a8-30c7-1cfb-f5fe" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2414,7 +2519,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
       <categoryLinks>
         <categoryLink id="f426-ec4c-f612-92e1" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
         <categoryLink id="dee2-8b87-a1f3-a47c" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-        <categoryLink id="492d-1471-b994-092d" name="Eldar Knights" hidden="false" targetId="5c8f-322f-0493-f524" primary="false"/>
+        <categoryLink id="fdf0-b830-6fcf-2fc8" name="Eldar Knights" hidden="false" targetId="5c8f-322f-0493-f524" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="72bc-0a16-f918-b48e" name="Bright Lances" hidden="false" collective="false" import="true" type="model">
@@ -2425,6 +2530,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
           <infoLinks>
             <infoLink id="1625-a3fb-9391-06c1" name="Bright Lance" hidden="false" targetId="c68d-e5ba-aeb0-a53c" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="1569-c202-4086-0f85" name="Light Artillery" hidden="false" targetId="b33a-b698-bada-f3b6" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2454,6 +2562,10 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="475d-f839-1d76-8372" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
             <infoLink id="e988-e0a6-f7a9-c799" name="Warp Hunter" hidden="false" targetId="c91c-6d6e-8215-fbde" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="6d49-1920-13c4-6584" name="Heavy Artillery" hidden="false" targetId="83c3-b2b8-ac74-c25c" primary="false"/>
+            <categoryLink id="d590-302e-5f4c-af12" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2481,6 +2593,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
           <infoLinks>
             <infoLink id="fa3c-06aa-cdab-0d2d" name="Vibro-Cannon" hidden="false" targetId="66d2-132a-f28e-6c85" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="0e42-f0c2-0d2d-3f14" name="Light Artillery" hidden="false" targetId="b33a-b698-bada-f3b6" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2511,6 +2626,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="8d51-2d4c-fb0d-18f3" name="Flyer" hidden="false" targetId="f081-2b42-2559-361e" type="rule"/>
             <infoLink id="3af8-f010-da0e-3343" name="Ignores Cover" hidden="false" targetId="68e8-8b1e-49cc-e8ef" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="779e-647b-a658-6c2e" name="Flyer" hidden="false" targetId="d6b7-fbc6-dca0-1682" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2540,6 +2658,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="26e3-c017-2cd1-8b1f" name="Vampyre Troop Carrier" hidden="false" targetId="7782-38c4-551a-054d" type="profile"/>
             <infoLink id="aea9-0755-c9cb-7e81" name="Transport (6)" hidden="false" targetId="1bfb-1bc3-45b7-ccd9" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="e288-bfcd-75a3-411d" name="Flyer" hidden="false" targetId="d6b7-fbc6-dca0-1682" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2568,6 +2689,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="c310-4702-8b99-6dbd" name="Flyer" hidden="false" targetId="f081-2b42-2559-361e" type="rule"/>
             <infoLink id="a6d9-6616-601c-767f" name="Nightwing" hidden="false" targetId="44ae-0d6d-b112-00d3" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="d0a6-e8df-b755-1201" name="Flyer" hidden="false" targetId="d6b7-fbc6-dca0-1682" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2597,10 +2721,14 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="c0a8-6577-e0bd-ebc1" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
             <infoLink id="03b7-2c25-74e1-713d" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
             <infoLink id="5a5b-85de-2cf4-b7ac" name="Cobra" hidden="false" targetId="18de-ca19-e1a1-2157" type="profile"/>
-            <infoLink id="782b-501d-503d-a047" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+            <infoLink id="782b-501d-503d-a047" name="Point Defence (3)" hidden="false" targetId="127d-208c-b46a-23b4" type="rule"/>
             <infoLink id="3b8b-64af-5435-0663" name="D-Cannons" hidden="false" targetId="ad4d-4d47-8719-dd03" type="rule"/>
             <infoLink id="d63a-ab1b-3711-9d9b" name="Destroys Buildings" hidden="false" targetId="7db7-4fc2-dcb1-aa01" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="9a62-3235-2c2d-2c5a" name="Superheavy" hidden="false" targetId="e3d7-eb22-9df1-719b" primary="false"/>
+            <categoryLink id="cb80-d1e1-3256-6ad6" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2633,6 +2761,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                 <infoLink id="d858-624c-c617-52c8" name="Psychic Lance (Eldar Knights)" hidden="false" targetId="204f-434e-e4c7-8e82" type="rule"/>
                 <infoLink id="4bcd-f165-0a12-aa70" name="Fire Gale Knight" hidden="false" targetId="a27c-b02a-843a-0ef3" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="d6ed-3147-84b4-48da" name="Knight" hidden="false" targetId="d0cd-8c36-3467-ff79" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -2645,6 +2776,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                 <infoLink id="8488-3aa2-31e7-03e8" name="Psychic Lance (Eldar Knights)" hidden="false" targetId="204f-434e-e4c7-8e82" type="rule"/>
                 <infoLink id="d9d2-4f6e-d1f3-3030" name="Fire Reaper Knight" hidden="false" targetId="9ac9-2b79-0952-55f3" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="76e9-d069-16da-7c2e" name="Knight" hidden="false" targetId="d0cd-8c36-3467-ff79" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -2657,6 +2791,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                 <infoLink id="bc26-d7c5-14af-0b7d" name="Psychic Lance (Eldar Knights)" hidden="false" targetId="204f-434e-e4c7-8e82" type="rule"/>
                 <infoLink id="051e-d639-9ffc-0dfe" name="Fire Storm Knight" hidden="false" targetId="8b7d-86ab-61bd-9c83" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="ef79-2ead-613e-3042" name="Knight" hidden="false" targetId="d0cd-8c36-3467-ff79" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -2691,6 +2828,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                 <infoLink id="d32a-77bf-9c0d-4c30" name="Psychic Lance (Eldar Knights)" hidden="false" targetId="204f-434e-e4c7-8e82" type="rule"/>
                 <infoLink id="cc5d-a497-74ee-9e86" name="Bright Stalker Knight" hidden="false" targetId="01a7-26d9-4f2f-e60d" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="c784-dfd0-faf9-2311" name="Knight" hidden="false" targetId="d0cd-8c36-3467-ff79" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -2703,6 +2843,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                 <infoLink id="fbcf-afa4-cd28-0a24" name="Psychic Lance (Eldar Knights)" hidden="false" targetId="204f-434e-e4c7-8e82" type="rule"/>
                 <infoLink id="2dac-b576-f53e-3453" name="Bright Stallion Knight" hidden="false" targetId="28bd-dda6-6f25-650b" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="63ab-fe1a-ebbb-8531" name="Knight" hidden="false" targetId="d0cd-8c36-3467-ff79" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -2737,6 +2880,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                 <infoLink id="8b72-9e91-7abc-cd64" name="Psychic Lance (Eldar Knights)" hidden="false" targetId="204f-434e-e4c7-8e82" type="rule"/>
                 <infoLink id="06f6-37ca-2f10-bf20" name="Towering Destroyer Knight" hidden="false" targetId="b53c-e90e-bc69-d5e5" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="157c-30cd-f049-95fa" name="Knight" hidden="false" targetId="d0cd-8c36-3467-ff79" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -2749,6 +2895,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                 <infoLink id="4ba4-e6e7-54fd-3f60" name="Psychic Lance (Eldar Knights)" hidden="false" targetId="204f-434e-e4c7-8e82" type="rule"/>
                 <infoLink id="4915-f12f-b5dd-e783" name="Towering Fury Knight" hidden="false" targetId="6778-aeb7-5517-559c" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="0bbe-d995-733b-d291" name="Knight" hidden="false" targetId="d0cd-8c36-3467-ff79" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -2780,8 +2929,12 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="e468-0d78-1f14-615a" name="Superheavy" hidden="false" targetId="f5aa-58a5-a7bf-25b2" type="rule"/>
             <infoLink id="b2dc-4bec-e982-2807" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
             <infoLink id="3f9a-f504-7b2e-84d8" name="Scorpion" hidden="false" targetId="cf5b-accb-c409-2aa1" type="profile"/>
-            <infoLink id="4657-2f25-2045-a8a1" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+            <infoLink id="4657-2f25-2045-a8a1" name="Point Defence (3)" hidden="false" targetId="127d-208c-b46a-23b4" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="485d-0e71-90cc-72f1" name="Superheavy" hidden="false" targetId="e3d7-eb22-9df1-719b" primary="false"/>
+            <categoryLink id="acec-6399-ada0-9169" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2812,9 +2965,13 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="9aab-c3a7-1250-750b" name="Superheavy" hidden="false" targetId="f5aa-58a5-a7bf-25b2" type="rule"/>
             <infoLink id="dea0-5cba-a813-32ff" name="Holofields" hidden="false" targetId="c5bc-0c20-6b4e-f76e" type="rule"/>
             <infoLink id="e0f2-4d96-552b-9890" name="Storm Serpent" hidden="false" targetId="f82d-9a93-39d1-ef64" type="profile"/>
-            <infoLink id="d21d-8e31-30a4-7064" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+            <infoLink id="d21d-8e31-30a4-7064" name="Point Defence (3)" hidden="false" targetId="127d-208c-b46a-23b4" type="rule"/>
             <infoLink id="6583-a666-9881-9892" name="Wraithgate" hidden="false" targetId="5032-df3f-54e4-bf05" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="2369-f4d3-8d6c-7a33" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+            <categoryLink id="4aec-5ca8-34fe-3881" name="Superheavy" hidden="false" targetId="e3d7-eb22-9df1-719b" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2844,8 +3001,12 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="a10a-2af2-5a51-dafc" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
             <infoLink id="eb07-d9e4-91fc-5134" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
             <infoLink id="aba8-c4ed-8977-8a56" name="Void Spinner" hidden="false" targetId="3882-eebd-d6ca-b08c" type="profile"/>
-            <infoLink id="8c87-4d5e-5aec-43c7" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+            <infoLink id="8c87-4d5e-5aec-43c7" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="2a26-1c93-0a57-f082" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+            <categoryLink id="7116-8409-f51d-8541" name="Superheavy" hidden="false" targetId="e3d7-eb22-9df1-719b" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2880,6 +3041,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="7afb-ecc9-eb7f-b650" name="Avatar" hidden="false" targetId="6cd7-5449-0757-a150" type="profile"/>
             <infoLink id="ebe2-fa7b-b802-1893" name="Fear" hidden="false" targetId="f039-7d72-313e-4f6c" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="39a6-095d-8211-af05" name="Walker" hidden="false" targetId="f082-d1ca-f340-1ce8" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2910,10 +3074,6 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="735d-2a01-ce31-7624" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a765-2110-3216-6c35" type="max"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="6bb6-5b18-7659-858e" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
-            <categoryLink id="7dd6-4751-7451-ecd2" name="Special Cards" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="17e4-ae41-78eb-771d" name="Warlock" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -2931,7 +3091,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                 <infoLink id="bcad-8f4b-237c-03d0" name="Psychic Power : Eldritch Storm" hidden="false" targetId="ef11-a186-89a9-9bee" type="rule"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="66e7-594a-55c5-e2ba" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
+                <categoryLink id="9459-9516-20f1-50af" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -2951,10 +3111,6 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1df-7131-0eaf-e62e" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a28-5252-27f4-a95a" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="fdb2-8f49-e375-39c5" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
-            <categoryLink id="ac6c-0546-1824-1955" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="bb1e-e903-f81c-3bb8" name="Wraithguard Squad" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -2967,6 +3123,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                 <infoLink id="e6c0-d860-cfeb-b140" name="Artificial Intelligence" hidden="false" targetId="c901-6acf-5a78-0935" type="rule"/>
                 <infoLink id="df13-bc21-c3d5-a051" name="Wraithguard" hidden="false" targetId="aa81-ab98-596c-7c3e" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="a796-437c-6798-1e7a" name="Walker" hidden="false" targetId="f082-d1ca-f340-1ce8" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -2985,10 +3144,6 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58ad-94fa-a98e-9410" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6044-78f0-3abb-268a" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="09bb-b3a6-a102-e29e" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
-            <categoryLink id="85ad-92a5-ae4f-daaa" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="feaf-0856-a849-01b4" name="Wraithlords" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -3001,6 +3156,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                 <infoLink id="1884-5c4f-839e-3ab1" name="Waystone Spirit" hidden="false" targetId="9ee3-0d9c-3917-602d" type="rule"/>
                 <infoLink id="ddc6-b8bf-4be4-7cf5" name="Wraithlord" hidden="false" targetId="dd5a-5826-348e-c50c" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="f66d-6b41-f372-3db5" name="Walker" hidden="false" targetId="f082-d1ca-f340-1ce8" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -3035,11 +3193,6 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
           </constraints>
           <selectionEntries>
             <selectionEntry id="c662-9929-f620-896c" name="Fire Dragons &amp; Phoenix Lord" hidden="false" collective="false" import="true" type="unit">
-              <categoryLinks>
-                <categoryLink id="9d9b-669c-2113-8a0c" name="Aspect Warriors" hidden="false" targetId="e4a0-2468-5a4a-a3d9" primary="false"/>
-                <categoryLink id="7c17-539e-0fec-cc63" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-                <categoryLink id="40ac-c497-08b6-6258" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
-              </categoryLinks>
               <selectionEntries>
                 <selectionEntry id="87a7-86d4-5297-a3a8" name="Fire Dragons" hidden="false" collective="false" import="true" type="model">
                   <constraints>
@@ -3081,11 +3234,6 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
               </costs>
             </selectionEntry>
             <selectionEntry id="9ed7-2cef-d574-7443" name="Dark Reapers &amp; Phoenix Lord" hidden="false" collective="false" import="true" type="unit">
-              <categoryLinks>
-                <categoryLink id="7201-0f28-a8f6-6050" name="Aspect Warriors" hidden="false" targetId="e4a0-2468-5a4a-a3d9" primary="false"/>
-                <categoryLink id="d709-5488-0f08-4b94" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
-                <categoryLink id="56b3-fdf7-880a-1576" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-              </categoryLinks>
               <selectionEntries>
                 <selectionEntry id="500b-f764-def3-9211" name="Dark Reapers" hidden="false" collective="false" import="true" type="model">
                   <constraints>
@@ -3181,11 +3329,6 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
               </costs>
             </selectionEntry>
             <selectionEntry id="c91e-284f-27fd-71c6" name="Howling Banshees &amp; Phoenix Lord" hidden="false" collective="false" import="true" type="unit">
-              <categoryLinks>
-                <categoryLink id="2eb1-9785-c935-6b21" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
-                <categoryLink id="2661-5927-119e-4e2a" name="Aspect Warriors" hidden="false" targetId="e4a0-2468-5a4a-a3d9" primary="false"/>
-                <categoryLink id="c8c6-6f28-4951-dbb7" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-              </categoryLinks>
               <selectionEntries>
                 <selectionEntry id="8000-6c2e-fbc1-d272" name="Howling Banshees" hidden="false" collective="false" import="true" type="model">
                   <constraints>
@@ -3226,11 +3369,6 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
               </costs>
             </selectionEntry>
             <selectionEntry id="c268-152e-9426-bcb5" name="Striking Scorpions &amp; Phoenix Lord" hidden="false" collective="false" import="true" type="unit">
-              <categoryLinks>
-                <categoryLink id="05c0-1e1d-a8c3-495d" name="Aspect Warriors" hidden="false" targetId="e4a0-2468-5a4a-a3d9" primary="false"/>
-                <categoryLink id="7b19-99c8-692a-62d5" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
-                <categoryLink id="fb94-75ef-c296-84c4" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-              </categoryLinks>
               <selectionEntries>
                 <selectionEntry id="f14e-98f7-89ff-8c10" name="Striking Scorpions" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -3271,11 +3409,6 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
               </costs>
             </selectionEntry>
             <selectionEntry id="344c-1c8f-ca8a-6f68" name="Swooping Hawks &amp; Phoenix Lord" hidden="false" collective="false" import="true" type="unit">
-              <categoryLinks>
-                <categoryLink id="3426-4437-d669-ce0c" name="Aspect Warriors" hidden="false" targetId="e4a0-2468-5a4a-a3d9" primary="false"/>
-                <categoryLink id="0940-365c-21ea-6ae5" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
-                <categoryLink id="0f9e-63a9-35db-eae5" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-              </categoryLinks>
               <selectionEntries>
                 <selectionEntry id="0f2f-0781-7cf1-ce37" name="Swooping Hawks" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -3319,10 +3452,6 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
               </costs>
             </selectionEntry>
             <selectionEntry id="16a9-ddce-a9b7-fbd3" name="Warp Spiders &amp; Phoenix Lord" hidden="false" collective="false" import="true" type="unit">
-              <categoryLinks>
-                <categoryLink id="14ca-c0fd-eccb-64f7" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
-                <categoryLink id="df0d-4553-65bd-ec35" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-              </categoryLinks>
               <selectionEntries>
                 <selectionEntry id="5b8d-0317-6e2a-a132" name="Warp Spiders" hidden="false" collective="false" import="true" type="model">
                   <constraints>
@@ -3376,6 +3505,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
       <categoryLinks>
         <categoryLink id="1769-aa24-f90f-4288" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
         <categoryLink id="1106-f6eb-b5a1-d23d" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+        <categoryLink id="253b-e075-380e-72e0" name="Aspect Warriors" hidden="false" targetId="e4a0-2468-5a4a-a3d9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="c50f-6db7-5c91-0c31" name="Warp Spiders" hidden="false" collective="false" import="true" type="model">
@@ -3388,6 +3518,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="ebb1-4fc1-9c3c-abd3" name="Fire On The Fly" hidden="false" targetId="9885-1975-9bed-7fce" type="rule"/>
             <infoLink id="05e0-7e0d-209d-2689" name="Warp Spider Squad" hidden="false" targetId="1f39-9ca5-aff8-941f" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="26d2-7702-7823-8bc5" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -3419,6 +3552,10 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="3abe-7aa0-1444-d5d9" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
             <infoLink id="f870-3a12-651d-74d6" name="Falcon" hidden="false" targetId="c815-7079-63f6-4908" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="478e-c87d-a626-475c" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+            <categoryLink id="db59-9c4f-56b0-70c3" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -3440,8 +3577,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="73dc-dde4-3fc0-1e54" name="Psychic Power - Psychic Node" hidden="false" targetId="0b7d-239b-52c5-d31f" type="rule"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="c873-c867-921f-3bc3" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
-            <categoryLink id="ba62-73ef-11e7-f821" name="Iyanden" hidden="false" targetId="4e17-2438-bb7b-5b13" primary="false"/>
+            <categoryLink id="4699-1cef-9d13-36b8" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -3472,9 +3608,6 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef31-021e-9b5e-e016" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd2e-6ce9-123b-195d" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="b4f0-cac3-542f-0252" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="154c-c62e-c525-149c" name="Jetbikes" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -3486,6 +3619,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                 <infoLink id="f48e-edd6-b89f-cd10" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
                 <infoLink id="7068-9d3c-9425-a3cb" name="Jetbike" hidden="false" targetId="cca1-8bc4-7c6c-0d8e" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="39e2-46a9-cb35-6577" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -3504,9 +3640,6 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a11-98ff-3f6b-db2e" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="274e-c31b-643d-a894" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="16d1-a5c3-ab04-5be5" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="845e-fac2-a6e6-6968" name="Vyper Jetbikes" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -3518,6 +3651,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                 <infoLink id="68bb-8273-a2ce-b46f" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
                 <infoLink id="09ce-8b65-0c93-5324" name="Vyper Jetbike" hidden="false" targetId="a071-0c5b-6a29-87f3" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="5de9-d107-9660-93b3" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -3558,7 +3694,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="f8c1-2fa4-11f3-d5f2" name="Warlock on Jetbike" hidden="false" targetId="65be-1340-3e11-a122" type="profile"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="81d7-8a6c-8f92-893f" name="Saim-Hann" hidden="false" targetId="ba10-fbc4-2d68-b651" primary="false"/>
+            <categoryLink id="32f1-c600-a589-72e6" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -3593,7 +3729,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="6c29-055a-8136-098d" name="Farseer on Jetbike" hidden="false" targetId="bb8b-00fd-f63d-b5c1" type="profile"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="7e0c-f903-4872-a969" name="Saim-Hann" hidden="false" targetId="ba10-fbc4-2d68-b651" primary="false"/>
+            <categoryLink id="cbd0-1e92-b462-00ca" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -3631,7 +3767,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="db9c-a01a-d726-5759" name="Hard To Hit" hidden="false" targetId="2d0e-02b6-1d6f-c8c4" type="rule"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="e232-4227-f4b9-d893" name="Saim-Hann" hidden="false" targetId="ba10-fbc4-2d68-b651" primary="false"/>
+            <categoryLink id="cdd8-d2f8-9291-9cf5" name="Titan" hidden="false" targetId="31e8-9840-fb3a-3b8d" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -3666,7 +3802,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="4de9-a6df-131f-ad11" name="Alaitoc Ranger Squad" hidden="false" targetId="2cd7-ba74-422a-c237" type="profile"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="ce2c-26dc-1b85-1c21" name="Alaitoc" hidden="false" targetId="e974-ea3f-12df-091c" primary="false"/>
+            <categoryLink id="dc03-d7e7-32de-58ab" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -3693,9 +3829,6 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ec6-53ed-5d47-066e" type="max"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba6e-6df0-ccef-1cfb" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="84a5-b5a1-cbae-13f3" name="Ulthwe" hidden="false" targetId="64bc-4960-0622-9ece" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="22a1-cf61-3ae0-4e8e" name="Guardian Squad" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -3705,6 +3838,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
               <infoLinks>
                 <infoLink id="0e60-42e2-bdae-d288" name="Guardian Squad" hidden="false" targetId="73c7-f37c-fefa-7e14" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="198f-b856-58fe-ac8d" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -3740,6 +3876,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
           <infoLinks>
             <infoLink id="6cbf-097b-2edc-dda7" name="Guardian Storm Squadron Squad" hidden="false" targetId="954f-135c-9d93-c021" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="0fdc-beea-370b-3d37" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -3780,6 +3919,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="1ba4-badb-49d2-0f1b" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
             <infoLink id="5245-7d18-3a81-777e" name="Psyker" hidden="false" targetId="bc94-be09-72d1-4571" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="d9d4-3eb8-2a34-a849" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -3797,6 +3939,10 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="d588-e077-2925-db27" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
             <infoLink id="1731-8e08-1bfb-1005" name="Falcon" hidden="false" targetId="c815-7079-63f6-4908" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="0e5f-1b05-d604-b6f6" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+            <categoryLink id="1d6a-8f7b-9c14-9a33" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -3835,6 +3981,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="b296-681e-e7fb-fa5a" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
             <infoLink id="5cf5-6b93-315d-c165" name="Karandras, The Shadow Hunter" hidden="false" targetId="a482-3311-e3fc-afb9" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="7028-9fc5-4adb-3d2c" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -3850,6 +3999,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="190c-a998-d30c-c2c9" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
             <infoLink id="f80b-d59a-b278-808c" name="Striking Scorpion Squad" hidden="false" targetId="2b29-569c-8711-f29e" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="6074-96bf-9e04-8557" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -3884,6 +4036,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="8302-e770-22eb-d74d" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
             <infoLink id="eac1-35b3-f356-9403" name="Howling Banshee Squad" hidden="false" targetId="855c-057a-1e8c-12f1" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="c65b-da8b-d451-fef9" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -3901,6 +4056,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="f971-f619-f093-f35d" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
             <infoLink id="84b6-dfc9-9034-a376" name="Jain Zar, The Storm Of Silence" hidden="false" targetId="a866-1333-a431-0f49" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="43a2-d17c-c936-7ab1" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -3969,7 +4127,12 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="fc8d-e477-9549-9ee9" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
             <infoLink id="d17f-454c-ee29-619f" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
             <infoLink id="3282-17ba-f5eb-7e1d" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
+            <infoLink id="1dc3-a312-1556-a641" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="e450-c24a-339e-d72e" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+            <categoryLink id="ed9d-f4e6-2327-3cd9" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -3994,9 +4157,6 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0989-4f17-e2e3-ff8e" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5069-cc91-6806-c0f7" type="max"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="8f55-eace-aa37-1a1e" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="585f-226e-623c-d46f" name="Saim-Hann Wild Rider Jetbikes" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -4008,6 +4168,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                 <infoLink id="f2a8-3ed9-30c6-5d4a" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
                 <infoLink id="2ca4-9e90-2996-2821" name="Saim-Hann Wild Rider Jetbike" hidden="false" targetId="af06-ae29-cb06-64e1" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="3bc7-aed1-926f-32dd" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -4042,6 +4205,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
           <infoLinks>
             <infoLink id="bc16-7ee6-bd3c-808c" name="Guardian Squad" hidden="false" targetId="73c7-f37c-fefa-7e14" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="15dd-a685-7e1a-f3a8" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -4068,7 +4234,6 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6128-2a1a-65c4-cb5a" type="min"/>
           </constraints>
           <categoryLinks>
-            <categoryLink id="d211-2bb6-b2ef-7958" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
             <categoryLink id="f502-3f3d-f621-3789" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
           </categoryLinks>
           <selectionEntries>
@@ -4080,6 +4245,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
               <infoLinks>
                 <infoLink id="6581-2729-1735-197e" name="Guardian Squad" hidden="false" targetId="73c7-f37c-fefa-7e14" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="a137-0029-7ad9-3b20" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -4098,9 +4266,6 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aedb-c64f-3f79-dcef" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="805d-d931-7d74-ec09" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="9096-b797-0b81-9a3e" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="800e-9835-0eb5-e2ed" name="Falcon Squadron" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -4113,6 +4278,10 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                 <infoLink id="9fe4-6cac-0fa7-5482" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
                 <infoLink id="4b8c-69c5-86c8-a4c9" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="c106-d096-31cb-a7ad" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+                <categoryLink id="a5c9-f588-bc90-693f" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -4151,6 +4320,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="cd8b-7cd0-7d51-fa00" name="Artificial Intelligence" hidden="false" targetId="c901-6acf-5a78-0935" type="rule"/>
             <infoLink id="2380-f143-e864-bf3f" name="Wraithguard" hidden="false" targetId="aa81-ab98-596c-7c3e" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="b70d-f62f-9ba6-8083" name="Walker" hidden="false" targetId="f082-d1ca-f340-1ce8" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -4169,6 +4341,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
         <categoryLink id="08db-7efd-d98e-0610" name="Aspect Warriors" hidden="false" targetId="e4a0-2468-5a4a-a3d9" primary="false"/>
         <categoryLink id="5a66-3486-5ff0-c884" name="Eldar" hidden="false" targetId="d029-c4ab-c1f7-9142" primary="false"/>
         <categoryLink id="46d7-6994-7fdd-a532" name="Free Cards" hidden="false" targetId="8e49-5810-e088-7dc4" primary="true"/>
+        <categoryLink id="1817-8f58-2db8-f53f" name="Biel-Tan" hidden="false" targetId="3131-7426-bf10-5540" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="02cf-9066-a080-11b7" name="Dire Avengers" hidden="false" collective="false" import="true" type="model">
@@ -4180,6 +4353,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="ebbe-b024-432c-6fd8" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
             <infoLink id="90eb-70d8-7418-1c9f" name="Dire Avenger Squad" hidden="false" targetId="2e67-0df9-5e9a-aa07" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="7162-492a-6cf5-f084" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -4312,6 +4488,10 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
           </costs>
         </selectionEntry>
         <selectionEntry id="d699-5a19-a0b8-fae1" name="Great Harlequin" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8368-e8c0-20ee-2b2f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9539-ebc2-564d-d62e" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="50ad-64f9-32de-19d8" name="Great Harlequin" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -4369,11 +4549,10 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
           </costs>
         </selectionEntry>
         <selectionEntry id="8abb-9462-b1a2-ee9b" name="Death Jester Troupe" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="0073-7618-9ed9-e7b5" name="Harlequin Masque" hidden="false" targetId="cd45-df8f-fec2-9e8e" primary="false"/>
-            <categoryLink id="a67f-1e94-57eb-72e4" name="Harlequin Masque" hidden="false" targetId="cd45-df8f-fec2-9e8e" primary="false"/>
-            <categoryLink id="1265-5eb3-5e85-5ade" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-          </categoryLinks>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5da9-4fec-5810-0c92" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba77-1ccb-52d5-dbeb" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="1b56-2c24-b05c-233f" name="Death Jesters" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -4668,6 +4847,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                     <infoLink id="c3c2-1b36-ced1-f3d7" name="Psychic Lance (Eldar Knights)" hidden="false" targetId="204f-434e-e4c7-8e82" type="rule"/>
                     <infoLink id="5edb-6cda-472c-8f2c" name="Fire Gale Knight" hidden="false" targetId="a27c-b02a-843a-0ef3" type="profile"/>
                   </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="3601-7718-c2c7-0c8c" name="Knight" hidden="false" targetId="d0cd-8c36-3467-ff79" primary="false"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                     <cost name=" VP" typeId="points" value="0.0"/>
@@ -4680,6 +4862,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                     <infoLink id="3553-23af-bb0d-4081" name="Psychic Lance (Eldar Knights)" hidden="false" targetId="204f-434e-e4c7-8e82" type="rule"/>
                     <infoLink id="920d-2247-0091-908c" name="Fire Reaper Knight" hidden="false" targetId="9ac9-2b79-0952-55f3" type="profile"/>
                   </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="817d-5b08-7754-9258" name="Knight" hidden="false" targetId="d0cd-8c36-3467-ff79" primary="false"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                     <cost name=" VP" typeId="points" value="0.0"/>
@@ -4692,6 +4877,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                     <infoLink id="ba1a-fa47-35c8-b0cf" name="Psychic Lance (Eldar Knights)" hidden="false" targetId="204f-434e-e4c7-8e82" type="rule"/>
                     <infoLink id="ea76-df99-99f2-08a6" name="Fire Storm Knight" hidden="false" targetId="8b7d-86ab-61bd-9c83" type="profile"/>
                   </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="77a4-be4c-484a-15ca" name="Knight" hidden="false" targetId="d0cd-8c36-3467-ff79" primary="false"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                     <cost name=" VP" typeId="points" value="0.0"/>
@@ -4721,6 +4909,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                     <infoLink id="9c27-7a5e-5eb7-8001" name="Psychic Lance (Eldar Knights)" hidden="false" targetId="204f-434e-e4c7-8e82" type="rule"/>
                     <infoLink id="9e19-4ace-efba-d51d" name="Bright Stalker Knight" hidden="false" targetId="01a7-26d9-4f2f-e60d" type="profile"/>
                   </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="634e-ca68-c906-09c6" name="Knight" hidden="false" targetId="d0cd-8c36-3467-ff79" primary="false"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                     <cost name=" VP" typeId="points" value="0.0"/>
@@ -4733,6 +4924,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                     <infoLink id="4dce-bc36-e268-fda3" name="Psychic Lance (Eldar Knights)" hidden="false" targetId="204f-434e-e4c7-8e82" type="rule"/>
                     <infoLink id="a48f-a811-e55d-41ad" name="Bright Stallion Knight" hidden="false" targetId="28bd-dda6-6f25-650b" type="profile"/>
                   </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="3d2f-a462-3414-49d4" name="Knight" hidden="false" targetId="d0cd-8c36-3467-ff79" primary="false"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                     <cost name=" VP" typeId="points" value="0.0"/>
@@ -4762,6 +4956,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                     <infoLink id="ccf0-eb37-a9ef-a117" name="Psychic Lance (Eldar Knights)" hidden="false" targetId="204f-434e-e4c7-8e82" type="rule"/>
                     <infoLink id="c2b9-0252-aea2-9824" name="Towering Destroyer Knight" hidden="false" targetId="b53c-e90e-bc69-d5e5" type="profile"/>
                   </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="69c8-3b1c-8905-843e" name="Knight" hidden="false" targetId="d0cd-8c36-3467-ff79" primary="false"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                     <cost name=" VP" typeId="points" value="0.0"/>
@@ -4774,6 +4971,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
                     <infoLink id="1776-b15f-b63e-2495" name="Psychic Lance (Eldar Knights)" hidden="false" targetId="204f-434e-e4c7-8e82" type="rule"/>
                     <infoLink id="d752-18dd-c823-7254" name="Towering Fury Knight" hidden="false" targetId="6778-aeb7-5517-559c" type="profile"/>
                   </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="d248-eae7-9983-05b1" name="Knight" hidden="false" targetId="d0cd-8c36-3467-ff79" primary="false"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                     <cost name=" VP" typeId="points" value="0.0"/>
@@ -4912,6 +5112,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
           <infoLinks>
             <infoLink id="96f4-c73d-366f-5ed7" name="Fusilier Squad" hidden="false" targetId="7a2c-e4fd-83ad-f7f7" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="e79f-0a2d-d406-c28a" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -4939,6 +5142,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
           <infoLinks>
             <infoLink id="bb49-bc4a-124b-6ccb" name="Warrior Squad" hidden="false" targetId="fe48-ebb3-be87-eb32" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="a884-5d53-b5a4-bbde" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -5129,6 +5335,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
               <infoLinks>
                 <infoLink id="705c-578c-b9e9-de6a" name="Fusilier Squad" hidden="false" targetId="7a2c-e4fd-83ad-f7f7" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="89a1-1c65-4ee6-409d" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -5263,6 +5472,10 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="1062-6a76-6ff2-b89f" name="Dragon Knight Squadron" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd45-eb0a-de14-1923" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff05-cf02-afcf-8770" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="5c78-3d5a-16a4-ff17" name="Dragon Knights" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -5317,6 +5530,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
               <infoLinks>
                 <infoLink id="baab-ed9c-1cef-84d0" name="Warrior Squad" hidden="false" targetId="fe48-ebb3-be87-eb32" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="98fc-ca54-b7ff-2504" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -5451,6 +5667,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
               <infoLinks>
                 <infoLink id="3262-0289-6e93-48ea" name="War Walker" hidden="false" targetId="b7d3-e3c3-9d01-af1f" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="3b27-6488-9d3a-216c" name="Walker" hidden="false" targetId="f082-d1ca-f340-1ce8" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -5545,10 +5764,6 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2c9-3f07-e948-ab3c" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4355-99c6-c6b1-0fbb" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="8f79-e74d-73b1-7348" name="Exodites" hidden="false" targetId="3e7c-f14b-198c-ce5c" primary="false"/>
-            <categoryLink id="3778-2529-b6e3-3ba8" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="7424-63b6-7179-d313" name="Raptor Knights" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -5796,6 +6011,10 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="2482-e060-431e-3a67" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
             <infoLink id="b588-8794-c077-889b" name="Transport (1)" hidden="false" targetId="1c7a-d5c9-5e57-caa2" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="3334-7f34-9437-0d1f" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+            <categoryLink id="af6e-aaca-e48f-baad" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -5824,6 +6043,9 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="aef5-3707-fc24-b237" name="Hellbender" hidden="false" targetId="1b6a-2ae2-f984-bc98" type="profile"/>
             <infoLink id="bbad-1a3a-612f-bc2c" name="Ignores Cover" hidden="false" targetId="68e8-8b1e-49cc-e8ef" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="c7cf-16bd-afec-ff6e" name="Heavy Artillery" hidden="false" targetId="83c3-b2b8-ac74-c25c" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>

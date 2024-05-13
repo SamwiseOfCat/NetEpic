@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="82c5-1daa-f99f-62e4" name="Tau" revision="2" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <readme>v2 notes :
+<catalogue id="82c5-1daa-f99f-62e4" name="Tau" revision="3" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>v3 notes :
+Fixes to some unit classifications.
+
+v2 notes :
 Fixed Kroot Tracker company card unit selection.
 
 v1 notes :
@@ -1759,10 +1762,6 @@ There is very little point in applying the Ta&apos;lissera Ritual to this unit.<
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbf6-9e39-d176-7661" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae2c-5060-4e5c-4888" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="94ca-f14e-d78a-42d0" name="Tau" hidden="false" targetId="a4a7-e99c-60e8-e41c" primary="false"/>
-            <categoryLink id="2642-4fc0-fdb9-6dba" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="600c-1b82-5a63-8ae7" name="Kroot Carnivores" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -1797,10 +1796,6 @@ There is very little point in applying the Ta&apos;lissera Ritual to this unit.<
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b93-8f47-59be-6a18" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3449-1c03-12ae-7982" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="3ccd-2744-062d-45fa" name="Tau" hidden="false" targetId="a4a7-e99c-60e8-e41c" primary="false"/>
-            <categoryLink id="4111-51ff-7fde-3cf5" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="89cc-e77e-c336-3c98" name="Kroot Shapers" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -1834,10 +1829,6 @@ There is very little point in applying the Ta&apos;lissera Ritual to this unit.<
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46d5-d93b-d317-dcfd" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de25-4c60-2795-d043" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="824e-498f-7689-e37a" name="Tau" hidden="false" targetId="a4a7-e99c-60e8-e41c" primary="false"/>
-            <categoryLink id="6720-e925-a4f4-5747" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="8e8b-a50e-49eb-acbe" name="Kroot Hunters" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -1886,10 +1877,6 @@ There is very little point in applying the Ta&apos;lissera Ritual to this unit.<
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa87-738b-5404-1465" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f3a-05ca-ba62-00e8" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="9b23-a96a-c733-acfe" name="Tau" hidden="false" targetId="a4a7-e99c-60e8-e41c" primary="false"/>
-            <categoryLink id="ae3d-77e0-4d9b-c688" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="d0f5-6d74-6848-c9b7" name="Kroot Carnivores" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -1924,10 +1911,6 @@ There is very little point in applying the Ta&apos;lissera Ritual to this unit.<
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1ca-9da2-b18d-8d35" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="337c-9d22-2ca6-707c" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="3e63-ffb2-e5c8-6225" name="Tau" hidden="false" targetId="a4a7-e99c-60e8-e41c" primary="false"/>
-            <categoryLink id="3ae4-d49f-c584-d951" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="92c5-db90-d4ae-56f9" name="Kroot Shapers" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -1974,9 +1957,6 @@ There is very little point in applying the Ta&apos;lissera Ritual to this unit.<
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69c1-a9b6-6af7-140d" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18cf-f5c3-3eec-3867" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="3b5c-a665-7884-92c6" name="Tau" hidden="false" targetId="a4a7-e99c-60e8-e41c" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="8d3d-e850-0887-67f7" name="Kroot Carnivores" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -2011,9 +1991,6 @@ There is very little point in applying the Ta&apos;lissera Ritual to this unit.<
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4dbe-13af-18e4-8633" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37c0-beb3-49a9-2980" type="max"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="82ed-7934-7286-1ca9" name="Tau" hidden="false" targetId="a4a7-e99c-60e8-e41c" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="312d-15e0-6bf6-56d6" name="Kroot Shapers" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -2047,9 +2024,6 @@ There is very little point in applying the Ta&apos;lissera Ritual to this unit.<
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91e9-87e1-6f1f-4d7d" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e308-3a46-e839-eab3" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="dd9d-0b33-b942-6498" name="Tau" hidden="false" targetId="a4a7-e99c-60e8-e41c" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="a65f-be98-d42c-3e8c" name="Kroot Hounds" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -2389,10 +2363,6 @@ There is very little point in applying the Ta&apos;lissera Ritual to this unit.<
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed8f-0859-3d3d-bd37" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="381e-4955-834b-afda" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="707b-0530-21d0-e9b5" name="Tau" hidden="false" targetId="a4a7-e99c-60e8-e41c" primary="false"/>
-            <categoryLink id="7c26-3bf4-9b6a-94f5" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="0376-3eef-a7d5-a902" name="Piranha Light Attack Craft" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -2424,10 +2394,6 @@ There is very little point in applying the Ta&apos;lissera Ritual to this unit.<
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a2c-f567-9704-e0c5" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b29e-fb7b-6b75-c110" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="d255-c1f6-6084-f30c" name="Tau" hidden="false" targetId="a4a7-e99c-60e8-e41c" primary="false"/>
-            <categoryLink id="0ae9-86a6-65f3-7687" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="c248-73ef-dc84-0698" name="Tetra Recon Craft" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -2870,10 +2836,6 @@ There is very little point in applying the Ta&apos;lissera Ritual to this unit.<
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae8c-2156-e1f9-d559" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8f5-a1b0-824c-997b" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="3f3f-647e-7017-b358" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-            <categoryLink id="6c20-cbe7-ecc0-3f8e" name="New CategoryLink" hidden="false" targetId="a4a7-e99c-60e8-e41c" primary="false"/>
-          </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="7cf9-ed71-9ea3-d2dd" name="Hammerheads" hidden="false" collective="false" import="true">
               <constraints>
@@ -3289,10 +3251,6 @@ There is very little point in applying the Ta&apos;lissera Ritual to this unit.<
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8046-0c37-9959-289b" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0728-8891-b06c-c112" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="e64e-a329-f681-fd47" name="Special Card" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
-            <categoryLink id="b662-63d7-6887-c5fc" name="Tau" hidden="false" targetId="a4a7-e99c-60e8-e41c" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="8600-cd44-8ff8-0f8c" name="Manta Missile Destroyer" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -3435,10 +3393,6 @@ There is very little point in applying the Ta&apos;lissera Ritual to this unit.<
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a84e-c357-dde9-8539" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9dd-1a66-4454-67d6" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="f5b9-1846-6595-83cb" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-            <categoryLink id="8b53-079e-f127-2111" name="New CategoryLink" hidden="false" targetId="a4a7-e99c-60e8-e41c" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="5b4a-db87-e4d8-8e90" name="XV-88 Broadside Battlesuits" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -3488,10 +3442,6 @@ There is very little point in applying the Ta&apos;lissera Ritual to this unit.<
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="825f-e02c-8b50-40af" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3947-fe0f-ba43-4d03" type="max"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="8298-c5f2-25db-77e7" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-            <categoryLink id="bee9-fe44-9912-04c9" name="New CategoryLink" hidden="false" targetId="a4a7-e99c-60e8-e41c" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="6b7c-2d43-668a-5ee7" name="XV-88 Broadside Battlesuits" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -3526,10 +3476,6 @@ There is very little point in applying the Ta&apos;lissera Ritual to this unit.<
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56f2-ed28-9520-7320" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b954-9793-563a-3a60" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="eadd-cc97-76f7-3814" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-            <categoryLink id="8d09-622a-0e6e-1c44" name="New CategoryLink" hidden="false" targetId="a4a7-e99c-60e8-e41c" primary="false"/>
-          </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="b07a-9500-c7cf-a596" name="XV-8 Battlesuits" hidden="false" collective="false" import="true">
               <constraints>
@@ -3743,10 +3689,6 @@ There is very little point in applying the Ta&apos;lissera Ritual to this unit.<
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d2e-d687-bb64-2ff5" type="max"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c631-5383-0fcc-03df" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="7615-4d31-5c9c-8ebe" name="Tau" hidden="false" targetId="a4a7-e99c-60e8-e41c" primary="false"/>
-            <categoryLink id="3fdb-31d1-c8b0-1dd3" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="a80d-6724-1c1d-1b12" name="Fire Warriors" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -3816,10 +3758,6 @@ There is very little point in applying the Ta&apos;lissera Ritual to this unit.<
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bf5-d96e-c715-80d3" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f619-61cd-e1b3-850f" type="max"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="b09a-04f8-14c5-9b9a" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-            <categoryLink id="60a5-11ca-51ff-50a9" name="New CategoryLink" hidden="false" targetId="a4a7-e99c-60e8-e41c" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="fc06-a223-2a26-9e71" name="XV-88 Broadside Battlesuits - Ta&apos;lissera Ritual" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -3854,10 +3792,6 @@ There is very little point in applying the Ta&apos;lissera Ritual to this unit.<
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="776d-f07b-fccc-fcf2" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8972-aa71-ca72-0b18" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="607e-6ee1-50df-cc01" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-            <categoryLink id="3ec2-29c1-dad0-c00d" name="New CategoryLink" hidden="false" targetId="a4a7-e99c-60e8-e41c" primary="false"/>
-          </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="746e-9b3e-ae18-a77a" name="XV-8 Battlesuits - Ta&apos;lissera Ritual" hidden="false" collective="false" import="true">
               <constraints>
@@ -4110,10 +4044,6 @@ There is very little point in applying the Ta&apos;lissera Ritual to this unit.<
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2307-eab0-1aa3-bbd9" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ef0-cd89-2f61-32ee" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="0e18-ec99-e5bf-1576" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-            <categoryLink id="55d9-d388-914b-2b3d" name="New CategoryLink" hidden="false" targetId="a4a7-e99c-60e8-e41c" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="cd7f-9189-a8e9-f620" name="XV-88 Broadside Battlesuits - Ta&apos;lissera Ritual" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -4222,10 +4152,6 @@ There is very little point in applying the Ta&apos;lissera Ritual to this unit.<
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0176-4fe8-5679-a83a" type="max"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e28-888d-4117-641e" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="f82b-09e0-df8e-2a69" name="Tau" hidden="false" targetId="a4a7-e99c-60e8-e41c" primary="false"/>
-            <categoryLink id="736c-b284-88c6-4c42" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="8e71-05b5-affb-1835" name="Fire Warriors - Ta&apos;lissera Ritual" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -4486,10 +4412,6 @@ There is very little point in applying the Ta&apos;lissera Ritual to this unit.<
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f8d-84e5-f2fd-5831" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d4b-b4c2-41bb-e89d" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="ceb2-06b6-4fa5-2f17" name="Special Card" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
-            <categoryLink id="e5c2-4186-8864-96d1" name="Tau" hidden="false" targetId="a4a7-e99c-60e8-e41c" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="5865-78ce-e097-06a2" name="Manta Missile Destroyer - Ta&apos;lissera Ritual" hidden="false" collective="false" import="true" type="model">
               <constraints>

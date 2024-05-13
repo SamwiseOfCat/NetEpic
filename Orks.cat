@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3e2a-ea46-765a-b749" name="Orks" revision="6" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <readme>v6 notes :
+<catalogue id="3e2a-ea46-765a-b749" name="Orks" revision="7" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>v7 notes :
+For some reason *all* units didnt have their type designated (Infantry, Vehicle etc). Now all fixed.
+
+v6 notes :
 Changed most of the Gargant weapon costs to be more relevant to actual points cost, matching other race&apos;s Titan costs (and VP awarded).
 
 v5 notes :
@@ -149,6 +152,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="e861-f888-9c61-1be5" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
             <infoLink id="3c76-389a-03d7-8e92" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="799b-4610-f5a2-021c" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -168,6 +174,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="f2eb-6be0-2b2e-5bb6" name="Deathskull Boyz Squad" hidden="false" targetId="c301-f67e-6b11-09a7" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="cb07-726b-4fc6-ee5e" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -201,6 +210,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="fc7b-4938-0f85-57e1" name="Blood Axe Boyz Squad" hidden="false" targetId="b383-9719-bc5f-9585" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="db6c-7155-c6d9-c835" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -222,6 +234,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="5de1-14e3-9333-1cd7" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
             <infoLink id="135c-5b92-141b-0519" name="Blood Axe Rhino" hidden="false" targetId="fbfb-d0d3-2f48-2bfc" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="fca9-291f-4144-8b32" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -240,6 +255,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="a516-00d3-b9d9-c3ff" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
             <infoLink id="f181-f986-793c-313a" name="Blood Axe Nobz" hidden="false" targetId="2f23-69d4-1876-6901" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="268c-2548-187c-4f9b" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -256,6 +274,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="44a0-64fe-d6e2-9b23" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
             <infoLink id="fb53-cb03-7d2e-213f" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="dc90-2517-57c6-09aa" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -287,6 +308,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="9146-5dd1-d0b0-5033" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
             <infoLink id="c2fb-86b4-8a46-3389" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="21f4-edd7-267c-dffe" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -306,6 +330,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="d382-0c57-fd5b-c7d4" name="Bad Moon Boyz Squad" hidden="false" targetId="c4d9-0fb8-b98b-4e27" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="4b77-aaaa-1c28-8f38" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -346,6 +373,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="d977-e754-e907-bb2b" name="Transport (3)" hidden="false" targetId="1313-2183-20de-05dc" type="rule"/>
             <infoLink id="0333-8948-ec2b-2c69" name="Turret" hidden="false" targetId="6d2d-fa7d-8436-5def" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="a5cd-7c84-b7da-d71b" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -365,6 +395,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="b1f8-70e9-a3e4-13a2" name="Evil Sunz Boyz Squad" hidden="false" targetId="880a-a465-3723-90c8" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="1fb4-eb85-c159-a99b" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -382,6 +415,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="d6f6-809a-fbe2-07e9" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
             <infoLink id="828f-f835-8f0c-374a" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="d27f-9e98-2192-4fa6" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -398,6 +434,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="d0d9-2c6b-fc25-c3fa" name="Turret" hidden="false" targetId="6d2d-fa7d-8436-5def" type="rule"/>
             <infoLink id="9ce9-4641-182c-34df" name="Transport (3)" hidden="false" targetId="1313-2183-20de-05dc" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="c809-04de-17cd-7681" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -429,6 +468,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="0a0a-9de3-c2df-1290" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
             <infoLink id="225e-350b-7e1e-eb66" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="835c-d971-0fbe-52b0" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -448,6 +490,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="421a-9767-ff94-6abf" name="Goff Boyz Squad" hidden="false" targetId="6e63-87cc-0d88-e358" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="0f90-f2ee-457c-8c99" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -481,6 +526,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="4893-9a39-26fc-b6d2" name="Snakebite Boyz Squad" hidden="false" targetId="f9ef-efb2-217e-57a6" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="a492-032f-6648-de48" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -498,6 +546,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="edbc-187a-4177-52a1" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
             <infoLink id="4a8f-c7bd-5591-52a1" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="fc98-5bd3-3e67-8c56" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -513,9 +564,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="ce26-c406-ef36-1224" name="Boarboyz" hidden="false" targetId="f840-2242-16cf-0778" type="profile"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="d03e-0546-b1b9-192e" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
-            <categoryLink id="71c3-cfb7-5871-8707" name="Snakebites" hidden="false" targetId="f4b5-1eca-d0f9-6176" primary="false"/>
-            <categoryLink id="08dc-13bf-fed1-ca9d" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+            <categoryLink id="1f30-8897-137e-0820" name="Cavalry" hidden="false" targetId="755d-5211-ce54-6b21" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -550,6 +599,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="611e-adf7-9c8a-3eea" name="Boarboyz" hidden="false" targetId="f840-2242-16cf-0778" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="e863-235d-cd5e-705e" name="Cavalry" hidden="false" targetId="755d-5211-ce54-6b21" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -590,6 +642,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="f617-8b65-624c-787a" name="Wildboyz Squad" hidden="false" targetId="ce40-8a00-d126-fc68" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="f9f6-3b6a-2e5a-ad10" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -607,6 +662,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="3cfd-ab3b-7948-4435" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
             <infoLink id="f02c-5d0e-1170-d830" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="4d97-444b-c3ed-60f5" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -640,12 +698,6 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96ce-6ad0-f630-7b73" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f92-2b86-7653-6b27" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="53d5-b72d-1174-01cf" name="Evil Sunz" hidden="false" targetId="955b-f81e-0401-bf96" primary="false"/>
-            <categoryLink id="2004-0d12-3fd5-d4dc" name="Kult Of Speed" hidden="false" targetId="9065-4bea-ad51-a691" primary="false"/>
-            <categoryLink id="5fb1-2554-21b3-a058" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
-            <categoryLink id="900c-e8c0-0516-3210" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="25f3-57b6-d638-7759" name="Nobz Warbikes" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -658,6 +710,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                 <infoLink id="5640-f2fd-3cb6-27ab" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
                 <infoLink id="7987-646d-323c-95ff" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="e4bd-2546-0176-064f" name="Cavalry" hidden="false" targetId="755d-5211-ce54-6b21" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -676,10 +731,6 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4602-3d80-ec2c-448e" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54bf-d3d4-0ec3-478d" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="745d-f980-f716-662e" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
-            <categoryLink id="b60e-a604-6087-6aff" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="dafe-8197-6ea2-f4cc" name="Warbuggy Squadron" hidden="false" collective="false" import="true" type="unit">
               <constraints>
@@ -691,8 +742,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                 <infoLink id="6252-1350-da95-fa26" name="Tow" hidden="false" targetId="99e4-6278-346f-7d92" type="rule"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="cc91-0c11-3f83-8e34" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
-                <categoryLink id="62d9-8640-bf00-0729" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+                <categoryLink id="cd8e-feef-32f5-6430" name="Cavalry" hidden="false" targetId="755d-5211-ce54-6b21" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -733,6 +783,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="41e1-db34-c711-7ec0" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
             <infoLink id="2580-edd2-3a74-8080" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="3db8-c38c-c326-5359" name="Cavalry" hidden="false" targetId="755d-5211-ce54-6b21" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -761,6 +814,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="e287-f045-bd92-1b24" name="Warbuggy" hidden="false" targetId="4f9f-a6b2-db5a-a2f3" type="profile"/>
             <infoLink id="b7a6-afb9-bd25-d78a" name="Tow" hidden="false" targetId="99e4-6278-346f-7d92" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="d676-4173-f399-96ac" name="Cavalry" hidden="false" targetId="755d-5211-ce54-6b21" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -801,6 +857,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="5f3b-e9ca-2005-234a" name="Ghazghkull Thraka" hidden="false" targetId="5f03-22e2-8102-017b" type="profile"/>
             <infoLink id="5d38-8e85-f293-246b" name="Power Of The WAAAAGH!!!" hidden="false" targetId="c294-846d-3aa6-f188" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="6ed9-ba36-e4c7-b99c" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -812,6 +871,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d73-e901-54cb-d1eb" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="697b-cc06-9763-f9aa" type="min"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink id="5aa7-28a6-521a-d043" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="2504-6a13-18a8-677e" name="Nobz" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -842,6 +904,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="089d-0d42-47e7-c4f9" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b901-5af4-d051-9e87" type="min"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink id="4e69-705e-6b34-e732" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="0af9-da38-09ec-7155" name="Nobz Battlewagons" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -893,6 +958,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="45f6-2de6-08c0-d500" name="Independent" hidden="false" targetId="8392-93a8-f4a2-15fb" type="rule"/>
             <infoLink id="2079-7e94-9497-bb54" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="8c9d-6279-fb8a-b4b0" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -908,6 +976,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="46f1-dd82-9127-08a8" name="Freebooterz Squad" hidden="false" targetId="753a-7bf5-9914-e13c" type="profile"/>
             <infoLink id="e2eb-dddd-916d-8438" name="Independent" hidden="false" targetId="8392-93a8-f4a2-15fb" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="e4c3-7e63-9588-0b70" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -937,6 +1008,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="e7d7-c8f6-b7be-b294" name="Pulsa Rokkits" hidden="false" targetId="bbbb-7683-7c93-4d27" type="rule"/>
             <infoLink id="6cac-d06e-c2c1-be9c" name="Pulsa Rokkit" hidden="false" targetId="b6ef-d988-d485-645a" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="12ce-e6d6-37c0-36a4" name="Heavy Artillery" hidden="false" targetId="83c3-b2b8-ac74-c25c" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -966,6 +1040,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="b870-44f7-c0d0-3c7e" name="Independent" hidden="false" targetId="8392-93a8-f4a2-15fb" type="rule"/>
             <infoLink id="ec8d-b5cc-f02d-8f1f" name="Blasta Bomma" hidden="false" targetId="3b48-84a2-2aec-e055" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="2f53-0655-7763-1d1c" name="Flyer" hidden="false" targetId="d6b7-fbc6-dca0-1682" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -994,6 +1071,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="cec9-5dc9-acdd-04a0" name="Copy Da Boyz" hidden="false" targetId="8140-bffb-ebd9-63b0" type="rule"/>
             <infoLink id="8e45-4366-dcce-fa43" name="Gretchin Squad" hidden="false" targetId="9077-5be8-43a7-b9c9" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="8889-ae97-acbf-6d55" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1022,6 +1102,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="4900-1891-8d6b-b06e" name="Goffik Rokker Tour Wagon" hidden="false" targetId="df5c-c0f9-9790-26f9" type="profile"/>
             <infoLink id="e41f-972e-9a48-c06f" name="Da Powah Ov Rok" hidden="false" targetId="1bf8-a489-2332-1a07" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="83eb-9ee1-091a-957b" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1041,6 +1124,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="d547-8570-ac96-30cf" name="Bouncer Boyz" hidden="false" targetId="6404-a3f5-7a74-3a8f" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="c8a6-7e34-3053-1670" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1069,6 +1155,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="18a5-23bb-e05b-526c" name="Copy Da Boyz" hidden="false" targetId="8140-bffb-ebd9-63b0" type="rule"/>
             <infoLink id="cef5-8b7c-93b8-d12d" name="Gretchin Squad" hidden="false" targetId="9077-5be8-43a7-b9c9" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="c7fe-6275-b2bf-a4cf" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1085,6 +1174,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="852b-42d9-da24-9959" name="Transport (3)" hidden="false" targetId="1313-2183-20de-05dc" type="rule"/>
             <infoLink id="882a-3214-a53a-cd60" name="Turret" hidden="false" targetId="6d2d-fa7d-8436-5def" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="b9ce-6077-153c-48cb" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1102,6 +1194,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="a81f-6117-d030-e409" name="Mechanic" hidden="false" targetId="7bc0-0efc-14c9-1467" type="rule"/>
             <infoLink id="6abb-fd8f-e947-6999" name="Mekboy Cards (2)" hidden="false" targetId="a121-58d9-5675-2eb1" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="09a4-bbbd-8db1-3983" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1131,6 +1226,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="2e06-50af-4d30-a762" name="Transport (3)" hidden="false" targetId="1313-2183-20de-05dc" type="rule"/>
             <infoLink id="cce8-1656-78da-55cf" name="Turret" hidden="false" targetId="6d2d-fa7d-8436-5def" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="fef7-4c20-00f3-fc45" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1146,6 +1244,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="abf4-1303-c17f-7a52" name="Copy Da Boyz" hidden="false" targetId="8140-bffb-ebd9-63b0" type="rule"/>
             <infoLink id="01c7-5035-6e23-063f" name="Gretchin Squad" hidden="false" targetId="9077-5be8-43a7-b9c9" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="0571-40d6-ef94-e3a0" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1162,6 +1263,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="e10d-a72f-8e51-88b7" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
             <infoLink id="935f-c0ce-8232-fb9a" name="Medic" hidden="false" targetId="c611-5569-09e6-6a1d" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="00d1-40b2-f09b-04ed" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1192,6 +1296,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="550f-3ffc-965c-212a" name="Landa" hidden="false" targetId="33b9-a60c-adbd-2e21" type="profile"/>
             <infoLink id="8b1e-7c62-00dd-e4de" name="Landas" hidden="false" targetId="620c-fb3b-a9d9-8ae1" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="a5ed-351b-063c-c067" name="Flyer" hidden="false" targetId="d6b7-fbc6-dca0-1682" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1220,6 +1327,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="8570-09fa-a5d8-f052" name="Runtherd" hidden="false" targetId="ad73-61c3-a6c5-e43a" type="profile"/>
             <infoLink id="e95b-8a5d-1504-d21f" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="fad3-8097-e94f-f7d9" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1253,6 +1363,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="9deb-a822-bef5-6120" name="Transport (5)" hidden="false" targetId="8a21-8c7b-a831-8883" type="rule"/>
             <infoLink id="61b0-3ccd-18ad-4577" name="Supa Transport Rokkit" hidden="false" targetId="f6d3-e14e-6267-45f3" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="5c42-e808-d72f-8449" name="Flyer" hidden="false" targetId="d6b7-fbc6-dca0-1682" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1291,7 +1404,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                 <infoLink id="b599-bf83-1f8e-8d01" name="Mekboy Power Fields" hidden="false" targetId="ed27-2fff-6595-aa56" type="rule"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="d7d9-136e-005c-b0a3" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
+                <categoryLink id="9f39-4f38-705d-4d64" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -1309,7 +1422,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                 <infoLink id="a185-3aa7-c30e-174c" name="Mekboy Power Fields" hidden="false" targetId="ed27-2fff-6595-aa56" type="rule"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="6e49-5f8f-b737-637c" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
+                <categoryLink id="f54f-3332-0adc-eaa9" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -1326,7 +1439,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                 <infoLink id="7019-dca1-2504-e230" name="Mekboy Dragsta" hidden="false" targetId="66ea-0366-0b86-1117" type="profile"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="8d9a-10d3-b6fe-559b" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
+                <categoryLink id="ff23-a03d-2b98-a283" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -1344,7 +1457,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                 <infoLink id="6342-841c-b49a-3eed" name="Mekboy Power Fields" hidden="false" targetId="ed27-2fff-6595-aa56" type="rule"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="d005-fb39-25f8-5396" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
+                <categoryLink id="d56d-35eb-d57e-8e25" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -1362,7 +1475,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                 <infoLink id="b11e-b3cd-ef6f-5aa3" name="Mekboy Power Fields" hidden="false" targetId="ed27-2fff-6595-aa56" type="rule"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="91b7-adbf-ee84-9c03" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
+                <categoryLink id="bb3e-6dfd-0081-10f9" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -1395,6 +1508,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="79f2-9941-54b4-19b7" name="Mekboy Kustom Cards (2)" hidden="false" targetId="a121-58d9-5675-2eb1" type="rule"/>
             <infoLink id="e4ab-0114-632b-3ca3" name="Mekboy Power Fields" hidden="false" targetId="ed27-2fff-6595-aa56" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="2300-7c62-cc0b-5479" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1424,6 +1540,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="0e2e-f834-d79d-c628" name="Mekboy Kustom Cards (2)" hidden="false" targetId="a121-58d9-5675-2eb1" type="rule"/>
             <infoLink id="b729-3818-755d-3cbe" name="Mekboy Power Fields" hidden="false" targetId="ed27-2fff-6595-aa56" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="dc79-d1fb-b554-2155" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1453,6 +1572,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="b116-2554-7710-7408" name="Mekboy Kustom Cards (2)" hidden="false" targetId="a121-58d9-5675-2eb1" type="rule"/>
             <infoLink id="920f-a18c-e2c2-ba52" name="Mekboy Power Fields" hidden="false" targetId="ed27-2fff-6595-aa56" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="d583-9f58-4d8c-9fb5" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1481,6 +1603,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="cb44-db1e-0912-2188" name="Mekboy Dragsta" hidden="false" targetId="66ea-0366-0b86-1117" type="profile"/>
             <infoLink id="e93e-97ea-4985-f405" name="Mekboy Kustom Cards (2)" hidden="false" targetId="a121-58d9-5675-2eb1" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="4c9a-7324-029c-c0d1" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1510,6 +1635,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="8908-5b08-3dba-2ee0" name="Mekboy Kustom Cards (2)" hidden="false" targetId="a121-58d9-5675-2eb1" type="rule"/>
             <infoLink id="0a3e-69ea-8018-5edc" name="Mekboy Power Fields" hidden="false" targetId="ed27-2fff-6595-aa56" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="c179-735d-354f-60fa" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1540,6 +1668,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="f357-9e6f-fd2b-dde0" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
             <infoLink id="beb3-9ddd-566c-7102" name="Warboss" hidden="false" targetId="4721-b16d-2899-c78d" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="d30f-3be1-0779-78b0" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1556,6 +1687,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="a1c6-27d0-d582-a143" name="Turret" hidden="false" targetId="6d2d-fa7d-8436-5def" type="rule"/>
             <infoLink id="0d09-9b0a-4cb5-65a5" name="Battlewagon" hidden="false" targetId="bd58-9c84-618a-8666" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="ff6d-7374-9952-b04a" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1573,6 +1707,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="aea3-968f-ea24-a460" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
             <infoLink id="9869-a792-5c93-88a4" name="Nobz Squad" hidden="false" targetId="fcf7-ae66-3b04-3646" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="122f-7dc6-4c2f-dc90" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1603,6 +1740,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="213e-fdec-074e-6c15" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
             <infoLink id="1e8e-82a2-329a-1d88" name="Warlord" hidden="false" targetId="f15e-d99f-f37b-ef53" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="6e77-076c-9d32-6246" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1620,6 +1760,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="565b-2e09-de9f-4d22" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
             <infoLink id="6315-c8e1-83a2-3333" name="Nobz Squad" hidden="false" targetId="fcf7-ae66-3b04-3646" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="0cf3-01e9-807f-dfbb" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1636,6 +1779,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="605b-0a73-54e1-7e1b" name="Turret" hidden="false" targetId="6d2d-fa7d-8436-5def" type="rule"/>
             <infoLink id="d013-f18f-a7b5-4fd2" name="Battlewagon" hidden="false" targetId="bd58-9c84-618a-8666" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="bb44-3a78-4a19-03fa" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1652,6 +1798,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="79ee-0503-5ddc-fb11" name="Stompa" hidden="false" targetId="b04a-7ef4-ecee-a624" type="profile"/>
             <infoLink id="45a8-8019-1a25-44d7" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="9887-55ba-c115-ecf0" name="Superheavy" hidden="false" targetId="e3d7-eb22-9df1-719b" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1683,6 +1832,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="56a1-7676-1eb6-cde7" name="Weirdboyz Psychic Attacks" hidden="false" targetId="a7bf-bd37-419f-fb92" type="rule"/>
             <infoLink id="9323-d97e-851f-c6e7" name="Weirdboy" hidden="false" targetId="915d-ed5d-7218-c84f" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="6fc6-4626-dbee-0169" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1697,6 +1849,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="e7ae-0fc9-4c62-31f1" name="Weirdboy Minderz" hidden="false" targetId="34be-0a30-66ad-b831" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="4d80-0bc8-fbb9-50c4" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1730,6 +1885,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="9c4f-9128-dee9-1f09" name="Deathskull Boyz Squad" hidden="false" targetId="c301-f67e-6b11-09a7" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="bf84-808d-aba0-c8d9" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1763,6 +1921,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="c124-23a8-562f-ced1" name="Bad Moon Boyz Squad" hidden="false" targetId="c4d9-0fb8-b98b-4e27" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="8636-3fb3-4156-b969" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1796,6 +1957,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="0dd3-6288-fe7e-aceb" name="Goff Boyz Squad" hidden="false" targetId="6e63-87cc-0d88-e358" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="5733-22ea-9d5c-d42e" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1829,6 +1993,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="15d8-69b6-9ad7-7ab8" name="Snakebite Boyz Squad" hidden="false" targetId="f9ef-efb2-217e-57a6" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="f9f2-554c-aa00-a9cd" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1863,6 +2030,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="9daf-f363-8ee7-be70" name="Evil Sunz Boyz Squad" hidden="false" targetId="880a-a465-3723-90c8" type="profile"/>
             <infoLink id="441b-75a7-bd8e-aae1" name="Evil Sunz - Extra Battlewagon" hidden="false" targetId="c50c-30a8-9915-028e" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="835c-ae46-3192-8d0f" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1895,6 +2065,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="03a4-5356-2624-7192" name="Blood Axe Boyz Squad" hidden="false" targetId="b383-9719-bc5f-9585" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="fac2-43f6-63c5-3e8d" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1927,6 +2100,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="270a-775a-713f-46a5" name="Independent" hidden="false" targetId="8392-93a8-f4a2-15fb" type="rule"/>
             <infoLink id="b8a8-c4c8-34d8-3b50" name="Blood Axe Kommando Kaptin" hidden="false" targetId="0d15-4334-b9ad-7d84" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="2645-b87f-8933-56e9" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1948,6 +2124,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="a521-e69c-3d29-5b92" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
             <infoLink id="c76e-bacb-2461-fe0d" name="Blood Axe Kommando" hidden="false" targetId="6154-0405-0b1f-a7c6" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="0d75-88fb-45d6-3272" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1978,6 +2157,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="06eb-41e6-82ef-7725" name="Stormboyz Kaptin" hidden="false" targetId="0e2d-6561-662d-5d61" type="profile"/>
             <infoLink id="d4fe-89ba-fd4b-75e4" name="Jump Packs" hidden="false" targetId="6d0a-c605-e4ec-dd51" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="9e4f-cf92-9496-e07c" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -1994,6 +2176,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="638e-bab8-012a-03cf" name="Independent" hidden="false" targetId="8392-93a8-f4a2-15fb" type="rule"/>
             <infoLink id="5ac2-e267-689f-27ce" name="Stormboyz Squad" hidden="false" targetId="db8b-3b99-217b-a895" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="8fac-6171-cb85-70f1" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2027,6 +2212,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="1b7c-1403-e68f-1ee3" name="Deathskull Shootas Squad" hidden="false" targetId="500a-86ce-6717-bea2" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="cc20-724e-d679-f953" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2059,6 +2247,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="deb5-c241-f385-7b87" name="Wildboyz Squad" hidden="false" targetId="ce40-8a00-d126-fc68" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="2900-2e84-66ae-8923" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2087,6 +2278,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="26a1-db34-2efd-4181" name="Copy Da Boyz" hidden="false" targetId="8140-bffb-ebd9-63b0" type="rule"/>
             <infoLink id="ae8b-9e32-36c5-a603" name="Gretchin Squad" hidden="false" targetId="9077-5be8-43a7-b9c9" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="6e33-9f94-1e93-d586" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2114,6 +2308,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="f951-568e-315e-f39f" name="Bikeboyz" hidden="false" targetId="1847-51a9-870c-f69d" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="cefa-2aef-ca0a-39ad" name="Cavalry" hidden="false" targetId="755d-5211-ce54-6b21" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2141,6 +2338,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="43e6-77a6-0642-1656" name="Madboyz Squad" hidden="false" targetId="8d2f-b65f-5469-d331" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="234b-fe0d-385c-06cf" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2171,6 +2371,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="6be8-da39-4fe8-87dc" name="Elite" hidden="false" targetId="0050-8331-3369-1cad" type="rule"/>
             <infoLink id="9c37-736b-f650-4a45" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="b36b-f82e-2b99-1245" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2201,6 +2404,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="5699-d057-9880-5002" name="Weirdboyz Psychic Attacks" hidden="false" targetId="a7bf-bd37-419f-fb92" type="rule"/>
             <infoLink id="f502-be54-884d-149c" name="Only One Per Same Clan" hidden="false" targetId="bc01-8c12-934d-d06a" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="0488-92d6-53de-2464" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2229,6 +2435,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="d5d6-83f6-1861-e35f" name="Onslaughter Dreadnought" hidden="false" targetId="d4ff-38b9-2fdb-8940" type="profile"/>
             <infoLink id="6953-c927-c715-1e49" name="Killa Kan &amp; Dreadnought Limitation" hidden="false" targetId="018a-fe1b-b6f7-bd56" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="4047-033d-41e7-3f33" name="Walker" hidden="false" targetId="f082-d1ca-f340-1ce8" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2257,6 +2466,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="fd9c-80bc-1a21-0bc6" name="Killa Kan" hidden="false" targetId="0876-6818-d2f4-a055" type="profile"/>
             <infoLink id="69ad-ee92-a9e3-5f37" name="Killa Kan &amp; Dreadnought Limitation" hidden="false" targetId="018a-fe1b-b6f7-bd56" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="70d0-aed4-345e-8796" name="Walker" hidden="false" targetId="f082-d1ca-f340-1ce8" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2292,6 +2504,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="b9a7-0474-3a45-8c90" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
             <infoLink id="9060-9d0f-026a-33ef" name="Blood Axe Land Raider" hidden="false" targetId="bb9a-5a4b-d584-f23d" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="f91c-042f-5683-79d4" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2321,6 +2536,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="9bfe-38a2-c5a6-4eea" name="Turret" hidden="false" targetId="6d2d-fa7d-8436-5def" type="rule"/>
             <infoLink id="23de-3835-fe57-dc65" name="Battlewagon" hidden="false" targetId="bd58-9c84-618a-8666" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="795b-316b-420b-47a0" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2350,6 +2568,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="9445-dfc2-3fce-62d0" name="Tinbot" hidden="false" targetId="a420-9e95-72d7-b249" type="profile"/>
             <infoLink id="e13f-8ec3-f0b6-f1fa" name="Orky Robotikz" hidden="false" targetId="ba84-4a17-465f-03bd" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="4814-74d8-ce5f-013b" name="Walker" hidden="false" targetId="f082-d1ca-f340-1ce8" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2378,6 +2599,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="f807-5178-20f9-17f1" name="Bonecruncha" hidden="false" targetId="0818-9242-6202-7170" type="profile"/>
             <infoLink id="69ae-a63d-9945-2ba4" name="Deathrolla" hidden="false" targetId="e78a-77e8-a469-c63d" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="43e3-114d-023a-1a2d" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2413,6 +2637,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="7346-12c6-5a91-3aa9" name="Blood Axe Rhino" hidden="false" targetId="fbfb-d0d3-2f48-2bfc" type="profile"/>
             <infoLink id="50b5-1a91-ee34-84d8" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="3390-cc9a-4ec8-19e1" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2442,6 +2669,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="a8ec-4557-23f6-70a7" name="Anti-Aircraft" hidden="false" targetId="fcc4-1801-9767-124b" type="rule"/>
             <infoLink id="74a0-79f0-402d-f6c0" name="Mekboy Kustom Cards (2)" hidden="false" targetId="a121-58d9-5675-2eb1" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="fbd5-d9cf-a6a8-1199" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2469,6 +2699,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="d628-d1ea-1293-54f5" name="Braincrusha" hidden="false" targetId="85e3-a2d2-5df1-f98c" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="bc2e-cf00-26f5-6910" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2498,6 +2731,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="9b0a-56af-fffc-f929" name="Doomdiver Magna-Kannon" hidden="false" targetId="59a0-5146-30a3-5ec5" type="profile"/>
             <infoLink id="4a2a-654a-01f1-fd96" name="Mekboy Kustom Cards (2)" hidden="false" targetId="a121-58d9-5675-2eb1" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="61b4-882b-6969-4880" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2532,6 +2768,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="f8c9-d934-c14a-0531" name="Evil Sunz Spleenrippa" hidden="false" targetId="e210-6468-c10f-4a29" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="7b4b-928e-e0a7-4ade" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2566,6 +2805,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="c756-1207-6f37-c676" name="Evil Sunz Gobsmasha" hidden="false" targetId="7bc1-ce31-0fab-eee2" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="a69b-312c-f9b7-cc4f" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2600,6 +2842,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="4849-2e57-23b5-2bf3" name="Evil Sunz Bowel-Burna" hidden="false" targetId="03e5-dabe-236d-abfd" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="310e-6cac-4c35-47cd" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2629,6 +2874,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="b99d-61ea-67de-c378" name="Independent" hidden="false" targetId="8392-93a8-f4a2-15fb" type="rule"/>
             <infoLink id="ce22-1f47-7aa5-dd3d" name="Deffkopta" hidden="false" targetId="ef68-44ef-302e-1c29" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="3963-b909-ba00-bffc" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2663,6 +2911,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="a4bf-a6cd-41c3-253a" name="Goff Gutrippa" hidden="false" targetId="9aee-f279-a818-ed68" type="profile"/>
             <infoLink id="2622-938b-6635-cee1" name="Turret" hidden="false" targetId="6d2d-fa7d-8436-5def" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="e32b-fba3-a34f-ef4b" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2697,6 +2948,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="5859-b87b-649e-a810" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
             <infoLink id="ca5d-ff08-2ae2-1fdb" name="Snakebite Cyberwyvern" hidden="false" targetId="d960-98eb-bb63-37d4" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="5c6f-7c1a-a213-1218" name="Skimmer" hidden="false" targetId="8b02-c5e0-f39c-f9a7" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2725,6 +2979,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="7db3-ae5d-07f5-8a90" name="Bonebreaka" hidden="false" targetId="a9b4-2731-8615-9c5a" type="profile"/>
             <infoLink id="1a58-166a-1150-398d" name="Deathrolla" hidden="false" targetId="e78a-77e8-a469-c63d" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="cf9e-37e8-3cdc-f00e" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2758,6 +3015,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="fa70-04bc-a985-66d4" name="Squiggoth" hidden="false" targetId="8512-22b6-7f2d-739e" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="3e18-6eeb-409b-d5c7" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2791,6 +3051,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="18fb-3267-ebec-05ee" name="Goff Lungbursta" hidden="false" targetId="92d4-0ce5-dbe3-4ee2" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="1ee7-3ea5-c622-d3db" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2820,6 +3083,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="19aa-6d70-50ed-d2e9" name="Open-Top Vehicle (OTV)" hidden="false" targetId="92c2-e5ef-b021-b866" type="rule"/>
             <infoLink id="301f-c1d9-8952-8f1f" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="6b09-1c1a-87cf-3e4c" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2848,6 +3114,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="68bf-3993-6b3e-0aa3" name="Scorcher" hidden="false" targetId="7af9-dc2b-d090-5891" type="profile"/>
             <infoLink id="ca85-e754-56b1-d8f8" name="Ignores Cover" hidden="false" targetId="68e8-8b1e-49cc-e8ef" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="7620-b149-71ff-ca31" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2876,6 +3145,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="2929-aeb1-8681-8161" name="Tow" hidden="false" targetId="99e4-6278-346f-7d92" type="rule"/>
             <infoLink id="7f4b-d68b-eb2d-0ba0" name="Wartrak" hidden="false" targetId="9128-c45a-e123-a7dd" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="c0de-3be1-25a0-a447" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2903,6 +3175,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="d3fa-2ccf-366b-c7f1" name="Hop-Splat Gun" hidden="false" targetId="b0e3-44e7-7bef-91ba" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="4f71-3178-c851-e54e" name="Light Artillery" hidden="false" targetId="b33a-b698-bada-f3b6" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2930,6 +3205,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="beef-6dd7-178a-8b8a" name="Lobba" hidden="false" targetId="21a3-012b-82e6-4554" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="0d6f-8e66-5108-312f" name="Light Artillery" hidden="false" targetId="b33a-b698-bada-f3b6" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2958,6 +3236,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="28af-d354-9627-354f" name="Mekboy Kustom Cards (2)" hidden="false" targetId="a121-58d9-5675-2eb1" type="rule"/>
             <infoLink id="1895-9845-5e13-963b" name="Shokk Attack Gun" hidden="false" targetId="3187-18fc-0fc9-3f27" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="81ff-ce48-5b95-4380" name="Light Artillery" hidden="false" targetId="b33a-b698-bada-f3b6" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -2988,6 +3269,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="3b6e-110d-8e65-c49f" name="Independent" hidden="false" targetId="8392-93a8-f4a2-15fb" type="rule"/>
             <infoLink id="85a8-b761-4764-a538" name="Penetrating (+2)" hidden="false" targetId="7890-be33-23b4-0dcd" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="722f-bec1-f1d1-5f28" name="Heavy Artillery" hidden="false" targetId="83c3-b2b8-ac74-c25c" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -3015,6 +3299,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="0ddb-9d28-c6ff-2252" name="Traktor Kannon" hidden="false" targetId="6523-7873-8807-6cd4" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="e25f-2938-2e35-a70c" name="Light Artillery" hidden="false" targetId="b33a-b698-bada-f3b6" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -3042,6 +3329,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="0cf3-5a48-be9e-9483" name="Zzap Gun" hidden="false" targetId="c228-ed89-efa9-de6a" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="b33f-f296-fb60-6441" name="Light Artillery" hidden="false" targetId="b33a-b698-bada-f3b6" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -3075,6 +3365,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="0602-e4f5-1c79-fee0" name="Snakebite Squig Katapult" hidden="false" targetId="4bb1-5729-ac44-e52c" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="8118-64d4-bc4e-086d" name="Heavy Artillery" hidden="false" targetId="83c3-b2b8-ac74-c25c" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -3104,6 +3397,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="bdcb-e013-3488-3f38" name="Independent" hidden="false" targetId="8392-93a8-f4a2-15fb" type="rule"/>
             <infoLink id="bb69-dcaa-52b2-be8a" name="Bomma" hidden="false" targetId="5a7b-b982-aad3-d155" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="8a5a-04ac-dd81-378a" name="Flyer" hidden="false" targetId="d6b7-fbc6-dca0-1682" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -3119,7 +3415,6 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
     </selectionEntry>
     <selectionEntry id="29d8-4b57-8fc9-f967" name="Fighta-Bomma Squadron" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink id="9338-4dff-76a0-430a" name="Flyer" hidden="false" targetId="d6b7-fbc6-dca0-1682" primary="false"/>
         <categoryLink id="d2ca-dfb0-363a-7706" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
         <categoryLink id="6618-63f1-718f-8f7f" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
       </categoryLinks>
@@ -3135,6 +3430,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="afbd-aacc-fc18-723f" name="Independent" hidden="false" targetId="8392-93a8-f4a2-15fb" type="rule"/>
             <infoLink id="61ad-e339-0a17-d488" name="Mekboy Kustom Cards (2)" hidden="false" targetId="a121-58d9-5675-2eb1" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="2888-f89b-a94b-1fb2" name="Flyer" hidden="false" targetId="d6b7-fbc6-dca0-1682" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -3164,6 +3462,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="19bb-5349-da66-e987" name="Open-Top Vehicle (OTV)" hidden="false" targetId="92c2-e5ef-b021-b866" type="rule"/>
             <infoLink id="1db6-fb2e-8acc-dc7d" name="Transport (6)" hidden="false" targetId="1bfb-1bc3-45b7-ccd9" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="f365-f1fc-9921-59dc" name="Superheavy" hidden="false" targetId="e3d7-eb22-9df1-719b" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -3194,6 +3495,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="2644-97f0-9592-c762" name="Transport (7)" hidden="false" targetId="2e89-024f-c477-ee37" type="rule"/>
             <infoLink id="0e7e-f248-ebb9-9e5a" name="Landas" hidden="false" targetId="620c-fb3b-a9d9-8ae1" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="b468-c188-4f1e-38f3" name="Flyer" hidden="false" targetId="d6b7-fbc6-dca0-1682" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -3224,6 +3528,10 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="5027-48dc-a304-71f9" name="Deathrolla" hidden="false" targetId="e78a-77e8-a469-c63d" type="rule"/>
             <infoLink id="8021-f8b7-59ff-74d4" name="All-Around Armour" hidden="false" targetId="53d7-4487-2803-2469" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="f06b-a076-8bab-f296" name="Superheavy" hidden="false" targetId="e3d7-eb22-9df1-719b" primary="false"/>
+            <categoryLink id="459f-5ff1-5959-aaad" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -3252,6 +3560,10 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="a207-59b6-02e8-b12f" name="Skullhamma" hidden="false" targetId="143b-005b-eae8-ed64" type="profile"/>
             <infoLink id="c8fe-160b-5d34-79f6" name="Transport (5)" hidden="false" targetId="8a21-8c7b-a831-8883" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="0d86-241f-440c-5d29" name="Superheavy" hidden="false" targetId="e3d7-eb22-9df1-719b" primary="false"/>
+            <categoryLink id="d6f3-3b0c-0c7e-fcf4" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -3285,6 +3597,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="15db-928d-97cf-f353" name="Transport (5)" hidden="false" targetId="8a21-8c7b-a831-8883" type="rule"/>
             <infoLink id="0ed2-de82-85b7-7574" name="Supa Rokkit Trans&apos;ort" hidden="false" targetId="f6d3-e14e-6267-45f3" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="87a9-233c-873e-c09e" name="Flyer" hidden="false" targetId="d6b7-fbc6-dca0-1682" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -3314,6 +3629,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="e0c8-58b3-31a9-f08d" name="Stompa" hidden="false" targetId="b04a-7ef4-ecee-a624" type="profile"/>
             <infoLink id="3907-2588-9df8-13fb" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="acde-d0a6-aef8-8468" name="Superheavy" hidden="false" targetId="e3d7-eb22-9df1-719b" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -3343,6 +3661,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="7079-8f4b-4152-5b73" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
             <infoLink id="7c57-5a8f-08c8-69ae" name="Fearless" hidden="false" targetId="266e-884d-c911-ba95" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="d41d-2b57-2fdb-f90c" name="Superheavy" hidden="false" targetId="e3d7-eb22-9df1-719b" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -3464,7 +3785,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-                <cost name=" VP" typeId="points" value="1.0"/>
+                <cost name=" VP" typeId="points" value="0.5"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -3490,7 +3811,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="25.0"/>
-                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.25"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -3513,7 +3834,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-                <cost name=" VP" typeId="points" value="1.0"/>
+                <cost name=" VP" typeId="points" value="0.5"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -3544,7 +3865,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-                <cost name=" VP" typeId="points" value="1.0"/>
+                <cost name=" VP" typeId="points" value="0.75"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -3559,7 +3880,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-                <cost name=" VP" typeId="points" value="1.0"/>
+                <cost name=" VP" typeId="points" value="0.75"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -3573,7 +3894,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-                <cost name=" VP" typeId="points" value="1.0"/>
+                <cost name=" VP" typeId="points" value="0.5"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -3593,7 +3914,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-                <cost name=" VP" typeId="points" value="1.0"/>
+                <cost name=" VP" typeId="points" value="0.5"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -3607,7 +3928,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-                <cost name=" VP" typeId="points" value="1.0"/>
+                <cost name=" VP" typeId="points" value="0.5"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -3648,7 +3969,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-                <cost name=" VP" typeId="points" value="1.0"/>
+                <cost name=" VP" typeId="points" value="0.5"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -3664,7 +3985,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-                <cost name=" VP" typeId="points" value="1.0"/>
+                <cost name=" VP" typeId="points" value="0.75"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -3678,7 +3999,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-                <cost name=" VP" typeId="points" value="1.0"/>
+                <cost name=" VP" typeId="points" value="0.75"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -3693,7 +4014,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-                <cost name=" VP" typeId="points" value="1.0"/>
+                <cost name=" VP" typeId="points" value="0.75"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -3707,7 +4028,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-                <cost name=" VP" typeId="points" value="1.0"/>
+                <cost name=" VP" typeId="points" value="0.5"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -3728,7 +4049,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="25.0"/>
-                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.25"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -3743,7 +4064,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-                <cost name=" VP" typeId="points" value="1.0"/>
+                <cost name=" VP" typeId="points" value="0.5"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -3758,7 +4079,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="25.0"/>
-                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.25"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -3771,7 +4092,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-                <cost name=" VP" typeId="points" value="1.0"/>
+                <cost name=" VP" typeId="points" value="0.5"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -3784,7 +4105,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-                <cost name=" VP" typeId="points" value="1.0"/>
+                <cost name=" VP" typeId="points" value="0.75"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -3805,7 +4126,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="150.0"/>
-                <cost name=" VP" typeId="points" value="2.0"/>
+                <cost name=" VP" typeId="points" value="1.5"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -3818,7 +4139,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="25.0"/>
-                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.25"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -3851,7 +4172,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-                <cost name=" VP" typeId="points" value="1.0"/>
+                <cost name=" VP" typeId="points" value="0.5"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -3865,7 +4186,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-                <cost name=" VP" typeId="points" value="1.0"/>
+                <cost name=" VP" typeId="points" value="0.5"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -3879,7 +4200,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-                <cost name=" VP" typeId="points" value="1.0"/>
+                <cost name=" VP" typeId="points" value="0.75"/>
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -3910,6 +4231,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="452b-aef7-dab5-426d" name="Steam Gargant" hidden="false" targetId="3be1-e59a-3914-f016" type="profile"/>
             <infoLink id="ca35-f898-b915-c919" name="Clouds Of Steam" hidden="false" targetId="27b5-8295-b1c3-f6ab" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="4e35-7806-1595-9a6f" name="Titan" hidden="false" targetId="31e8-9840-fb3a-3b8d" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -3942,6 +4266,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="07ec-cfb5-d044-ce6e" name="Mega Gargant" hidden="false" targetId="9c41-527a-a80f-1154" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="cdaa-a103-6755-68bc" name="Titan" hidden="false" targetId="31e8-9840-fb3a-3b8d" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -3975,6 +4302,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="9f99-484e-f11a-5cfc" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
             <infoLink id="e65f-b935-5bf5-fbae" name="Blood Axe Nobz" hidden="false" targetId="2f23-69d4-1876-6901" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="2db9-e727-bd09-5730" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -4011,9 +4341,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                 <infoLink id="9065-50ab-c781-a4e4" name="Gargant Power Fields" hidden="false" targetId="a6af-5671-5403-88d4" type="rule"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="12ad-5063-d0f5-db79" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
-                <categoryLink id="67fb-ed0e-e754-065f" name="Titan" hidden="false" targetId="31e8-9840-fb3a-3b8d" primary="false"/>
-                <categoryLink id="8650-07b1-15f8-f302" name="Special Cards" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
+                <categoryLink id="d3fe-85a3-90b5-7121" name="Titan" hidden="false" targetId="31e8-9840-fb3a-3b8d" primary="false"/>
               </categoryLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="3b3c-08ad-1ebb-cff1" name="Great Gargant Arm Weapons" hidden="false" collective="false" import="true">
@@ -4033,7 +4361,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                       </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-                        <cost name=" VP" typeId="points" value="1.0"/>
+                        <cost name=" VP" typeId="points" value="0.5"/>
                         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
                       </costs>
                     </selectionEntry>
@@ -4046,7 +4374,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                       </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-                        <cost name=" VP" typeId="points" value="1.0"/>
+                        <cost name=" VP" typeId="points" value="0.75"/>
                         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
                       </costs>
                     </selectionEntry>
@@ -4060,7 +4388,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                       </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-                        <cost name=" VP" typeId="points" value="1.0"/>
+                        <cost name=" VP" typeId="points" value="0.75"/>
                         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
                       </costs>
                     </selectionEntry>
@@ -4075,7 +4403,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                       </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-                        <cost name=" VP" typeId="points" value="1.0"/>
+                        <cost name=" VP" typeId="points" value="0.75"/>
                         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
                       </costs>
                     </selectionEntry>
@@ -4089,7 +4417,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                       </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-                        <cost name=" VP" typeId="points" value="1.0"/>
+                        <cost name=" VP" typeId="points" value="0.5"/>
                         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
                       </costs>
                     </selectionEntry>
@@ -4110,7 +4438,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                       </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="25.0"/>
-                        <cost name=" VP" typeId="points" value="0.0"/>
+                        <cost name=" VP" typeId="points" value="0.25"/>
                         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
                       </costs>
                     </selectionEntry>
@@ -4125,7 +4453,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                       </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-                        <cost name=" VP" typeId="points" value="1.0"/>
+                        <cost name=" VP" typeId="points" value="0.5"/>
                         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
                       </costs>
                     </selectionEntry>
@@ -4140,7 +4468,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                       </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="25.0"/>
-                        <cost name=" VP" typeId="points" value="0.0"/>
+                        <cost name=" VP" typeId="points" value="0.25"/>
                         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
                       </costs>
                     </selectionEntry>
@@ -4153,7 +4481,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                       </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-                        <cost name=" VP" typeId="points" value="1.0"/>
+                        <cost name=" VP" typeId="points" value="0.5"/>
                         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
                       </costs>
                     </selectionEntry>
@@ -4166,7 +4494,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                       </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-                        <cost name=" VP" typeId="points" value="1.0"/>
+                        <cost name=" VP" typeId="points" value="0.75"/>
                         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
                       </costs>
                     </selectionEntry>
@@ -4187,7 +4515,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                       </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="150.0"/>
-                        <cost name=" VP" typeId="points" value="2.0"/>
+                        <cost name=" VP" typeId="points" value="1.5"/>
                         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
                       </costs>
                     </selectionEntry>
@@ -4200,7 +4528,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                       </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="25.0"/>
-                        <cost name=" VP" typeId="points" value="0.0"/>
+                        <cost name=" VP" typeId="points" value="0.25"/>
                         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
                       </costs>
                     </selectionEntry>
@@ -4233,7 +4561,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                       </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-                        <cost name=" VP" typeId="points" value="1.0"/>
+                        <cost name=" VP" typeId="points" value="0.5"/>
                         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
                       </costs>
                     </selectionEntry>
@@ -4247,7 +4575,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                       </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-                        <cost name=" VP" typeId="points" value="1.0"/>
+                        <cost name=" VP" typeId="points" value="0.5"/>
                         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
                       </costs>
                     </selectionEntry>
@@ -4261,7 +4589,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                       </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-                        <cost name=" VP" typeId="points" value="1.0"/>
+                        <cost name=" VP" typeId="points" value="0.75"/>
                         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
                       </costs>
                     </selectionEntry>
@@ -4280,8 +4608,6 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                 <infoLink id="ec78-592c-244e-6ff2" name="Gargant Power Fields" hidden="false" targetId="a6af-5671-5403-88d4" type="rule"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="1219-339f-3f27-47a7" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
-                <categoryLink id="b77d-0993-6c19-36d2" name="Special Cards" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
                 <categoryLink id="5dc0-7a04-3f48-1154" name="Titan" hidden="false" targetId="31e8-9840-fb3a-3b8d" primary="false"/>
               </categoryLinks>
               <selectionEntryGroups>
@@ -4301,7 +4627,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                       </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-                        <cost name=" VP" typeId="points" value="1.0"/>
+                        <cost name=" VP" typeId="points" value="0.5"/>
                         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
                       </costs>
                     </selectionEntry>
@@ -4327,7 +4653,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                       </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="25.0"/>
-                        <cost name=" VP" typeId="points" value="0.0"/>
+                        <cost name=" VP" typeId="points" value="0.25"/>
                         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
                       </costs>
                     </selectionEntry>
@@ -4350,7 +4676,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                       </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-                        <cost name=" VP" typeId="points" value="1.0"/>
+                        <cost name=" VP" typeId="points" value="0.5"/>
                         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
                       </costs>
                     </selectionEntry>
@@ -4378,7 +4704,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                       </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-                        <cost name=" VP" typeId="points" value="1.0"/>
+                        <cost name=" VP" typeId="points" value="0.75"/>
                         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
                       </costs>
                     </selectionEntry>
@@ -4393,7 +4719,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                       </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-                        <cost name=" VP" typeId="points" value="1.0"/>
+                        <cost name=" VP" typeId="points" value="0.75"/>
                         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
                       </costs>
                     </selectionEntry>
@@ -4407,7 +4733,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                       </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-                        <cost name=" VP" typeId="points" value="1.0"/>
+                        <cost name=" VP" typeId="points" value="0.5"/>
                         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
                       </costs>
                     </selectionEntry>
@@ -4427,7 +4753,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                       </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-                        <cost name=" VP" typeId="points" value="1.0"/>
+                        <cost name=" VP" typeId="points" value="0.5"/>
                         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
                       </costs>
                     </selectionEntry>
@@ -4441,7 +4767,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                       </categoryLinks>
                       <costs>
                         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="50.0"/>
-                        <cost name=" VP" typeId="points" value="1.0"/>
+                        <cost name=" VP" typeId="points" value="0.5"/>
                         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
                       </costs>
                     </selectionEntry>
@@ -4504,6 +4830,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
               <infoLinks>
                 <infoLink id="82e5-bc05-0bae-2e1d" name="Da Zooma" hidden="false" targetId="3650-dcc6-31e1-9209" type="profile"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="a9af-848f-9f77-9cf0" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -4535,7 +4864,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                 <infoLink id="288e-48c4-361a-9670" name="Mekboy Power Fields" hidden="false" targetId="ed27-2fff-6595-aa56" type="rule"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="8145-df5f-cdd5-8927" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
+                <categoryLink id="967a-2d8b-f914-e215" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -4553,7 +4882,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                 <infoLink id="80af-86a1-cd80-bed8" name="Mekboy Power Fields" hidden="false" targetId="ed27-2fff-6595-aa56" type="rule"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="11d1-0f44-9ed8-562f" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
+                <categoryLink id="4ed6-f541-34d6-c3de" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -4570,7 +4899,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                 <infoLink id="7d44-9f11-5b23-2f1b" name="Mekboy Dragsta" hidden="false" targetId="66ea-0366-0b86-1117" type="profile"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="fcd0-920e-fbd1-29d2" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
+                <categoryLink id="b459-2548-615d-7f53" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -4588,7 +4917,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                 <infoLink id="1229-331d-1b6d-c2e7" name="Mekboy Power Fields" hidden="false" targetId="ed27-2fff-6595-aa56" type="rule"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="9fd7-16d4-2c69-f6d1" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
+                <categoryLink id="a764-a315-dda7-340e" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -4606,7 +4935,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
                 <infoLink id="f2bf-d183-7eed-c6f7" name="Mekboy Power Fields" hidden="false" targetId="ed27-2fff-6595-aa56" type="rule"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="402b-32de-202f-4db7" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
+                <categoryLink id="7e0b-cf36-b51b-5f7c" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -4625,6 +4954,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
     </selectionEntry>
     <selectionEntry id="3383-dff9-b251-6ff5" name="Mad Doc Grotsnik" publicationId="c1a5-0905-d6e8-335a" hidden="false" collective="false" import="true" type="unit">
       <comment>Rules for Grotsnik are a little worse than normal NetEpic Painboyz, but you *do* get a squad of Madboyz to make up for it with all the &quot;fun&quot; that brings to the table...</comment>
+      <infoLinks>
+        <infoLink id="ebb8-feb9-e68a-7585" name="Unique" hidden="false" targetId="8872-7902-38c1-08d1" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="47e1-3033-e8b2-ac24" name="Orks" hidden="false" targetId="0375-b8b2-0f7d-3417" primary="false"/>
         <categoryLink id="bcc6-69ce-13c8-4522" name="Special Cards" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
@@ -4722,6 +5054,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
               <comment>Have left this NetEpic-specifica rule in as it makes sense, given the size of this unit...</comment>
             </infoLink>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="b3fe-a6e6-d304-9229" name="Walker" hidden="false" targetId="f082-d1ca-f340-1ce8" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -4738,6 +5073,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="c729-1026-a920-ece3" name="Command" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
             <infoLink id="39ef-0064-0420-866c" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="22f8-5470-2ff5-f988" name="Walker" hidden="false" targetId="f082-d1ca-f340-1ce8" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -4771,6 +5109,9 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="1454-8084-99d9-a639" name="Weirdboyz Psychic Attacks" hidden="false" targetId="a7bf-bd37-419f-fb92" type="rule"/>
             <infoLink id="b140-5ae7-5fe2-3160" name="Command" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="5b16-0439-42b7-3c11" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>

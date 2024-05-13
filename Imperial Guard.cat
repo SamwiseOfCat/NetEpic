@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e7fc-3623-dfb1-db57" name="Imperial Guard" revision="5" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <readme>v5 notes :
+<catalogue id="e7fc-3623-dfb1-db57" name="Imperial Guard" revision="7" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>v7 notes : 
+Gorgon Company costs fixed.Warlord &amp; Reaver Battlegroups fixed.
+
+v6 notes:
+The following issues were identified: Deathstrike Missiles were costing more than they should. Some detachment constraints were open-ended on Company cards. &quot;PDF Only&quot; rule was missing from some PDF units. Some companies were costing more than they should as they were inheriting the separate detachment costs - all are now fixed.
+
+v5 notes :
 Major change to Titan weapon cost /VP&apos;s - each weapon now has a VP value that aligns to cost in points for more accurate VP awarding in the event of a Titan being destroyed.
 
 v4 notes:
@@ -16,7 +22,7 @@ v2 notes :
 Added Krueger&apos;s Heroes special card and Catachan Devils company from WD198. Added Imperial Confessor from Citadel Journal. The Imperial Guard Colonel card from the Citadel Journal has not been added as the NetEpic Regimental Command card covers this need already (note that the NetEpic unit is slightly inferior to the CJ/SM 2Ed unit as the Tactical troops provided have a better CAF).
 
 v1 notes :
-Imperial Guard (aka. Adeptus Militaris, Astra Militarum) armies are either usually classic Guard armies or Planetary Defence Force armies. The Classic Guard army is by far the more widely used. PDF armies are frequently used in narrative play as a highly defensive army, utilising the optional Fortifications Rules for an interesting game of Defend/Take &amp; Hold. PDF Armies have access to extremely cheap infantry which the classic Guard do not, but are limited in what othe classic units they can take. A PDF player can only pick cards with the &quot;Planetary Defence Force&quot; Category/Key Word.</readme>
+Imperial Guard (aka. Adeptus Militaris, Astra Militarum) armies are either usually classic Guard armies or Planetary Defence Force armies. The Classic Guard army is by far the more widely used. PDF armies are frequently used in narrative play as a highly defensive army, utilising the optional Fortifications Rules for an interesting game of Defend/Take &amp; Hold. PDF Armies have access to extremely cheap infantry which the classic Guard do not, but are limited in what other classic units they can take. A PDF player can only pick cards with the &quot;Planetary Defence Force&quot; Category/Key Word.</readme>
   <publications>
     <publication id="05b1-5ac1-9e42-fdf3" name="Adeptus Militaris NetEpic Army Book" shortName="Adeptus Militaris NetEpic Army Book" publisherUrl="netepic.org"/>
     <publication id="431b-f4e0-99d3-f364" name="Adeptus Mechanicus NetEpic Army Book" shortName="Adeptus Mechanicus NetEpic Army Book" publisherUrl="netepic.org"/>
@@ -358,7 +364,7 @@ Imperial Guard detachments may only be given orders if they are connected to a C
         <categoryLink id="aedd-02f4-aa8f-6717" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="69a7-2526-9285-cf63" name="Ogryns" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="69a7-2526-9285-cf63" name="Ogryn Squads" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4d8-2b1c-59fa-8183" type="min"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b43d-b220-970b-3a7d" type="max"/>
@@ -750,7 +756,7 @@ Imperial Guard detachments may only be given orders if they are connected to a C
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2854-0c13-d965-9110" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="f8a4-0d7a-33ea-0fa4" name="Heavy Company HQ" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="f8a4-0d7a-33ea-0fa4" name="Heavy Company HQ" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52e6-12af-28b1-53d4" type="max"/>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5c5-0426-7701-de2b" type="min"/>
@@ -1533,9 +1539,6 @@ Imperial Guard detachments may only be given orders if they are connected to a C
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eefb-2521-9ca7-90df" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d50d-772b-ffde-8658" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="bd30-9adf-c9bb-4436" name="Imperial Guard" hidden="false" targetId="6ba7-0180-55a8-6861" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="52f8-d240-991a-d7d2" name="Mechanized Assault Squads" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -1644,9 +1647,6 @@ Imperial Guard detachments may only be given orders if they are connected to a C
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9799-0b80-8717-748f" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c319-5530-590b-063d" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="914e-0e09-ee7c-73cd" name="Imperial Guard" hidden="false" targetId="6ba7-0180-55a8-6861" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="a337-9ac4-1435-0363" name="Mechanized Tactical Squads" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -1686,6 +1686,10 @@ Imperial Guard detachments may only be given orders if they are connected to a C
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="14cd-0354-a43b-b2f3" name="Gorgon Assault Platoon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf84-2d75-3063-5c38" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d0f-66c3-84af-e8b0" type="min"/>
+          </constraints>
           <categoryLinks>
             <categoryLink id="dcc3-16cf-0efe-ce6a" name="Imperial Guard" hidden="false" targetId="6ba7-0180-55a8-6861" primary="false"/>
             <categoryLink id="d7ff-4294-fe77-0257" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
@@ -1717,6 +1721,10 @@ Imperial Guard detachments may only be given orders if they are connected to a C
           </costs>
         </selectionEntry>
         <selectionEntry id="b7d2-26b6-e677-a631" name="Gorgon Heavy APC" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f20-2d05-ff0c-f3c0" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="003a-68b9-54bb-bb05" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="c3a4-46b2-1df1-b9eb" name="Gorgon" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1760,10 +1768,10 @@ Imperial Guard detachments may only be given orders if they are connected to a C
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="2ba7-195a-1ca3-5c81" name="Gorgon Tactical Infantry Platoon" hidden="false" collective="false" import="true" type="upgrade">
-          <categoryLinks>
-            <categoryLink id="f341-c9b7-82a0-901c" name="Imperial Guard" hidden="false" targetId="6ba7-0180-55a8-6861" primary="false"/>
-            <categoryLink id="15d1-fd59-12c0-21f7" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-          </categoryLinks>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="416b-f572-04b0-4bed" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d30b-76e2-e3a8-379b" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="7acf-25f4-d45d-15f3" name="Gorgon Tactical Squads" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -1790,6 +1798,10 @@ Imperial Guard detachments may only be given orders if they are connected to a C
           </costs>
         </selectionEntry>
         <selectionEntry id="1dae-80de-33bf-504c" name="Gorgon Heavy APC" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4021-4aa5-42d5-ffc8" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15a4-304a-f757-dce4" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="39bb-e785-65ba-252a" name="Gorgon" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -2576,89 +2588,13 @@ Imperial Guard detachments may only be given orders if they are connected to a C
             <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e47c-8033-9c87-4204" name="Gorgon Tactical Platoon" hidden="false" collective="false" import="true" type="unit">
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdcb-2b4d-bee6-610a" type="max"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e63-1fb1-7d91-19e6" type="min"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="6916-2ed7-84ef-1a1f" name="Imperial Guard" hidden="false" targetId="6ba7-0180-55a8-6861" primary="false"/>
-          </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="bda3-c20e-7684-8480" name="Gorgon Tactical Infantry Platoon" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="635c-15a9-e877-05d8" name="Imperial Guard" hidden="false" targetId="6ba7-0180-55a8-6861" primary="false"/>
-                <categoryLink id="8b52-3511-1271-01bc" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-              </categoryLinks>
-              <selectionEntries>
-                <selectionEntry id="0ead-a416-a46c-bf6e" name="Gorgon Tactical Squads" hidden="false" collective="false" import="true" type="model">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67db-072e-e42d-067f" type="max"/>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bd5-f967-e757-8cb7" type="min"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="1477-06a3-e105-6cb4" name="Tactical Squad" hidden="false" targetId="3e27-6ee9-4b10-a2e1" type="profile"/>
-                  </infoLinks>
-                  <categoryLinks>
-                    <categoryLink id="5252-b202-05f5-807a" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-                    <cost name=" VP" typeId="points" value="0.0"/>
-                    <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-                <cost name=" VP" typeId="points" value="0.0"/>
-                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="e86b-1258-3d9f-539b" name="Gorgon Heavy APC" hidden="false" collective="false" import="true" type="model">
-              <selectionEntries>
-                <selectionEntry id="68e2-d65f-9cff-850c" name="Gorgon" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ce4-7908-f1df-2c50" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f04-71af-a732-e7b5" type="min"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="12ef-2c8a-3cdc-1523" name="Gorgon" hidden="false" targetId="99b2-e0bb-9224-4cfc" type="profile"/>
-                    <infoLink id="f33c-5b5d-eb45-c3b2" name="Transport (6)" hidden="false" targetId="1bfb-1bc3-45b7-ccd9" type="rule"/>
-                    <infoLink id="1b79-8e17-d5b5-c524" name="Point Defence (4)" hidden="false" targetId="ced4-1595-2144-8c63" type="rule"/>
-                    <infoLink id="2c4f-2bfe-29bf-fad3" name="Superheavy" hidden="false" targetId="f5aa-58a5-a7bf-25b2" type="rule"/>
-                    <infoLink id="07b8-99a6-7e58-4c8b" name="Gorgons and Difficult Terrain" hidden="false" targetId="834a-2b1f-88d8-9c62" type="rule"/>
-                  </infoLinks>
-                  <categoryLinks>
-                    <categoryLink id="f1e2-421d-ef7d-43fc" name="Superheavy" hidden="false" targetId="e3d7-eb22-9df1-719b" primary="false"/>
-                  </categoryLinks>
-                  <costs>
-                    <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-                    <cost name=" VP" typeId="points" value="0.0"/>
-                    <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-                <cost name=" VP" typeId="points" value="0.0"/>
-                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
-            <cost name=" VP" typeId="points" value="0.0"/>
-            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="3a84-4246-0130-5f67" name="Gorgon Tactical Company HQ" hidden="false" collective="false" import="true" type="unit">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6089-8e0e-1dea-073e" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9e9-a18c-80ee-9a58" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="5f0a-81a0-af3f-ad93" name="Gorgon Tactical Company HQ" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="5f0a-81a0-af3f-ad93" name="Gorgon Tactical Company HQ" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f50-d995-721f-162e" type="max"/>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fee-fc0e-b0ff-e05e" type="min"/>
@@ -2668,6 +2604,9 @@ Imperial Guard detachments may only be given orders if they are connected to a C
                 <infoLink id="091f-a1cf-bb86-fe0a" name="Command" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
                 <infoLink id="33c6-1580-ab3c-e20e" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="04d7-2ee2-2e7b-41f4" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -2695,6 +2634,83 @@ Imperial Guard detachments may only be given orders if they are connected to a C
                   </infoLinks>
                   <categoryLinks>
                     <categoryLink id="a5ed-48a1-0c7c-5bd8" name="Superheavy" hidden="false" targetId="e3d7-eb22-9df1-719b" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                    <cost name=" VP" typeId="points" value="0.0"/>
+                    <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ca31-7706-dd7b-4db2" name="Gorgon Tactical Platoon" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcef-65b4-a532-2c64" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1532-2b56-50ad-083b" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5dda-50b3-9961-72d5" name="Gorgon Tactical Infantry Platoon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a91-fe43-6f90-2de1" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7ef-340d-bc5f-80c2" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="c7ac-cafb-4ad4-7d09" name="Gorgon Tactical Squads" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f017-6f1e-32b6-793e" type="max"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6488-e62d-86bf-3111" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="34e6-e4c3-0dde-e47a" name="Tactical Squad" hidden="false" targetId="3e27-6ee9-4b10-a2e1" type="profile"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="e7cc-9e11-a19d-fa45" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                    <cost name=" VP" typeId="points" value="0.0"/>
+                    <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                <cost name=" VP" typeId="points" value="0.0"/>
+                <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b1c8-fc79-9e26-2fa8" name="Gorgon Heavy APC" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="735e-e923-07c4-58ef" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="273b-ea4f-e14e-db7a" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="a2d2-11d6-7d88-7e33" name="Gorgon" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae7e-b9ed-20ce-6326" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc8f-bee8-0fbb-8f01" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="0381-eeab-efee-6087" name="Gorgon" hidden="false" targetId="99b2-e0bb-9224-4cfc" type="profile"/>
+                    <infoLink id="3488-0b13-f15d-8617" name="Transport (6)" hidden="false" targetId="1bfb-1bc3-45b7-ccd9" type="rule"/>
+                    <infoLink id="1769-910a-9d42-116f" name="Point Defence (4)" hidden="false" targetId="ced4-1595-2144-8c63" type="rule"/>
+                    <infoLink id="0513-2363-f3d6-2d1d" name="Superheavy" hidden="false" targetId="f5aa-58a5-a7bf-25b2" type="rule"/>
+                    <infoLink id="3649-fc7a-07e7-0aa5" name="Gorgons and Difficult Terrain" hidden="false" targetId="834a-2b1f-88d8-9c62" type="rule"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="b09c-b4e1-df44-f7e1" name="Superheavy" hidden="false" targetId="e3d7-eb22-9df1-719b" primary="false"/>
                   </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -2772,7 +2788,7 @@ Imperial Guard detachments may only be given orders if they are connected to a C
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a281-bc73-e537-ca81" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="57ce-5360-4205-3b8e" name="Gorgon Assault Company HQ" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="57ce-5360-4205-3b8e" name="Gorgon Assault Company HQ" hidden="false" collective="false" import="true" type="unit">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edd8-9fc6-8224-dea3" type="max"/>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03aa-df36-b708-4bb1" type="min"/>
@@ -2782,6 +2798,9 @@ Imperial Guard detachments may only be given orders if they are connected to a C
                 <infoLink id="2952-a9c4-d99e-d212" name="Command" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
                 <infoLink id="c1d6-69e3-4795-1d12" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
               </infoLinks>
+              <categoryLinks>
+                <categoryLink id="8194-6e9c-fce0-425b" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
                 <cost name=" VP" typeId="points" value="0.0"/>
@@ -2794,7 +2813,7 @@ Imperial Guard detachments may only be given orders if they are connected to a C
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0812-f2c7-380e-bd06" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="788c-872b-621e-727e" name="Command Gorgon" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="788c-872b-621e-727e" name="Command Gorgon" hidden="false" collective="false" import="true" type="model">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad1a-2d0b-64ab-a974" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a793-dd5b-c5dd-0f56" type="min"/>
@@ -2830,32 +2849,29 @@ Imperial Guard detachments may only be given orders if they are connected to a C
             <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="42db-aedd-3ca9-7806" name="Gorgon Assault Platoon" hidden="false" collective="false" import="true" type="unit">
+        <selectionEntry id="240c-cc06-753e-6284" name="Gorgon Assault Platoon" hidden="false" collective="false" import="true" type="unit">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a3b-576b-59cf-82de" type="max"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="930b-3af9-11ae-a3de" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="835f-43fd-d0a3-2274" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5437-7329-b845-07ad" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="fdfd-c193-785b-a17d" name="Imperial Guard" hidden="false" targetId="6ba7-0180-55a8-6861" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
-            <selectionEntry id="e620-be50-dbb1-1353" name="Gorgon Assault Platoon" hidden="false" collective="false" import="true" type="upgrade">
-              <categoryLinks>
-                <categoryLink id="2495-93fd-e783-ee02" name="Imperial Guard" hidden="false" targetId="6ba7-0180-55a8-6861" primary="false"/>
-                <categoryLink id="faa9-5768-a8a8-8138" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-              </categoryLinks>
+            <selectionEntry id="6c61-bb4f-b14b-3598" name="Gorgon Assault Platoon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7755-edff-27d3-d252" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cd6-eadb-a9a2-af90" type="min"/>
+              </constraints>
               <selectionEntries>
-                <selectionEntry id="e955-af76-130d-c80c" name="Gorgon Assault Squads" hidden="false" collective="false" import="true" type="model">
+                <selectionEntry id="9ae2-2573-36e9-0e21" name="Gorgon Assault Squads" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56b9-db35-f014-1c56" type="max"/>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de0d-81b1-aad9-6b78" type="min"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3029-9eae-3852-1e3b" type="max"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e346-91d0-b610-1c52" type="min"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="0911-6fa8-f0db-0eaa" name="Assault Squad" hidden="false" targetId="d9d4-c562-d473-c27a" type="profile"/>
-                    <infoLink id="5367-c2f2-ae62-8a8d" name="Jump Packs" hidden="false" targetId="6d0a-c605-e4ec-dd51" type="rule"/>
+                    <infoLink id="39a6-cfb2-5d9b-5d00" name="Assault Squad" hidden="false" targetId="d9d4-c562-d473-c27a" type="profile"/>
+                    <infoLink id="7199-1b03-da29-97fa" name="Jump Packs" hidden="false" targetId="6d0a-c605-e4ec-dd51" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
-                    <categoryLink id="7602-9af0-8f67-aa5c" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
+                    <categoryLink id="9a75-52af-4fdc-66e9" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
                   </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -2870,22 +2886,26 @@ Imperial Guard detachments may only be given orders if they are connected to a C
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8c28-6bb0-77ab-586a" name="Gorgon Heavy APC" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="cd1f-212f-89e0-d128" name="Gorgon Heavy APC" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8cc-7d97-1200-1371" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2050-366b-32ad-dcf1" type="min"/>
+              </constraints>
               <selectionEntries>
-                <selectionEntry id="e2d7-1fd6-16f0-9b71" name="Gorgon" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="ae6a-9468-22c6-de54" name="Gorgon" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88c8-3928-5d45-0d2b" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf0e-99d3-a7a9-7699" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a983-3d97-cdb8-ded7" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2386-8c6e-1638-2653" type="min"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="9acf-e6ba-d254-782c" name="Gorgon" hidden="false" targetId="99b2-e0bb-9224-4cfc" type="profile"/>
-                    <infoLink id="c5e1-ee51-4521-eae2" name="Transport (6)" hidden="false" targetId="1bfb-1bc3-45b7-ccd9" type="rule"/>
-                    <infoLink id="c092-ed0b-9b0c-1aef" name="Point Defence (4)" hidden="false" targetId="ced4-1595-2144-8c63" type="rule"/>
-                    <infoLink id="20ce-399c-d067-efa3" name="Superheavy" hidden="false" targetId="f5aa-58a5-a7bf-25b2" type="rule"/>
-                    <infoLink id="7c32-fd20-485e-4e6b" name="Gorgons and Difficult Terrain" hidden="false" targetId="834a-2b1f-88d8-9c62" type="rule"/>
+                    <infoLink id="c70b-cce5-5ec7-2ca2" name="Gorgon" hidden="false" targetId="99b2-e0bb-9224-4cfc" type="profile"/>
+                    <infoLink id="fa23-5744-1d4a-5e85" name="Transport (6)" hidden="false" targetId="1bfb-1bc3-45b7-ccd9" type="rule"/>
+                    <infoLink id="bf58-776a-5693-d0a7" name="Point Defence (4)" hidden="false" targetId="ced4-1595-2144-8c63" type="rule"/>
+                    <infoLink id="7082-f48a-e82b-cabe" name="Superheavy" hidden="false" targetId="f5aa-58a5-a7bf-25b2" type="rule"/>
+                    <infoLink id="33ce-f265-5a16-c19d" name="Gorgons and Difficult Terrain" hidden="false" targetId="834a-2b1f-88d8-9c62" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
-                    <categoryLink id="42e8-d0a3-02b0-5173" name="Superheavy" hidden="false" targetId="e3d7-eb22-9df1-719b" primary="false"/>
+                    <categoryLink id="d388-ae85-abe3-26cd" name="Superheavy" hidden="false" targetId="e3d7-eb22-9df1-719b" primary="false"/>
                   </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -3067,9 +3087,6 @@ Imperial Guard detachments may only be given orders if they are connected to a C
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e9c-352e-03e5-7567" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8021-ce04-b5c6-6c2d" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="afd0-87a5-2daf-1de3" name="Imperial Guard" hidden="false" targetId="6ba7-0180-55a8-6861" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="1651-4d02-1078-7e0b" name="Mole" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -3184,7 +3201,7 @@ Imperial Guard detachments may only be given orders if they are connected to a C
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de9b-da85-5c37-d5bc" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="947a-74d0-4f3a-53ba" name="Hellbore Company HQ" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="947a-74d0-4f3a-53ba" name="Hellbore Company HQ" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3179-c145-c012-d240" type="max"/>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f6e-1416-61c9-6975" type="min"/>
@@ -3279,7 +3296,7 @@ Imperial Guard detachments may only be given orders if they are connected to a C
             <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="804b-9bc1-c1bf-9d2c" name="Hellbore Command Rhino" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="804b-9bc1-c1bf-9d2c" name="Hellbore Command Rhino" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bf5-78ab-afd1-1888" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cee-f5d3-a824-bdb7" type="min"/>
@@ -3509,9 +3526,6 @@ Imperial Guard detachments may only be given orders if they are connected to a C
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4f2-f101-e6c7-dc98" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88ac-d938-66ad-a66b" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="ea56-037e-9d3c-c91a" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="6cdb-c45f-c4df-67dc" name="Land Speeders" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -4375,7 +4389,7 @@ Imperial Guard detachments may only be given orders if they are connected to a C
         <categoryLink id="9ac5-efa0-3428-96eb" name="Imperial Guard" hidden="false" targetId="6ba7-0180-55a8-6861" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="43aa-994d-513c-2dab" name="Baneblade CHQ" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="43aa-994d-513c-2dab" name="Baneblade CHQ" hidden="false" collective="false" import="true" type="unit">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="110c-e247-d2be-27c3" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6db3-af19-ce8f-241b" type="min"/>
@@ -4410,7 +4424,7 @@ Imperial Guard detachments may only be given orders if they are connected to a C
             <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="c2d7-c758-437b-8fca" name="Baneblade" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="c2d7-c758-437b-8fca" name="Baneblade" hidden="false" collective="false" import="true" type="unit">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2f5-8c01-b4b7-9c2b" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83dd-51d5-96fd-c1e8" type="min"/>
@@ -4774,7 +4788,7 @@ Imperial Guard detachments may only be given orders if they are connected to a C
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b51a-074d-c6f9-2b83" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="f794-00c5-bff9-7ab6" name="Artillery Company HQ" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="f794-00c5-bff9-7ab6" name="Artillery Company HQ" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7468-e036-d5f7-58ee" type="max"/>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03ac-bec7-3ed2-bfcd" type="min"/>
@@ -5311,13 +5325,13 @@ Imperial Guard detachments may only be given orders if they are connected to a C
             <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4399-e85f-2591-16cb" name="Airborne HQ" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="4399-e85f-2591-16cb" name="Airborne HQ" hidden="false" collective="false" import="true" type="unit">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b060-da3d-85a4-9d30" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="443b-44cd-e3f8-d25a" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="b4ae-6086-478a-a384" name="Tactical Company HQ" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="b4ae-6086-478a-a384" name="Tactical Company HQ" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c148-e3e1-6f22-f883" type="max"/>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff55-4648-d52b-249b" type="min"/>
@@ -5336,7 +5350,7 @@ Imperial Guard detachments may only be given orders if they are connected to a C
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e925-2410-f502-9de1" name="Valkyrie CHQ" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="e925-2410-f502-9de1" name="Valkyrie CHQ" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8873-5037-3807-1a1e" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65c0-8cb5-1f6e-887f" type="min"/>
@@ -6073,6 +6087,10 @@ Imperial Guard detachments may only be given orders if they are connected to a C
           </costs>
         </selectionEntry>
         <selectionEntry id="65e1-6f01-2bb5-210b" name="Battalion Command Tactical Platoon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ac1-4e7b-0554-2a81" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37bd-c03e-5f24-858a" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="b52b-1219-67cc-c0a2" name="Chimeras" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -6180,6 +6198,10 @@ Imperial Guard detachments may only be given orders if they are connected to a C
           </costs>
         </selectionEntry>
         <selectionEntry id="c7db-04bb-0252-bcde" name="Regimental Command Tactical Platoon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03b4-54bd-3082-ffd2" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38ef-d5e2-9c35-0b88" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="c66b-b89e-3a5e-d860" name="Chimeras" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -6819,6 +6841,10 @@ Imperial Guard detachments may only be given orders if they are connected to a C
           </constraints>
           <selectionEntries>
             <selectionEntry id="dd15-63e4-5ec9-1299" name="Reaver Titan" hidden="false" collective="false" import="true" type="unit">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="775d-9c08-313c-4b84" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb30-05b2-ed3e-f97d" type="min"/>
+              </constraints>
               <infoLinks>
                 <infoLink id="8ece-bd72-4d8f-8f08" name="Reaver Titan" hidden="false" targetId="7ac8-35c0-6725-7148" type="profile"/>
               </infoLinks>
@@ -7535,13 +7561,17 @@ Imperial Guard detachments may only be given orders if they are connected to a C
         <categoryLink id="0dea-bd82-ffed-5fcd" name="Special Cards" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="b91a-e1f6-c4c5-0a0e" name="Warlord Titans" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="b91a-e1f6-c4c5-0a0e" name="Warlord Titan" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6823-48ac-d7f3-46b2" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8149-06c1-0df1-2415" type="min"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="a6d6-fd86-68a7-4c93" name="Warlord Titan" hidden="false" collective="false" import="true" type="unit">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="089a-7a76-37a2-2f8e" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eac3-4d31-4bff-4c95" type="min"/>
+              </constraints>
               <infoLinks>
                 <infoLink id="8e7c-9fab-68f2-ffb8" name="Warlord Titan" hidden="false" targetId="a3a3-18d6-61ac-e2a0" type="profile"/>
               </infoLinks>
@@ -8368,6 +8398,9 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="9dbf-2fb2-9aa6-4b5c" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
             <infoLink id="20ae-ec14-7cfd-4cb6" name="Turret" hidden="false" targetId="6d2d-fa7d-8436-5def" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="6b4e-d47b-b1a8-1ae0" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -8540,6 +8573,9 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="b6d7-0bde-e315-92f7" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
             <infoLink id="f232-d438-d582-884d" name="Turret" hidden="false" targetId="6d2d-fa7d-8436-5def" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="1237-55c0-36b8-1d32" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -8810,19 +8846,19 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5d9-3580-d932-b30b" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="6858-05db-630e-a4fd" name="Barrage Missile Launcher" hidden="false" collective="false" import="true" targetId="b8ca-5814-f0a6-2c72" type="selectionEntry">
+            <entryLink id="894f-751b-f120-9da7" name="Deathstrike Barrage Missile" hidden="false" collective="false" import="true" targetId="d7e9-7711-e353-6f94" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bae-3bf8-0366-7129" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0eab-ad6c-e133-3587" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="619a-18db-4e42-f0f8" name="Harpoon Missile" hidden="false" collective="false" import="true" targetId="d175-f59c-e381-ddb8" type="selectionEntry">
+            <entryLink id="d751-cbc9-2b77-67be" name="Deathstrike Harpoon Missile" hidden="false" collective="false" import="true" targetId="1fd1-6ec7-351f-105b" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02bc-9dd8-1d04-375b" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b50-201a-c277-2284" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="2732-610f-b089-c7a0" name="Warp Missile" hidden="false" collective="false" import="true" targetId="417c-1a53-541c-aa98" type="selectionEntry">
+            <entryLink id="7c57-53a0-7980-71af" name="Deathstrike Warp Missile" hidden="false" collective="false" import="true" targetId="93a8-cf49-befd-aa0b" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="126b-eb06-694d-c45c" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d959-080f-19f3-b795" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -9193,6 +9229,9 @@ E) Ignore: Ignore the question and move on to the next one.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="1312-125e-b51a-2cc1" name="Support Company" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="8810-f6f6-b961-ab62" name="PDF Only Card" hidden="false" targetId="3833-a53d-8ee6-e0c9" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="b84d-2a49-fccf-0d84" name="Planetary Defence Force" hidden="false" targetId="9c94-2689-8ab9-8a0c" primary="false"/>
         <categoryLink id="aee4-671d-4aeb-bf9a" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="true"/>
@@ -9333,9 +9372,9 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="75.0"/>
-            <cost name=" VP" typeId="points" value="1.0"/>
-            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="2.0"/>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -9514,6 +9553,10 @@ E) Ignore: Ignore the question and move on to the next one.</description>
         </selectionEntry>
         <selectionEntry id="d6a4-e105-b1ab-b3a0" name="Hive Gang Boss" hidden="false" collective="false" import="true" type="unit">
           <comment>Boss unit does not have Infiltration rule as per NetEpic card.</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55e9-1f17-a7d5-db6a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="993d-6455-ec39-4431" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="8864-2fe3-ad7a-8827" name="Hive Gangers" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -9865,9 +9908,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d65b-b4b9-f216-caf9" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0081-78da-497f-f646" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="b265-f562-1a9f-1187" name="Planetary Defence Force" hidden="false" targetId="9c94-2689-8ab9-8a0c" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="81ab-d250-f7ac-4025" name="Ragnarok Tanks" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -10221,9 +10261,6 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3aa5-4815-5ba4-8f1b" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9dd5-028c-366a-66fa" type="min"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink id="18ed-e970-ab60-a122" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="8994-f9ae-605c-c3da" name="Infantry Guns" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -10257,10 +10294,12 @@ E) Ignore: Ignore the question and move on to the next one.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="2980-9a81-6d3d-60f1" name="Infantry Gun Battery" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="6085-40ae-e732-0de8" name="PDF Only Card" hidden="false" targetId="3833-a53d-8ee6-e0c9" type="rule"/>
+      </infoLinks>
       <categoryLinks>
-        <categoryLink id="7466-3e69-b013-f6eb" name="Planetary Defence Force" hidden="false" targetId="9c94-2689-8ab9-8a0c" primary="false"/>
-        <categoryLink id="5b29-69bb-0e2d-c1ba" name="Planetary Defence Force" hidden="false" targetId="9c94-2689-8ab9-8a0c" primary="false"/>
         <categoryLink id="92d2-27ce-616a-f9d0" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+        <categoryLink id="ed67-b1a7-c5a7-404c" name="Planetary Defence Force" hidden="false" targetId="9c94-2689-8ab9-8a0c" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="a869-d49b-8816-dee7" name="Infantry Guns" hidden="false" collective="false" import="true" type="model">
@@ -10648,9 +10687,8 @@ E) Ignore: Ignore the question and move on to the next one.</description>
         <infoLink id="283b-1109-e7e5-ba62" name="PDF Only Card" hidden="false" targetId="3833-a53d-8ee6-e0c9" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="d1aa-6ffb-f521-b974" name="Planetary Defence Force" hidden="false" targetId="9c94-2689-8ab9-8a0c" primary="false"/>
-        <categoryLink id="9493-20c1-f622-8cdc" name="Planetary Defence Force" hidden="false" targetId="9c94-2689-8ab9-8a0c" primary="false"/>
         <categoryLink id="0b7c-23b4-e15e-7592" name="Support Cards" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
+        <categoryLink id="089d-1c0d-4d33-99f7" name="Planetary Defence Force" hidden="false" targetId="9c94-2689-8ab9-8a0c" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="da14-b7ec-4b07-4ca2" name="Tactical Recon Platoon" hidden="false" collective="false" import="true" type="model">
@@ -10832,6 +10870,10 @@ E) Ignore: Ignore the question and move on to the next one.</description>
           </costs>
         </selectionEntry>
         <selectionEntry id="2102-5602-c6d0-6bc7" name="Leman Russ CHQ" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3be-dfa9-cd17-5241" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9961-0101-79c6-4b4e" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="bbb3-6d91-51e6-d0c4" name="Leman Russ CHQ" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -10875,6 +10917,10 @@ E) Ignore: Ignore the question and move on to the next one.</description>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="cdc2-c518-686d-29bb" name="Leman Russ CHQ" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b722-15ce-a595-18cf" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ed0-02d5-a1ac-334e" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="8ab6-d398-3927-3bfa" name="Leman Russ CHQ" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -11188,8 +11234,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
             <infoLink id="ceaf-87a6-386b-57a8" name="Command" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
           </infoLinks>
           <categoryLinks>
-            <categoryLink id="b726-9700-0da8-2234" name="Special Card" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
-            <categoryLink id="62cc-224d-9ec1-6f1f" name="Imperial Guard" hidden="false" targetId="6ba7-0180-55a8-6861" primary="false"/>
+            <categoryLink id="a0f9-938d-f920-4324" name="Infantry" hidden="false" targetId="55ef-63f2-5290-498f" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="100.0"/>
@@ -11429,6 +11474,40 @@ E) Ignore: Ignore the question and move on to the next one.</description>
     <selectionEntry id="dec2-5375-5b31-c55c" name="Sonic Disruptor" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="ca8b-6c64-0c4a-075c" name="Sonic Disruptor" hidden="false" targetId="2bad-56f2-531f-aa40" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d7e9-7711-e353-6f94" name="Deathstrike Barrage Missile" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b8fa-7f5b-cbba-98e4" name="Barrage Missile Launcher" hidden="false" targetId="2d99-6394-36f4-b7bc" type="profile"/>
+        <infoLink id="da1f-c877-7932-8f5c" name="One Shot" hidden="false" targetId="def8-03e0-48bc-eb8d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1fd1-6ec7-351f-105b" name="Deathstrike Harpoon Missile" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4fdf-c7b8-dacf-a259" name="One Shot" hidden="false" targetId="def8-03e0-48bc-eb8d" type="rule"/>
+        <infoLink id="1ac6-5a43-b8d0-44a9" name="Harpoon Missile" hidden="false" targetId="0352-8227-488d-b658" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="93a8-cf49-befd-aa0b" name="Deathstrike Warp Missile" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="76e5-b98a-59b8-53aa" name="One Shot" hidden="false" targetId="def8-03e0-48bc-eb8d" type="rule"/>
+        <infoLink id="b370-069c-f2af-8e94" name="Warp Missile" hidden="false" targetId="2364-ab4a-84df-6bc3" type="profile"/>
+        <infoLink id="187d-8221-d0ad-5038" name="Destroys Buildings" hidden="false" targetId="7db7-4fc2-dcb1-aa01" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
