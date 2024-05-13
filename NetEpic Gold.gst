@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="b6ca-ebfc-974f-eaae" name="NetEpic Gold" revision="6" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com   " xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
-  <comment>v6 notes :
+<gameSystem id="b6ca-ebfc-974f-eaae" name="NetEpic Gold" revision="7" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com   " xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+  <comment>v7 notes :
+Final release before hosting on NetEpic.org.
+
+v6 notes :
 Minor typo fixes.
 
 v5 notes :
