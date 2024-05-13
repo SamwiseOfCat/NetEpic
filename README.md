@@ -1,6 +1,10 @@
 NetEpic / Epic Space Marine 2nd Edition Battlescribe Game System & Army Lists
 -----------------------------------------------------------------------------
 
+Please feel free to email me with any issues you find in the lists - typos, incorrect points values, missing stats etc and I will add them to a list to get fixed in the next release. All feedback is welcome - please use stagletto at gmail dot com and ill get back to you when I can.
+
+Enjoy!
+
 Internet Installation Notes (best/easiest way!)
 ---------------------------------------
 
@@ -30,27 +34,27 @@ Manual Installation Steps (do this if you cannot install via the above method, o
 
 Release Notes
 -------------
-v6 notes :
+v7 notes :
+Final release before publishing to NetEpic.org. 
 
-Minor fixes to some army Company Cards.
+v6 notes :
+Final fixes to main GST file.
 
 v5 notes :
 
-Yes I know v4 notes didnt get added :-)
-This is hopefully the final release as there will presumably be no NetEpic / SM 2nd Ed armies to add, and also hopefully because there arent any glaring errors in the lists ive made.
-It is a BIG release which has been a LOT of work, and in conjunction with v4 it adds :
+Yes I know v4 notes didnt get added :-) This is hopefully the final release as there will presumably be no NetEpic / SM 2nd Ed armies to add, and also hopefully because there arent any glaring errors in the lists ive made. It is a BIG release which has been a LOT of work, and in conjunction with v4 it adds :
 
-* Dark Eldar
-* Slann / Exodus / Dracon
-* Harlequin Masques / Exodites
-* Chaos
-* Sisters Of Battle
-* Tyranids
+    Dark Eldar
+    Slann / Exodus / Dracon
+    Harlequin Masques / Exodites
+    Chaos
+    Sisters Of Battle
+    Tyranids
 
-It also changes the way you pay for weapons on Titans, as well as the way VP is awarded for them which seems a lot fairer. This will result in the odd "fraction" value in adding up VP though, a small price to pay.
-Hopefully people out there find it useful, its been a labour of love getting all this done (and in some cases less "love" more "urgghhhh").
+It also changes the way you pay for weapons on Titans, as well as the way VP is awarded for them which seems a lot fairer. This will result in the odd "fraction" value in adding up VP though, a small price to pay. Hopefully people out there find it useful, its been a labour of love getting all this done (and in some cases less "love" more "urgghhhh").
 
 Cheers - Steve
+
 
 v3 notes :
 
@@ -95,9 +99,6 @@ Known Bugs / Improvements In The Pipeline
 
 #2:  Faction-specific cards are not prohibited by the code - YET - but will be soon, maybe not for Version 1.2 though. In the meantime, the limitations on Faction-specific cards are made clear by text "Rules" applied to each Force Organisation, as well as Prohibited units that named Factions cant take, so anyone with any experience of list-building with cards will be able to easily identify faction-specific units in a list where they shouldnt be...
 
-Please feel free to email me with any issues you find in the lists - typos, incorrect points values, missing stats etc and I will add them to a list to get fixed in the next release. All feedback is welcome - please use stagletto at gmail dot com and ill get back to you when I can.
-
-Enjoy!
 
 Steve
 
