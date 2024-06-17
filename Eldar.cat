@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6a64-81d6-8354-a8c3" name="Eldar" revision="6" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <readme>v6 notes :
+<catalogue id="6a64-81d6-8354-a8c3" name="Eldar" revision="7" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>v7 notes:
+Changed cost of Saim-Hann Wind Riders Company Card to 650 points / 7VP to match Army Book and SM 2nd Ed value, highlighted to me via email by a NetEpic player.  Wave Serpent / Doomweaver weapon rules added as Rules in their own right for ease of reading in the BS format. D-Cannon rules added to standard weapon profile rather than separate.
+
+v6 notes :
 Minor change to mandatory detatchments on a couple of company cards and Point Defence values for multiple vehicles.
 
 v5 notes :
@@ -2430,6 +2433,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
           </constraints>
           <infoLinks>
             <infoLink id="8f0b-eb69-f0ba-fcde" name="Doomweaver" hidden="false" targetId="e0b1-dbbc-d3b0-2071" type="profile"/>
+            <infoLink id="7048-98bb-a75a-8e87" name="Doomweavers" hidden="false" targetId="5ea6-12a2-687b-2fa0" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="7e07-d435-f4c3-a64f" name="Heavy Artillery" hidden="false" targetId="83c3-b2b8-ac74-c25c" primary="false"/>
@@ -2464,6 +2468,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="f27a-e0d6-6bb4-3d74" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
             <infoLink id="eee7-8793-5ae6-8f60" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
             <infoLink id="ca9d-6a8d-7ae0-fa48" name="Wave Serpent" hidden="false" targetId="72fb-c1d0-a19d-c179" type="profile"/>
+            <infoLink id="b181-f6f3-3b29-c419" name="Wave Serpents - Warp Wave" hidden="false" targetId="0de2-8d88-f560-58f1" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="d235-af02-2201-f563" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -2561,6 +2566,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
             <infoLink id="dd4e-0d29-1384-39ff" name="Skimmer" hidden="false" targetId="85d7-184d-edaf-7eed" type="rule"/>
             <infoLink id="475d-f839-1d76-8372" name="Pop-Up Attack" hidden="false" targetId="ab26-e055-f5a7-e9c3" type="rule"/>
             <infoLink id="e988-e0a6-f7a9-c799" name="Warp Hunter" hidden="false" targetId="c91c-6d6e-8215-fbde" type="profile"/>
+            <infoLink id="ef26-2948-9e0e-73c0" name="Warp Hunter - Warp Attacks" hidden="false" targetId="17ce-b5da-3ff4-071a" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="6d49-1920-13c4-6584" name="Heavy Artillery" hidden="false" targetId="83c3-b2b8-ac74-c25c" primary="false"/>
@@ -3593,6 +3599,7 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
       </costs>
     </selectionEntry>
     <selectionEntry id="18e6-19c7-6485-295a" name="Saim-Hann - Wind Rider Host" hidden="false" collective="false" import="true" type="unit">
+      <comment>Changed to 650 points after player feedback noted army book cost was lower, also matches Space Marine 2nd Ed values.</comment>
       <infoLinks>
         <infoLink id="3748-8c06-4a35-d388" name="Unique" hidden="false" targetId="8872-7902-38c1-08d1" type="rule"/>
       </infoLinks>
@@ -3669,8 +3676,8 @@ Eldar Unique Characters have been added (Jain Zar, Karandras, Eldrad Ulthran) as
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="750.0"/>
-        <cost name=" VP" typeId="points" value="8.0"/>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="650.0"/>
+        <cost name=" VP" typeId="points" value="7.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="13.0"/>
       </costs>
     </selectionEntry>
@@ -6402,6 +6409,15 @@ Daemons. When a Greater Daemon is attacked, it must make its basic saving throw 
     <rule id="ad4d-4d47-8719-dd03" name="D-Cannons" hidden="false">
       <description>Roll for scatter as per an indirect barrage (2D6cm). Instantly destroys any target under the template, except targets with a Hit Template who take a hit (after rolling for scatter) at +3 on the relevent damage chart. Does not effect shielded targets. This weapon destroys buildings if they fail a basic save.</description>
     </rule>
+    <rule id="5ea6-12a2-687b-2fa0" name="Doomweavers" hidden="false">
+      <description>Each model fires an individual web template. Take one template and place it anywhere on the tabletop (you may use LOS or fire indirectly). Scatter it 2D6cm whether or not it was fired indirectly. Place the template number side up the number one printed on it towards the firing model. The other two templates are placed joining the original template on a random edge, determined by rolling a 2D6 (if you roll the same edge twice the second template is wasted). Place all templates numbered side up. Models under a Doomweaver template that have active shields/fields or a 1+ armor save are unaffected. All other units are destroyed on a 4+. If the model makes the 4+ roll, move it to the closest outer edge of the webbed area. Models displaced that are on First Fire orders will not be able to shoot until Advance Fire (if it hasn’t fired already). Units with a hit location template and no shields are struck once on a random location for the highest damage listed in that particular template. If the location struck has a 1+ save no damage is caused. Infantry in buildings roll 4+ as normal to avoid the web. In the open the web disperses in 2 turns. To keep track of this, in the End Phase remove any un-numbered templates, and flip numbered templates to their un-numbered sides. Any buildings or significant terrain that is covered by web will be impassable for the rest of the game.</description>
+    </rule>
+    <rule id="0de2-8d88-f560-58f1" name="Wave Serpents - Warp Wave" hidden="false">
+      <description>Place a special wave template in front of Wave Serpent. The wave is impenetrable to any kind of attack and is impossible to move through. Opponents in a higher position that can see over the template can shoot at the Wave Serpent (including pop ups and indirect barrages), and jump-troops may attack the Wave Serpent normally. The template moves with the vehicle and does not affect terrain. Any other targets “hit” by the template during the Wave Serpent’s movement are moved to the trailing edge of the template and can do nothing for rest of that turn. If the wave passes over a building the building will be destroyed if it fails its basic saving throw (models inside are unaffected if the building survives and must try to bail out if it doesn’t). Wave Serpents can also function as minesweepers - moving through minefields clears a path behind the model. Alternatively, the wave can be fired instead of being used as a vehicle shield. The shield is fired in the Orders Phase before any orders are placed. Move the template 2D6 x 10 cm with the same effects as a moving Wave Serpent, with the additional effect that all models pushed aside suffer a hit on a 4+. Remove the template after use and replace at the beginning of the following turn. Targets with Shields lose one, and if unshielded they receive a hit in their lowest template location (leg or track) with a -2 TSM. Titans and Praetorians do not suffer the disruption effect. Vehicles that are thrown into impassable terrain by the wave move to the edge of the impassable terrain and suffer no further damage. No model that is already hit can be hit again by the same wave attack in any given turn.</description>
+    </rule>
+    <rule id="17ce-b5da-3ff4-071a" name="Warp Hunter - Warp Attacks" hidden="false">
+      <description>Place a barrage template within line of sight and range, and scatter twice (2D6cm each time). Each model under the template may be affected by the warp hole. Roll the scatter dice for each target and on the roll of a cross hair the target is sucked in the warp and destroyed. Otherwise it is thrown D6 cm in the direction shown by the arrow and can do nothing else for the rest of the turn. Buildings can be sucked into the warp and must therefore make a normal basic saving throw or be destroyed. Units with shields lose one and are scattered D6 cm in a random direction. Units with no shields and a hit location template determine a location and roll for damage (no armor save).</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="73c7-f37c-fefa-7e14" name="Guardian Squad" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
@@ -6618,7 +6634,7 @@ Holofields</characteristic>
       <characteristics>
         <characteristic name="Range" typeId="844b-36c0-eaa1-5158">75cm</characteristic>
         <characteristic name="Shooting Profile" typeId="c573-6741-2e61-1642">Barrage Template</characteristic>
-        <characteristic name="Special Rules" typeId="0aa3-ca6c-3b0e-e404">See Special Rule.</characteristic>
+        <characteristic name="Special Rules" typeId="0aa3-ca6c-3b0e-e404">Roll for scatter as per an indirect barrage (2D6cm). Instantly destroys any target under the template, except targets with a Hit Template who take a hit (after rolling for scatter) at +3 on the relevent damage chart. Does not effect shielded targets. This weapon destroys buildings if they fail a basic save.</characteristic>
       </characteristics>
     </profile>
     <profile id="3112-5527-a410-64d3" name="Heat Lance" hidden="false" typeId="6cab-14fd-d162-8ecc" typeName="Eldar Titan Weapons">
@@ -6820,7 +6836,7 @@ Scatter Laser : 24cm, 3d 5+ (0)</characteristic>
         <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+1</characteristic>
         <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Doomweaver : See Special Rules</characteristic>
         <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">3+</characteristic>
-        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339">Each model fires an individual web template. Take one template and place it anywhere on the tabletop (you may use LOS or fire indirectly). Scatter it 2D6cm whether or not it was fired indirectly. Place the template number side up the number one printed on it towards the firing model. The other two templates are placed joining the original template on a random edge, determined by rolling a 2D6 (if you roll the same edge twice the second template is wasted). Place all templates numbered side up. Models under a Doomweaver template that have active shields/fields or a 1+ armor save are unaffected. All other units are destroyed on a 4+. If the model makes the 4+ roll, move it to the closest outer edge of the webbed area. Models displaced that are on First Fire orders will not be able to shoot until Advance Fire (if it hasn’t fired already). Units with a hit location template and no shields are struck once on a random location for the highest damage listed in that particular template. If the location struck has a 1+ save no damage is caused. Infantry in buildings roll 4+ as normal to avoid the web. In the open the web disperses in 2 turns. To keep track of this, in the End Phase remove any un-numbered templates, and flip numbered templates to their un-numbered sides. Any buildings or significant terrain that is covered by web will be impassable for the rest of the game.</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339">See Special Rule.</characteristic>
       </characteristics>
     </profile>
     <profile id="72fb-c1d0-a19d-c179" name="Wave Serpent" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
@@ -6831,8 +6847,7 @@ Scatter Laser : 24cm, 3d 5+ (0)</characteristic>
         <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+1</characteristic>
         <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Warp Wave : 2d6x10cm, Special 4+ (0)</characteristic>
         <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">3+</characteristic>
-        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339">Place a special wave template in front of Wave Serpent. The wave is impenetrable to any kind of attack and is impossible to move through. Opponents in a higher position that can see over the template can shoot at the Wave Serpent (including pop ups and indirect barrages), and jump-troops may attack the Wave Serpent normally. The template moves with the vehicle and does not affect terrain. Any other targets “hit” by the template during the Wave Serpent’s movement are moved to the trailing edge of the template and can do nothing for rest of that turn. If the wave passes over a building the building will be destroyed if it fails its basic saving throw (models inside are unaffected if the building survives and must try to bail out if it doesn’t). Wave Serpents can also function as minesweepers - moving through minefields clears a path behind the model. Alternatively, the wave can be fired instead of being used as a vehicle shield. The shield is fired in the Orders Phase before any orders are placed. Move the template 2D6 x 10 cm with the same effects as a moving Wave Serpent, with the additional effect that all models pushed aside suffer a hit on a 4+. Remove the template after use and replace at the beginning of the following turn. Targets with Shields lose one, and if unshielded they receive a hit in their lowest template location (leg or track) with a -2 TSM. Titans and Praetorians do not suffer the disruption effect. Vehicles that are thrown into impassable terrain by the wave move to the edge of the impassable terrain and suffer no further damage. No model that is already hit can be hit again by the same wave attack in any given turn.
-</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339">See Special Rule.</characteristic>
       </characteristics>
     </profile>
     <profile id="c122-9cd9-e2c1-8b64" name="Unicorn" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
@@ -6865,7 +6880,7 @@ Scatter Laser : 24cm, 3d 5+ (0)</characteristic>
         <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+1</characteristic>
         <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Warp Cannon : 75cm, See Special Rules</characteristic>
         <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">3+</characteristic>
-        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339">Place a barrage template within line of sight and range, and scatter twice (2D6cm each time). Each model under the template may be affected by the warp hole. Roll the scatter dice for each target and on the roll of a cross hair the target is sucked in the warp and destroyed. Otherwise it is thrown D6 cm in the direction shown by the arrow and can do nothing else for the rest of the turn. Buildings can be sucked into the warp and must therefore make a normal basic saving throw or be destroyed. Units with shields lose one and are scattered D6 cm in a random direction. Units with no shields and a hit location template determine a location and roll for damage (no armor save).</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339">See Special Rule.</characteristic>
       </characteristics>
     </profile>
     <profile id="66d2-132a-f28e-6c85" name="Vibro-Cannon" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
