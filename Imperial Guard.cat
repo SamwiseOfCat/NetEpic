@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="e7fc-3623-dfb1-db57" name="Imperial Guard" revision="8" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>v8 notes:
-Fixed Confessor points value and spelling of &quot;Assassin&quot;
+Fixed Confessor points value, Sentinel To-Hit on Autocannon, and spelling of &quot;Assassin&quot;.
 
 v7 notes : 
 Gorgon Company costs fixed.Warlord &amp; Reaver Battlegroups fixed.
@@ -11241,6 +11241,8 @@ E) Ignore: Ignore the question and move on to the next one.</description>
           </categoryLinks>
           <costs>
             <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -12531,7 +12533,7 @@ Maximal Fire (can be up to 6 counters, only one shot per turn) : 1 Counter = 4+ 
         <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">25cm</characteristic>
         <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">6+</characteristic>
         <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+2</characteristic>
-        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Autocannon : 50cm, 1d 5+ (0)</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Autocannon : 50cm, 1d 4+ (0)</characteristic>
         <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">4+</characteristic>
         <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
       </characteristics>
