@@ -34,6 +34,13 @@ Manual Installation Steps (do this if you cannot install via the above method, o
 
 Release Notes
 -------------
+
+v9 notes:
+Even more (very minor) fixes.
+
+v8 notes :
+Minor fixes.
+
 v7 notes :
 Final release before publishing to NetEpic.org. 
 
