@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6a64-81d6-8354-a8c3" name="Eldar" revision="7" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <readme>v7 notes:
+<catalogue id="6a64-81d6-8354-a8c3" name="Eldar" revision="8" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>v8 notes:
+Fixed distance of War Walker Scatter Laser attacks.
+
+v7 notes:
 Changed cost of Saim-Hann Wind Riders Company Card to 650 points / 7VP to match Army Book and SM 2nd Ed value, highlighted to me via email by a NetEpic player.  Wave Serpent / Doomweaver weapon rules added as Rules in their own right for ease of reading in the BS format. D-Cannon rules added to standard weapon profile rather than separate.
 
 v6 notes :
@@ -6823,7 +6826,7 @@ Spread Fire -  10BP 2+ (0)</characteristic>
         <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">6+</characteristic>
         <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+1</characteristic>
         <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Lascannon : 75cm, 1d 5+ (-2)
-Scatter Laser : 24cm, 3d 5+ (0)</characteristic>
+Scatter Laser : 25cm, 3d 5+ (0)</characteristic>
         <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">3+</characteristic>
         <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
       </characteristics>
