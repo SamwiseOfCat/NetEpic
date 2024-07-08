@@ -42,14 +42,14 @@ v8 notes :
 Minor fixes.
 
 v7 notes :
-Final release before publishing to NetEpic.org. 
+Final release before publishing to NetEpic.org. My experimental Necrons list has been removed and replaced with the excellent (and authorised by the NetEpic Group!) list created by the fabulous Jodrell.
 
 v6 notes :
 Final fixes to main GST file.
 
 v5 notes :
 
-Yes I know v4 notes didnt get added :-) This is hopefully the final release as there will presumably be no NetEpic / SM 2nd Ed armies to add, and also hopefully because there arent any glaring errors in the lists ive made. It is a BIG release which has been a LOT of work, and in conjunction with v4 it adds :
+Yes I know v4 notes didnt get added :-) This is hopefully the final release as there will presumably be no new NetEpic / SM 2nd Ed armies to add, and also hopefully because there arent any glaring errors in the lists ive made. It is a BIG release which has been a LOT of work, and in conjunction with v4 it adds :
 
     Dark Eldar
     Slann / Exodus / Dracon
