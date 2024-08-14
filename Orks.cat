@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3e2a-ea46-765a-b749" name="Orks" revision="7" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <readme>v7 notes :
+<catalogue id="3e2a-ea46-765a-b749" name="Orks" revision="8" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>v8 notes :
+Trukks were not showing up in their Support Card profile - now fixed.
+
+v7 notes :
 For some reason *all* units didnt have their type designated (Infantry, Vehicle etc). Now all fixed.
 
 v6 notes :
@@ -3082,6 +3085,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
             <infoLink id="af83-7f7f-e80c-1e02" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
             <infoLink id="19aa-6d70-50ed-d2e9" name="Open-Top Vehicle (OTV)" hidden="false" targetId="92c2-e5ef-b021-b866" type="rule"/>
             <infoLink id="301f-c1d9-8952-8f1f" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
+            <infoLink id="c47a-5e5b-d91f-9560" name="Trukk" hidden="false" targetId="ab6a-a62c-3c51-542d" type="profile"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="6b09-1c1a-87cf-3e4c" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
