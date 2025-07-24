@@ -1,9 +1,10 @@
 NetEpic / Epic Space Marine 2nd Edition Battlescribe Game System & Army Lists
 -----------------------------------------------------------------------------
 
-Please feel free to email me with any issues you find in the lists - typos, incorrect points values, missing stats etc and I will add them to a list to get fixed in the next release. All feedback is welcome - please use stagletto at gmail dot com and ill get back to you when I can.
+***** The current version is Version 10 *****
 
-Enjoy!
+Please feel free to email me with any issues you find in the lists - typos, incorrect points values, missing stats etc and I will add them to a list to get fixed in the next release. All feedback is welcome - please use stagletto at gmail dot com and ill get back to you when I can, or log an Issue if you are a GitHub user here on the NetEpic project.
+
 
 Internet Installation Notes (best/easiest way!)
 ---------------------------------------
@@ -34,6 +35,8 @@ Manual Installation Steps (do this if you cannot install via the above method, o
 
 Release Notes
 -------------
+
+v10 notes : Quite a few fixes, including missing weapon profiles or unit stats on Chaos armies (I was doing the Chaos lists late in the evenings and presumably the coffee or whisky effects had stopped and instead got sleepy and forgetful and missed a few things!)
 
 v9 notes:
 Even more (very minor) fixes.
