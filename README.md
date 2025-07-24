@@ -13,7 +13,7 @@ Internet Installation Notes (best/easiest way!)
 2) Run Battlescribe.
 3) Click the "Manage Data" icon at the top of the BS window.
 4) Click "Import Data".
-5) Click "Import Data From URL" then enter the following URL: "https://github.com/SamwiseOfCat/NetEpic/releases/download/v9/NetEpic.latest.bsi"
+5) Click "Import Data From URL" then enter the following URL: "https://github.com/SamwiseOfCat/NetEpic/releases/download/v10/NetEpic.latest.bsi"
 6) Battlescribe will then download the files for you.
 7) Once complete, Click the "Create A New Roster" icon in the top left.
 8) Select "NetEpic Gold" from the first dropdown.
