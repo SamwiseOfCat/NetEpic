@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a9aa-a2eb-5b74-a29d" name="Chaos" revision="7" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <comment></comment>
-  <readme>v7 notes :
+<catalogue id="a9aa-a2eb-5b74-a29d" name="Chaos" revision="8" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>IMPORTANT NOTE ON CHAOS ARMY COMPOSTITION USING THESE LISTS  (Version revision notes follow below) :
+There is a big difference between the 2nd Ed (Renegades) and NetEpic rules for army compositions - the extended NetEpic rules are highly restrictive in regards to which Chaos Power/God you select. The 2nd Ed rules are far less restrictive - basically you can pick any Power&apos;s units as long as you have a Greater Daemon of that power. For this reason the Battlescribe lists here allow you the freedom to pick as you wish - choose which ruleset you intend to use for force composition, with agreement from your opponent.
+
+v8 notes :
+Added missing special rules for Banelord Titan. Added missing weapon options &amp; special rules for Lord Of Battle. Added Daemon Engines rule to units that were missing it. Changed Daemon Engines Unit composition to allow any combination of 3 Engines as per original 2nd ruleset (NetEpic split these into 3 cards where you needed at least 2 or one type in a single card, seems illogical). Fixed missing Lord Of Change &quot;Bolt Of Change&quot; range stat. Added &quot;No First Fire vs charging Greater Daemons&quot; and &quot;Morale Test&quot; rules from Renegades to Greater Daemons. Added missing Death Dealer Tower Gun range stat.
+
+v7 notes :
 Fixed a number of unit card classifcations. Added &quot;Unique&quot; rule to all named units like the Primarchs or named titans. Added Chaos Titan-specific weapons.
 
 v6 notes :
@@ -113,6 +118,7 @@ This was the list I was dreading doing... easily the most complex in regards to 
         </categoryLink>
         <categoryLink id="7157-5c84-b933-4485" name="Chaos Undivided" hidden="false" targetId="0f68-4c63-262e-2b3c" primary="false"/>
         <categoryLink id="ad9d-ae48-1007-0f35" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
+        <categoryLink id="f151-9972-8d92-d525" name="Greater Daemon Card" hidden="false" targetId="013c-3347-c2b8-2c7c" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="a68b-fb17-7eb0-a873" name="Nurgle" hidden="false">
@@ -397,6 +403,7 @@ This was the list I was dreading doing... easily the most complex in regards to 
         </categoryLink>
         <categoryLink id="2153-1a09-19d1-d3f8" name="Chaos Space Marines" hidden="false" targetId="876a-a1c2-7f18-2798" primary="false"/>
         <categoryLink id="9802-3e76-ae66-9753" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
+        <categoryLink id="f6f5-fbbf-abbe-7105" name="Greater Daemon Card" hidden="false" targetId="013c-3347-c2b8-2c7c" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -3699,6 +3706,19 @@ This was the list I was dreading doing... easily the most complex in regards to 
           <categoryLinks>
             <categoryLink id="40ce-62b4-b527-3b4a" name="Titan" hidden="false" targetId="31e8-9840-fb3a-3b8d" primary="false"/>
           </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="8f75-236e-908a-5635" name="Lord Of Battle Weapons" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d03e-ff70-70a2-9e57" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="d11d-33ff-e2ff-1c7d" name="Lord Of Battle Chain Fist" hidden="false" collective="false" import="true" targetId="383c-a6c7-cd88-8139" type="selectionEntry"/>
+                <entryLink id="4e23-1344-61c4-cd93" name="Lord Of Battle Deathstorm" hidden="false" collective="false" import="true" targetId="f787-fc4b-1de4-093d" type="selectionEntry"/>
+                <entryLink id="c0af-32dc-552b-d307" name="Lord Of Battle Doomburner" hidden="false" collective="false" import="true" targetId="e4d3-9d8f-c427-4090" type="selectionEntry"/>
+                <entryLink id="5a2a-44ce-59f9-5ec8" name="Lord Of Battle Hellblade" hidden="false" collective="false" import="true" targetId="2813-232a-90c5-27ea" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
             <cost name=" VP" typeId="points" value="0.0"/>
@@ -3754,6 +3774,7 @@ This was the list I was dreading doing... easily the most complex in regards to 
     <selectionEntry id="f209-501d-e6b0-47e0" name="Banelord Titan" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="c7a6-3f96-dc68-6f3a" name="Daemon Engines" hidden="false" targetId="2413-3e31-3b05-25c4" type="rule"/>
+        <infoLink id="6e17-a00c-73e6-0975" name="Banelord Titan - Special Rules" hidden="false" targetId="ea67-c108-28b6-2d46" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4a4f-421c-eca4-6c04" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
@@ -3852,6 +3873,9 @@ This was the list I was dreading doing... easily the most complex in regards to 
       </costs>
     </selectionEntry>
     <selectionEntry id="e4e5-1c9b-1b5b-340c" name="Cannon of Khorne" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="c21e-e91d-ea27-c98c" name="Daemon Engines" hidden="false" targetId="2413-3e31-3b05-25c4" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="aa34-aabc-50e2-b8ce" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
         <categoryLink id="ed0a-13fb-bb47-2bab" name="Khorne" hidden="false" targetId="9294-e104-e717-3556" primary="false"/>
@@ -3982,11 +4006,14 @@ This was the list I was dreading doing... easily the most complex in regards to 
         <categoryLink id="a017-f013-e58a-0084" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="4785-b358-6f23-52fb" name="Juggers" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="4785-b358-6f23-52fb" name="Juggernaughts" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d42-ef64-a9d0-221a" type="max"/>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cc8-1dc2-e399-0ba9" type="min"/>
           </constraints>
+          <infoLinks>
+            <infoLink id="bf4c-9306-297a-3bc9" name="Juggernaughts" hidden="false" targetId="0845-437c-002e-3d10" type="profile"/>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="fa0e-c28b-5f60-1196" name="Cavalry" hidden="false" targetId="755d-5211-ce54-6b21" primary="false"/>
           </categoryLinks>
@@ -4003,7 +4030,7 @@ This was the list I was dreading doing... easily the most complex in regards to 
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="3.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f5e1-8d44-d956-5d24" name="Daemon Engines of Khorne A" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="f5e1-8d44-d956-5d24" name="Daemon Engines of Khorne" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="1385-23da-563c-288e" name="Daemon Engines" hidden="false" targetId="2413-3e31-3b05-25c4" type="rule"/>
       </infoLinks>
@@ -4020,9 +4047,6 @@ This was the list I was dreading doing... easily the most complex in regards to 
           </constraints>
           <selectionEntries>
             <selectionEntry id="701e-e206-6e21-e9b3" name="Brass Scorpion" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17df-d468-45ab-9b50" type="min"/>
-              </constraints>
               <infoLinks>
                 <infoLink id="d226-e7cb-2487-4c47" name="Brass Scorpion" hidden="false" targetId="2dec-b720-5641-c3b9" type="profile"/>
                 <infoLink id="2605-3d8d-38f2-8ea1" name="All-Around Armour" hidden="false" targetId="53d7-4487-2803-2469" type="rule"/>
@@ -4037,9 +4061,6 @@ This was the list I was dreading doing... easily the most complex in regards to 
               </costs>
             </selectionEntry>
             <selectionEntry id="8ba8-813e-9ba6-bce4" name="Doom Blaster" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3ef-a634-4dab-4e82" type="min"/>
-              </constraints>
               <infoLinks>
                 <infoLink id="86e0-9ca5-16a2-a8d1" name="Doom Blaster" hidden="false" targetId="b227-8fb6-9fd2-7a7f" type="profile"/>
               </infoLinks>
@@ -4052,42 +4073,12 @@ This was the list I was dreading doing... easily the most complex in regards to 
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="250.0"/>
-        <cost name=" VP" typeId="points" value="3.0"/>
-        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="2.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="ed93-c315-bd65-7c03" name="Daemon Engines of Khorne B" hidden="false" collective="false" import="true" type="unit">
-      <infoLinks>
-        <infoLink id="e72a-f87b-55a5-74d8" name="Daemon Engines" hidden="false" targetId="2413-3e31-3b05-25c4" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="b13b-fcf7-c801-cfb5" name="Khorne" hidden="false" targetId="9294-e104-e717-3556" primary="false"/>
-        <categoryLink id="f155-2e86-457f-b469" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-        <categoryLink id="b55a-c178-0390-3137" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="b3d0-61c1-608d-73dc" name="Daemon Engines of Khorne" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f8c-b79a-decf-a36d" type="max"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dff3-863d-2f91-ce90" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="76cf-e318-0b3d-70b6" name="Cauldron Of Blood" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c63f-05d2-4882-f0b4" type="min"/>
-              </constraints>
+            <selectionEntry id="7e7c-5a3f-10fd-75be" name="Blood Reaper" hidden="false" collective="false" import="true" type="model">
               <infoLinks>
-                <infoLink id="e3a4-c779-8ba5-b02a" name="Cauldron of Blood" hidden="false" targetId="982b-5e25-492f-d0ed" type="profile"/>
-                <infoLink id="045e-4168-d65c-13ba" name="All-Around Armour" hidden="false" targetId="53d7-4487-2803-2469" type="rule"/>
-                <infoLink id="ab5a-927b-f6ef-1467" name="Ignores Cover" hidden="false" targetId="68e8-8b1e-49cc-e8ef" type="rule"/>
+                <infoLink id="7a50-c71a-c6e3-451c" name="Blood Reaper" hidden="false" targetId="20ef-17c6-a47a-8256" type="profile"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="fe4c-ec66-389d-c7d4" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+                <categoryLink id="1201-c301-250c-6b4e" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -4095,15 +4086,14 @@ This was the list I was dreading doing... easily the most complex in regards to 
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="b753-b0b5-739d-217e" name="Blood Reaper" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df2c-22bd-8e7e-9fbf" type="min"/>
-              </constraints>
+            <selectionEntry id="47fb-ddeb-ca42-8626" name="Cauldron Of Blood" hidden="false" collective="false" import="true" type="model">
               <infoLinks>
-                <infoLink id="27e9-1ee4-853f-c94d" name="Blood Reaper" hidden="false" targetId="20ef-17c6-a47a-8256" type="profile"/>
+                <infoLink id="55d3-ecc6-f3d3-95b1" name="Cauldron of Blood" hidden="false" targetId="982b-5e25-492f-d0ed" type="profile"/>
+                <infoLink id="4d7b-54e2-3855-301c" name="All-Around Armour" hidden="false" targetId="53d7-4487-2803-2469" type="rule"/>
+                <infoLink id="4da3-ae8a-5346-73f3" name="Ignores Cover" hidden="false" targetId="68e8-8b1e-49cc-e8ef" type="rule"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="7d13-1769-7b29-94c4" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+                <categoryLink id="7860-6d19-649b-9911" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -4111,42 +4101,14 @@ This was the list I was dreading doing... easily the most complex in regards to 
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="250.0"/>
-        <cost name=" VP" typeId="points" value="3.0"/>
-        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="2.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="9446-c209-bf77-0642" name="Daemon Engines of Khorne C" hidden="false" collective="false" import="true" type="unit">
-      <infoLinks>
-        <infoLink id="4254-1d45-61c1-4438" name="Daemon Engines" hidden="false" targetId="2413-3e31-3b05-25c4" type="rule"/>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="648e-df07-bbf5-12d5" name="Khorne" hidden="false" targetId="9294-e104-e717-3556" primary="false"/>
-        <categoryLink id="8c59-be89-2cfc-380c" name="Support Card" hidden="false" targetId="4462-e6f9-41a2-4e47" primary="true"/>
-        <categoryLink id="3a34-5472-1c5f-a584" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="b5a6-6f4b-76f0-ba29" name="Daemon Engines of Khorne" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b40c-98fc-824a-1700" type="max"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8778-6992-a207-10a6" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="0421-0237-009a-8c59" name="Death Dealer" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9684-ab01-1579-3f52" type="min"/>
-              </constraints>
+            <selectionEntry id="76a5-ca41-a353-0ba1" name="Death Dealer" hidden="false" collective="false" import="true" type="model">
               <infoLinks>
-                <infoLink id="53ad-639a-39ea-30f3" name="Death Dealer" hidden="false" targetId="c5ff-b1e4-4110-296b" type="profile"/>
-                <infoLink id="55cb-f294-1580-137b" name="All-Around Armour" hidden="false" targetId="53d7-4487-2803-2469" type="rule"/>
-                <infoLink id="b13e-7f7f-3371-3260" name="Transport (5)" hidden="false" targetId="8a21-8c7b-a831-8883" type="rule"/>
+                <infoLink id="d9ea-2a6f-b757-fcdb" name="Death Dealer" hidden="false" targetId="c5ff-b1e4-4110-296b" type="profile"/>
+                <infoLink id="af7e-35f8-4fc5-319f" name="All-Around Armour" hidden="false" targetId="53d7-4487-2803-2469" type="rule"/>
+                <infoLink id="4c69-4817-994a-3bf8" name="Transport (5)" hidden="false" targetId="8a21-8c7b-a831-8883" type="rule"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="a9b6-78f9-0148-d625" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+                <categoryLink id="424c-42c3-570f-db8d" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -4154,18 +4116,15 @@ This was the list I was dreading doing... easily the most complex in regards to 
                 <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="7795-389b-aafc-11ba" name="Tower of Skulls" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecaf-f2cf-bf87-361d" type="min"/>
-              </constraints>
+            <selectionEntry id="ef2c-8962-5e19-125f" name="Tower of Skulls" hidden="false" collective="false" import="true" type="model">
               <infoLinks>
-                <infoLink id="8873-a4ac-63f2-1502" name="Tower of Skulls" hidden="false" targetId="a1df-2c09-09f1-3218" type="profile"/>
-                <infoLink id="0d51-248a-077e-c4d6" name="Point Defence (6)" hidden="false" targetId="9010-8c41-f117-b72d" type="rule"/>
-                <infoLink id="66da-90e0-5fa1-e180" name="All-Around Armour" hidden="false" targetId="53d7-4487-2803-2469" type="rule"/>
-                <infoLink id="4c7b-5ce5-8196-658e" name="360° Weapon" hidden="false" targetId="02c3-fe5a-3cf1-34a5" type="rule"/>
+                <infoLink id="8b5a-2019-ad9f-d606" name="Tower of Skulls" hidden="false" targetId="a1df-2c09-09f1-3218" type="profile"/>
+                <infoLink id="0ecc-1d96-e280-cc51" name="Point Defence (6)" hidden="false" targetId="9010-8c41-f117-b72d" type="rule"/>
+                <infoLink id="6d15-6863-9ae2-fa46" name="All-Around Armour" hidden="false" targetId="53d7-4487-2803-2469" type="rule"/>
+                <infoLink id="1d98-a87e-9747-d38d" name="360° Weapon" hidden="false" targetId="02c3-fe5a-3cf1-34a5" type="rule"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="e4ca-615f-5bb4-913f" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
+                <categoryLink id="0562-a483-b045-f30e" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
@@ -4299,6 +4258,8 @@ This was the list I was dreading doing... easily the most complex in regards to 
             <infoLink id="3900-55ce-08f4-98e8" name="Greater Daemons / Princes : Inspire Minions" hidden="false" targetId="9bfe-1a4d-f6f7-6f11" type="rule"/>
             <infoLink id="6719-7b91-6883-6bf1" name="Transport (11)" hidden="false" targetId="2637-f0ec-5992-1001" type="rule"/>
             <infoLink id="144c-45ab-381c-b843" name="Point Defence (8)" hidden="false" targetId="8939-5bc6-cf6b-0cd3" type="rule"/>
+            <infoLink id="afaa-77f3-486a-38a6" name="Plague Cannon" hidden="false" targetId="f70a-4c61-b541-7e6b" type="rule"/>
+            <infoLink id="ddaf-ad2e-8828-5f40" name="Daemon Engines" hidden="false" targetId="2413-3e31-3b05-25c4" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="3f75-45ac-457e-87f1" name="Praetorian" hidden="false" targetId="6a0d-f19f-df5c-6958" primary="false"/>
@@ -4610,6 +4571,9 @@ This was the list I was dreading doing... easily the most complex in regards to 
       </costs>
     </selectionEntry>
     <selectionEntry id="0135-98d7-e6c9-2b6a" name="Breath of Nurgle" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="4b26-31ff-4261-0c71" name="Daemon Engines" hidden="false" targetId="2413-3e31-3b05-25c4" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="a419-059b-10ad-4176" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
         <categoryLink id="cd35-c665-709c-b85d" name="Nurgle" hidden="false" targetId="5e4c-6b46-08d5-8daa" primary="false"/>
@@ -4792,6 +4756,7 @@ This was the list I was dreading doing... easily the most complex in regards to 
             <infoLink id="3303-2edd-919b-ee38" name="Terror" hidden="false" targetId="1f26-d712-95f4-c56e" type="rule"/>
             <infoLink id="2add-2c77-cf14-ecd4" name="Greater Daemons / Princes : &quot;That Didnt Hurt&quot;" hidden="false" targetId="deb6-a321-b7c8-fd05" type="rule"/>
             <infoLink id="4433-c7f3-0bc2-9222" name="Litany of Slaanesh" hidden="false" targetId="05cb-f505-276d-88a7" type="rule"/>
+            <infoLink id="c4a8-46d7-784b-8f68" name="Daemon Engines" hidden="false" targetId="2413-3e31-3b05-25c4" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="c5c7-58ed-31df-1fe5" name="Superheavy" hidden="false" targetId="e3d7-eb22-9df1-719b" primary="false"/>
@@ -5966,6 +5931,7 @@ This was the list I was dreading doing... easily the most complex in regards to 
     <selectionEntry id="b324-ad70-5b0c-e1da" name="Firelord" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="d301-4ed1-92b0-8889" name="Chaos Reward Cards : 1" hidden="false" targetId="78b0-8086-cbd3-887f" type="rule"/>
+        <infoLink id="3233-381e-4459-8482" name="Daemon Engines" hidden="false" targetId="2413-3e31-3b05-25c4" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9498-b250-4b7b-6b27" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
@@ -6067,6 +6033,7 @@ This was the list I was dreading doing... easily the most complex in regards to 
     <selectionEntry id="1eaa-da24-5159-687b" name="Silver Towers of Tzeentch" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="b58d-a6bd-ca0f-c7cc" name="Chaos Reward Cards : 1" hidden="false" targetId="78b0-8086-cbd3-887f" type="rule"/>
+        <infoLink id="5c10-d991-f1d7-fa98" name="Daemon Engines" hidden="false" targetId="2413-3e31-3b05-25c4" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="16f3-b877-afaa-77cc" name="Chaos" hidden="false" targetId="5755-5ae2-3628-ebe9" primary="false"/>
@@ -9445,6 +9412,50 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="f787-fc4b-1de4-093d" name="Lord Of Battle Deathstorm" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="978c-31b4-9de3-7ab1" name="Deathstorm" hidden="false" targetId="0656-1f2e-dde0-ee39" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e4d3-9d8f-c427-4090" name="Lord Of Battle Doomburner" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3c51-4dbb-4d55-7484" name="Doomburner" hidden="false" targetId="1609-1a48-e2a4-7d2a" type="profile"/>
+        <infoLink id="0ad4-ea3e-02c1-f430" name="Damages Buildings" hidden="false" targetId="c5de-b394-fde5-2388" type="rule"/>
+        <infoLink id="7684-1b4d-7999-9a0c" name="Penetrating (+1)" hidden="false" targetId="b867-0e00-dc6a-7039" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2813-232a-90c5-27ea" name="Lord Of Battle Hellblade" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="366b-edf6-a8cb-84ce" name="Destroys Buildings" hidden="false" targetId="7db7-4fc2-dcb1-aa01" type="rule"/>
+        <infoLink id="b395-9591-f9e7-bc2a" name="Hellblade" hidden="false" targetId="e432-f757-1055-e58f" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="383c-a6c7-cd88-8139" name="Lord Of Battle Chain Fist" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="331d-4f02-d156-ed07" name="Chain Fist" hidden="false" targetId="f5da-992c-b616-69d7" type="profile"/>
+        <infoLink id="6250-15d4-f9ba-ba89" name="Destroys Buildings" hidden="false" targetId="7db7-4fc2-dcb1-aa01" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+        <cost name=" VP" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="952d-3432-487f-ade6" name="Mark of Khorne : Blood for the Blood God!" publicationId="114f-d100-94a8-32d5" page="10" hidden="false">
@@ -9477,14 +9488,14 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
     <rule id="9bfe-1a4d-f6f7-6f11" name="Greater Daemons / Princes : Inspire Minions" hidden="false">
       <description>Any unit that is within 25cm of a Greater Daemon / Prince and has line of sight will automatically pass any Morale Test that it is required to make. However, if any Greater Daemon / Prince is destroyed all units with 25 cm must immediately take a Morale Test (even if they do not have line of sight) or be placed on Fall Back Orders.</description>
     </rule>
-    <rule id="239b-94a4-a58e-e857" name="Greater Daemons / Princes : Fearless" hidden="false">
-      <description>Greater Daemons / Princes are immune to Fear and Terror, and automatically pass Morale Tests. This does not grant immunity from having to make a morale save, in case it matters.</description>
+    <rule id="239b-94a4-a58e-e857" name="Greater Daemons / Princes : Fearless / Create Fear" hidden="false">
+      <description>Greater Daemons / Princes are immune to Fear and Terror, and automatically pass Morale Tests. This does not grant immunity from having to make a morale save, in case it matters. If a Greater Daemon attacks another unit in close combat the enermy unit must take an immediate morale test. If the test is failed, the unit is immediately placed on Fall Back orders (with the corresponding -2 to CAF) whilst still being pinned in close combat.</description>
     </rule>
     <rule id="bca4-33d0-6f9a-78a3" name="Greater Daemons / Princes : Psychic Vulnerability" hidden="false">
-      <description>Due to their nature Greater Daemons / Princes are vulnerable to psychic powers and may not save themselves by using Chaos cards when attacked by ethereal psychic powers or Close Combat attacks that are psychic in nature. In the case of attacks from physical psychic powers, Greater Daemons / Princes may use Chaos cards to avoid destruction but they must surrender two cards instead of one, due to the fact that the Greater Daemon / Prince must expend more power to negate this type of attack.</description>
+      <description>Due to their nature Greater Daemons / Princes are vulnerable to psychic powers and may not save themselves by using Chaos cards when attacked by ethereal psychic powers or Close Combat attacks that are psychic in nature. In the case of attacks from physical psychic powers, Greater Daemons / Princes may use Chaos cards to avoid destruction but they must surrender two cards instead of one, due to the fact that the Greater Daemon / Prince must expend more power to negate this type of attack. NOTE : This rule does not apply if using 2nd Ed rules - psychic attacks that a Daemon cannot be saved with Reward Cards in 2nd Ed.</description>
     </rule>
     <rule id="deb6-a321-b7c8-fd05" name="Greater Daemons / Princes : &quot;That Didnt Hurt&quot;" hidden="false">
-      <description>Greater Daemons / Princes can draw and use the raw energy of Chaos to protect themselves in battle. When a Greater Daemon / Prince fails an Armor Save it may surrender a Chaos Reward to “negate” the killing blow. This is done by fanning out the player’s remaining Chaos Reward cards and allowing the opponent to randomly select one and discard it. Multiple failed saves may be countered on a 1 card to 1 failed save basis. Effects that do not allow an Armor Save cannot be countered.</description>
+      <description>Greater Daemons / Princes can draw and use the raw energy of Chaos to protect themselves in battle. When a Greater Daemon / Prince fails an Armor Save it may surrender a Chaos Reward to “negate” the killing blow. This is done by fanning out the player’s remaining Chaos Reward cards and allowing the opponent to randomly select one and discard it. Multiple failed saves may be countered on a 1 card to 1 failed save basis. Effects that do not allow an Armor Save cannot be countered. Also, Daemons cannot be shot at by units on First Fire when they are charged.</description>
     </rule>
     <rule id="7680-1ac9-e544-a739" name="Khorne Berserkers : Morale &amp; Movement" hidden="false">
       <description>Khorne Berserkers are immune to any Morale checks they are called upon to make. They may only take Charge orders. If Chaos is winning the battle, the squad can triple their movement (ie. a squad on its normal &quot;only Charge orders&quot;  would be moving 45cm).</description>
@@ -9622,6 +9633,12 @@ Pods that land on another model (friend or foe) cause a hit with –3 TSM. The p
     </rule>
     <rule id="141b-dd42-edca-ccdf" name="Khornate Titan Weapons" hidden="false">
       <description>This weapon may only be mounted on a Warlord Titan dedicated to Khorne.</description>
+    </rule>
+    <rule id="ea67-c108-28b6-2d46" name="Banelord Titan - Special Rules" hidden="false">
+      <description>Banelord Titans may only be given Advance or Charge orders. If the Chaos player is winning all Banelords receive +1 to save and To Hit rolls, and also roll an extra D6 in close combat.</description>
+    </rule>
+    <rule id="f70a-4c61-b541-7e6b" name="Plague Cannon" hidden="false">
+      <description>Models destroyed by this weapon are replaced by a plague counter. In every End Phase place a 6 cm barrage template over each plague counter and roll a d6 for every model touched. On a 4+ it must make an Armor Save to avoid destruction (models without armor save on 6+). Remove the original plague counters and replace these secondary casualties with new plague counters. Next End Phase, follow the same procedure.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -9968,9 +9985,11 @@ Heavy Bolters : 25cm, 4d 5+ (0)</characteristic>
         <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">15cm</characteristic>
         <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">See hit template</characteristic>
         <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+10</characteristic>
-        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">See Weapons</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Head Cannon : 50cm, 1d 4+ (-2)
+Fire Throwers : 15cm, 6d 5+ (0) - Ignores Cover
++2 arm weapons from list</characteristic>
         <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">N/A</characteristic>
-        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339">3+ Psychic Save</characteristic>
       </characteristics>
     </profile>
     <profile id="a7b2-68bb-7291-3346" name="Daemon Prince of Nurgle" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
@@ -10074,7 +10093,8 @@ Jaw Cannon : 50cm, 3d 5+ (-1)</characteristic>
         <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">2+</characteristic>
         <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+7</characteristic>
         <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Gatling Cannon : 25cm, 6d 5+ (0)
-Tower Gun : 1d 5+ (-2)</characteristic>
+Tower Gun : 50cm, 1d 5+ (-2)
+Bolters : 15cm, 4d 6+ (0)</characteristic>
         <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">1+</characteristic>
         <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
       </characteristics>
@@ -10192,7 +10212,7 @@ Tower Guns : 50cm, 4d 5+ (-1)</characteristic>
 Hell Cannon : 25cm, 2d 4+ (-2)
 Plague Cannon : 25cm, 4BP 5+ (-1)</characteristic>
         <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da"/>
-        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339">+1D6 CAF awarded to any transported troops making boarding actions against superheavy or larger units, or any boarding actions against enemy troops in buildings. Can carry infantry/walkers of any size.</characteristic>
+        <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339">+1D6 CAF awarded to any transported troops making boarding actions against superheavy or larger units, or any boarding actions against enemy troops in buildings. Can carry infantry/walkers of any size. When in close combat with a non-shielded Titan/Praetorian/Superheavy/Building, troops inside can make a boarding action where they gain an extra +1D6 CAF for the first round of combat only.</characteristic>
       </characteristics>
     </profile>
     <profile id="25e3-4436-d4fc-a960" name="Daemon Prince of Khorne" hidden="false" typeId="8550-7363-7647-120f" typeName="Unit">
@@ -10466,7 +10486,7 @@ Lascannon : 50cm, 2d 5+ (-1)</characteristic>
         <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">15cm</characteristic>
         <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">2+</characteristic>
         <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+8</characteristic>
-        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Bolt of Change - 1d 3+ (-1) - See Special Rules</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Bolt of Change - 35cm, 1d 3+ (-1) - See Special Rules</characteristic>
         <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">N/A</characteristic>
         <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339">Cannot make pop-up attacks.</characteristic>
       </characteristics>
@@ -11239,7 +11259,7 @@ Defiler Cannon : 50cm, 1d 4+ (-2)</characteristic>
         <characteristic name="Special Rules" typeId="0ee4-aa22-5440-8df0">The whip is used at the start of the Close Combat Segment. Roll a D6 for every enemy model in base to base contact and on a score of 4+ it takes a hit at -1 TSM. Shielded targets lose D6 shields if hit, and if they lose more shields than they have, the excess hits are added to the CAF of the titan using the whip.</characteristic>
       </characteristics>
     </profile>
-    <profile id="e6e5-6fa6-5b31-0eb8" name="Bloodletter / Lord Of Battle Head" hidden="false" typeId="268b-2318-376d-7096" typeName="Chaos Praetorian &amp; Superheavy Weapons">
+    <profile id="e6e5-6fa6-5b31-0eb8" name="Bloodletter Head" hidden="false" typeId="268b-2318-376d-7096" typeName="Chaos Praetorian &amp; Superheavy Weapons">
       <characteristics>
         <characteristic name="Range" typeId="7ee4-d9f0-70f0-f2a0">25cm</characteristic>
         <characteristic name="Attack Dice" typeId="cb7a-d0c6-2b2d-d141">2d</characteristic>

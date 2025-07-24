@@ -9023,7 +9023,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="350.0"/>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="400.0"/>
         <cost name=" VP" typeId="points" value="4.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="2.0"/>
       </costs>

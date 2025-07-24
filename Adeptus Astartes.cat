@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0d18-39a5-d423-b431" name="Space Marines" revision="8" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <readme>v8 notes :
+<catalogue id="0d18-39a5-d423-b431" name="Space Marines" revision="9" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>v9 notes :
+Fixed Land Raider Point Defence.
+
+v8 notes :
 Fixes to some unit classifications.
 
 v7 notes :
@@ -1153,7 +1156,7 @@ Many thanks to Drewski for initial Alpha testing of this list.</readme>
           <infoLinks>
             <infoLink id="3936-6f0f-1e0b-9c64" name="Land Raider" hidden="false" targetId="5656-41dd-5d0c-750b" type="profile"/>
             <infoLink id="3d4c-d353-1b84-a0ba" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
-            <infoLink id="3843-7ccc-8a24-c046" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+            <infoLink id="3843-7ccc-8a24-c046" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="5b7a-fd7d-0fd4-94b3" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -1950,7 +1953,7 @@ Many thanks to Drewski for initial Alpha testing of this list.</readme>
               <infoLinks>
                 <infoLink id="3ada-a8f1-a14c-f7b8" name="Land Raider" hidden="false" targetId="5656-41dd-5d0c-750b" type="profile"/>
                 <infoLink id="d551-15c4-c548-53cc" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
-                <infoLink id="b055-3e7b-62f0-7706" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="b055-3e7b-62f0-7706" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="84c8-8034-d472-df9c" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -1987,7 +1990,7 @@ Many thanks to Drewski for initial Alpha testing of this list.</readme>
                 <infoLink id="1d6b-2d46-39d9-ce59" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
                 <infoLink id="a96b-7cc0-6cb9-ac5a" name="Command" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
                 <infoLink id="32e6-7df4-a576-6cef" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
-                <infoLink id="727e-3ebf-fee7-3898" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="727e-3ebf-fee7-3898" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="1f8e-4397-3666-0d39" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -2192,7 +2195,7 @@ Many thanks to Drewski for initial Alpha testing of this list.</readme>
           <infoLinks>
             <infoLink id="b31f-b657-d056-7dd5" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
             <infoLink id="17d6-a553-a1b9-bbe5" name="Land Raider" hidden="false" targetId="5656-41dd-5d0c-750b" type="profile"/>
-            <infoLink id="10ca-81bf-20c4-a634" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+            <infoLink id="10ca-81bf-20c4-a634" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="0875-5e5e-997c-960f" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -2242,7 +2245,7 @@ Many thanks to Drewski for initial Alpha testing of this list.</readme>
           <infoLinks>
             <infoLink id="5250-9267-979b-858b" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
             <infoLink id="770a-5ee1-00e9-3bfe" name="Land Raider" hidden="false" targetId="5656-41dd-5d0c-750b" type="profile"/>
-            <infoLink id="2550-0416-ed86-8bb1" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+            <infoLink id="2550-0416-ed86-8bb1" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="6145-46af-29c5-3e01" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -2298,7 +2301,7 @@ Many thanks to Drewski for initial Alpha testing of this list.</readme>
               <infoLinks>
                 <infoLink id="c843-570b-1da8-9804" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
                 <infoLink id="cff8-14aa-38a1-c4bb" name="Land Raider" hidden="false" targetId="5656-41dd-5d0c-750b" type="profile"/>
-                <infoLink id="5b79-684e-96c0-c045" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="5b79-684e-96c0-c045" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="3f3d-ef37-22f8-056b" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -2348,7 +2351,7 @@ Many thanks to Drewski for initial Alpha testing of this list.</readme>
               <infoLinks>
                 <infoLink id="101d-9366-8ab7-690f" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
                 <infoLink id="c084-c903-4c5b-cd72" name="Command Land Raider" hidden="false" targetId="d172-1b00-ac8a-b377" type="profile"/>
-                <infoLink id="a1de-0025-805f-400b" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="a1de-0025-805f-400b" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="d947-10cf-00e7-408d" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -3474,7 +3477,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
           </constraints>
           <infoLinks>
             <infoLink id="4504-5e30-e5fd-9d33" name="Land Raider Helios" hidden="false" targetId="21bb-e1ec-cce4-ba4f" type="profile"/>
-            <infoLink id="1a48-cc92-94a3-17fc" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+            <infoLink id="1a48-cc92-94a3-17fc" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="011c-295b-160f-1b9c" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -4440,7 +4443,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
               <infoLinks>
                 <infoLink id="b913-5b11-306d-f497" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
                 <infoLink id="fadd-41d3-c03f-b6ec" name="Land Raider Crusader" hidden="false" targetId="2ec2-5cfa-cfd7-f056" type="profile"/>
-                <infoLink id="c790-91e5-ad16-517a" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="c790-91e5-ad16-517a" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="9562-810a-f083-7208" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -4495,7 +4498,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
               <infoLinks>
                 <infoLink id="2153-ed11-43ba-1327" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
                 <infoLink id="c913-4366-3bd0-435b" name="Land Raider Crusader" hidden="false" targetId="2ec2-5cfa-cfd7-f056" type="profile"/>
-                <infoLink id="457f-edfb-aec1-1e94" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="457f-edfb-aec1-1e94" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="e9d5-a7ba-1bc2-28f4" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -4555,7 +4558,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
           <infoLinks>
             <infoLink id="d6cd-514a-669c-a123" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
             <infoLink id="897c-13cb-e960-cf8b" name="Land Raider Crusader" hidden="false" targetId="2ec2-5cfa-cfd7-f056" type="profile"/>
-            <infoLink id="bbd7-f515-5025-ab4b" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+            <infoLink id="bbd7-f515-5025-ab4b" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="6cf1-84dd-110c-a008" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -4600,7 +4603,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
                 <infoLink id="05d0-be44-1bc6-9a27" name="Land Raider Crusader" hidden="false" targetId="2ec2-5cfa-cfd7-f056" type="profile"/>
                 <infoLink id="f2be-2e9a-8ab4-81b3" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
                 <infoLink id="100a-3569-d649-9b88" name="Command" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
-                <infoLink id="bfa5-8165-a7c6-f21f" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="bfa5-8165-a7c6-f21f" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="10cf-ca9b-75c2-981b" name="Black Templars" hidden="false" targetId="0fa7-1982-bb1e-f396" primary="false"/>
@@ -4636,7 +4639,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
               <infoLinks>
                 <infoLink id="386d-6528-6cd4-ebd5" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
                 <infoLink id="22c0-e679-56e9-47ac" name="Land Raider Crusader" hidden="false" targetId="2ec2-5cfa-cfd7-f056" type="profile"/>
-                <infoLink id="aeda-ceec-be3d-4c82" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="aeda-ceec-be3d-4c82" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="beec-193c-9414-202c" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -4676,7 +4679,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
           <infoLinks>
             <infoLink id="4ebb-de9f-ab7f-00df" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
             <infoLink id="f1bc-d16b-0bfa-1b5d" name="Land Raider Crusader" hidden="false" targetId="2ec2-5cfa-cfd7-f056" type="profile"/>
-            <infoLink id="d3e5-80c7-dd03-3e34" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+            <infoLink id="d3e5-80c7-dd03-3e34" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="a682-11b2-4b28-ee5d" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -5217,7 +5220,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
               <infoLinks>
                 <infoLink id="32e7-da7a-744f-1a8f" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
                 <infoLink id="3074-f5b2-a33b-ade1" name="Command Land Raider" hidden="false" targetId="d172-1b00-ac8a-b377" type="profile"/>
-                <infoLink id="4ea6-c3cc-0fb4-ccab" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="4ea6-c3cc-0fb4-ccab" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="14fb-a35a-65b7-d647" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -5325,7 +5328,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
               <infoLinks>
                 <infoLink id="e327-df1a-5a76-ea94" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
                 <infoLink id="8236-22c6-ba68-ffd2" name="Land Raider" hidden="false" targetId="5656-41dd-5d0c-750b" type="profile"/>
-                <infoLink id="3412-1009-ab9d-63a5" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="3412-1009-ab9d-63a5" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="0135-8a0d-d520-29ba" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -5553,7 +5556,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
               <infoLinks>
                 <infoLink id="850a-b34f-873e-d78c" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
                 <infoLink id="e05c-6b0d-fcb6-50d9" name="Land Raider" hidden="false" targetId="5656-41dd-5d0c-750b" type="profile"/>
-                <infoLink id="4961-5c71-4366-7a26" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="4961-5c71-4366-7a26" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="6656-8a9f-c592-d792" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -5605,7 +5608,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
                 <infoLink id="b22a-b717-ddcc-a28e" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
                 <infoLink id="3ddc-03db-b0ed-50c4" name="Command" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
                 <infoLink id="8f73-6d40-530a-43ed" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
-                <infoLink id="e700-fa9d-694f-fd23" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="e700-fa9d-694f-fd23" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="d9b2-b8cf-09c3-05c9" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -5709,7 +5712,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
               <infoLinks>
                 <infoLink id="2413-e90a-dafa-70e6" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
                 <infoLink id="719e-0312-488b-1560" name="Command Land Raider" hidden="false" targetId="d172-1b00-ac8a-b377" type="profile"/>
-                <infoLink id="692e-8ca4-cfd2-b00b" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="692e-8ca4-cfd2-b00b" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="3514-9df9-45a3-5e4a" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -5762,7 +5765,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
               <infoLinks>
                 <infoLink id="dfde-3f84-7a9b-1a07" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
                 <infoLink id="beea-c8c8-76c3-02ce" name="Land Raider" hidden="false" targetId="5656-41dd-5d0c-750b" type="profile"/>
-                <infoLink id="7256-d10c-d0e2-c368" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="7256-d10c-d0e2-c368" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="d5a2-6673-727b-a5e2" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -5820,7 +5823,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
           <infoLinks>
             <infoLink id="06e0-7b1b-3029-b0de" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
             <infoLink id="b8a6-56d0-5295-f21f" name="Land Raider" hidden="false" targetId="5656-41dd-5d0c-750b" type="profile"/>
-            <infoLink id="3a16-f686-195d-9f1c" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+            <infoLink id="3a16-f686-195d-9f1c" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="dd0d-dc5c-e294-066a" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -5871,7 +5874,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
           <infoLinks>
             <infoLink id="418b-bad7-9768-2f1d" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
             <infoLink id="6eb2-b433-9786-9f70" name="Land Raider" hidden="false" targetId="5656-41dd-5d0c-750b" type="profile"/>
-            <infoLink id="126a-c8d4-82a6-8727" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+            <infoLink id="126a-c8d4-82a6-8727" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="ef02-4468-746f-c78f" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -7136,7 +7139,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
           <infoLinks>
             <infoLink id="aa63-bc44-8580-986f" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
             <infoLink id="bf7d-ece0-d22a-44d6" name="Land Raider" hidden="false" targetId="5656-41dd-5d0c-750b" type="profile"/>
-            <infoLink id="5597-7f91-8e86-e7b9" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+            <infoLink id="5597-7f91-8e86-e7b9" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="51ae-29a3-2d72-5233" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -7955,7 +7958,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
               <infoLinks>
                 <infoLink id="c0e0-cfb9-ff64-0d12" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
                 <infoLink id="8a5d-4919-a6cc-3bc4" name="Land Raider" hidden="false" targetId="5656-41dd-5d0c-750b" type="profile"/>
-                <infoLink id="a0a1-5db4-0dda-ebec" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="a0a1-5db4-0dda-ebec" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="ff26-8a27-b291-4088" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -8014,7 +8017,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
           <infoLinks>
             <infoLink id="e7bb-4e57-e77d-47a8" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
             <infoLink id="e5c5-713f-4501-8130" name="Land Raider" hidden="false" targetId="5656-41dd-5d0c-750b" type="profile"/>
-            <infoLink id="460e-9f35-613d-293a" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+            <infoLink id="460e-9f35-613d-293a" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="1764-3a12-65bb-9cd8" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -8626,7 +8629,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
           <infoLinks>
             <infoLink id="8ba0-3998-c6f2-8a26" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
             <infoLink id="fa46-62e4-1cf2-162f" name="Land Raider Crusader" hidden="false" targetId="2ec2-5cfa-cfd7-f056" type="profile"/>
-            <infoLink id="111d-ba9b-568e-504b" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+            <infoLink id="111d-ba9b-568e-504b" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="7040-79d8-6638-3eb8" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -8748,7 +8751,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
               <infoLinks>
                 <infoLink id="26d5-ba28-42b7-0ebe" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
                 <infoLink id="a10b-d297-361b-e7af" name="Land Raider Crusader" hidden="false" targetId="2ec2-5cfa-cfd7-f056" type="profile"/>
-                <infoLink id="6494-f0b9-bd47-bc14" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="6494-f0b9-bd47-bc14" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="d0cf-c13c-83d1-64c8" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -8822,7 +8825,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
               <infoLinks>
                 <infoLink id="bb53-323f-2320-af5b" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
                 <infoLink id="ecea-9743-8efc-610c" name="Land Raider Crusader" hidden="false" targetId="2ec2-5cfa-cfd7-f056" type="profile"/>
-                <infoLink id="4d25-3474-3c67-c12e" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="4d25-3474-3c67-c12e" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="9208-7083-5253-5635" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -8955,7 +8958,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
               <infoLinks>
                 <infoLink id="81c4-2cb0-a837-73e6" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
                 <infoLink id="37de-84b3-4bdd-ac08" name="Land Raider Crusader" hidden="false" targetId="2ec2-5cfa-cfd7-f056" type="profile"/>
-                <infoLink id="42fb-a546-95e6-a31c" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="42fb-a546-95e6-a31c" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="09fc-ba10-8016-beb1" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -9155,7 +9158,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
           <infoLinks>
             <infoLink id="de3c-c626-89af-e9bc" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
             <infoLink id="4058-de27-138d-4916" name="Land Raider Crusader" hidden="false" targetId="2ec2-5cfa-cfd7-f056" type="profile"/>
-            <infoLink id="eb31-fe43-2685-cfb1" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+            <infoLink id="eb31-fe43-2685-cfb1" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="0c64-3f19-004e-d9f8" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -9195,7 +9198,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
                 <infoLink id="930d-4c88-e8f2-ff17" name="Land Raider Crusader" hidden="false" targetId="2ec2-5cfa-cfd7-f056" type="profile"/>
                 <infoLink id="a564-ea28-0c72-d68d" name="Headquarters (HQ)" hidden="false" targetId="ce40-8c8d-3d87-f002" type="rule"/>
                 <infoLink id="295d-e7a1-0c7f-008c" name="Command" hidden="false" targetId="3c0b-fc55-3148-742b" type="rule"/>
-                <infoLink id="304f-4935-fcda-d28d" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="304f-4935-fcda-d28d" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="7c0f-a333-e6e8-aa25" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -9227,7 +9230,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
               <infoLinks>
                 <infoLink id="48e0-3c06-2e80-0da4" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
                 <infoLink id="e037-dbff-5e67-3c53" name="Land Raider Crusader" hidden="false" targetId="2ec2-5cfa-cfd7-f056" type="profile"/>
-                <infoLink id="4b24-a122-28d4-a0e8" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+                <infoLink id="4b24-a122-28d4-a0e8" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="9848-0429-9385-835e" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
@@ -11323,8 +11326,7 @@ E) Ignore: Ignore the question and move on to the next one.</description>
         <characteristic name="Move" typeId="bebf-5a70-33c4-fe7f">20cm</characteristic>
         <characteristic name="Save" typeId="055d-0b88-bbaf-dc8c">2+</characteristic>
         <characteristic name="CAF" typeId="fed2-08a4-b3f9-f4f3">+3</characteristic>
-        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Lascannons : 75cm, 2d 5+ (-2)
-Point Defence (1)</characteristic>
+        <characteristic name="Weapons" typeId="8e21-035a-6cdc-67eb">Lascannons : 75cm, 2d 5+ (-2)</characteristic>
         <characteristic name="Morale" typeId="3bb5-71b6-c61b-07da">2+</characteristic>
         <characteristic name="Special Rules" typeId="2a20-9420-2ae5-5339"/>
       </characteristics>

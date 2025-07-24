@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3e2a-ea46-765a-b749" name="Orks" revision="8" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <readme>v8 notes :
+<catalogue id="3e2a-ea46-765a-b749" name="Orks" revision="9" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>v9 notes :
+Fixed Point Defence values for Blood Axe Rhinos &amp; Land Raiders.
+
+v8 notes :
 Trukks were not showing up in their Support Card profile - now fixed.
 
 v7 notes :
@@ -2504,7 +2507,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           </rules>
           <infoLinks>
             <infoLink id="7d8b-9394-22ca-4298" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
-            <infoLink id="b9a7-0474-3a45-8c90" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+            <infoLink id="b9a7-0474-3a45-8c90" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
             <infoLink id="9060-9d0f-026a-33ef" name="Blood Axe Land Raider" hidden="false" targetId="bb9a-5a4b-d584-f23d" type="profile"/>
           </infoLinks>
           <categoryLinks>
@@ -2638,7 +2641,7 @@ A lot of Gargant weapons have had their points changed slightly up or down to av
           <infoLinks>
             <infoLink id="c7a3-fc2d-840d-8ea6" name="Transport (2)" hidden="false" targetId="63bd-f880-cdfc-fc58" type="rule"/>
             <infoLink id="7346-12c6-5a91-3aa9" name="Blood Axe Rhino" hidden="false" targetId="fbfb-d0d3-2f48-2bfc" type="profile"/>
-            <infoLink id="50b5-1a91-ee34-84d8" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
+            <infoLink id="50b5-1a91-ee34-84d8" name="Point Defence (1)" hidden="false" targetId="6cb5-13de-0386-8b65" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="3390-cc9a-4ec8-19e1" name="Vehicle" hidden="false" targetId="33fc-5c4f-a988-5691" primary="false"/>
