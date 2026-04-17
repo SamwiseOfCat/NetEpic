@@ -1,7 +1,7 @@
 NetEpic / Epic Space Marine 2nd Edition Battlescribe Game System & Army Lists
 -----------------------------------------------------------------------------
 
-***** The current version is Version 10 *****
+_***** The current version is Version 11 *****_
 
 Please feel free to email me with any issues you find in the lists - typos, incorrect points values, missing stats etc and I will add them to a list to get fixed in the next release. All feedback is welcome - please use stagletto at gmail dot com and ill get back to you when I can, or log an Issue if you are a GitHub user here on the NetEpic project.
 
