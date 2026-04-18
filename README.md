@@ -1,7 +1,7 @@
 NetEpic / Epic Space Marine 2nd Edition Battlescribe Game System & Army Lists
 -----------------------------------------------------------------------------
 
-_***** The current version is Version 11 *****_
+_***** The current version is Version 12 *****_
 
 Please feel free to email me with any issues you find in the lists - typos, incorrect points values, missing stats etc and I will add them to a list to get fixed in the next release. All feedback is welcome - please use stagletto at gmail dot com and ill get back to you when I can, or log an Issue if you are a GitHub user here on the NetEpic project.
 
@@ -13,7 +13,7 @@ Internet Installation Notes (best/easiest way!)
 2) Run Battlescribe.
 3) Click the "Manage Data" icon at the top of the BS window.
 4) Click "Import Data".
-5) Click "Import Data From URL" then enter the following URL: "https://github.com/SamwiseOfCat/NetEpic/releases/download/v11/NetEpic.latest.bsi"
+5) Click "Import Data From URL" then enter the following URL: "https://github.com/SamwiseOfCat/NetEpic/releases/download/v12/NetEpic.latest.bsi"
 6) Battlescribe will then download the files for you.
 7) Once complete, Click the "Create A New Roster" icon in the top left.
 8) Select "NetEpic Gold" from the first dropdown.
