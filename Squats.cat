@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f34c-bf7e-4778-7d1b" name="Squats" revision="5" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f34c-bf7e-4778-7d1b" name="Squats" revision="6" battleScribeVersion="2.03" authorName="Steve Jones" authorContact="stagletto@gmail.com" library="false" gameSystemId="b6ca-ebfc-974f-eaae" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>.</comment>
-  <readme>v5 notes :
+  <readme>v6 notes :
+Added the Behemoth.
+
+v5 notes :
 Fixed Leviathan cost as part of Ironbreaker Company Card.
 
 v4 notes :
@@ -597,6 +600,7 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
           <costs>
             <cost name=" VP" typeId="points" value="4.0"/>
             <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2305,7 +2309,7 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f347-01b8-167a-35fe" name="Air Attack Corps" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="f347-01b8-167a-35fe" name="Air Attack Corps" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="4652-adc1-247c-b787" name="Company Card" hidden="false" targetId="704c-e54e-0e5c-2d2f" primary="true"/>
         <categoryLink id="2247-9bbe-1c68-458e" name="Squats" hidden="false" targetId="f3bd-9505-bea6-fef5" primary="false"/>
@@ -2325,7 +2329,7 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
               <infoLinks>
                 <infoLink id="725b-6c38-7f49-db50" name="Point Defence (X)" hidden="false" targetId="1452-6385-ff7e-515c" type="rule"/>
                 <infoLink id="7450-6321-6f85-32d0" name="Flyer" hidden="false" targetId="f081-2b42-2559-361e" type="rule"/>
-                <infoLink id="3b7d-6c84-b5e5-09c1" name="360° Firing" hidden="false" targetId="687c-75a3-312c-a769" type="rule"/>
+                <infoLink id="3b7d-6c84-b5e5-09c1" name="360° Firing - All Weapons" hidden="false" targetId="687c-75a3-312c-a769" type="rule"/>
                 <infoLink id="2074-cd94-c46a-36cc" name="Fires in First Fire Phase" hidden="false" targetId="1d5f-6e50-4d9c-e1dc" type="rule"/>
                 <infoLink id="b643-6d2c-8e66-c227" name="Overlord Armoured Airship" hidden="false" targetId="0b0b-1345-577c-1aa3" type="profile"/>
                 <infoLink id="f3ac-0731-5c7e-3723" name="Overlord Hits" hidden="false" targetId="f690-7624-41f6-98bd" type="rule"/>
@@ -4483,6 +4487,71 @@ Maximum One Each: Grudgekeeper Battery, Hearthlord, Hellfury, Robot Squadron, La
       <costs>
         <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
         <cost name=" VP" typeId="points" value="0.0"/>
+        <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="27d8-ae9d-0a23-f0ee" name="Behemoth" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="ffdb-a6c4-8c6a-5bd1" name="Squats" hidden="false" targetId="f3bd-9505-bea6-fef5" primary="false"/>
+        <categoryLink id="b995-1864-37c0-83d4" name="Special Card" hidden="false" targetId="224e-9fab-b2e1-8a4f" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="5a25-121c-396d-9e0f" name="Behemoth" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53dc-b43a-aee4-1d0f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec4a-224c-a9a7-d3b7" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="3724-ef31-18ee-dbdf" name="Void Shields (4)" hidden="false" targetId="0464-76ee-86b5-49fa" type="rule"/>
+            <infoLink id="b9f2-1485-4ef7-ef8d" name="Behemoth" hidden="false" targetId="4945-9242-ccb0-e637" type="profile"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="f524-bf46-ed08-6884" name="Behemoth Weapons" hidden="false" collective="false" import="true">
+              <selectionEntries>
+                <selectionEntry id="3223-44fd-fbac-735b" name="&quot;Last Word&quot; Railgun" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a42e-af75-6730-28c4" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d32-9862-10e4-cd83" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="3b70-d36c-e541-892d" name="360° Weapon" hidden="false" targetId="02c3-fe5a-3cf1-34a5" type="rule"/>
+                    <infoLink id="ec50-04b7-d2f5-c428" name="Destroys Buildings" hidden="false" targetId="7db7-4fc2-dcb1-aa01" type="rule"/>
+                    <infoLink id="6603-5382-4cf7-6ea5" name="Penetrating (+3)" hidden="false" targetId="af8f-61cb-cc42-2f21" type="rule"/>
+                    <infoLink id="5925-f6c6-c520-5f56" name="&quot;Last Word&quot; Railgun" hidden="false" targetId="187f-f5f4-3dfc-91cf" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                    <cost name=" VP" typeId="points" value="0.0"/>
+                    <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="90ee-5b73-1739-d0ff" name="Behemoth Heavy Bolter Array" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="856b-dbb9-ada8-443a" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0cb-8bf1-cf28-8fa5" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="8b0d-b8f2-bf58-34e8" name="Behemoth Heavy Bolter Array" hidden="false" targetId="4915-5586-87cb-3e1e" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+                    <cost name=" VP" typeId="points" value="0.0"/>
+                    <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="52f8-db9e-3336-8db6" value="0.0"/>
+            <cost name=" VP" typeId="points" value="0.0"/>
+            <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="52f8-db9e-3336-8db6" value="450.0"/>
+        <cost name=" VP" typeId="points" value="5.0"/>
         <cost name=" Break Point" typeId="25ab-cb1a-141e-dc75" value="0.0"/>
       </costs>
     </selectionEntry>
